@@ -1,0 +1,27 @@
+<% if @activities.empty? %>
+  <p>Welcome to Stratify.  You're ready to configure some collectors.  Check out the README to learn how to set up your collectors and start gathering data.</p>
+<% else %>
+  <ul class="days">
+    <% @activities.group_by(&:created_on).each do |day, activities| %>
+      <li>
+        <p class="date"><%= l day, :format => :pretty %></p>
+        <% activities.each do |activity| %>
+          <article class="<%= css_class_for_activity(activity) %>" id="<%= dom_id(activity) %>">
+            <span class="data-source">
+              <%= activity.permalink ? link_to(image_tag_for_activity(activity), activity.permalink) : image_tag_for_activity(activity) %>
+            </span>
+            <span class="data-content">
+              <%= render :partial => partial_for_activity(activity), :locals => { :activity => activity } %>
+            </span>
+            <span class="data-time">
+              <%= l activity.created_at, :format => :time_only %>
+            
+              <%# TODO Move this functionality to the activity detail page (once such a page exists). Deleting an activity is too rare of an event to warrant cluttering up the index view with all these delete icons. %>
+              <%= link_to image_tag("trash-icon-16.gif"), activity_path(activity), :confirm => 'Are you sure?', :method => :delete, :title => "Delete" %>
+            </span>
+          </article>
+        <% end %>
+      </li>
+    <% end %>
+  </ul>
+<% end %>

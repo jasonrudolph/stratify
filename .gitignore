@@ -1,0 +1,7 @@
+.bundle
+config/deploy.rb
+config/mongoid.yml
+lib/tasks/collectors.rake
+log/*.log
+tmp/**/*
+todo.taskpaper

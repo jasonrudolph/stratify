@@ -1,0 +1,152 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+html, body {
+	height: 100%;
+}
+
+article, aside { 
+  display:block;
+}
+
+body {
+  background-color: white;
+  width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+	font-family: "Trebuchet MS", Helvetica, Arial sans-serif;
+  font-size-adjust: none;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  color: #333;
+}
+
+p {
+  margin: 1em 0;
+}
+
+a {
+  color: #268ED4;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+img {
+  border: 0;
+}
+
+header { 
+  display: none; /* hide the header until I have a chance to give it some design love */
+}
+
+#content {
+  display: table;
+}
+
+#mainContent {
+	display: table-cell;
+  min-width: 700px;
+	width: 80%;
+  padding-right: 1em;
+}
+
+ul.days {
+  list-style-type: none;
+}
+
+ul.days li p.date {
+  font-weight: bold;
+  font-size: 1.2em;
+  padding: .3em;
+  background-color: #CCC;
+  border-radius: .2em;
+}
+
+ul.days li article {
+  width: 100%;
+  display: table;
+  padding: .1em .1em 1em .1em;
+}
+
+ul.days li article span {
+  display: table-cell;
+	vertical-align: top;
+}
+
+ul.days li article span.data-source {
+  width: 40px;
+}
+
+ul.days li article span.data-time {
+  width: 70px;
+  font-size: 70%;
+  color: #999;
+  text-align: right;
+}
+
+ul.days li article span.data-content {
+}
+
+ul.days li article span.data-content p {
+  margin: 0;
+}
+
+ul.days li article span.data-content p.summary a {
+  color: #333;
+}
+
+ul.days li article span.data-content p.summary a:hover {
+  color: #268ED4;
+}
+
+ul.days li article span.data-content p.details {
+  padding-top: 0.4em;
+  font-size: 80%;
+  color: #666;
+}
+
+/* Sidebar styles */
+
+#sidebar {
+	display: table-cell;
+	width: 20%;
+}
+
+#layers {
+  border-radius: .2em;
+  border: .1em solid #CCC;
+  padding: .4em;
+}
+
+#layers h2 {
+  font-size: 120%;
+}
+
+#layers form ul {
+  list-style-type: none;
+  padding-top: .2em;
+}
+
+#layers form {
+  margin-bottom: 3em;
+}
+
+#layers * li {
+  padding: .3em 0em;
+  font-size: 90%;
+}
+
+#layers * li img {
+	vertical-align: middle;
+	padding-left: .3em;
+}
+
+#layers a {
+  font-size: 80%;
+}

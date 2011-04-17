@@ -1,0 +1,2091 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Major Version</key><integer>1</integer>
+	<key>Minor Version</key><integer>1</integer>
+	<key>Application Version</key><string>10.2.1</string>
+	<key>Features</key><integer>5</integer>
+	<key>Show Content Ratings</key><true/>
+	<key>Music Folder</key><string>file://localhost/Users/z/Music/iTunes/iTunes%20Media/</string>
+	<key>Library Persistent ID</key><string>F343578A04A17962</string>
+	<key>Tracks</key>
+	<dict>
+		<key>86</key>
+		<dict>
+			<key>Track ID</key><integer>86</integer>
+			<key>Name</key><string>Play Your Part (Pt. 1)</string>
+			<key>Artist</key><string>Girl Talk</string>
+			<key>Album</key><string>Feed The Animals</string>
+			<key>Genre</key><string>Mash-up</string>
+			<key>Kind</key><string>MPEG audio file</string>
+			<key>Size</key><integer>19612331</integer>
+			<key>Total Time</key><integer>284865</integer>
+			<key>Track Number</key><integer>1</integer>
+			<key>Track Count</key><integer>14</integer>
+			<key>Year</key><integer>2008</integer>
+			<key>Date Modified</key><date>2008-12-07T18:55:32Z</date>
+			<key>Date Added</key><date>2011-02-27T21:45:44Z</date>
+			<key>Bit Rate</key><integer>320</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Part Of Gapless Album</key><true/>
+			<key>Comments</key><string>released on Illegal Art</string>
+			<key>Play Count</key><integer>1</integer>
+			<key>Play Date</key><integer>3381673926</integer>
+			<key>Play Date UTC</key><date>2011-02-27T21:52:06Z</date>
+			<key>Artwork Count</key><integer>1</integer>
+			<key>Persistent ID</key><string>5E392CBEF8E9ED1F</string>
+			<key>Track Type</key><string>File</string>
+			<key>Location</key><string>file://localhost/Users/z/Music/iTunes/iTunes%20Media/Music/Girl%20Talk/Feed%20The%20Animals/01%20Play%20Your%20Part%20(Pt.%201).mp3</string>
+			<key>File Folder Count</key><integer>5</integer>
+			<key>Library Folder Count</key><integer>1</integer>
+		</dict>
+		<key>88</key>
+		<dict>
+			<key>Track ID</key><integer>88</integer>
+			<key>Name</key><string>Shut The Club Down</string>
+			<key>Artist</key><string>Girl Talk</string>
+			<key>Album</key><string>Feed The Animals</string>
+			<key>Genre</key><string>Mash-up</string>
+			<key>Kind</key><string>MPEG audio file</string>
+			<key>Size</key><integer>15689780</integer>
+			<key>Total Time</key><integer>186801</integer>
+			<key>Track Number</key><integer>2</integer>
+			<key>Track Count</key><integer>14</integer>
+			<key>Year</key><integer>2008</integer>
+			<key>Date Modified</key><date>2008-12-07T18:55:33Z</date>
+			<key>Date Added</key><date>2011-02-27T21:45:44Z</date>
+			<key>Bit Rate</key><integer>320</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Part Of Gapless Album</key><true/>
+			<key>Comments</key><string>released on Illegal Art</string>
+			<key>Play Count</key><integer>1</integer>
+			<key>Play Date</key><integer>3381673928</integer>
+			<key>Play Date UTC</key><date>2011-02-27T21:52:08Z</date>
+			<key>Artwork Count</key><integer>1</integer>
+			<key>Persistent ID</key><string>6145DC1C4F459075</string>
+			<key>Track Type</key><string>File</string>
+			<key>Location</key><string>file://localhost/Users/z/Music/iTunes/iTunes%20Media/Music/Girl%20Talk/Feed%20The%20Animals/02%20Shut%20The%20Club%20Down.mp3</string>
+			<key>File Folder Count</key><integer>5</integer>
+			<key>Library Folder Count</key><integer>1</integer>
+		</dict>
+		<key>90</key>
+		<dict>
+			<key>Track ID</key><integer>90</integer>
+			<key>Name</key><string>Still Here</string>
+			<key>Artist</key><string>Girl Talk</string>
+			<key>Album</key><string>Feed The Animals</string>
+			<key>Genre</key><string>Mash-up</string>
+			<key>Kind</key><string>MPEG audio file</string>
+			<key>Size</key><integer>17704335</integer>
+			<key>Total Time</key><integer>237165</integer>
+			<key>Track Number</key><integer>3</integer>
+			<key>Track Count</key><integer>14</integer>
+			<key>Year</key><integer>2008</integer>
+			<key>Date Modified</key><date>2008-12-07T18:55:35Z</date>
+			<key>Date Added</key><date>2011-02-27T21:45:44Z</date>
+			<key>Bit Rate</key><integer>320</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Part Of Gapless Album</key><true/>
+			<key>Comments</key><string>released on Illegal Art</string>
+			<key>Artwork Count</key><integer>1</integer>
+			<key>Persistent ID</key><string>8780A3C7A0117B2B</string>
+			<key>Track Type</key><string>File</string>
+			<key>Location</key><string>file://localhost/Users/z/Music/iTunes/iTunes%20Media/Music/Girl%20Talk/Feed%20The%20Animals/03%20Still%20Here.mp3</string>
+			<key>File Folder Count</key><integer>5</integer>
+			<key>Library Folder Count</key><integer>1</integer>
+		</dict>
+		<key>92</key>
+		<dict>
+			<key>Track ID</key><integer>92</integer>
+			<key>Name</key><string>What It's All About</string>
+			<key>Artist</key><string>Girl Talk</string>
+			<key>Album</key><string>Feed The Animals</string>
+			<key>Genre</key><string>Mash-up</string>
+			<key>Kind</key><string>MPEG audio file</string>
+			<key>Size</key><integer>18408605</integer>
+			<key>Total Time</key><integer>254772</integer>
+			<key>Track Number</key><integer>4</integer>
+			<key>Track Count</key><integer>14</integer>
+			<key>Year</key><integer>2008</integer>
+			<key>Date Modified</key><date>2008-12-07T18:55:36Z</date>
+			<key>Date Added</key><date>2011-02-27T21:45:44Z</date>
+			<key>Bit Rate</key><integer>320</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Part Of Gapless Album</key><true/>
+			<key>Comments</key><string>released on Illegal Art</string>
+			<key>Artwork Count</key><integer>1</integer>
+			<key>Persistent ID</key><string>15B969B660E18D37</string>
+			<key>Track Type</key><string>File</string>
+			<key>Location</key><string>file://localhost/Users/z/Music/iTunes/iTunes%20Media/Music/Girl%20Talk/Feed%20The%20Animals/04%20What%20It's%20All%20About.mp3</string>
+			<key>File Folder Count</key><integer>5</integer>
+			<key>Library Folder Count</key><integer>1</integer>
+		</dict>
+		<key>94</key>
+		<dict>
+			<key>Track ID</key><integer>94</integer>
+			<key>Name</key><string>Set It Off</string>
+			<key>Artist</key><string>Girl Talk</string>
+			<key>Album</key><string>Feed The Animals</string>
+			<key>Genre</key><string>Mash-up</string>
+			<key>Kind</key><string>MPEG audio file</string>
+			<key>Size</key><integer>17094115</integer>
+			<key>Total Time</key><integer>221910</integer>
+			<key>Track Number</key><integer>5</integer>
+			<key>Track Count</key><integer>14</integer>
+			<key>Year</key><integer>2008</integer>
+			<key>Date Modified</key><date>2008-12-07T18:55:38Z</date>
+			<key>Date Added</key><date>2011-02-27T21:45:44Z</date>
+			<key>Bit Rate</key><integer>320</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Part Of Gapless Album</key><true/>
+			<key>Comments</key><string>released on Illegal Art</string>
+			<key>Artwork Count</key><integer>1</integer>
+			<key>Persistent ID</key><string>F1E55C4714899740</string>
+			<key>Track Type</key><string>File</string>
+			<key>Location</key><string>file://localhost/Users/z/Music/iTunes/iTunes%20Media/Music/Girl%20Talk/Feed%20The%20Animals/05%20Set%20It%20Off.mp3</string>
+			<key>File Folder Count</key><integer>5</integer>
+			<key>Library Folder Count</key><integer>1</integer>
+		</dict>
+		<key>96</key>
+		<dict>
+			<key>Track ID</key><integer>96</integer>
+			<key>Name</key><string>No Pause</string>
+			<key>Artist</key><string>Girl Talk</string>
+			<key>Album</key><string>Feed The Animals</string>
+			<key>Genre</key><string>Mash-up</string>
+			<key>Kind</key><string>MPEG audio file</string>
+			<key>Size</key><integer>15908154</integer>
+			<key>Total Time</key><integer>192261</integer>
+			<key>Track Number</key><integer>6</integer>
+			<key>Track Count</key><integer>14</integer>
+			<key>Year</key><integer>2008</integer>
+			<key>Date Modified</key><date>2008-12-07T18:55:39Z</date>
+			<key>Date Added</key><date>2011-02-27T21:45:44Z</date>
+			<key>Bit Rate</key><integer>320</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Part Of Gapless Album</key><true/>
+			<key>Comments</key><string>released on Illegal Art</string>
+			<key>Artwork Count</key><integer>1</integer>
+			<key>Persistent ID</key><string>DEBB4AF87A6DDB6B</string>
+			<key>Track Type</key><string>File</string>
+			<key>Location</key><string>file://localhost/Users/z/Music/iTunes/iTunes%20Media/Music/Girl%20Talk/Feed%20The%20Animals/06%20No%20Pause.mp3</string>
+			<key>File Folder Count</key><integer>5</integer>
+			<key>Library Folder Count</key><integer>1</integer>
+		</dict>
+		<key>98</key>
+		<dict>
+			<key>Track ID</key><integer>98</integer>
+			<key>Name</key><string>Like This</string>
+			<key>Artist</key><string>Girl Talk</string>
+			<key>Album</key><string>Feed The Animals</string>
+			<key>Genre</key><string>Mash-up</string>
+			<key>Kind</key><string>MPEG audio file</string>
+			<key>Size</key><integer>16264465</integer>
+			<key>Total Time</key><integer>201168</integer>
+			<key>Track Number</key><integer>7</integer>
+			<key>Track Count</key><integer>14</integer>
+			<key>Year</key><integer>2008</integer>
+			<key>Date Modified</key><date>2008-12-07T18:55:41Z</date>
+			<key>Date Added</key><date>2011-02-27T21:45:44Z</date>
+			<key>Bit Rate</key><integer>320</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Part Of Gapless Album</key><true/>
+			<key>Comments</key><string>released on Illegal Art</string>
+			<key>Artwork Count</key><integer>1</integer>
+			<key>Persistent ID</key><string>16DB653FFFD9C0B5</string>
+			<key>Track Type</key><string>File</string>
+			<key>Location</key><string>file://localhost/Users/z/Music/iTunes/iTunes%20Media/Music/Girl%20Talk/Feed%20The%20Animals/07%20Like%20This.mp3</string>
+			<key>File Folder Count</key><integer>5</integer>
+			<key>Library Folder Count</key><integer>1</integer>
+		</dict>
+		<key>100</key>
+		<dict>
+			<key>Track ID</key><integer>100</integer>
+			<key>Name</key><string>Give Me A Beat</string>
+			<key>Artist</key><string>Girl Talk</string>
+			<key>Album</key><string>Feed The Animals</string>
+			<key>Genre</key><string>Mash-up</string>
+			<key>Kind</key><string>MPEG audio file</string>
+			<key>Size</key><integer>18309335</integer>
+			<key>Total Time</key><integer>252290</integer>
+			<key>Track Number</key><integer>8</integer>
+			<key>Track Count</key><integer>14</integer>
+			<key>Year</key><integer>2008</integer>
+			<key>Date Modified</key><date>2008-12-07T18:55:43Z</date>
+			<key>Date Added</key><date>2011-02-27T21:45:44Z</date>
+			<key>Bit Rate</key><integer>320</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Part Of Gapless Album</key><true/>
+			<key>Comments</key><string>released on Illegal Art</string>
+			<key>Artwork Count</key><integer>1</integer>
+			<key>Persistent ID</key><string>A5D4E5C19A007E01</string>
+			<key>Track Type</key><string>File</string>
+			<key>Location</key><string>file://localhost/Users/z/Music/iTunes/iTunes%20Media/Music/Girl%20Talk/Feed%20The%20Animals/08%20Give%20Me%20A%20Beat.mp3</string>
+			<key>File Folder Count</key><integer>5</integer>
+			<key>Library Folder Count</key><integer>1</integer>
+		</dict>
+		<key>102</key>
+		<dict>
+			<key>Track ID</key><integer>102</integer>
+			<key>Name</key><string>Hands In The Air</string>
+			<key>Artist</key><string>Girl Talk</string>
+			<key>Album</key><string>Feed The Animals</string>
+			<key>Genre</key><string>Mash-up</string>
+			<key>Kind</key><string>MPEG audio file</string>
+			<key>Size</key><integer>18632211</integer>
+			<key>Total Time</key><integer>260362</integer>
+			<key>Track Number</key><integer>9</integer>
+			<key>Track Count</key><integer>14</integer>
+			<key>Year</key><integer>2008</integer>
+			<key>Date Modified</key><date>2008-12-07T18:55:44Z</date>
+			<key>Date Added</key><date>2011-02-27T21:45:44Z</date>
+			<key>Bit Rate</key><integer>320</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Part Of Gapless Album</key><true/>
+			<key>Comments</key><string>released on Illegal Art</string>
+			<key>Artwork Count</key><integer>1</integer>
+			<key>Persistent ID</key><string>8F2607249F4E16E9</string>
+			<key>Track Type</key><string>File</string>
+			<key>Location</key><string>file://localhost/Users/z/Music/iTunes/iTunes%20Media/Music/Girl%20Talk/Feed%20The%20Animals/09%20Hands%20In%20The%20Air.mp3</string>
+			<key>File Folder Count</key><integer>5</integer>
+			<key>Library Folder Count</key><integer>1</integer>
+		</dict>
+		<key>104</key>
+		<dict>
+			<key>Track ID</key><integer>104</integer>
+			<key>Name</key><string>In Step</string>
+			<key>Artist</key><string>Girl Talk</string>
+			<key>Album</key><string>Feed The Animals</string>
+			<key>Genre</key><string>Mash-up</string>
+			<key>Kind</key><string>MPEG audio file</string>
+			<key>Size</key><integer>16352235</integer>
+			<key>Total Time</key><integer>203363</integer>
+			<key>Track Number</key><integer>10</integer>
+			<key>Track Count</key><integer>14</integer>
+			<key>Year</key><integer>2008</integer>
+			<key>Date Modified</key><date>2008-12-07T18:55:46Z</date>
+			<key>Date Added</key><date>2011-02-27T21:45:45Z</date>
+			<key>Bit Rate</key><integer>320</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Part Of Gapless Album</key><true/>
+			<key>Comments</key><string>released on Illegal Art</string>
+			<key>Artwork Count</key><integer>1</integer>
+			<key>Persistent ID</key><string>243DBB9437166258</string>
+			<key>Track Type</key><string>File</string>
+			<key>Location</key><string>file://localhost/Users/z/Music/iTunes/iTunes%20Media/Music/Girl%20Talk/Feed%20The%20Animals/10%20In%20Step.mp3</string>
+			<key>File Folder Count</key><integer>5</integer>
+			<key>Library Folder Count</key><integer>1</integer>
+		</dict>
+		<key>106</key>
+		<dict>
+			<key>Track ID</key><integer>106</integer>
+			<key>Name</key><string>Let Me See You</string>
+			<key>Artist</key><string>Girl Talk</string>
+			<key>Album</key><string>Feed The Animals</string>
+			<key>Genre</key><string>Mash-up</string>
+			<key>Kind</key><string>MPEG audio file</string>
+			<key>Size</key><integer>17972879</integer>
+			<key>Total Time</key><integer>243879</integer>
+			<key>Track Number</key><integer>11</integer>
+			<key>Track Count</key><integer>14</integer>
+			<key>Year</key><integer>2008</integer>
+			<key>Date Modified</key><date>2008-12-07T18:55:48Z</date>
+			<key>Date Added</key><date>2011-02-27T21:45:45Z</date>
+			<key>Bit Rate</key><integer>320</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Part Of Gapless Album</key><true/>
+			<key>Comments</key><string>released on Illegal Art</string>
+			<key>Artwork Count</key><integer>1</integer>
+			<key>Persistent ID</key><string>76A14C386250EE93</string>
+			<key>Track Type</key><string>File</string>
+			<key>Location</key><string>file://localhost/Users/z/Music/iTunes/iTunes%20Media/Music/Girl%20Talk/Feed%20The%20Animals/11%20Let%20Me%20See%20You.mp3</string>
+			<key>File Folder Count</key><integer>5</integer>
+			<key>Library Folder Count</key><integer>1</integer>
+		</dict>
+		<key>108</key>
+		<dict>
+			<key>Track ID</key><integer>108</integer>
+			<key>Name</key><string>Here's The Thing</string>
+			<key>Artist</key><string>Girl Talk</string>
+			<key>Album</key><string>Feed The Animals</string>
+			<key>Genre</key><string>Mash-up</string>
+			<key>Kind</key><string>MPEG audio file</string>
+			<key>Size</key><integer>19640538</integer>
+			<key>Total Time</key><integer>285570</integer>
+			<key>Track Number</key><integer>12</integer>
+			<key>Track Count</key><integer>14</integer>
+			<key>Year</key><integer>2008</integer>
+			<key>Date Modified</key><date>2008-12-07T18:55:50Z</date>
+			<key>Date Added</key><date>2011-02-27T21:45:45Z</date>
+			<key>Bit Rate</key><integer>320</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Part Of Gapless Album</key><true/>
+			<key>Comments</key><string>released on Illegal Art</string>
+			<key>Artwork Count</key><integer>1</integer>
+			<key>Persistent ID</key><string>5194D0291EDEDBE8</string>
+			<key>Track Type</key><string>File</string>
+			<key>Location</key><string>file://localhost/Users/z/Music/iTunes/iTunes%20Media/Music/Girl%20Talk/Feed%20The%20Animals/12%20Here's%20The%20Thing.mp3</string>
+			<key>File Folder Count</key><integer>5</integer>
+			<key>Library Folder Count</key><integer>1</integer>
+		</dict>
+		<key>110</key>
+		<dict>
+			<key>Track ID</key><integer>110</integer>
+			<key>Name</key><string>Don't Stop</string>
+			<key>Artist</key><string>Girl Talk</string>
+			<key>Album</key><string>Feed The Animals</string>
+			<key>Genre</key><string>Mash-up</string>
+			<key>Kind</key><string>MPEG audio file</string>
+			<key>Size</key><integer>15348091</integer>
+			<key>Total Time</key><integer>178259</integer>
+			<key>Track Number</key><integer>13</integer>
+			<key>Track Count</key><integer>14</integer>
+			<key>Year</key><integer>2008</integer>
+			<key>Date Modified</key><date>2008-12-07T18:55:51Z</date>
+			<key>Date Added</key><date>2011-02-27T21:45:45Z</date>
+			<key>Bit Rate</key><integer>320</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Part Of Gapless Album</key><true/>
+			<key>Comments</key><string>released on Illegal Art</string>
+			<key>Artwork Count</key><integer>1</integer>
+			<key>Persistent ID</key><string>C1549F4861587F53</string>
+			<key>Track Type</key><string>File</string>
+			<key>Location</key><string>file://localhost/Users/z/Music/iTunes/iTunes%20Media/Music/Girl%20Talk/Feed%20The%20Animals/13%20Don't%20Stop.mp3</string>
+			<key>File Folder Count</key><integer>5</integer>
+			<key>Library Folder Count</key><integer>1</integer>
+		</dict>
+		<key>112</key>
+		<dict>
+			<key>Track ID</key><integer>112</integer>
+			<key>Name</key><string>Play Your Part (Pt. 2)</string>
+			<key>Artist</key><string>Girl Talk</string>
+			<key>Album</key><string>Feed The Animals</string>
+			<key>Genre</key><string>Mash-up</string>
+			<key>Kind</key><string>MPEG audio file</string>
+			<key>Size</key><integer>16428528</integer>
+			<key>Total Time</key><integer>205270</integer>
+			<key>Track Number</key><integer>14</integer>
+			<key>Track Count</key><integer>14</integer>
+			<key>Year</key><integer>2008</integer>
+			<key>Date Modified</key><date>2008-12-07T18:55:53Z</date>
+			<key>Date Added</key><date>2011-02-27T21:45:46Z</date>
+			<key>Bit Rate</key><integer>320</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Part Of Gapless Album</key><true/>
+			<key>Comments</key><string>released on Illegal Art</string>
+			<key>Artwork Count</key><integer>1</integer>
+			<key>Persistent ID</key><string>60507D9F41220132</string>
+			<key>Track Type</key><string>File</string>
+			<key>Location</key><string>file://localhost/Users/z/Music/iTunes/iTunes%20Media/Music/Girl%20Talk/Feed%20The%20Animals/14%20Play%20Your%20Part%20(Pt.%202).mp3</string>
+			<key>File Folder Count</key><integer>5</integer>
+			<key>Library Folder Count</key><integer>1</integer>
+		</dict>
+		<key>114</key>
+		<dict>
+			<key>Track ID</key><integer>114</integer>
+			<key>Name</key><string>Smells Like Teen Spirit</string>
+			<key>Artist</key><string>Nirvana</string>
+			<key>Composer</key><string>Kurt Cobain, David Grohl, Chris Novoselic</string>
+			<key>Album</key><string>Nevermind</string>
+			<key>Genre</key><string>Rock</string>
+			<key>Kind</key><string>MPEG audio file</string>
+			<key>Size</key><integer>7230247</integer>
+			<key>Total Time</key><integer>301165</integer>
+			<key>Track Number</key><integer>1</integer>
+			<key>Track Count</key><integer>12</integer>
+			<key>Year</key><integer>1991</integer>
+			<key>BPM</key><integer>192</integer>
+			<key>Date Modified</key><date>2007-12-22T23:08:06Z</date>
+			<key>Date Added</key><date>2011-02-27T21:45:46Z</date>
+			<key>Bit Rate</key><integer>192</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Play Count</key><integer>2</integer>
+			<key>Play Date</key><integer>3381674314</integer>
+			<key>Play Date UTC</key><date>2011-02-27T21:58:34Z</date>
+			<key>Persistent ID</key><string>83B3927542025FDC</string>
+			<key>Track Type</key><string>File</string>
+			<key>Location</key><string>file://localhost/Users/z/Music/iTunes/iTunes%20Media/Music/Nirvana/Nevermind/01%20Smells%20Like%20Teen%20Spirit.mp3</string>
+			<key>File Folder Count</key><integer>5</integer>
+			<key>Library Folder Count</key><integer>1</integer>
+		</dict>
+		<key>116</key>
+		<dict>
+			<key>Track ID</key><integer>116</integer>
+			<key>Name</key><string>In Bloom</string>
+			<key>Artist</key><string>Nirvana</string>
+			<key>Composer</key><string>Kurt Cobain, David Grohl, Chris Novoselic</string>
+			<key>Album</key><string>Nevermind</string>
+			<key>Genre</key><string>Rock</string>
+			<key>Kind</key><string>MPEG audio file</string>
+			<key>Size</key><integer>6121177</integer>
+			<key>Total Time</key><integer>254955</integer>
+			<key>Track Number</key><integer>2</integer>
+			<key>Track Count</key><integer>12</integer>
+			<key>Year</key><integer>1991</integer>
+			<key>BPM</key><integer>192</integer>
+			<key>Date Modified</key><date>2007-12-22T23:08:06Z</date>
+			<key>Date Added</key><date>2011-02-27T21:45:46Z</date>
+			<key>Bit Rate</key><integer>192</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Persistent ID</key><string>10047F43960CBF1F</string>
+			<key>Track Type</key><string>File</string>
+			<key>Location</key><string>file://localhost/Users/z/Music/iTunes/iTunes%20Media/Music/Nirvana/Nevermind/02%20In%20Bloom.mp3</string>
+			<key>File Folder Count</key><integer>5</integer>
+			<key>Library Folder Count</key><integer>1</integer>
+		</dict>
+		<key>118</key>
+		<dict>
+			<key>Track ID</key><integer>118</integer>
+			<key>Name</key><string>Come As You Are</string>
+			<key>Artist</key><string>Nirvana</string>
+			<key>Composer</key><string>Kurt Cobain, David Grohl, Chris Novoselic</string>
+			<key>Album</key><string>Nevermind</string>
+			<key>Genre</key><string>Rock</string>
+			<key>Kind</key><string>MPEG audio file</string>
+			<key>Size</key><integer>5259143</integer>
+			<key>Total Time</key><integer>219036</integer>
+			<key>Track Number</key><integer>3</integer>
+			<key>Track Count</key><integer>12</integer>
+			<key>Year</key><integer>1991</integer>
+			<key>BPM</key><integer>192</integer>
+			<key>Date Modified</key><date>2007-12-22T23:08:06Z</date>
+			<key>Date Added</key><date>2011-02-27T21:45:46Z</date>
+			<key>Bit Rate</key><integer>192</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Persistent ID</key><string>AD9C6E4D3AC73A33</string>
+			<key>Track Type</key><string>File</string>
+			<key>Location</key><string>file://localhost/Users/z/Music/iTunes/iTunes%20Media/Music/Nirvana/Nevermind/03%20Come%20As%20You%20Are.mp3</string>
+			<key>File Folder Count</key><integer>5</integer>
+			<key>Library Folder Count</key><integer>1</integer>
+		</dict>
+		<key>120</key>
+		<dict>
+			<key>Track ID</key><integer>120</integer>
+			<key>Name</key><string>Breed</string>
+			<key>Artist</key><string>Nirvana</string>
+			<key>Composer</key><string>Kurt Cobain, David Grohl, Chris Novoselic</string>
+			<key>Album</key><string>Nevermind</string>
+			<key>Genre</key><string>Rock</string>
+			<key>Kind</key><string>MPEG audio file</string>
+			<key>Size</key><integer>4418408</integer>
+			<key>Total Time</key><integer>184006</integer>
+			<key>Track Number</key><integer>4</integer>
+			<key>Track Count</key><integer>12</integer>
+			<key>Year</key><integer>1991</integer>
+			<key>BPM</key><integer>192</integer>
+			<key>Date Modified</key><date>2007-12-22T23:08:06Z</date>
+			<key>Date Added</key><date>2011-02-27T21:45:46Z</date>
+			<key>Bit Rate</key><integer>192</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Persistent ID</key><string>BEDDC09F881E681B</string>
+			<key>Track Type</key><string>File</string>
+			<key>Location</key><string>file://localhost/Users/z/Music/iTunes/iTunes%20Media/Music/Nirvana/Nevermind/04%20Breed.mp3</string>
+			<key>File Folder Count</key><integer>5</integer>
+			<key>Library Folder Count</key><integer>1</integer>
+		</dict>
+		<key>122</key>
+		<dict>
+			<key>Track ID</key><integer>122</integer>
+			<key>Name</key><string>Lithium</string>
+			<key>Artist</key><string>Nirvana</string>
+			<key>Composer</key><string>Kurt Cobain, David Grohl, Chris Novoselic</string>
+			<key>Album</key><string>Nevermind</string>
+			<key>Genre</key><string>Rock</string>
+			<key>Kind</key><string>MPEG audio file</string>
+			<key>Size</key><integer>6170704</integer>
+			<key>Total Time</key><integer>257018</integer>
+			<key>Track Number</key><integer>5</integer>
+			<key>Track Count</key><integer>12</integer>
+			<key>Year</key><integer>1991</integer>
+			<key>BPM</key><integer>192</integer>
+			<key>Date Modified</key><date>2007-12-22T23:08:06Z</date>
+			<key>Date Added</key><date>2011-02-27T21:45:46Z</date>
+			<key>Bit Rate</key><integer>192</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Persistent ID</key><string>1A979AE023510848</string>
+			<key>Track Type</key><string>File</string>
+			<key>Location</key><string>file://localhost/Users/z/Music/iTunes/iTunes%20Media/Music/Nirvana/Nevermind/05%20Lithium.mp3</string>
+			<key>File Folder Count</key><integer>5</integer>
+			<key>Library Folder Count</key><integer>1</integer>
+		</dict>
+		<key>124</key>
+		<dict>
+			<key>Track ID</key><integer>124</integer>
+			<key>Name</key><string>Polly</string>
+			<key>Artist</key><string>Nirvana</string>
+			<key>Composer</key><string>Kurt Cobain, David Grohl, Chris Novoselic</string>
+			<key>Album</key><string>Nevermind</string>
+			<key>Genre</key><string>Rock</string>
+			<key>Kind</key><string>MPEG audio file</string>
+			<key>Size</key><integer>4252896</integer>
+			<key>Total Time</key><integer>177110</integer>
+			<key>Track Number</key><integer>6</integer>
+			<key>Track Count</key><integer>12</integer>
+			<key>Year</key><integer>1991</integer>
+			<key>BPM</key><integer>192</integer>
+			<key>Date Modified</key><date>2007-12-22T23:08:06Z</date>
+			<key>Date Added</key><date>2011-02-27T21:45:46Z</date>
+			<key>Bit Rate</key><integer>192</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Persistent ID</key><string>A58293F4D4ACBC90</string>
+			<key>Track Type</key><string>File</string>
+			<key>Location</key><string>file://localhost/Users/z/Music/iTunes/iTunes%20Media/Music/Nirvana/Nevermind/06%20Polly.mp3</string>
+			<key>File Folder Count</key><integer>5</integer>
+			<key>Library Folder Count</key><integer>1</integer>
+		</dict>
+		<key>126</key>
+		<dict>
+			<key>Track ID</key><integer>126</integer>
+			<key>Name</key><string>Territorial Pissings</string>
+			<key>Artist</key><string>Nirvana</string>
+			<key>Composer</key><string>Kurt Cobain, David Grohl, Chris Novoselic</string>
+			<key>Album</key><string>Nevermind</string>
+			<key>Genre</key><string>Rock</string>
+			<key>Kind</key><string>MPEG audio file</string>
+			<key>Size</key><integer>3437264</integer>
+			<key>Total Time</key><integer>143124</integer>
+			<key>Track Number</key><integer>7</integer>
+			<key>Track Count</key><integer>12</integer>
+			<key>Year</key><integer>1991</integer>
+			<key>BPM</key><integer>192</integer>
+			<key>Date Modified</key><date>2007-12-22T23:08:06Z</date>
+			<key>Date Added</key><date>2011-02-27T21:45:46Z</date>
+			<key>Bit Rate</key><integer>192</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Persistent ID</key><string>9726A8940821B123</string>
+			<key>Track Type</key><string>File</string>
+			<key>Location</key><string>file://localhost/Users/z/Music/iTunes/iTunes%20Media/Music/Nirvana/Nevermind/07%20Territorial%20Pissings.mp3</string>
+			<key>File Folder Count</key><integer>5</integer>
+			<key>Library Folder Count</key><integer>1</integer>
+		</dict>
+		<key>128</key>
+		<dict>
+			<key>Track ID</key><integer>128</integer>
+			<key>Name</key><string>Drain You</string>
+			<key>Artist</key><string>Nirvana</string>
+			<key>Composer</key><string>Kurt Cobain, David Grohl, Chris Novoselic</string>
+			<key>Album</key><string>Nevermind</string>
+			<key>Genre</key><string>Rock</string>
+			<key>Kind</key><string>MPEG audio file</string>
+			<key>Size</key><integer>5373240</integer>
+			<key>Total Time</key><integer>223791</integer>
+			<key>Track Number</key><integer>8</integer>
+			<key>Track Count</key><integer>12</integer>
+			<key>Year</key><integer>1991</integer>
+			<key>BPM</key><integer>192</integer>
+			<key>Date Modified</key><date>2007-12-22T23:08:06Z</date>
+			<key>Date Added</key><date>2011-02-27T21:45:46Z</date>
+			<key>Bit Rate</key><integer>192</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Persistent ID</key><string>42E0FC59BB768AC4</string>
+			<key>Track Type</key><string>File</string>
+			<key>Location</key><string>file://localhost/Users/z/Music/iTunes/iTunes%20Media/Music/Nirvana/Nevermind/08%20Drain%20You.mp3</string>
+			<key>File Folder Count</key><integer>5</integer>
+			<key>Library Folder Count</key><integer>1</integer>
+		</dict>
+		<key>130</key>
+		<dict>
+			<key>Track ID</key><integer>130</integer>
+			<key>Name</key><string>Lounge Act</string>
+			<key>Artist</key><string>Nirvana</string>
+			<key>Composer</key><string>Kurt Cobain, David Grohl, Chris Novoselic</string>
+			<key>Album</key><string>Nevermind</string>
+			<key>Genre</key><string>Rock</string>
+			<key>Kind</key><string>MPEG audio file</string>
+			<key>Size</key><integer>3770159</integer>
+			<key>Total Time</key><integer>156995</integer>
+			<key>Track Number</key><integer>9</integer>
+			<key>Track Count</key><integer>12</integer>
+			<key>Year</key><integer>1991</integer>
+			<key>BPM</key><integer>192</integer>
+			<key>Date Modified</key><date>2007-12-22T23:08:06Z</date>
+			<key>Date Added</key><date>2011-02-27T21:45:46Z</date>
+			<key>Bit Rate</key><integer>192</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Persistent ID</key><string>C1E6C5A91E627285</string>
+			<key>Track Type</key><string>File</string>
+			<key>Location</key><string>file://localhost/Users/z/Music/iTunes/iTunes%20Media/Music/Nirvana/Nevermind/09%20Lounge%20Act.mp3</string>
+			<key>File Folder Count</key><integer>5</integer>
+			<key>Library Folder Count</key><integer>1</integer>
+		</dict>
+		<key>132</key>
+		<dict>
+			<key>Track ID</key><integer>132</integer>
+			<key>Name</key><string>Stay Away</string>
+			<key>Artist</key><string>Nirvana</string>
+			<key>Composer</key><string>Kurt Cobain, David Grohl, Chris Novoselic</string>
+			<key>Album</key><string>Nevermind</string>
+			<key>Genre</key><string>Rock</string>
+			<key>Kind</key><string>MPEG audio file</string>
+			<key>Size</key><integer>5103657</integer>
+			<key>Total Time</key><integer>212558</integer>
+			<key>Track Number</key><integer>10</integer>
+			<key>Track Count</key><integer>12</integer>
+			<key>Year</key><integer>1991</integer>
+			<key>BPM</key><integer>192</integer>
+			<key>Date Modified</key><date>2007-12-22T23:08:06Z</date>
+			<key>Date Added</key><date>2011-02-27T21:45:46Z</date>
+			<key>Bit Rate</key><integer>192</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Persistent ID</key><string>012D3C9E55F09D32</string>
+			<key>Track Type</key><string>File</string>
+			<key>Location</key><string>file://localhost/Users/z/Music/iTunes/iTunes%20Media/Music/Nirvana/Nevermind/10%20Stay%20Away.mp3</string>
+			<key>File Folder Count</key><integer>5</integer>
+			<key>Library Folder Count</key><integer>1</integer>
+		</dict>
+		<key>134</key>
+		<dict>
+			<key>Track ID</key><integer>134</integer>
+			<key>Name</key><string>On A Plain</string>
+			<key>Artist</key><string>Nirvana</string>
+			<key>Composer</key><string>Kurt Cobain, David Grohl, Chris Novoselic</string>
+			<key>Album</key><string>Nevermind</string>
+			<key>Genre</key><string>Rock</string>
+			<key>Kind</key><string>MPEG audio file</string>
+			<key>Size</key><integer>4716837</integer>
+			<key>Total Time</key><integer>196440</integer>
+			<key>Track Number</key><integer>11</integer>
+			<key>Track Count</key><integer>12</integer>
+			<key>Year</key><integer>1991</integer>
+			<key>BPM</key><integer>192</integer>
+			<key>Date Modified</key><date>2007-12-22T23:08:06Z</date>
+			<key>Date Added</key><date>2011-02-27T21:45:46Z</date>
+			<key>Bit Rate</key><integer>192</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Persistent ID</key><string>87AD381B6216E628</string>
+			<key>Track Type</key><string>File</string>
+			<key>Location</key><string>file://localhost/Users/z/Music/iTunes/iTunes%20Media/Music/Nirvana/Nevermind/11%20On%20A%20Plain.mp3</string>
+			<key>File Folder Count</key><integer>5</integer>
+			<key>Library Folder Count</key><integer>1</integer>
+		</dict>
+		<key>136</key>
+		<dict>
+			<key>Track ID</key><integer>136</integer>
+			<key>Name</key><string>Something In The Way</string>
+			<key>Artist</key><string>Nirvana</string>
+			<key>Composer</key><string>Kurt Cobain, David Grohl, Chris Novoselic</string>
+			<key>Album</key><string>Nevermind</string>
+			<key>Genre</key><string>Rock</string>
+			<key>Kind</key><string>MPEG audio file</string>
+			<key>Size</key><integer>29647695</integer>
+			<key>Total Time</key><integer>1235226</integer>
+			<key>Track Number</key><integer>12</integer>
+			<key>Track Count</key><integer>12</integer>
+			<key>Year</key><integer>1991</integer>
+			<key>BPM</key><integer>192</integer>
+			<key>Date Modified</key><date>2007-12-22T23:08:06Z</date>
+			<key>Date Added</key><date>2011-02-27T21:45:46Z</date>
+			<key>Bit Rate</key><integer>192</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Persistent ID</key><string>5840E2774282003B</string>
+			<key>Track Type</key><string>File</string>
+			<key>Location</key><string>file://localhost/Users/z/Music/iTunes/iTunes%20Media/Music/Nirvana/Nevermind/12%20Something%20In%20The%20Way.mp3</string>
+			<key>File Folder Count</key><integer>5</integer>
+			<key>Library Folder Count</key><integer>1</integer>
+		</dict>
+		<key>138</key>
+		<dict>
+			<key>Track ID</key><integer>138</integer>
+			<key>Name</key><string>Everything Zen</string>
+			<key>Artist</key><string>Bush</string>
+			<key>Album</key><string>Sixteen Stone</string>
+			<key>Genre</key><string>Rock</string>
+			<key>Kind</key><string>MPEG audio file</string>
+			<key>Size</key><integer>5598846</integer>
+			<key>Total Time</key><integer>278204</integer>
+			<key>Disc Number</key><integer>1</integer>
+			<key>Track Number</key><integer>1</integer>
+			<key>Year</key><integer>1994</integer>
+			<key>Date Modified</key><date>2006-11-26T14:52:45Z</date>
+			<key>Date Added</key><date>2011-02-27T21:45:46Z</date>
+			<key>Bit Rate</key><integer>160</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Play Count</key><integer>1</integer>
+			<key>Play Date</key><integer>3381673889</integer>
+			<key>Play Date UTC</key><date>2011-02-27T21:51:29Z</date>
+			<key>Artwork Count</key><integer>1</integer>
+			<key>Persistent ID</key><string>1EB008B136052926</string>
+			<key>Track Type</key><string>File</string>
+			<key>Location</key><string>file://localhost/Users/z/Music/iTunes/iTunes%20Media/Music/Bush/Sixteen%20Stone/1-01%20Everything%20Zen.mp3</string>
+			<key>File Folder Count</key><integer>5</integer>
+			<key>Library Folder Count</key><integer>1</integer>
+		</dict>
+		<key>140</key>
+		<dict>
+			<key>Track ID</key><integer>140</integer>
+			<key>Name</key><string>Swim</string>
+			<key>Artist</key><string>Bush</string>
+			<key>Album</key><string>Sixteen Stone</string>
+			<key>Genre</key><string>Rock</string>
+			<key>Kind</key><string>MPEG audio file</string>
+			<key>Size</key><integer>5949399</integer>
+			<key>Total Time</key><integer>295732</integer>
+			<key>Disc Number</key><integer>1</integer>
+			<key>Track Number</key><integer>2</integer>
+			<key>Year</key><integer>1994</integer>
+			<key>Date Modified</key><date>2006-11-26T14:52:45Z</date>
+			<key>Date Added</key><date>2011-02-27T21:45:46Z</date>
+			<key>Bit Rate</key><integer>160</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Play Count</key><integer>1</integer>
+			<key>Play Date</key><integer>3381673892</integer>
+			<key>Play Date UTC</key><date>2011-02-27T21:51:32Z</date>
+			<key>Artwork Count</key><integer>1</integer>
+			<key>Persistent ID</key><string>146F561733A990A8</string>
+			<key>Track Type</key><string>File</string>
+			<key>Location</key><string>file://localhost/Users/z/Music/iTunes/iTunes%20Media/Music/Bush/Sixteen%20Stone/1-02%20Swim.mp3</string>
+			<key>File Folder Count</key><integer>5</integer>
+			<key>Library Folder Count</key><integer>1</integer>
+		</dict>
+		<key>142</key>
+		<dict>
+			<key>Track ID</key><integer>142</integer>
+			<key>Name</key><string>Bomb</string>
+			<key>Artist</key><string>Bush</string>
+			<key>Album</key><string>Sixteen Stone</string>
+			<key>Genre</key><string>Rock</string>
+			<key>Kind</key><string>MPEG audio file</string>
+			<key>Size</key><integer>4093303</integer>
+			<key>Total Time</key><integer>202893</integer>
+			<key>Disc Number</key><integer>1</integer>
+			<key>Track Number</key><integer>3</integer>
+			<key>Year</key><integer>1994</integer>
+			<key>Date Modified</key><date>2006-11-26T14:52:45Z</date>
+			<key>Date Added</key><date>2011-02-27T21:45:46Z</date>
+			<key>Bit Rate</key><integer>160</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Play Count</key><integer>1</integer>
+			<key>Play Date</key><integer>3381673894</integer>
+			<key>Play Date UTC</key><date>2011-02-27T21:51:34Z</date>
+			<key>Artwork Count</key><integer>1</integer>
+			<key>Persistent ID</key><string>0FDE471BBF86F822</string>
+			<key>Track Type</key><string>File</string>
+			<key>Location</key><string>file://localhost/Users/z/Music/iTunes/iTunes%20Media/Music/Bush/Sixteen%20Stone/1-03%20Bomb.mp3</string>
+			<key>File Folder Count</key><integer>5</integer>
+			<key>Library Folder Count</key><integer>1</integer>
+		</dict>
+		<key>144</key>
+		<dict>
+			<key>Track ID</key><integer>144</integer>
+			<key>Name</key><string>Little Things</string>
+			<key>Artist</key><string>Bush</string>
+			<key>Album</key><string>Sixteen Stone</string>
+			<key>Genre</key><string>Rock</string>
+			<key>Kind</key><string>MPEG audio file</string>
+			<key>Size</key><integer>5321253</integer>
+			<key>Total Time</key><integer>264280</integer>
+			<key>Disc Number</key><integer>1</integer>
+			<key>Track Number</key><integer>4</integer>
+			<key>Year</key><integer>1994</integer>
+			<key>Date Modified</key><date>2006-11-26T14:52:45Z</date>
+			<key>Date Added</key><date>2011-02-27T21:45:46Z</date>
+			<key>Bit Rate</key><integer>160</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Play Count</key><integer>1</integer>
+			<key>Play Date</key><integer>3381673896</integer>
+			<key>Play Date UTC</key><date>2011-02-27T21:51:36Z</date>
+			<key>Artwork Count</key><integer>1</integer>
+			<key>Persistent ID</key><string>A67596E4667524D8</string>
+			<key>Track Type</key><string>File</string>
+			<key>Location</key><string>file://localhost/Users/z/Music/iTunes/iTunes%20Media/Music/Bush/Sixteen%20Stone/1-04%20Little%20Things.mp3</string>
+			<key>File Folder Count</key><integer>5</integer>
+			<key>Library Folder Count</key><integer>1</integer>
+		</dict>
+		<key>146</key>
+		<dict>
+			<key>Track ID</key><integer>146</integer>
+			<key>Name</key><string>Comedown</string>
+			<key>Artist</key><string>Bush</string>
+			<key>Album</key><string>Sixteen Stone</string>
+			<key>Genre</key><string>Rock</string>
+			<key>Kind</key><string>MPEG audio file</string>
+			<key>Size</key><integer>6569551</integer>
+			<key>Total Time</key><integer>326739</integer>
+			<key>Disc Number</key><integer>1</integer>
+			<key>Track Number</key><integer>5</integer>
+			<key>Year</key><integer>1994</integer>
+			<key>Date Modified</key><date>2006-11-26T14:52:45Z</date>
+			<key>Date Added</key><date>2011-02-27T21:45:46Z</date>
+			<key>Bit Rate</key><integer>160</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Play Count</key><integer>1</integer>
+			<key>Play Date</key><integer>3381673901</integer>
+			<key>Play Date UTC</key><date>2011-02-27T21:51:41Z</date>
+			<key>Artwork Count</key><integer>1</integer>
+			<key>Persistent ID</key><string>4BB0CE63EEB95985</string>
+			<key>Track Type</key><string>File</string>
+			<key>Location</key><string>file://localhost/Users/z/Music/iTunes/iTunes%20Media/Music/Bush/Sixteen%20Stone/1-05%20Comedown.mp3</string>
+			<key>File Folder Count</key><integer>5</integer>
+			<key>Library Folder Count</key><integer>1</integer>
+		</dict>
+		<key>148</key>
+		<dict>
+			<key>Track ID</key><integer>148</integer>
+			<key>Name</key><string>Body</string>
+			<key>Artist</key><string>Bush</string>
+			<key>Album</key><string>Sixteen Stone</string>
+			<key>Genre</key><string>Rock</string>
+			<key>Kind</key><string>MPEG audio file</string>
+			<key>Size</key><integer>6892419</integer>
+			<key>Total Time</key><integer>342883</integer>
+			<key>Disc Number</key><integer>1</integer>
+			<key>Track Number</key><integer>6</integer>
+			<key>Year</key><integer>1994</integer>
+			<key>Date Modified</key><date>2006-11-26T14:52:45Z</date>
+			<key>Date Added</key><date>2011-02-27T21:45:47Z</date>
+			<key>Bit Rate</key><integer>160</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Play Count</key><integer>1</integer>
+			<key>Play Date</key><integer>3381673907</integer>
+			<key>Play Date UTC</key><date>2011-02-27T21:51:47Z</date>
+			<key>Artwork Count</key><integer>1</integer>
+			<key>Persistent ID</key><string>12CB734F89DF68D3</string>
+			<key>Track Type</key><string>File</string>
+			<key>Location</key><string>file://localhost/Users/z/Music/iTunes/iTunes%20Media/Music/Bush/Sixteen%20Stone/1-06%20Body.mp3</string>
+			<key>File Folder Count</key><integer>5</integer>
+			<key>Library Folder Count</key><integer>1</integer>
+		</dict>
+		<key>150</key>
+		<dict>
+			<key>Track ID</key><integer>150</integer>
+			<key>Name</key><string>Machinehead</string>
+			<key>Artist</key><string>Bush</string>
+			<key>Album</key><string>Sixteen Stone</string>
+			<key>Genre</key><string>Rock</string>
+			<key>Kind</key><string>MPEG audio file</string>
+			<key>Size</key><integer>5164609</integer>
+			<key>Total Time</key><integer>256417</integer>
+			<key>Disc Number</key><integer>1</integer>
+			<key>Track Number</key><integer>7</integer>
+			<key>Year</key><integer>1994</integer>
+			<key>Date Modified</key><date>2006-11-26T14:52:45Z</date>
+			<key>Date Added</key><date>2011-02-27T21:45:47Z</date>
+			<key>Bit Rate</key><integer>160</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Play Count</key><integer>1</integer>
+			<key>Play Date</key><integer>3381673909</integer>
+			<key>Play Date UTC</key><date>2011-02-27T21:51:49Z</date>
+			<key>Artwork Count</key><integer>1</integer>
+			<key>Persistent ID</key><string>2E9D82102EB59619</string>
+			<key>Track Type</key><string>File</string>
+			<key>Location</key><string>file://localhost/Users/z/Music/iTunes/iTunes%20Media/Music/Bush/Sixteen%20Stone/1-07%20Machinehead.mp3</string>
+			<key>File Folder Count</key><integer>5</integer>
+			<key>Library Folder Count</key><integer>1</integer>
+		</dict>
+		<key>152</key>
+		<dict>
+			<key>Track ID</key><integer>152</integer>
+			<key>Name</key><string>Testosterone</string>
+			<key>Artist</key><string>Bush</string>
+			<key>Album</key><string>Sixteen Stone</string>
+			<key>Genre</key><string>Rock</string>
+			<key>Kind</key><string>MPEG audio file</string>
+			<key>Size</key><integer>5231698</integer>
+			<key>Total Time</key><integer>259813</integer>
+			<key>Disc Number</key><integer>1</integer>
+			<key>Track Number</key><integer>8</integer>
+			<key>Year</key><integer>1994</integer>
+			<key>Date Modified</key><date>2006-11-26T14:52:45Z</date>
+			<key>Date Added</key><date>2011-02-27T21:45:47Z</date>
+			<key>Bit Rate</key><integer>160</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Play Count</key><integer>1</integer>
+			<key>Play Date</key><integer>3381673911</integer>
+			<key>Play Date UTC</key><date>2011-02-27T21:51:51Z</date>
+			<key>Artwork Count</key><integer>1</integer>
+			<key>Persistent ID</key><string>DB56662A75EB6C56</string>
+			<key>Track Type</key><string>File</string>
+			<key>Location</key><string>file://localhost/Users/z/Music/iTunes/iTunes%20Media/Music/Bush/Sixteen%20Stone/1-08%20Testosterone.mp3</string>
+			<key>File Folder Count</key><integer>5</integer>
+			<key>Library Folder Count</key><integer>1</integer>
+		</dict>
+		<key>154</key>
+		<dict>
+			<key>Track ID</key><integer>154</integer>
+			<key>Name</key><string>Monkey</string>
+			<key>Artist</key><string>Bush</string>
+			<key>Album</key><string>Sixteen Stone</string>
+			<key>Genre</key><string>Rock</string>
+			<key>Kind</key><string>MPEG audio file</string>
+			<key>Size</key><integer>4851738</integer>
+			<key>Total Time</key><integer>240848</integer>
+			<key>Disc Number</key><integer>1</integer>
+			<key>Track Number</key><integer>9</integer>
+			<key>Year</key><integer>1994</integer>
+			<key>Date Modified</key><date>2006-11-26T14:52:45Z</date>
+			<key>Date Added</key><date>2011-02-27T21:45:47Z</date>
+			<key>Bit Rate</key><integer>160</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Play Count</key><integer>1</integer>
+			<key>Play Date</key><integer>3381673915</integer>
+			<key>Play Date UTC</key><date>2011-02-27T21:51:55Z</date>
+			<key>Artwork Count</key><integer>1</integer>
+			<key>Persistent ID</key><string>1B7F0D502F98E718</string>
+			<key>Track Type</key><string>File</string>
+			<key>Location</key><string>file://localhost/Users/z/Music/iTunes/iTunes%20Media/Music/Bush/Sixteen%20Stone/1-09%20Monkey.mp3</string>
+			<key>File Folder Count</key><integer>5</integer>
+			<key>Library Folder Count</key><integer>1</integer>
+		</dict>
+		<key>156</key>
+		<dict>
+			<key>Track ID</key><integer>156</integer>
+			<key>Name</key><string>Glycerine</string>
+			<key>Artist</key><string>Bush</string>
+			<key>Album</key><string>Sixteen Stone</string>
+			<key>Genre</key><string>Rock</string>
+			<key>Kind</key><string>MPEG audio file</string>
+			<key>Size</key><integer>5367540</integer>
+			<key>Total Time</key><integer>266579</integer>
+			<key>Disc Number</key><integer>1</integer>
+			<key>Track Number</key><integer>10</integer>
+			<key>Year</key><integer>1994</integer>
+			<key>Date Modified</key><date>2006-11-26T14:52:45Z</date>
+			<key>Date Added</key><date>2011-02-27T21:45:47Z</date>
+			<key>Bit Rate</key><integer>160</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Play Count</key><integer>1</integer>
+			<key>Play Date</key><integer>3381673919</integer>
+			<key>Play Date UTC</key><date>2011-02-27T21:51:59Z</date>
+			<key>Artwork Count</key><integer>1</integer>
+			<key>Persistent ID</key><string>EE0566F728040DD4</string>
+			<key>Track Type</key><string>File</string>
+			<key>Location</key><string>file://localhost/Users/z/Music/iTunes/iTunes%20Media/Music/Bush/Sixteen%20Stone/1-10%20Glycerine.mp3</string>
+			<key>File Folder Count</key><integer>5</integer>
+			<key>Library Folder Count</key><integer>1</integer>
+		</dict>
+		<key>158</key>
+		<dict>
+			<key>Track ID</key><integer>158</integer>
+			<key>Name</key><string>Alien</string>
+			<key>Artist</key><string>Bush</string>
+			<key>Album</key><string>Sixteen Stone</string>
+			<key>Genre</key><string>Rock</string>
+			<key>Kind</key><string>MPEG audio file</string>
+			<key>Size</key><integer>7923214</integer>
+			<key>Total Time</key><integer>394422</integer>
+			<key>Disc Number</key><integer>1</integer>
+			<key>Track Number</key><integer>11</integer>
+			<key>Year</key><integer>1994</integer>
+			<key>Date Modified</key><date>2006-11-26T14:52:45Z</date>
+			<key>Date Added</key><date>2011-02-27T21:45:47Z</date>
+			<key>Bit Rate</key><integer>160</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Play Count</key><integer>1</integer>
+			<key>Play Date</key><integer>3381673922</integer>
+			<key>Play Date UTC</key><date>2011-02-27T21:52:02Z</date>
+			<key>Artwork Count</key><integer>1</integer>
+			<key>Persistent ID</key><string>FE82556A644B0BF3</string>
+			<key>Track Type</key><string>File</string>
+			<key>Location</key><string>file://localhost/Users/z/Music/iTunes/iTunes%20Media/Music/Bush/Sixteen%20Stone/1-11%20Alien.mp3</string>
+			<key>File Folder Count</key><integer>5</integer>
+			<key>Library Folder Count</key><integer>1</integer>
+		</dict>
+		<key>160</key>
+		<dict>
+			<key>Track ID</key><integer>160</integer>
+			<key>Name</key><string>X-Girlfriend</string>
+			<key>Artist</key><string>Bush</string>
+			<key>Album</key><string>Sixteen Stone</string>
+			<key>Genre</key><string>Rock</string>
+			<key>Kind</key><string>MPEG audio file</string>
+			<key>Size</key><integer>937670</integer>
+			<key>Total Time</key><integer>45139</integer>
+			<key>Disc Number</key><integer>1</integer>
+			<key>Track Number</key><integer>12</integer>
+			<key>Year</key><integer>1994</integer>
+			<key>Date Modified</key><date>2006-11-26T14:52:45Z</date>
+			<key>Date Added</key><date>2011-02-27T21:45:47Z</date>
+			<key>Bit Rate</key><integer>160</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Play Count</key><integer>1</integer>
+			<key>Play Date</key><integer>3381673923</integer>
+			<key>Play Date UTC</key><date>2011-02-27T21:52:03Z</date>
+			<key>Artwork Count</key><integer>1</integer>
+			<key>Persistent ID</key><string>62C9E8B0A6EC57F6</string>
+			<key>Track Type</key><string>File</string>
+			<key>Location</key><string>file://localhost/Users/z/Music/iTunes/iTunes%20Media/Music/Bush/Sixteen%20Stone/1-12%20X-Girlfriend.mp3</string>
+			<key>File Folder Count</key><integer>5</integer>
+			<key>Library Folder Count</key><integer>1</integer>
+		</dict>
+		<key>162</key>
+		<dict>
+			<key>Track ID</key><integer>162</integer>
+			<key>Name</key><string>Born Standing Up: A Comic's Life (Unabridged)</string>
+			<key>Artist</key><string>Steve Martin</string>
+			<key>Album Artist</key><string>Steve Martin</string>
+			<key>Album</key><string>Born Standing Up: A Comic's Life (Unabridged)</string>
+			<key>Genre</key><string>Biography &#38; Memoir</string>
+			<key>Kind</key><string>Protected AAC audio file</string>
+			<key>Size</key><integer>116823943</integer>
+			<key>Total Time</key><integer>14594342</integer>
+			<key>Disc Number</key><integer>1</integer>
+			<key>Disc Count</key><integer>1</integer>
+			<key>Track Number</key><integer>1</integer>
+			<key>Track Count</key><integer>1</integer>
+			<key>Date Modified</key><date>2010-08-12T01:53:45Z</date>
+			<key>Date Added</key><date>2011-02-27T21:45:47Z</date>
+			<key>Bit Rate</key><integer>64</integer>
+			<key>Sample Rate</key><integer>22050</integer>
+			<key>Play Count</key><integer>1</integer>
+			<key>Play Date</key><integer>3381673963</integer>
+			<key>Play Date UTC</key><date>2011-02-27T21:52:43Z</date>
+			<key>Artwork Count</key><integer>1</integer>
+			<key>Persistent ID</key><string>DB6F370B2A647633</string>
+			<key>Track Type</key><string>File</string>
+			<key>Protected</key><true/>
+			<key>Purchased</key><true/>
+			<key>Location</key><string>file://localhost/Users/z/Music/iTunes/iTunes%20Media/Audiobooks/Steve%20Martin/01%20Born%20Standing%20Up_%20A%20Comic's%20Life%20(Unabridged).m4b</string>
+			<key>File Folder Count</key><integer>4</integer>
+			<key>Library Folder Count</key><integer>1</integer>
+		</dict>
+		<key>168</key>
+		<dict>
+			<key>Track ID</key><integer>168</integer>
+			<key>Name</key><string>Tech News Today 187: To Xoom Or Not To Xoom</string>
+			<key>Artist</key><string>Tom Merritt, Becky Worley, Sarah Lane and Jason Howell</string>
+			<key>Album</key><string>Tech News Today</string>
+			<key>Genre</key><string>Podcast</string>
+			<key>Kind</key><string>MPEG audio file</string>
+			<key>Size</key><integer>22594132</integer>
+			<key>Total Time</key><integer>2796956</integer>
+			<key>Year</key><integer>2011</integer>
+			<key>Date Modified</key><date>2011-02-27T21:47:40Z</date>
+			<key>Date Added</key><date>2011-02-27T21:47:40Z</date>
+			<key>Bit Rate</key><integer>64</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Release Date</key><date>2011-02-26T04:27:53Z</date>
+			<key>Artwork Count</key><integer>1</integer>
+			<key>Persistent ID</key><string>8B93CD3C17DE0264</string>
+			<key>Track Type</key><string>File</string>
+			<key>Podcast</key><true/>
+			<key>Unplayed</key><true/>
+			<key>Location</key><string>file://localhost/Users/z/Music/iTunes/iTunes%20Media/Podcasts/Tech%20News%20Today/Tech%20News%20Today%20187_%20To%20Xoom%20Or%20Not%20To%20Xoom.mp3</string>
+			<key>File Folder Count</key><integer>4</integer>
+			<key>Library Folder Count</key><integer>1</integer>
+		</dict>
+		<key>170</key>
+		<dict>
+			<key>Track ID</key><integer>170</integer>
+			<key>Name</key><string>Tech News Today 186: Who Are Yooodle?</string>
+			<key>Artist</key><string>Tom Merritt, Becky Worley, Sarah Lane and Jason Howell</string>
+			<key>Album</key><string>Tech News Today</string>
+			<key>Genre</key><string>Podcast</string>
+			<key>Kind</key><string>MPEG audio file</string>
+			<key>Size</key><integer>20250098</integer>
+			<key>Total Time</key><integer>2503941</integer>
+			<key>Track Number</key><integer>186</integer>
+			<key>Year</key><integer>2011</integer>
+			<key>Date Modified</key><date>2011-02-27T21:48:29Z</date>
+			<key>Date Added</key><date>2011-02-27T21:48:29Z</date>
+			<key>Bit Rate</key><integer>64</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Comments</key><string>http://twit.tv/tnt186</string>
+			<key>Play Count</key><integer>1</integer>
+			<key>Play Date</key><integer>3381673955</integer>
+			<key>Play Date UTC</key><date>2011-02-27T21:52:35Z</date>
+			<key>Release Date</key><date>2011-02-25T00:03:06Z</date>
+			<key>Artwork Count</key><integer>1</integer>
+			<key>Persistent ID</key><string>90228FA50E9DF82D</string>
+			<key>Track Type</key><string>File</string>
+			<key>Podcast</key><true/>
+			<key>Location</key><string>file://localhost/Users/z/Music/iTunes/iTunes%20Media/Podcasts/Tech%20News%20Today/186%20Tech%20News%20Today%20186_%20Who%20Are%20Yooodle_.mp3</string>
+			<key>File Folder Count</key><integer>4</integer>
+			<key>Library Folder Count</key><integer>1</integer>
+		</dict>
+		<key>172</key>
+		<dict>
+			<key>Track ID</key><integer>172</integer>
+			<key>Name</key><string>Interview With the Onion News Network</string>
+			<key>Artist</key><string>Onion News Network</string>
+			<key>Album Artist</key><string>Onion News Network</string>
+			<key>Album</key><string>Onion News Network, Season 1</string>
+			<key>Genre</key><string>Comedy</string>
+			<key>Kind</key><string>Protected MPEG-4 video file</string>
+			<key>Size</key><integer>161012304</integer>
+			<key>Total Time</key><integer>302002</integer>
+			<key>Disc Number</key><integer>1</integer>
+			<key>Disc Count</key><integer>1</integer>
+			<key>Track Number</key><integer>101</integer>
+			<key>Year</key><integer>2011</integer>
+			<key>Date Modified</key><date>2011-02-27T21:59:50Z</date>
+			<key>Date Added</key><date>2011-02-27T21:48:44Z</date>
+			<key>Bit Rate</key><integer>156</integer>
+			<key>Play Date</key><integer>3381674523</integer>
+			<key>Play Date UTC</key><date>2011-02-27T22:02:03Z</date>
+			<key>Release Date</key><date>2011-01-17T08:00:00Z</date>
+			<key>Artwork Count</key><integer>1</integer>
+			<key>Series</key><string>Onion News Network</string>
+			<key>Season</key><integer>1</integer>
+			<key>Episode</key><string>100</string>
+			<key>Episode Order</key><integer>101</integer>
+			<key>Sort Album</key><string>Onion News Network, Season 1</string>
+			<key>Persistent ID</key><string>0D45F1EB9B8114C8</string>
+			<key>Content Rating</key><string>us-tv|TV-14|500|</string>
+			<key>Track Type</key><string>File</string>
+			<key>Protected</key><true/>
+			<key>Purchased</key><true/>
+			<key>Has Video</key><true/>
+			<key>HD</key><true/>
+			<key>Video Width</key><integer>960</integer>
+			<key>Video Height</key><integer>720</integer>
+			<key>TV Show</key><true/>
+			<key>Location</key><string>file://localhost/Users/z/Music/iTunes/iTunes%20Media/TV%20Shows/Onion%20News%20Network/Season%201/101%20Interview%20With%20the%20Onion%20News%20Network%20(HD).m4v</string>
+			<key>File Folder Count</key><integer>5</integer>
+			<key>Library Folder Count</key><integer>1</integer>
+		</dict>
+		<key>174</key>
+		<dict>
+			<key>Track ID</key><integer>174</integer>
+			<key>Name</key><string>Episode 254: Pagination with Kaminari</string>
+			<key>Artist</key><string>Ryan Bates</string>
+			<key>Album</key><string>Railscasts</string>
+			<key>Genre</key><string>Podcast</string>
+			<key>Kind</key><string>QuickTime movie file</string>
+			<key>Size</key><integer>17001833</integer>
+			<key>Total Time</key><integer>502035</integer>
+			<key>Year</key><integer>2011</integer>
+			<key>Date Modified</key><date>2011-02-27T21:48:50Z</date>
+			<key>Date Added</key><date>2011-02-27T21:48:49Z</date>
+			<key>Bit Rate</key><integer>94</integer>
+			<key>Play Count</key><integer>1</integer>
+			<key>Play Date</key><integer>3381673939</integer>
+			<key>Play Date UTC</key><date>2011-02-27T21:52:19Z</date>
+			<key>Release Date</key><date>2011-02-21T08:00:00Z</date>
+			<key>Artwork Count</key><integer>1</integer>
+			<key>Persistent ID</key><string>F1295E395667F211</string>
+			<key>Track Type</key><string>File</string>
+			<key>Podcast</key><true/>
+			<key>Has Video</key><true/>
+			<key>HD</key><false/>
+			<key>Video Width</key><integer>800</integer>
+			<key>Video Height</key><integer>600</integer>
+			<key>Movie</key><true/>
+			<key>Location</key><string>file://localhost/Users/z/Music/iTunes/iTunes%20Media/Podcasts/Railscasts/Episode%20254_%20Pagination%20with%20Kaminari.mov</string>
+			<key>File Folder Count</key><integer>4</integer>
+			<key>Library Folder Count</key><integer>1</integer>
+		</dict>
+		<key>176</key>
+		<dict>
+			<key>Track ID</key><integer>176</integer>
+			<key>Name</key><string>Sneak Peek</string>
+			<key>Artist</key><string>Comedy Central Stand-Up</string>
+			<key>Album Artist</key><string>Comedy Central Stand-Up</string>
+			<key>Album</key><string>Comedy Central Presents, Season 15</string>
+			<key>Genre</key><string>Comedy</string>
+			<key>Kind</key><string>Protected MPEG-4 video file</string>
+			<key>Size</key><integer>687417352</integer>
+			<key>Total Time</key><integer>1271271</integer>
+			<key>Disc Number</key><integer>1</integer>
+			<key>Disc Count</key><integer>1</integer>
+			<key>Track Number</key><integer>101</integer>
+			<key>Year</key><integer>2010</integer>
+			<key>Date Modified</key><date>2011-02-27T23:47:09Z</date>
+			<key>Date Added</key><date>2011-02-27T21:48:55Z</date>
+			<key>Bit Rate</key><integer>156</integer>
+			<key>Play Count</key><integer>1</integer>
+			<key>Play Date</key><integer>3381679466</integer>
+			<key>Play Date UTC</key><date>2011-02-27T23:24:26Z</date>
+			<key>Release Date</key><date>2010-12-20T08:00:00Z</date>
+			<key>Artwork Count</key><integer>1</integer>
+			<key>Series</key><string>Comedy Central Stand-Up</string>
+			<key>Season</key><integer>15</integer>
+			<key>Episode</key><string>1500</string>
+			<key>Episode Order</key><integer>101</integer>
+			<key>Sort Album</key><string>Comedy Central Presents, Season 15</string>
+			<key>Persistent ID</key><string>7CF760E31F789363</string>
+			<key>Content Rating</key><string>us-tv|TV-14|500|</string>
+			<key>Track Type</key><string>File</string>
+			<key>Protected</key><true/>
+			<key>Purchased</key><true/>
+			<key>Has Video</key><true/>
+			<key>HD</key><true/>
+			<key>Video Width</key><integer>960</integer>
+			<key>Video Height</key><integer>720</integer>
+			<key>TV Show</key><true/>
+			<key>Location</key><string>file://localhost/Users/z/Music/iTunes/iTunes%20Media/TV%20Shows/Comedy%20Central%20Stand-Up/Season%2015/101%20Sneak%20Peek%20(HD).m4v</string>
+			<key>File Folder Count</key><integer>5</integer>
+			<key>Library Folder Count</key><integer>1</integer>
+		</dict>
+		<key>178</key>
+		<dict>
+			<key>Track ID</key><integer>178</integer>
+			<key>Name</key><string>Episode 252: Metrics Metrics Metrics</string>
+			<key>Artist</key><string>Ryan Bates</string>
+			<key>Album</key><string>Railscasts</string>
+			<key>Genre</key><string>Podcast</string>
+			<key>Kind</key><string>QuickTime movie file</string>
+			<key>Size</key><integer>31720551</integer>
+			<key>Total Time</key><integer>471037</integer>
+			<key>Year</key><integer>2011</integer>
+			<key>Date Modified</key><date>2011-02-27T21:51:08Z</date>
+			<key>Date Added</key><date>2011-02-27T21:51:08Z</date>
+			<key>Bit Rate</key><integer>94</integer>
+			<key>Release Date</key><date>2011-02-07T08:00:00Z</date>
+			<key>Artwork Count</key><integer>1</integer>
+			<key>Persistent ID</key><string>54DA6FA010FB534D</string>
+			<key>Track Type</key><string>File</string>
+			<key>Podcast</key><true/>
+			<key>Unplayed</key><true/>
+			<key>Has Video</key><true/>
+			<key>HD</key><false/>
+			<key>Video Width</key><integer>800</integer>
+			<key>Video Height</key><integer>600</integer>
+			<key>Movie</key><true/>
+			<key>Location</key><string>file://localhost/Users/z/Music/iTunes/iTunes%20Media/Podcasts/Railscasts/Episode%20252_%20Metrics%20Metrics%20Metrics.mov</string>
+			<key>File Folder Count</key><integer>4</integer>
+			<key>Library Folder Count</key><integer>1</integer>
+		</dict>
+		<key>180</key>
+		<dict>
+			<key>Track ID</key><integer>180</integer>
+			<key>Name</key><string>V for Vendetta</string>
+			<key>Genre</key><string>Action &#38; Adventure</string>
+			<key>Kind</key><string>MPEG-4 video file</string>
+			<key>Size</key><integer>754867510</integer>
+			<key>Total Time</key><integer>7951424</integer>
+			<key>Date Modified</key><date>2010-10-30T20:54:51Z</date>
+			<key>Date Added</key><date>2011-02-27T21:56:50Z</date>
+			<key>Bit Rate</key><integer>161</integer>
+			<key>Play Count</key><integer>1</integer>
+			<key>Play Date</key><integer>3381679475</integer>
+			<key>Play Date UTC</key><date>2011-02-27T23:24:35Z</date>
+			<key>Artwork Count</key><integer>1</integer>
+			<key>Persistent ID</key><string>3B7824E068FB05A6</string>
+			<key>Track Type</key><string>File</string>
+			<key>Has Video</key><true/>
+			<key>HD</key><false/>
+			<key>Video Width</key><integer>720</integer>
+			<key>Video Height</key><integer>362</integer>
+			<key>Movie</key><true/>
+			<key>Location</key><string>file://localhost/Users/z/Music/iTunes/iTunes%20Media/Movies/V%20for%20Vendetta/V%20for%20Vendetta.m4v</string>
+			<key>File Folder Count</key><integer>4</integer>
+			<key>Library Folder Count</key><integer>1</integer>
+		</dict>
+		<key>182</key>
+		<dict>
+			<key>Track ID</key><integer>182</integer>
+			<key>Name</key><string>Zombieland</string>
+			<key>Genre</key><string>Comedy</string>
+			<key>Kind</key><string>MPEG-4 video file</string>
+			<key>Size</key><integer>961026380</integer>
+			<key>Total Time</key><integer>5262144</integer>
+			<key>Date Modified</key><date>2010-10-30T20:55:26Z</date>
+			<key>Date Added</key><date>2011-02-27T23:25:21Z</date>
+			<key>Bit Rate</key><integer>163</integer>
+			<key>Artwork Count</key><integer>1</integer>
+			<key>Persistent ID</key><string>DABC4B7988D64374</string>
+			<key>Track Type</key><string>File</string>
+			<key>Has Video</key><true/>
+			<key>HD</key><false/>
+			<key>Video Width</key><integer>720</integer>
+			<key>Video Height</key><integer>352</integer>
+			<key>Movie</key><true/>
+			<key>Location</key><string>file://localhost/Users/z/Music/iTunes/iTunes%20Media/Movies/Zombieland/Zombieland.m4v</string>
+			<key>File Folder Count</key><integer>4</integer>
+			<key>Library Folder Count</key><integer>1</integer>
+		</dict>
+		<key>1109</key>
+		<dict>
+			<key>Track ID</key><integer>1109</integer>
+			<key>Name</key><string>Malcolm Gladwell &#38; Dan Ariely: A Conversation</string>
+			<key>Artist</key><string>Dan Ariely, Duke University</string>
+			<key>Composer</key><string>Duke</string>
+			<key>Album</key><string>Course - Group</string>
+			<key>Genre</key><string>iTunes U</string>
+			<key>Kind</key><string>MPEG audio file</string>
+			<key>Size</key><integer>68738112</integer>
+			<key>Total Time</key><integer>3434971</integer>
+			<key>Disc Number</key><integer>1</integer>
+			<key>Year</key><integer>2011</integer>
+			<key>Date Modified</key><date>2011-03-19T18:25:53Z</date>
+			<key>Date Added</key><date>2011-03-19T18:25:53Z</date>
+			<key>Bit Rate</key><integer>160</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Play Count</key><integer>1</integer>
+			<key>Play Date</key><integer>3383389603</integer>
+			<key>Play Date UTC</key><date>2011-03-19T18:26:43Z</date>
+			<key>Release Date</key><date>2011-03-11T12:28:44Z</date>
+			<key>Artwork Count</key><integer>1</integer>
+			<key>Persistent ID</key><string>D4646FAF4A311CFA</string>
+			<key>Track Type</key><string>File</string>
+			<key>iTunesU</key><true/>
+			<key>Location</key><string>file://localhost/Users/z/Music/iTunes/iTunes%20Media/iTunes%20U/Course%20-%20Group/Malcolm%20Gladwell%20&#38;%20Dan%20Ariely_%20A%20Conversation.mp3</string>
+			<key>File Folder Count</key><integer>4</integer>
+			<key>Library Folder Count</key><integer>1</integer>
+		</dict>
+		<key>1257</key>
+		<dict>
+			<key>Track ID</key><integer>1257</integer>
+			<key>Name</key><string>Session 512 - Using HTML5 Offline Storage</string>
+			<key>Artist</key><string>Apple Developer</string>
+			<key>Composer</key><string>Developer on iTunes</string>
+			<key>Album</key><string>WWDC 2010 Session Videos - SD</string>
+			<key>Genre</key><string>iTunes U</string>
+			<key>Kind</key><string>QuickTime movie file</string>
+			<key>Size</key><integer>119448144</integer>
+			<key>Total Time</key><integer>2648982</integer>
+			<key>Year</key><integer>2010</integer>
+			<key>Date Modified</key><date>2011-03-19T18:29:33Z</date>
+			<key>Date Added</key><date>2011-03-19T18:29:33Z</date>
+			<key>Bit Rate</key><integer>56</integer>
+			<key>Comments</key><string>See how you can use HTML5 local data storage to improve responsiveness in your web application. Learn to create full-fledged offline web applications that can be used even when your users don't have a connection to the Internet, and discover the best prac</string>
+			<key>Play Count</key><integer>1</integer>
+			<key>Play Date</key><integer>3383389793</integer>
+			<key>Play Date UTC</key><date>2011-03-19T18:29:53Z</date>
+			<key>Release Date</key><date>2010-06-15T20:00:00Z</date>
+			<key>Artwork Count</key><integer>1</integer>
+			<key>Persistent ID</key><string>991DF2FED28D9926</string>
+			<key>Track Type</key><string>File</string>
+			<key>iTunesU</key><true/>
+			<key>Has Video</key><true/>
+			<key>HD</key><false/>
+			<key>Video Width</key><integer>640</integer>
+			<key>Video Height</key><integer>400</integer>
+			<key>Movie</key><true/>
+			<key>Location</key><string>file://localhost/Users/z/Music/iTunes/iTunes%20Media/iTunes%20U/WWDC%202010%20Session%20Videos%20-%20SD/Session%20512%20-%20Using%20HTML5%20Offline%20Storage.mov</string>
+			<key>File Folder Count</key><integer>4</integer>
+			<key>Library Folder Count</key><integer>1</integer>
+		</dict>
+	</dict>
+	<key>Playlists</key>
+	<array>
+		<dict>
+			<key>Name</key><string>Library</string>
+			<key>Master</key><true/>
+			<key>Playlist ID</key><integer>188</integer>
+			<key>Playlist Persistent ID</key><string>BEB56C23CB34B73A</string>
+			<key>Visible</key><false/>
+			<key>All Items</key><true/>
+			<key>Playlist Items</key>
+			<array>
+				<dict>
+					<key>Track ID</key><integer>1257</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>138</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>140</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>142</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>144</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>146</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>148</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>150</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>152</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>154</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>156</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>158</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>160</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>176</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>1109</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>86</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>88</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>90</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>92</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>94</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>96</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>98</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>100</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>102</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>104</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>106</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>108</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>110</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>112</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>114</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>116</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>118</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>120</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>122</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>124</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>126</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>128</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>130</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>132</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>134</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>136</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>172</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>178</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>174</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>162</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>168</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>170</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>180</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>182</integer>
+				</dict>
+			</array>
+		</dict>
+		<dict>
+			<key>Name</key><string>Music</string>
+			<key>Playlist ID</key><integer>382</integer>
+			<key>Playlist Persistent ID</key><string>81164D92BE0B3CF8</string>
+			<key>Distinguished Kind</key><integer>4</integer>
+			<key>Music</key><true/>
+			<key>All Items</key><true/>
+			<key>Playlist Items</key>
+			<array>
+				<dict>
+					<key>Track ID</key><integer>138</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>140</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>142</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>144</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>146</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>148</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>150</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>152</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>154</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>156</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>158</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>160</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>86</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>88</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>90</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>92</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>94</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>96</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>98</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>100</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>102</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>104</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>106</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>108</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>110</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>112</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>114</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>116</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>118</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>120</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>122</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>124</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>126</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>128</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>130</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>132</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>134</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>136</integer>
+				</dict>
+			</array>
+		</dict>
+		<dict>
+			<key>Name</key><string>Movies</string>
+			<key>Playlist ID</key><integer>423</integer>
+			<key>Playlist Persistent ID</key><string>6E3BCA330EDA6007</string>
+			<key>Distinguished Kind</key><integer>2</integer>
+			<key>Movies</key><true/>
+			<key>All Items</key><true/>
+			<key>Playlist Items</key>
+			<array>
+				<dict>
+					<key>Track ID</key><integer>180</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>182</integer>
+				</dict>
+			</array>
+		</dict>
+		<dict>
+			<key>Name</key><string>TV Shows</string>
+			<key>Playlist ID</key><integer>428</integer>
+			<key>Playlist Persistent ID</key><string>938D5558879DF14A</string>
+			<key>Distinguished Kind</key><integer>3</integer>
+			<key>TV Shows</key><true/>
+			<key>All Items</key><true/>
+			<key>Playlist Items</key>
+			<array>
+				<dict>
+					<key>Track ID</key><integer>172</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>176</integer>
+				</dict>
+			</array>
+		</dict>
+		<dict>
+			<key>Name</key><string>Podcasts</string>
+			<key>Playlist ID</key><integer>366</integer>
+			<key>Playlist Persistent ID</key><string>F2FEBE41D05CA3F6</string>
+			<key>Distinguished Kind</key><integer>10</integer>
+			<key>Podcasts</key><true/>
+			<key>All Items</key><true/>
+			<key>Playlist Items</key>
+			<array>
+				<dict>
+					<key>Track ID</key><integer>168</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>170</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>174</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>178</integer>
+				</dict>
+			</array>
+		</dict>
+		<dict>
+			<key>Name</key><string>iTunes U</string>
+			<key>Playlist ID</key><integer>379</integer>
+			<key>Playlist Persistent ID</key><string>04F345F420C6AF7C</string>
+			<key>Distinguished Kind</key><integer>31</integer>
+			<key>iTunesU</key><true/>
+			<key>All Items</key><true/>
+			<key>Playlist Items</key>
+			<array>
+				<dict>
+					<key>Track ID</key><integer>1109</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>1257</integer>
+				</dict>
+			</array>
+		</dict>
+		<dict>
+			<key>Name</key><string>Books</string>
+			<key>Playlist ID</key><integer>433</integer>
+			<key>Playlist Persistent ID</key><string>C9E300B4BAFDE488</string>
+			<key>Distinguished Kind</key><integer>5</integer>
+			<key>Audiobooks</key><true/>
+			<key>Books</key><true/>
+			<key>All Items</key><true/>
+			<key>Playlist Items</key>
+			<array>
+				<dict>
+					<key>Track ID</key><integer>162</integer>
+				</dict>
+			</array>
+		</dict>
+		<dict>
+			<key>Name</key><string>Purchased</string>
+			<key>Playlist ID</key><integer>446</integer>
+			<key>Playlist Persistent ID</key><string>D065A950526EC951</string>
+			<key>Distinguished Kind</key><integer>19</integer>
+			<key>Purchased Music</key><true/>
+			<key>All Items</key><true/>
+			<key>Playlist Items</key>
+			<array>
+				<dict>
+					<key>Track ID</key><integer>172</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>176</integer>
+				</dict>
+			</array>
+		</dict>
+		<dict>
+			<key>Name</key><string>Genius</string>
+			<key>Playlist ID</key><integer>443</integer>
+			<key>Playlist Persistent ID</key><string>4711B10854139674</string>
+			<key>Distinguished Kind</key><integer>26</integer>
+			<key>All Items</key><true/>
+		</dict>
+		<dict>
+			<key>Name</key><string>iTunes DJ</string>
+			<key>Playlist ID</key><integer>363</integer>
+			<key>Playlist Persistent ID</key><string>3BED3FBA7676539E</string>
+			<key>Distinguished Kind</key><integer>22</integer>
+			<key>Party Shuffle</key><true/>
+			<key>All Items</key><true/>
+		</dict>
+		<dict>
+			<key>Name</key><string>90’s Music</string>
+			<key>Playlist ID</key><integer>238</integer>
+			<key>Playlist Persistent ID</key><string>2F374616D95A17FD</string>
+			<key>All Items</key><true/>
+			<key>Smart Info</key>
+			<data>
+			AQEAAwAAAAIAAAAZAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+			AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+			AAAAAA==
+			</data>
+			<key>Smart Criteria</key>
+			<data>
+			U0xzdAABAAEAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+			AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+			AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAcAAAEAAAAAAAAAAAAAAAAAAAAAAAAA
+			AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABEAAAAAAAAB8YAAAAAAAAAAAAAAAAAAAAB
+			AAAAAAAAB88AAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQEA
+			AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABgFNMc3QAAQAB
+			AAAAAgAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+			AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+			AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8AAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+			AAAAAAAAAAAAAAAAAAAAAAAAAAAARAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAB
+			AAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPAAABAAAAAAAAAAAAAAA
+			AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEQAAAAAAAAAIAAAAAAAAAAA
+			AAAAAAAAAAEAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAA==
+			</data>
+			<key>Playlist Items</key>
+			<array>
+				<dict>
+					<key>Track ID</key><integer>114</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>116</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>118</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>120</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>122</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>124</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>126</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>128</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>130</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>132</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>134</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>136</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>138</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>140</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>142</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>144</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>146</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>148</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>150</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>152</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>154</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>156</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>158</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>160</integer>
+				</dict>
+			</array>
+		</dict>
+		<dict>
+			<key>Name</key><string>Classical Music</string>
+			<key>Playlist ID</key><integer>360</integer>
+			<key>Playlist Persistent ID</key><string>54FBAAA1ACDBBE2E</string>
+			<key>All Items</key><true/>
+			<key>Smart Info</key>
+			<data>
+			AQEAAwAAAAIAAAAZAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+			AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+			AAAAAA==
+			</data>
+			<key>Smart Criteria</key>
+			<data>
+			U0xzdAABAAEAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+			AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+			AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAQAAAAAAAAAAAAAAAAAAAAAA
+			AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAGAU0xzdAABAAEAAAACAAAAAQAAAAAAAAAA
+			AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+			AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+			AAAAAAAAADwAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+			AAAAAABEAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAB
+			AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8AAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+			AAAAAAAAAAAAAAAAAAAAAAAAAAAARAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAg
+			AAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEBAAAAAAAAAAAA
+			AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAnpTTHN0AAEAAQAAAAcAAAAB
+			AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+			AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+			AAAAAAAAAAAAAAAAAAAACAEAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+			AAAAAAAAAAAAAAAAABIAQwBsAGEAcwBzAGkAYwBhAGwAAAAIAQAAAQAAAAAAAAAAAAAAAAAA
+			AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEABLAGwAYQBzAHMAaQBlAGsAAAAI
+			AQAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEgBD
+			AGwAYQBzAHMAaQBxAHUAZQAAAAgBAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+			AAAAAAAAAAAAAAAAAAAAAAAOAEsAbABhAHMAcwBpAGsAAAAIAQAAAQAAAAAAAAAAAAAAAAAA
+			AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEABDAGwAYQBzAHMAaQBjAGEAAAAI
+			AQAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACjCv
+			MOkwtzDDMK8AAAAIAQAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+			AAAAAAAAAAAADgBDAGwA4QBzAGkAYwBh
+			</data>
+		</dict>
+		<dict>
+			<key>Name</key><string>Music Videos</string>
+			<key>Playlist ID</key><integer>357</integer>
+			<key>Playlist Persistent ID</key><string>A168959E6EDBE8DE</string>
+			<key>All Items</key><true/>
+			<key>Smart Info</key>
+			<data>
+			AQEAAwAAAAIAAAAZAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+			AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+			AAAAAA==
+			</data>
+			<key>Smart Criteria</key>
+			<data>
+			U0xzdAABAAEAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+			AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+			AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwAAAQAAAAAAAAAAAAAAAAAAAAAAAAA
+			AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABEAAAAAAAAACAAAAAAAAAAAAAAAAAAAAAB
+			AAAAAAAAACAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAA=
+			</data>
+		</dict>
+		<dict>
+			<key>Name</key><string>My Top Rated</string>
+			<key>Playlist ID</key><integer>265</integer>
+			<key>Playlist Persistent ID</key><string>A9536F9DEF95F0C2</string>
+			<key>All Items</key><true/>
+			<key>Smart Info</key>
+			<data>
+			AQEAAwAAAAIAAAAZAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+			AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+			AAAAAA==
+			</data>
+			<key>Smart Criteria</key>
+			<data>
+			U0xzdAABAAEAAAABAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+			AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+			AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABkAAAAQAAAAAAAAAAAAAAAAAAAAAAAA
+			AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABEAAAAAAAAADwAAAAAAAAAAAAAAAAAAAAB
+			AAAAAAAAADwAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAA=
+			</data>
+		</dict>
+		<dict>
+			<key>Name</key><string>Recently Added</string>
+			<key>Playlist ID</key><integer>311</integer>
+			<key>Playlist Persistent ID</key><string>CB0CB09ED059FD84</string>
+			<key>All Items</key><true/>
+			<key>Smart Info</key>
+			<data>
+			AQEAAwAAAAIAAAAZAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+			AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+			AAAAAA==
+			</data>
+			<key>Smart Criteria</key>
+			<data>
+			U0xzdAABAAEAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+			AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+			AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAIAAAAAAAAAAAAAAAAAAAAAAAAA
+			AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABELa4tri2uLa7//////////gAAAAAACTqA
+			La4tri2uLa4AAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA5AgAAAQAA
+			AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAARAAAAAAAAAAB
+			AAAAAAAAAAAAAAAAAAAAAQAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAA
+			AAAAAAAA
+			</data>
+			<key>Playlist Items</key>
+			<array>
+				<dict>
+					<key>Track ID</key><integer>1109</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>1257</integer>
+				</dict>
+			</array>
+		</dict>
+		<dict>
+			<key>Name</key><string>Recently Played</string>
+			<key>Playlist ID</key><integer>289</integer>
+			<key>Playlist Persistent ID</key><string>62BD433239F828F4</string>
+			<key>All Items</key><true/>
+			<key>Smart Info</key>
+			<data>
+			AQEAAwAAAAIAAAAZAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+			AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+			AAAAAA==
+			</data>
+			<key>Smart Criteria</key>
+			<data>
+			U0xzdAABAAEAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+			AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+			AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABcAAAIAAAAAAAAAAAAAAAAAAAAAAAAA
+			AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABELa4tri2uLa7//////////gAAAAAACTqA
+			La4tri2uLa4AAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA5AgAAAQAA
+			AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAARAAAAAAAAAAB
+			AAAAAAAAAAAAAAAAAAAAAQAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAA
+			AAAAAAAA
+			</data>
+			<key>Playlist Items</key>
+			<array>
+				<dict>
+					<key>Track ID</key><integer>1109</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>1257</integer>
+				</dict>
+			</array>
+		</dict>
+		<dict>
+			<key>Name</key><string>Top 25 Most Played</string>
+			<key>Playlist ID</key><integer>268</integer>
+			<key>Playlist Persistent ID</key><string>14B3E15A1472B6DB</string>
+			<key>All Items</key><true/>
+			<key>Smart Info</key>
+			<data>
+			AQEBAwAAABkAAAAZAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+			AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+			AAAAAA==
+			</data>
+			<key>Smart Criteria</key>
+			<data>
+			U0xzdAABAAEAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+			AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+			AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADkCAAABAAAAAAAAAAAAAAAAAAAAAAAA
+			AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABEAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAB
+			AAAAAAAAAAEAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAWAAAAEAAA
+			AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAARAAAAAAAAAAA
+			AAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAA
+			AAAAAAAA
+			</data>
+			<key>Playlist Items</key>
+			<array>
+				<dict>
+					<key>Track ID</key><integer>180</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>162</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>88</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>86</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>1109</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>176</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>160</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>158</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>156</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>154</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>152</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>150</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>148</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>146</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>144</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>142</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>140</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>138</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>1257</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>114</integer>
+				</dict>
+			</array>
+		</dict>
+	</array>
+</dict>
+</plist>

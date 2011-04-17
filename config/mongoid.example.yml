@@ -1,0 +1,18 @@
+development:
+  persist_in_safe_mode: true
+  host: localhost
+  database: stratify_development
+
+test:
+  persist_in_safe_mode: true
+  host: localhost
+  database: stratify_test
+
+# set these environment variables on your prod server
+production:
+  persist_in_safe_mode: true
+  host: <%= ENV['MONGOID_HOST'] %>
+  port: <%= ENV['MONGOID_PORT'] %>
+  username: <%= ENV['MONGOID_USERNAME'] %>
+  password: <%= ENV['MONGOID_PASSWORD'] %>
+  database: stratify_production

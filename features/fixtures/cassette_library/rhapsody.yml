@@ -1,0 +1,1001 @@
+--- 
+- !ruby/struct:VCR::HTTPInteraction 
+  request: !ruby/struct:VCR::Request 
+    method: :get
+    uri: http://feeds.rhapsody.com:80/member/ABCDEFGHIJKLMNOPQRSTUVWXYZ123456/track-history.rss
+    body: 
+    headers: 
+  response: !ruby/struct:VCR::Response 
+    status: !ruby/struct:VCR::ResponseStatus 
+      code: 200
+      message: OK
+    headers: 
+      server: 
+      - Apache Coyote/1.0
+      p3p: 
+      - CP="CAO DSP COR CUR DEV TAI PSA IVD CONo OUR DELi SAMi BUS PRE"
+      pragma: 
+      - ""
+      rotwversion: 
+      - 01_42_00_136_branch_3
+      rotwbid: 
+      - "1716221367"
+      rotwexpire: 
+      - PageIdMatch(rss-feed-user-listening-history:usr.ABCDEFGHIJKLMNOPQRSTUVWXYZ123456)-Ttl(1800000)
+      content-type: 
+      - text/xml; charset=UTF-8
+      expires: 
+      - Wed, 23 Feb 2011 01:39:02 GMT
+      date: 
+      - Wed, 23 Feb 2011 01:09:56 GMT
+      transfer-encoding: 
+      - chunked
+      connection: 
+      - keep-alive
+      - Transfer-Encoding
+    body: "<?xml version=\"1.0\" encoding=\"UTF-8\" ?>\n\
+      <?xml-stylesheet title=\"XSL_formatting\" type=\"text/xsl\" href=\"http://feeds.rhapsody.com/rss-transform-xslt.xml?bid=1716221367\"?>\n\
+      <!--These data are only offered for use pursuant to the license agreement\n\
+      posted at http://webservices.rhapsody.com/rws-license.html.\n\
+      Any use of these data indicates your agreement to the terms and conditions\n\
+      set forth therein.-->\n\
+      <rss version=\"2.0\" xmlns:rhap=\"http://feeds.rhapsody.com/dtds/\">\n\
+      <channel>\n\
+      <title>Tracks Fan 9876Z Recently Played on Rhapsody</title><link>http://www.rhapsody.com/member/ABCDEFGHIJKLMNOPQRSTUVWXYZ123456?rws=%2Fmember%2FABCDEFGHIJKLMNOPQRSTUVWXYZ123456%2Ftrack-history.rss</link><description>Tracks Fan 9876Z Recently Played on Rhapsody</description><category /><language>en</language><ttl>720</ttl><pubDate>Tue, 22 Feb 2011 17:09:54 -0800</pubDate><image>\n\
+      <url>http://static.realone.com/rotw/images/logo_rhapsody_113x22.gif</url>\n\
+      <title>Tracks Fan 9876Z Recently Played on Rhapsody</title>\n\
+      <link>http://www.rhapsody.com/member/ABCDEFGHIJKLMNOPQRSTUVWXYZ123456?rws=%2Fmember%2FABCDEFGHIJKLMNOPQRSTUVWXYZ123456%2Ftrack-history.rss</link>\n\
+      <description>Tracks Fan 9876Z Recently Played on Rhapsody</description>\n\
+      </image><item>\n\
+      <title>Smells Like Teen Spirit - Nirvana ('90s Alternative)</title>\n\
+      <link>http://www.rhapsody.com/goto?variant=play&amp;rcid=tra.1956646&amp;rws=%2Fmember%2FABCDEFGHIJKLMNOPQRSTUVWXYZ123456%2Ftrack-history.rss</link>\n\
+      <category>'90s Alternative</category>\n\
+      <pubDate>Tue, 22 Feb 2011 03:52:00 -0800</pubDate>\n\
+      <source url=\"http://www.rhapsody.com/member/ABCDEFGHIJKLMNOPQRSTUVWXYZ123456?rws=%2Fmember%2FABCDEFGHIJKLMNOPQRSTUVWXYZ123456%2Ftrack-history.rss\">Tracks Fan 9876Z Recently Played on Rhapsody</source>\n\
+      <guid isPermaLink=\"false\">tra.1956646</guid>\n\
+      <rhap:rcid xmlns:rhap=\"rhap\">tra.1956646</rhap:rcid>\n\
+      <rhap:artist xmlns:rhap=\"rhap\">Nirvana</rhap:artist>\n\
+      <rhap:artist-rcid xmlns:rhap=\"rhap\">art.69299</rhap:artist-rcid>\n\
+      <rhap:album xmlns:rhap=\"rhap\">Nevermind</rhap:album>\n\
+      <rhap:album-rcid xmlns:rhap=\"rhap\">alb.238528</rhap:album-rcid>\n\
+      <rhap:album-art xmlns:rhap=\"rhap\">http://image.listen.com/img/170x170/0/7/8/6/386870_170x170.jpg</rhap:album-art>\n\
+      <rhap:track xmlns:rhap=\"rhap\">Smells Like Teen Spirit</rhap:track>\n\
+      <rhap:track-rcid xmlns:rhap=\"rhap\">tra.1956646</rhap:track-rcid>\n\
+      <rhap:duration xmlns:rhap=\"rhap\">301</rhap:duration>\n\
+      <rhap:play-href xmlns:rhap=\"rhap\">http://www.rhapsody.com/goto?variant=play&amp;rcid=tra.1956646&amp;rws=%2Fmember%2FABCDEFGHIJKLMNOPQRSTUVWXYZ123456%2Ftrack-history.rss</rhap:play-href>\n\
+      <rhap:data-href xmlns:rhap=\"rhap\">http://www.rhapsody.com/goto?variant=data&amp;rcid=tra.1956646&amp;rws=%2Fmember%2FABCDEFGHIJKLMNOPQRSTUVWXYZ123456%2Ftrack-history.rss</rhap:data-href>\n\
+      <description><![CDATA[Smells Like Teen Spirit - Nirvana ('90s Alternative)]]></description>\n\
+      </item><item>\n\
+      <title>Body Count's In The House - Body Count (Rapcore)</title>\n\
+      <link>http://www.rhapsody.com/goto?variant=play&amp;rcid=tra.2023754&amp;rws=%2Fmember%2FABCDEFGHIJKLMNOPQRSTUVWXYZ123456%2Ftrack-history.rss</link>\n\
+      <category>Rapcore</category>\n\
+      <pubDate>Tue, 22 Feb 2011 03:52:00 -0800</pubDate>\n\
+      <source url=\"http://www.rhapsody.com/member/ABCDEFGHIJKLMNOPQRSTUVWXYZ123456?rws=%2Fmember%2FABCDEFGHIJKLMNOPQRSTUVWXYZ123456%2Ftrack-history.rss\">Tracks Fan 9876Z Recently Played on Rhapsody</source>\n\
+      <guid isPermaLink=\"false\">tra.2023754</guid>\n\
+      <rhap:rcid xmlns:rhap=\"rhap\">tra.2023754</rhap:rcid>\n\
+      <rhap:artist xmlns:rhap=\"rhap\">Body Count</rhap:artist>\n\
+      <rhap:artist-rcid xmlns:rhap=\"rhap\">art.3913</rhap:artist-rcid>\n\
+      <rhap:album xmlns:rhap=\"rhap\">Body Count</rhap:album>\n\
+      <rhap:album-rcid xmlns:rhap=\"rhap\">alb.220871</rhap:album-rcid>\n\
+      <rhap:album-art xmlns:rhap=\"rhap\">http://image.listen.com/img/170x170/3/8/4/1/391483_170x170.jpg</rhap:album-art>\n\
+      <rhap:track xmlns:rhap=\"rhap\">Body Count's In The House</rhap:track>\n\
+      <rhap:track-rcid xmlns:rhap=\"rhap\">tra.2023754</rhap:track-rcid>\n\
+      <rhap:duration xmlns:rhap=\"rhap\">204</rhap:duration>\n\
+      <rhap:play-href xmlns:rhap=\"rhap\">http://www.rhapsody.com/goto?variant=play&amp;rcid=tra.2023754&amp;rws=%2Fmember%2FABCDEFGHIJKLMNOPQRSTUVWXYZ123456%2Ftrack-history.rss</rhap:play-href>\n\
+      <rhap:data-href xmlns:rhap=\"rhap\">http://www.rhapsody.com/goto?variant=data&amp;rcid=tra.2023754&amp;rws=%2Fmember%2FABCDEFGHIJKLMNOPQRSTUVWXYZ123456%2Ftrack-history.rss</rhap:data-href>\n\
+      <description><![CDATA[Body Count's In The House - Body Count (Rapcore)]]></description>\n\
+      </item><item>\n\
+      <title>E.T. (feat Kayne West) - Katy Perry (Pop)</title>\n\
+      <link>http://www.rhapsody.com/goto?variant=play&amp;rcid=tra.44473828&amp;rws=%2Fmember%2FABCDEFGHIJKLMNOPQRSTUVWXYZ123456%2Ftrack-history.rss</link>\n\
+      <category>Pop</category>\n\
+      <pubDate>Tue, 22 Feb 2011 03:52:00 -0800</pubDate>\n\
+      <source url=\"http://www.rhapsody.com/member/ABCDEFGHIJKLMNOPQRSTUVWXYZ123456?rws=%2Fmember%2FABCDEFGHIJKLMNOPQRSTUVWXYZ123456%2Ftrack-history.rss\">Tracks Fan 9876Z Recently Played on Rhapsody</source>\n\
+      <guid isPermaLink=\"false\">tra.44473828</guid>\n\
+      <rhap:rcid xmlns:rhap=\"rhap\">tra.44473828</rhap:rcid>\n\
+      <rhap:artist xmlns:rhap=\"rhap\">Katy Perry</rhap:artist>\n\
+      <rhap:artist-rcid xmlns:rhap=\"rhap\">art.7330911</rhap:artist-rcid>\n\
+      <rhap:album xmlns:rhap=\"rhap\">E.T. (featuring Kanye West)</rhap:album>\n\
+      <rhap:album-rcid xmlns:rhap=\"rhap\">alb.44473827</rhap:album-rcid>\n\
+      <rhap:album-art xmlns:rhap=\"rhap\">http://image.listen.com/img/170x170/3/1/9/9/2329913_170x170.jpg</rhap:album-art>\n\
+      <rhap:track xmlns:rhap=\"rhap\">E.T. (feat Kayne West)</rhap:track>\n\
+      <rhap:track-rcid xmlns:rhap=\"rhap\">tra.44473828</rhap:track-rcid>\n\
+      <rhap:duration xmlns:rhap=\"rhap\">231</rhap:duration>\n\
+      <rhap:play-href xmlns:rhap=\"rhap\">http://www.rhapsody.com/goto?variant=play&amp;rcid=tra.44473828&amp;rws=%2Fmember%2FABCDEFGHIJKLMNOPQRSTUVWXYZ123456%2Ftrack-history.rss</rhap:play-href>\n\
+      <rhap:data-href xmlns:rhap=\"rhap\">http://www.rhapsody.com/goto?variant=data&amp;rcid=tra.44473828&amp;rws=%2Fmember%2FABCDEFGHIJKLMNOPQRSTUVWXYZ123456%2Ftrack-history.rss</rhap:data-href>\n\
+      <description><![CDATA[E.T. (feat Kayne West) - Katy Perry (Pop)]]></description>\n\
+      </item><item>\n\
+      <title>Something In The Way - Nirvana ('90s Alternative)</title>\n\
+      <link>http://www.rhapsody.com/goto?variant=play&amp;rcid=tra.1956657&amp;rws=%2Fmember%2FABCDEFGHIJKLMNOPQRSTUVWXYZ123456%2Ftrack-history.rss</link>\n\
+      <category>'90s Alternative</category>\n\
+      <pubDate>Tue, 22 Feb 2011 03:45:00 -0800</pubDate>\n\
+      <source url=\"http://www.rhapsody.com/member/ABCDEFGHIJKLMNOPQRSTUVWXYZ123456?rws=%2Fmember%2FABCDEFGHIJKLMNOPQRSTUVWXYZ123456%2Ftrack-history.rss\">Tracks Fan 9876Z Recently Played on Rhapsody</source>\n\
+      <guid isPermaLink=\"false\">tra.1956657</guid>\n\
+      <rhap:rcid xmlns:rhap=\"rhap\">tra.1956657</rhap:rcid>\n\
+      <rhap:artist xmlns:rhap=\"rhap\">Nirvana</rhap:artist>\n\
+      <rhap:artist-rcid xmlns:rhap=\"rhap\">art.69299</rhap:artist-rcid>\n\
+      <rhap:album xmlns:rhap=\"rhap\">Nevermind</rhap:album>\n\
+      <rhap:album-rcid xmlns:rhap=\"rhap\">alb.238528</rhap:album-rcid>\n\
+      <rhap:album-art xmlns:rhap=\"rhap\">http://image.listen.com/img/170x170/0/7/8/6/386870_170x170.jpg</rhap:album-art>\n\
+      <rhap:track xmlns:rhap=\"rhap\">Something In The Way</rhap:track>\n\
+      <rhap:track-rcid xmlns:rhap=\"rhap\">tra.1956657</rhap:track-rcid>\n\
+      <rhap:duration xmlns:rhap=\"rhap\">232</rhap:duration>\n\
+      <rhap:play-href xmlns:rhap=\"rhap\">http://www.rhapsody.com/goto?variant=play&amp;rcid=tra.1956657&amp;rws=%2Fmember%2FABCDEFGHIJKLMNOPQRSTUVWXYZ123456%2Ftrack-history.rss</rhap:play-href>\n\
+      <rhap:data-href xmlns:rhap=\"rhap\">http://www.rhapsody.com/goto?variant=data&amp;rcid=tra.1956657&amp;rws=%2Fmember%2FABCDEFGHIJKLMNOPQRSTUVWXYZ123456%2Ftrack-history.rss</rhap:data-href>\n\
+      <description><![CDATA[Something In The Way - Nirvana ('90s Alternative)]]></description>\n\
+      </item><item>\n\
+      <title>On A Plain - Nirvana ('90s Alternative)</title>\n\
+      <link>http://www.rhapsody.com/goto?variant=play&amp;rcid=tra.1956656&amp;rws=%2Fmember%2FABCDEFGHIJKLMNOPQRSTUVWXYZ123456%2Ftrack-history.rss</link>\n\
+      <category>'90s Alternative</category>\n\
+      <pubDate>Tue, 22 Feb 2011 03:38:00 -0800</pubDate>\n\
+      <source url=\"http://www.rhapsody.com/member/ABCDEFGHIJKLMNOPQRSTUVWXYZ123456?rws=%2Fmember%2FABCDEFGHIJKLMNOPQRSTUVWXYZ123456%2Ftrack-history.rss\">Tracks Fan 9876Z Recently Played on Rhapsody</source>\n\
+      <guid isPermaLink=\"false\">tra.1956656</guid>\n\
+      <rhap:rcid xmlns:rhap=\"rhap\">tra.1956656</rhap:rcid>\n\
+      <rhap:artist xmlns:rhap=\"rhap\">Nirvana</rhap:artist>\n\
+      <rhap:artist-rcid xmlns:rhap=\"rhap\">art.69299</rhap:artist-rcid>\n\
+      <rhap:album xmlns:rhap=\"rhap\">Nevermind</rhap:album>\n\
+      <rhap:album-rcid xmlns:rhap=\"rhap\">alb.238528</rhap:album-rcid>\n\
+      <rhap:album-art xmlns:rhap=\"rhap\">http://image.listen.com/img/170x170/0/7/8/6/386870_170x170.jpg</rhap:album-art>\n\
+      <rhap:track xmlns:rhap=\"rhap\">On A Plain</rhap:track>\n\
+      <rhap:track-rcid xmlns:rhap=\"rhap\">tra.1956656</rhap:track-rcid>\n\
+      <rhap:duration xmlns:rhap=\"rhap\">196</rhap:duration>\n\
+      <rhap:play-href xmlns:rhap=\"rhap\">http://www.rhapsody.com/goto?variant=play&amp;rcid=tra.1956656&amp;rws=%2Fmember%2FABCDEFGHIJKLMNOPQRSTUVWXYZ123456%2Ftrack-history.rss</rhap:play-href>\n\
+      <rhap:data-href xmlns:rhap=\"rhap\">http://www.rhapsody.com/goto?variant=data&amp;rcid=tra.1956656&amp;rws=%2Fmember%2FABCDEFGHIJKLMNOPQRSTUVWXYZ123456%2Ftrack-history.rss</rhap:data-href>\n\
+      <description><![CDATA[On A Plain - Nirvana ('90s Alternative)]]></description>\n\
+      </item><item>\n\
+      <title>Stay Away - Nirvana ('90s Alternative)</title>\n\
+      <link>http://www.rhapsody.com/goto?variant=play&amp;rcid=tra.1956655&amp;rws=%2Fmember%2FABCDEFGHIJKLMNOPQRSTUVWXYZ123456%2Ftrack-history.rss</link>\n\
+      <category>'90s Alternative</category>\n\
+      <pubDate>Tue, 22 Feb 2011 03:34:00 -0800</pubDate>\n\
+      <source url=\"http://www.rhapsody.com/member/ABCDEFGHIJKLMNOPQRSTUVWXYZ123456?rws=%2Fmember%2FABCDEFGHIJKLMNOPQRSTUVWXYZ123456%2Ftrack-history.rss\">Tracks Fan 9876Z Recently Played on Rhapsody</source>\n\
+      <guid isPermaLink=\"false\">tra.1956655</guid>\n\
+      <rhap:rcid xmlns:rhap=\"rhap\">tra.1956655</rhap:rcid>\n\
+      <rhap:artist xmlns:rhap=\"rhap\">Nirvana</rhap:artist>\n\
+      <rhap:artist-rcid xmlns:rhap=\"rhap\">art.69299</rhap:artist-rcid>\n\
+      <rhap:album xmlns:rhap=\"rhap\">Nevermind</rhap:album>\n\
+      <rhap:album-rcid xmlns:rhap=\"rhap\">alb.238528</rhap:album-rcid>\n\
+      <rhap:album-art xmlns:rhap=\"rhap\">http://image.listen.com/img/170x170/0/7/8/6/386870_170x170.jpg</rhap:album-art>\n\
+      <rhap:track xmlns:rhap=\"rhap\">Stay Away</rhap:track>\n\
+      <rhap:track-rcid xmlns:rhap=\"rhap\">tra.1956655</rhap:track-rcid>\n\
+      <rhap:duration xmlns:rhap=\"rhap\">212</rhap:duration>\n\
+      <rhap:play-href xmlns:rhap=\"rhap\">http://www.rhapsody.com/goto?variant=play&amp;rcid=tra.1956655&amp;rws=%2Fmember%2FABCDEFGHIJKLMNOPQRSTUVWXYZ123456%2Ftrack-history.rss</rhap:play-href>\n\
+      <rhap:data-href xmlns:rhap=\"rhap\">http://www.rhapsody.com/goto?variant=data&amp;rcid=tra.1956655&amp;rws=%2Fmember%2FABCDEFGHIJKLMNOPQRSTUVWXYZ123456%2Ftrack-history.rss</rhap:data-href>\n\
+      <description><![CDATA[Stay Away - Nirvana ('90s Alternative)]]></description>\n\
+      </item><item>\n\
+      <title>Lounge Act - Nirvana ('90s Alternative)</title>\n\
+      <link>http://www.rhapsody.com/goto?variant=play&amp;rcid=tra.1956654&amp;rws=%2Fmember%2FABCDEFGHIJKLMNOPQRSTUVWXYZ123456%2Ftrack-history.rss</link>\n\
+      <category>'90s Alternative</category>\n\
+      <pubDate>Tue, 22 Feb 2011 03:31:00 -0800</pubDate>\n\
+      <source url=\"http://www.rhapsody.com/member/ABCDEFGHIJKLMNOPQRSTUVWXYZ123456?rws=%2Fmember%2FABCDEFGHIJKLMNOPQRSTUVWXYZ123456%2Ftrack-history.rss\">Tracks Fan 9876Z Recently Played on Rhapsody</source>\n\
+      <guid isPermaLink=\"false\">tra.1956654</guid>\n\
+      <rhap:rcid xmlns:rhap=\"rhap\">tra.1956654</rhap:rcid>\n\
+      <rhap:artist xmlns:rhap=\"rhap\">Nirvana</rhap:artist>\n\
+      <rhap:artist-rcid xmlns:rhap=\"rhap\">art.69299</rhap:artist-rcid>\n\
+      <rhap:album xmlns:rhap=\"rhap\">Nevermind</rhap:album>\n\
+      <rhap:album-rcid xmlns:rhap=\"rhap\">alb.238528</rhap:album-rcid>\n\
+      <rhap:album-art xmlns:rhap=\"rhap\">http://image.listen.com/img/170x170/0/7/8/6/386870_170x170.jpg</rhap:album-art>\n\
+      <rhap:track xmlns:rhap=\"rhap\">Lounge Act</rhap:track>\n\
+      <rhap:track-rcid xmlns:rhap=\"rhap\">tra.1956654</rhap:track-rcid>\n\
+      <rhap:duration xmlns:rhap=\"rhap\">157</rhap:duration>\n\
+      <rhap:play-href xmlns:rhap=\"rhap\">http://www.rhapsody.com/goto?variant=play&amp;rcid=tra.1956654&amp;rws=%2Fmember%2FABCDEFGHIJKLMNOPQRSTUVWXYZ123456%2Ftrack-history.rss</rhap:play-href>\n\
+      <rhap:data-href xmlns:rhap=\"rhap\">http://www.rhapsody.com/goto?variant=data&amp;rcid=tra.1956654&amp;rws=%2Fmember%2FABCDEFGHIJKLMNOPQRSTUVWXYZ123456%2Ftrack-history.rss</rhap:data-href>\n\
+      <description><![CDATA[Lounge Act - Nirvana ('90s Alternative)]]></description>\n\
+      </item><item>\n\
+      <title>Drain You - Nirvana ('90s Alternative)</title>\n\
+      <link>http://www.rhapsody.com/goto?variant=play&amp;rcid=tra.1956653&amp;rws=%2Fmember%2FABCDEFGHIJKLMNOPQRSTUVWXYZ123456%2Ftrack-history.rss</link>\n\
+      <category>'90s Alternative</category>\n\
+      <pubDate>Tue, 22 Feb 2011 03:28:00 -0800</pubDate>\n\
+      <source url=\"http://www.rhapsody.com/member/ABCDEFGHIJKLMNOPQRSTUVWXYZ123456?rws=%2Fmember%2FABCDEFGHIJKLMNOPQRSTUVWXYZ123456%2Ftrack-history.rss\">Tracks Fan 9876Z Recently Played on Rhapsody</source>\n\
+      <guid isPermaLink=\"false\">tra.1956653</guid>\n\
+      <rhap:rcid xmlns:rhap=\"rhap\">tra.1956653</rhap:rcid>\n\
+      <rhap:artist xmlns:rhap=\"rhap\">Nirvana</rhap:artist>\n\
+      <rhap:artist-rcid xmlns:rhap=\"rhap\">art.69299</rhap:artist-rcid>\n\
+      <rhap:album xmlns:rhap=\"rhap\">Nevermind</rhap:album>\n\
+      <rhap:album-rcid xmlns:rhap=\"rhap\">alb.238528</rhap:album-rcid>\n\
+      <rhap:album-art xmlns:rhap=\"rhap\">http://image.listen.com/img/170x170/0/7/8/6/386870_170x170.jpg</rhap:album-art>\n\
+      <rhap:track xmlns:rhap=\"rhap\">Drain You</rhap:track>\n\
+      <rhap:track-rcid xmlns:rhap=\"rhap\">tra.1956653</rhap:track-rcid>\n\
+      <rhap:duration xmlns:rhap=\"rhap\">224</rhap:duration>\n\
+      <rhap:play-href xmlns:rhap=\"rhap\">http://www.rhapsody.com/goto?variant=play&amp;rcid=tra.1956653&amp;rws=%2Fmember%2FABCDEFGHIJKLMNOPQRSTUVWXYZ123456%2Ftrack-history.rss</rhap:play-href>\n\
+      <rhap:data-href xmlns:rhap=\"rhap\">http://www.rhapsody.com/goto?variant=data&amp;rcid=tra.1956653&amp;rws=%2Fmember%2FABCDEFGHIJKLMNOPQRSTUVWXYZ123456%2Ftrack-history.rss</rhap:data-href>\n\
+      <description><![CDATA[Drain You - Nirvana ('90s Alternative)]]></description>\n\
+      </item><item>\n\
+      <title>Territorial Pissings - Nirvana ('90s Alternative)</title>\n\
+      <link>http://www.rhapsody.com/goto?variant=play&amp;rcid=tra.1956652&amp;rws=%2Fmember%2FABCDEFGHIJKLMNOPQRSTUVWXYZ123456%2Ftrack-history.rss</link>\n\
+      <category>'90s Alternative</category>\n\
+      <pubDate>Tue, 22 Feb 2011 03:28:00 -0800</pubDate>\n\
+      <source url=\"http://www.rhapsody.com/member/ABCDEFGHIJKLMNOPQRSTUVWXYZ123456?rws=%2Fmember%2FABCDEFGHIJKLMNOPQRSTUVWXYZ123456%2Ftrack-history.rss\">Tracks Fan 9876Z Recently Played on Rhapsody</source>\n\
+      <guid isPermaLink=\"false\">tra.1956652</guid>\n\
+      <rhap:rcid xmlns:rhap=\"rhap\">tra.1956652</rhap:rcid>\n\
+      <rhap:artist xmlns:rhap=\"rhap\">Nirvana</rhap:artist>\n\
+      <rhap:artist-rcid xmlns:rhap=\"rhap\">art.69299</rhap:artist-rcid>\n\
+      <rhap:album xmlns:rhap=\"rhap\">Nevermind</rhap:album>\n\
+      <rhap:album-rcid xmlns:rhap=\"rhap\">alb.238528</rhap:album-rcid>\n\
+      <rhap:album-art xmlns:rhap=\"rhap\">http://image.listen.com/img/170x170/0/7/8/6/386870_170x170.jpg</rhap:album-art>\n\
+      <rhap:track xmlns:rhap=\"rhap\">Territorial Pissings</rhap:track>\n\
+      <rhap:track-rcid xmlns:rhap=\"rhap\">tra.1956652</rhap:track-rcid>\n\
+      <rhap:duration xmlns:rhap=\"rhap\">143</rhap:duration>\n\
+      <rhap:play-href xmlns:rhap=\"rhap\">http://www.rhapsody.com/goto?variant=play&amp;rcid=tra.1956652&amp;rws=%2Fmember%2FABCDEFGHIJKLMNOPQRSTUVWXYZ123456%2Ftrack-history.rss</rhap:play-href>\n\
+      <rhap:data-href xmlns:rhap=\"rhap\">http://www.rhapsody.com/goto?variant=data&amp;rcid=tra.1956652&amp;rws=%2Fmember%2FABCDEFGHIJKLMNOPQRSTUVWXYZ123456%2Ftrack-history.rss</rhap:data-href>\n\
+      <description><![CDATA[Territorial Pissings - Nirvana ('90s Alternative)]]></description>\n\
+      </item><item>\n\
+      <title>Polly - Nirvana ('90s Alternative)</title>\n\
+      <link>http://www.rhapsody.com/goto?variant=play&amp;rcid=tra.1956651&amp;rws=%2Fmember%2FABCDEFGHIJKLMNOPQRSTUVWXYZ123456%2Ftrack-history.rss</link>\n\
+      <category>'90s Alternative</category>\n\
+      <pubDate>Tue, 22 Feb 2011 03:22:00 -0800</pubDate>\n\
+      <source url=\"http://www.rhapsody.com/member/ABCDEFGHIJKLMNOPQRSTUVWXYZ123456?rws=%2Fmember%2FABCDEFGHIJKLMNOPQRSTUVWXYZ123456%2Ftrack-history.rss\">Tracks Fan 9876Z Recently Played on Rhapsody</source>\n\
+      <guid isPermaLink=\"false\">tra.1956651</guid>\n\
+      <rhap:rcid xmlns:rhap=\"rhap\">tra.1956651</rhap:rcid>\n\
+      <rhap:artist xmlns:rhap=\"rhap\">Nirvana</rhap:artist>\n\
+      <rhap:artist-rcid xmlns:rhap=\"rhap\">art.69299</rhap:artist-rcid>\n\
+      <rhap:album xmlns:rhap=\"rhap\">Nevermind</rhap:album>\n\
+      <rhap:album-rcid xmlns:rhap=\"rhap\">alb.238528</rhap:album-rcid>\n\
+      <rhap:album-art xmlns:rhap=\"rhap\">http://image.listen.com/img/170x170/0/7/8/6/386870_170x170.jpg</rhap:album-art>\n\
+      <rhap:track xmlns:rhap=\"rhap\">Polly</rhap:track>\n\
+      <rhap:track-rcid xmlns:rhap=\"rhap\">tra.1956651</rhap:track-rcid>\n\
+      <rhap:duration xmlns:rhap=\"rhap\">177</rhap:duration>\n\
+      <rhap:play-href xmlns:rhap=\"rhap\">http://www.rhapsody.com/goto?variant=play&amp;rcid=tra.1956651&amp;rws=%2Fmember%2FABCDEFGHIJKLMNOPQRSTUVWXYZ123456%2Ftrack-history.rss</rhap:play-href>\n\
+      <rhap:data-href xmlns:rhap=\"rhap\">http://www.rhapsody.com/goto?variant=data&amp;rcid=tra.1956651&amp;rws=%2Fmember%2FABCDEFGHIJKLMNOPQRSTUVWXYZ123456%2Ftrack-history.rss</rhap:data-href>\n\
+      <description><![CDATA[Polly - Nirvana ('90s Alternative)]]></description>\n\
+      </item><item>\n\
+      <title>Lithium - Nirvana ('90s Alternative)</title>\n\
+      <link>http://www.rhapsody.com/goto?variant=play&amp;rcid=tra.1956650&amp;rws=%2Fmember%2FABCDEFGHIJKLMNOPQRSTUVWXYZ123456%2Ftrack-history.rss</link>\n\
+      <category>'90s Alternative</category>\n\
+      <pubDate>Tue, 22 Feb 2011 03:19:00 -0800</pubDate>\n\
+      <source url=\"http://www.rhapsody.com/member/ABCDEFGHIJKLMNOPQRSTUVWXYZ123456?rws=%2Fmember%2FABCDEFGHIJKLMNOPQRSTUVWXYZ123456%2Ftrack-history.rss\">Tracks Fan 9876Z Recently Played on Rhapsody</source>\n\
+      <guid isPermaLink=\"false\">tra.1956650</guid>\n\
+      <rhap:rcid xmlns:rhap=\"rhap\">tra.1956650</rhap:rcid>\n\
+      <rhap:artist xmlns:rhap=\"rhap\">Nirvana</rhap:artist>\n\
+      <rhap:artist-rcid xmlns:rhap=\"rhap\">art.69299</rhap:artist-rcid>\n\
+      <rhap:album xmlns:rhap=\"rhap\">Nevermind</rhap:album>\n\
+      <rhap:album-rcid xmlns:rhap=\"rhap\">alb.238528</rhap:album-rcid>\n\
+      <rhap:album-art xmlns:rhap=\"rhap\">http://image.listen.com/img/170x170/0/7/8/6/386870_170x170.jpg</rhap:album-art>\n\
+      <rhap:track xmlns:rhap=\"rhap\">Lithium</rhap:track>\n\
+      <rhap:track-rcid xmlns:rhap=\"rhap\">tra.1956650</rhap:track-rcid>\n\
+      <rhap:duration xmlns:rhap=\"rhap\">257</rhap:duration>\n\
+      <rhap:play-href xmlns:rhap=\"rhap\">http://www.rhapsody.com/goto?variant=play&amp;rcid=tra.1956650&amp;rws=%2Fmember%2FABCDEFGHIJKLMNOPQRSTUVWXYZ123456%2Ftrack-history.rss</rhap:play-href>\n\
+      <rhap:data-href xmlns:rhap=\"rhap\">http://www.rhapsody.com/goto?variant=data&amp;rcid=tra.1956650&amp;rws=%2Fmember%2FABCDEFGHIJKLMNOPQRSTUVWXYZ123456%2Ftrack-history.rss</rhap:data-href>\n\
+      <description><![CDATA[Lithium - Nirvana ('90s Alternative)]]></description>\n\
+      </item><item>\n\
+      <title>Breed - Nirvana ('90s Alternative)</title>\n\
+      <link>http://www.rhapsody.com/goto?variant=play&amp;rcid=tra.1956649&amp;rws=%2Fmember%2FABCDEFGHIJKLMNOPQRSTUVWXYZ123456%2Ftrack-history.rss</link>\n\
+      <category>'90s Alternative</category>\n\
+      <pubDate>Tue, 22 Feb 2011 03:15:00 -0800</pubDate>\n\
+      <source url=\"http://www.rhapsody.com/member/ABCDEFGHIJKLMNOPQRSTUVWXYZ123456?rws=%2Fmember%2FABCDEFGHIJKLMNOPQRSTUVWXYZ123456%2Ftrack-history.rss\">Tracks Fan 9876Z Recently Played on Rhapsody</source>\n\
+      <guid isPermaLink=\"false\">tra.1956649</guid>\n\
+      <rhap:rcid xmlns:rhap=\"rhap\">tra.1956649</rhap:rcid>\n\
+      <rhap:artist xmlns:rhap=\"rhap\">Nirvana</rhap:artist>\n\
+      <rhap:artist-rcid xmlns:rhap=\"rhap\">art.69299</rhap:artist-rcid>\n\
+      <rhap:album xmlns:rhap=\"rhap\">Nevermind</rhap:album>\n\
+      <rhap:album-rcid xmlns:rhap=\"rhap\">alb.238528</rhap:album-rcid>\n\
+      <rhap:album-art xmlns:rhap=\"rhap\">http://image.listen.com/img/170x170/0/7/8/6/386870_170x170.jpg</rhap:album-art>\n\
+      <rhap:track xmlns:rhap=\"rhap\">Breed</rhap:track>\n\
+      <rhap:track-rcid xmlns:rhap=\"rhap\">tra.1956649</rhap:track-rcid>\n\
+      <rhap:duration xmlns:rhap=\"rhap\">183</rhap:duration>\n\
+      <rhap:play-href xmlns:rhap=\"rhap\">http://www.rhapsody.com/goto?variant=play&amp;rcid=tra.1956649&amp;rws=%2Fmember%2FABCDEFGHIJKLMNOPQRSTUVWXYZ123456%2Ftrack-history.rss</rhap:play-href>\n\
+      <rhap:data-href xmlns:rhap=\"rhap\">http://www.rhapsody.com/goto?variant=data&amp;rcid=tra.1956649&amp;rws=%2Fmember%2FABCDEFGHIJKLMNOPQRSTUVWXYZ123456%2Ftrack-history.rss</rhap:data-href>\n\
+      <description><![CDATA[Breed - Nirvana ('90s Alternative)]]></description>\n\
+      </item><item>\n\
+      <title>Come As You Are - Nirvana ('90s Alternative)</title>\n\
+      <link>http://www.rhapsody.com/goto?variant=play&amp;rcid=tra.1956648&amp;rws=%2Fmember%2FABCDEFGHIJKLMNOPQRSTUVWXYZ123456%2Ftrack-history.rss</link>\n\
+      <category>'90s Alternative</category>\n\
+      <pubDate>Tue, 22 Feb 2011 03:12:00 -0800</pubDate>\n\
+      <source url=\"http://www.rhapsody.com/member/ABCDEFGHIJKLMNOPQRSTUVWXYZ123456?rws=%2Fmember%2FABCDEFGHIJKLMNOPQRSTUVWXYZ123456%2Ftrack-history.rss\">Tracks Fan 9876Z Recently Played on Rhapsody</source>\n\
+      <guid isPermaLink=\"false\">tra.1956648</guid>\n\
+      <rhap:rcid xmlns:rhap=\"rhap\">tra.1956648</rhap:rcid>\n\
+      <rhap:artist xmlns:rhap=\"rhap\">Nirvana</rhap:artist>\n\
+      <rhap:artist-rcid xmlns:rhap=\"rhap\">art.69299</rhap:artist-rcid>\n\
+      <rhap:album xmlns:rhap=\"rhap\">Nevermind</rhap:album>\n\
+      <rhap:album-rcid xmlns:rhap=\"rhap\">alb.238528</rhap:album-rcid>\n\
+      <rhap:album-art xmlns:rhap=\"rhap\">http://image.listen.com/img/170x170/0/7/8/6/386870_170x170.jpg</rhap:album-art>\n\
+      <rhap:track xmlns:rhap=\"rhap\">Come As You Are</rhap:track>\n\
+      <rhap:track-rcid xmlns:rhap=\"rhap\">tra.1956648</rhap:track-rcid>\n\
+      <rhap:duration xmlns:rhap=\"rhap\">219</rhap:duration>\n\
+      <rhap:play-href xmlns:rhap=\"rhap\">http://www.rhapsody.com/goto?variant=play&amp;rcid=tra.1956648&amp;rws=%2Fmember%2FABCDEFGHIJKLMNOPQRSTUVWXYZ123456%2Ftrack-history.rss</rhap:play-href>\n\
+      <rhap:data-href xmlns:rhap=\"rhap\">http://www.rhapsody.com/goto?variant=data&amp;rcid=tra.1956648&amp;rws=%2Fmember%2FABCDEFGHIJKLMNOPQRSTUVWXYZ123456%2Ftrack-history.rss</rhap:data-href>\n\
+      <description><![CDATA[Come As You Are - Nirvana ('90s Alternative)]]></description>\n\
+      </item><item>\n\
+      <title>In Bloom - Nirvana ('90s Alternative)</title>\n\
+      <link>http://www.rhapsody.com/goto?variant=play&amp;rcid=tra.1956647&amp;rws=%2Fmember%2FABCDEFGHIJKLMNOPQRSTUVWXYZ123456%2Ftrack-history.rss</link>\n\
+      <category>'90s Alternative</category>\n\
+      <pubDate>Tue, 22 Feb 2011 03:08:00 -0800</pubDate>\n\
+      <source url=\"http://www.rhapsody.com/member/ABCDEFGHIJKLMNOPQRSTUVWXYZ123456?rws=%2Fmember%2FABCDEFGHIJKLMNOPQRSTUVWXYZ123456%2Ftrack-history.rss\">Tracks Fan 9876Z Recently Played on Rhapsody</source>\n\
+      <guid isPermaLink=\"false\">tra.1956647</guid>\n\
+      <rhap:rcid xmlns:rhap=\"rhap\">tra.1956647</rhap:rcid>\n\
+      <rhap:artist xmlns:rhap=\"rhap\">Nirvana</rhap:artist>\n\
+      <rhap:artist-rcid xmlns:rhap=\"rhap\">art.69299</rhap:artist-rcid>\n\
+      <rhap:album xmlns:rhap=\"rhap\">Nevermind</rhap:album>\n\
+      <rhap:album-rcid xmlns:rhap=\"rhap\">alb.238528</rhap:album-rcid>\n\
+      <rhap:album-art xmlns:rhap=\"rhap\">http://image.listen.com/img/170x170/0/7/8/6/386870_170x170.jpg</rhap:album-art>\n\
+      <rhap:track xmlns:rhap=\"rhap\">In Bloom</rhap:track>\n\
+      <rhap:track-rcid xmlns:rhap=\"rhap\">tra.1956647</rhap:track-rcid>\n\
+      <rhap:duration xmlns:rhap=\"rhap\">254</rhap:duration>\n\
+      <rhap:play-href xmlns:rhap=\"rhap\">http://www.rhapsody.com/goto?variant=play&amp;rcid=tra.1956647&amp;rws=%2Fmember%2FABCDEFGHIJKLMNOPQRSTUVWXYZ123456%2Ftrack-history.rss</rhap:play-href>\n\
+      <rhap:data-href xmlns:rhap=\"rhap\">http://www.rhapsody.com/goto?variant=data&amp;rcid=tra.1956647&amp;rws=%2Fmember%2FABCDEFGHIJKLMNOPQRSTUVWXYZ123456%2Ftrack-history.rss</rhap:data-href>\n\
+      <description><![CDATA[In Bloom - Nirvana ('90s Alternative)]]></description>\n\
+      </item><item>\n\
+      <title>Love The Way You Lie (Part II) featuring Eminem - Rihanna (Pop)</title>\n\
+      <link>http://www.rhapsody.com/goto?variant=play&amp;rcid=tra.42398492&amp;rws=%2Fmember%2FABCDEFGHIJKLMNOPQRSTUVWXYZ123456%2Ftrack-history.rss</link>\n\
+      <category>Pop</category>\n\
+      <pubDate>Mon, 21 Feb 2011 18:00:00 -0800</pubDate>\n\
+      <source url=\"http://www.rhapsody.com/member/ABCDEFGHIJKLMNOPQRSTUVWXYZ123456?rws=%2Fmember%2FABCDEFGHIJKLMNOPQRSTUVWXYZ123456%2Ftrack-history.rss\">Tracks Fan 9876Z Recently Played on Rhapsody</source>\n\
+      <guid isPermaLink=\"false\">tra.42398492</guid>\n\
+      <rhap:rcid xmlns:rhap=\"rhap\">tra.42398492</rhap:rcid>\n\
+      <rhap:artist xmlns:rhap=\"rhap\">Rihanna</rhap:artist>\n\
+      <rhap:artist-rcid xmlns:rhap=\"rhap\">art.7375005</rhap:artist-rcid>\n\
+      <rhap:album xmlns:rhap=\"rhap\">Loud</rhap:album>\n\
+      <rhap:album-rcid xmlns:rhap=\"rhap\">alb.42398481</rhap:album-rcid>\n\
+      <rhap:album-art xmlns:rhap=\"rhap\">http://image.listen.com/img/170x170/1/6/0/7/2207061_170x170.jpg</rhap:album-art>\n\
+      <rhap:track xmlns:rhap=\"rhap\">Love The Way You Lie (Part II) featuring Eminem</rhap:track>\n\
+      <rhap:track-rcid xmlns:rhap=\"rhap\">tra.42398492</rhap:track-rcid>\n\
+      <rhap:duration xmlns:rhap=\"rhap\">296</rhap:duration>\n\
+      <rhap:play-href xmlns:rhap=\"rhap\">http://www.rhapsody.com/goto?variant=play&amp;rcid=tra.42398492&amp;rws=%2Fmember%2FABCDEFGHIJKLMNOPQRSTUVWXYZ123456%2Ftrack-history.rss</rhap:play-href>\n\
+      <rhap:data-href xmlns:rhap=\"rhap\">http://www.rhapsody.com/goto?variant=data&amp;rcid=tra.42398492&amp;rws=%2Fmember%2FABCDEFGHIJKLMNOPQRSTUVWXYZ123456%2Ftrack-history.rss</rhap:data-href>\n\
+      <description><![CDATA[Love The Way You Lie (Part II) featuring Eminem - Rihanna (Pop)]]></description>\n\
+      </item><item>\n\
+      <title>Skin - Rihanna (Pop)</title>\n\
+      <link>http://www.rhapsody.com/goto?variant=play&amp;rcid=tra.42398491&amp;rws=%2Fmember%2FABCDEFGHIJKLMNOPQRSTUVWXYZ123456%2Ftrack-history.rss</link>\n\
+      <category>Pop</category>\n\
+      <pubDate>Mon, 21 Feb 2011 17:55:00 -0800</pubDate>\n\
+      <source url=\"http://www.rhapsody.com/member/ABCDEFGHIJKLMNOPQRSTUVWXYZ123456?rws=%2Fmember%2FABCDEFGHIJKLMNOPQRSTUVWXYZ123456%2Ftrack-history.rss\">Tracks Fan 9876Z Recently Played on Rhapsody</source>\n\
+      <guid isPermaLink=\"false\">tra.42398491</guid>\n\
+      <rhap:rcid xmlns:rhap=\"rhap\">tra.42398491</rhap:rcid>\n\
+      <rhap:artist xmlns:rhap=\"rhap\">Rihanna</rhap:artist>\n\
+      <rhap:artist-rcid xmlns:rhap=\"rhap\">art.7375005</rhap:artist-rcid>\n\
+      <rhap:album xmlns:rhap=\"rhap\">Loud</rhap:album>\n\
+      <rhap:album-rcid xmlns:rhap=\"rhap\">alb.42398481</rhap:album-rcid>\n\
+      <rhap:album-art xmlns:rhap=\"rhap\">http://image.listen.com/img/170x170/1/6/0/7/2207061_170x170.jpg</rhap:album-art>\n\
+      <rhap:track xmlns:rhap=\"rhap\">Skin</rhap:track>\n\
+      <rhap:track-rcid xmlns:rhap=\"rhap\">tra.42398491</rhap:track-rcid>\n\
+      <rhap:duration xmlns:rhap=\"rhap\">303</rhap:duration>\n\
+      <rhap:play-href xmlns:rhap=\"rhap\">http://www.rhapsody.com/goto?variant=play&amp;rcid=tra.42398491&amp;rws=%2Fmember%2FABCDEFGHIJKLMNOPQRSTUVWXYZ123456%2Ftrack-history.rss</rhap:play-href>\n\
+      <rhap:data-href xmlns:rhap=\"rhap\">http://www.rhapsody.com/goto?variant=data&amp;rcid=tra.42398491&amp;rws=%2Fmember%2FABCDEFGHIJKLMNOPQRSTUVWXYZ123456%2Ftrack-history.rss</rhap:data-href>\n\
+      <description><![CDATA[Skin - Rihanna (Pop)]]></description>\n\
+      </item><item>\n\
+      <title>Complicated - Rihanna (Pop)</title>\n\
+      <link>http://www.rhapsody.com/goto?variant=play&amp;rcid=tra.42398490&amp;rws=%2Fmember%2FABCDEFGHIJKLMNOPQRSTUVWXYZ123456%2Ftrack-history.rss</link>\n\
+      <category>Pop</category>\n\
+      <pubDate>Mon, 21 Feb 2011 17:50:00 -0800</pubDate>\n\
+      <source url=\"http://www.rhapsody.com/member/ABCDEFGHIJKLMNOPQRSTUVWXYZ123456?rws=%2Fmember%2FABCDEFGHIJKLMNOPQRSTUVWXYZ123456%2Ftrack-history.rss\">Tracks Fan 9876Z Recently Played on Rhapsody</source>\n\
+      <guid isPermaLink=\"false\">tra.42398490</guid>\n\
+      <rhap:rcid xmlns:rhap=\"rhap\">tra.42398490</rhap:rcid>\n\
+      <rhap:artist xmlns:rhap=\"rhap\">Rihanna</rhap:artist>\n\
+      <rhap:artist-rcid xmlns:rhap=\"rhap\">art.7375005</rhap:artist-rcid>\n\
+      <rhap:album xmlns:rhap=\"rhap\">Loud</rhap:album>\n\
+      <rhap:album-rcid xmlns:rhap=\"rhap\">alb.42398481</rhap:album-rcid>\n\
+      <rhap:album-art xmlns:rhap=\"rhap\">http://image.listen.com/img/170x170/1/6/0/7/2207061_170x170.jpg</rhap:album-art>\n\
+      <rhap:track xmlns:rhap=\"rhap\">Complicated</rhap:track>\n\
+      <rhap:track-rcid xmlns:rhap=\"rhap\">tra.42398490</rhap:track-rcid>\n\
+      <rhap:duration xmlns:rhap=\"rhap\">257</rhap:duration>\n\
+      <rhap:play-href xmlns:rhap=\"rhap\">http://www.rhapsody.com/goto?variant=play&amp;rcid=tra.42398490&amp;rws=%2Fmember%2FABCDEFGHIJKLMNOPQRSTUVWXYZ123456%2Ftrack-history.rss</rhap:play-href>\n\
+      <rhap:data-href xmlns:rhap=\"rhap\">http://www.rhapsody.com/goto?variant=data&amp;rcid=tra.42398490&amp;rws=%2Fmember%2FABCDEFGHIJKLMNOPQRSTUVWXYZ123456%2Ftrack-history.rss</rhap:data-href>\n\
+      <description><![CDATA[Complicated - Rihanna (Pop)]]></description>\n\
+      </item><item>\n\
+      <title>Raining Men featuring Nicki Minaj - Rihanna (Pop)</title>\n\
+      <link>http://www.rhapsody.com/goto?variant=play&amp;rcid=tra.42398489&amp;rws=%2Fmember%2FABCDEFGHIJKLMNOPQRSTUVWXYZ123456%2Ftrack-history.rss</link>\n\
+      <category>Pop</category>\n\
+      <pubDate>Mon, 21 Feb 2011 17:46:00 -0800</pubDate>\n\
+      <source url=\"http://www.rhapsody.com/member/ABCDEFGHIJKLMNOPQRSTUVWXYZ123456?rws=%2Fmember%2FABCDEFGHIJKLMNOPQRSTUVWXYZ123456%2Ftrack-history.rss\">Tracks Fan 9876Z Recently Played on Rhapsody</source>\n\
+      <guid isPermaLink=\"false\">tra.42398489</guid>\n\
+      <rhap:rcid xmlns:rhap=\"rhap\">tra.42398489</rhap:rcid>\n\
+      <rhap:artist xmlns:rhap=\"rhap\">Rihanna</rhap:artist>\n\
+      <rhap:artist-rcid xmlns:rhap=\"rhap\">art.7375005</rhap:artist-rcid>\n\
+      <rhap:album xmlns:rhap=\"rhap\">Loud</rhap:album>\n\
+      <rhap:album-rcid xmlns:rhap=\"rhap\">alb.42398481</rhap:album-rcid>\n\
+      <rhap:album-art xmlns:rhap=\"rhap\">http://image.listen.com/img/170x170/1/6/0/7/2207061_170x170.jpg</rhap:album-art>\n\
+      <rhap:track xmlns:rhap=\"rhap\">Raining Men featuring Nicki Minaj</rhap:track>\n\
+      <rhap:track-rcid xmlns:rhap=\"rhap\">tra.42398489</rhap:track-rcid>\n\
+      <rhap:duration xmlns:rhap=\"rhap\">224</rhap:duration>\n\
+      <rhap:play-href xmlns:rhap=\"rhap\">http://www.rhapsody.com/goto?variant=play&amp;rcid=tra.42398489&amp;rws=%2Fmember%2FABCDEFGHIJKLMNOPQRSTUVWXYZ123456%2Ftrack-history.rss</rhap:play-href>\n\
+      <rhap:data-href xmlns:rhap=\"rhap\">http://www.rhapsody.com/goto?variant=data&amp;rcid=tra.42398489&amp;rws=%2Fmember%2FABCDEFGHIJKLMNOPQRSTUVWXYZ123456%2Ftrack-history.rss</rhap:data-href>\n\
+      <description><![CDATA[Raining Men featuring Nicki Minaj - Rihanna (Pop)]]></description>\n\
+      </item><item>\n\
+      <title>Man Down - Rihanna (Pop)</title>\n\
+      <link>http://www.rhapsody.com/goto?variant=play&amp;rcid=tra.42398488&amp;rws=%2Fmember%2FABCDEFGHIJKLMNOPQRSTUVWXYZ123456%2Ftrack-history.rss</link>\n\
+      <category>Pop</category>\n\
+      <pubDate>Mon, 21 Feb 2011 17:42:00 -0800</pubDate>\n\
+      <source url=\"http://www.rhapsody.com/member/ABCDEFGHIJKLMNOPQRSTUVWXYZ123456?rws=%2Fmember%2FABCDEFGHIJKLMNOPQRSTUVWXYZ123456%2Ftrack-history.rss\">Tracks Fan 9876Z Recently Played on Rhapsody</source>\n\
+      <guid isPermaLink=\"false\">tra.42398488</guid>\n\
+      <rhap:rcid xmlns:rhap=\"rhap\">tra.42398488</rhap:rcid>\n\
+      <rhap:artist xmlns:rhap=\"rhap\">Rihanna</rhap:artist>\n\
+      <rhap:artist-rcid xmlns:rhap=\"rhap\">art.7375005</rhap:artist-rcid>\n\
+      <rhap:album xmlns:rhap=\"rhap\">Loud</rhap:album>\n\
+      <rhap:album-rcid xmlns:rhap=\"rhap\">alb.42398481</rhap:album-rcid>\n\
+      <rhap:album-art xmlns:rhap=\"rhap\">http://image.listen.com/img/170x170/1/6/0/7/2207061_170x170.jpg</rhap:album-art>\n\
+      <rhap:track xmlns:rhap=\"rhap\">Man Down</rhap:track>\n\
+      <rhap:track-rcid xmlns:rhap=\"rhap\">tra.42398488</rhap:track-rcid>\n\
+      <rhap:duration xmlns:rhap=\"rhap\">267</rhap:duration>\n\
+      <rhap:play-href xmlns:rhap=\"rhap\">http://www.rhapsody.com/goto?variant=play&amp;rcid=tra.42398488&amp;rws=%2Fmember%2FABCDEFGHIJKLMNOPQRSTUVWXYZ123456%2Ftrack-history.rss</rhap:play-href>\n\
+      <rhap:data-href xmlns:rhap=\"rhap\">http://www.rhapsody.com/goto?variant=data&amp;rcid=tra.42398488&amp;rws=%2Fmember%2FABCDEFGHIJKLMNOPQRSTUVWXYZ123456%2Ftrack-history.rss</rhap:data-href>\n\
+      <description><![CDATA[Man Down - Rihanna (Pop)]]></description>\n\
+      </item><item>\n\
+      <title>California King Bed - Rihanna (Pop)</title>\n\
+      <link>http://www.rhapsody.com/goto?variant=play&amp;rcid=tra.42398487&amp;rws=%2Fmember%2FABCDEFGHIJKLMNOPQRSTUVWXYZ123456%2Ftrack-history.rss</link>\n\
+      <category>Pop</category>\n\
+      <pubDate>Mon, 21 Feb 2011 17:37:00 -0800</pubDate>\n\
+      <source url=\"http://www.rhapsody.com/member/ABCDEFGHIJKLMNOPQRSTUVWXYZ123456?rws=%2Fmember%2FABCDEFGHIJKLMNOPQRSTUVWXYZ123456%2Ftrack-history.rss\">Tracks Fan 9876Z Recently Played on Rhapsody</source>\n\
+      <guid isPermaLink=\"false\">tra.42398487</guid>\n\
+      <rhap:rcid xmlns:rhap=\"rhap\">tra.42398487</rhap:rcid>\n\
+      <rhap:artist xmlns:rhap=\"rhap\">Rihanna</rhap:artist>\n\
+      <rhap:artist-rcid xmlns:rhap=\"rhap\">art.7375005</rhap:artist-rcid>\n\
+      <rhap:album xmlns:rhap=\"rhap\">Loud</rhap:album>\n\
+      <rhap:album-rcid xmlns:rhap=\"rhap\">alb.42398481</rhap:album-rcid>\n\
+      <rhap:album-art xmlns:rhap=\"rhap\">http://image.listen.com/img/170x170/1/6/0/7/2207061_170x170.jpg</rhap:album-art>\n\
+      <rhap:track xmlns:rhap=\"rhap\">California King Bed</rhap:track>\n\
+      <rhap:track-rcid xmlns:rhap=\"rhap\">tra.42398487</rhap:track-rcid>\n\
+      <rhap:duration xmlns:rhap=\"rhap\">251</rhap:duration>\n\
+      <rhap:play-href xmlns:rhap=\"rhap\">http://www.rhapsody.com/goto?variant=play&amp;rcid=tra.42398487&amp;rws=%2Fmember%2FABCDEFGHIJKLMNOPQRSTUVWXYZ123456%2Ftrack-history.rss</rhap:play-href>\n\
+      <rhap:data-href xmlns:rhap=\"rhap\">http://www.rhapsody.com/goto?variant=data&amp;rcid=tra.42398487&amp;rws=%2Fmember%2FABCDEFGHIJKLMNOPQRSTUVWXYZ123456%2Ftrack-history.rss</rhap:data-href>\n\
+      <description><![CDATA[California King Bed - Rihanna (Pop)]]></description>\n\
+      </item><item>\n\
+      <title>Only Girl (In The World) - Rihanna (Pop)</title>\n\
+      <link>http://www.rhapsody.com/goto?variant=play&amp;rcid=tra.42398486&amp;rws=%2Fmember%2FABCDEFGHIJKLMNOPQRSTUVWXYZ123456%2Ftrack-history.rss</link>\n\
+      <category>Pop</category>\n\
+      <pubDate>Mon, 21 Feb 2011 17:33:00 -0800</pubDate>\n\
+      <source url=\"http://www.rhapsody.com/member/ABCDEFGHIJKLMNOPQRSTUVWXYZ123456?rws=%2Fmember%2FABCDEFGHIJKLMNOPQRSTUVWXYZ123456%2Ftrack-history.rss\">Tracks Fan 9876Z Recently Played on Rhapsody</source>\n\
+      <guid isPermaLink=\"false\">tra.42398486</guid>\n\
+      <rhap:rcid xmlns:rhap=\"rhap\">tra.42398486</rhap:rcid>\n\
+      <rhap:artist xmlns:rhap=\"rhap\">Rihanna</rhap:artist>\n\
+      <rhap:artist-rcid xmlns:rhap=\"rhap\">art.7375005</rhap:artist-rcid>\n\
+      <rhap:album xmlns:rhap=\"rhap\">Loud</rhap:album>\n\
+      <rhap:album-rcid xmlns:rhap=\"rhap\">alb.42398481</rhap:album-rcid>\n\
+      <rhap:album-art xmlns:rhap=\"rhap\">http://image.listen.com/img/170x170/1/6/0/7/2207061_170x170.jpg</rhap:album-art>\n\
+      <rhap:track xmlns:rhap=\"rhap\">Only Girl (In The World)</rhap:track>\n\
+      <rhap:track-rcid xmlns:rhap=\"rhap\">tra.42398486</rhap:track-rcid>\n\
+      <rhap:duration xmlns:rhap=\"rhap\">235</rhap:duration>\n\
+      <rhap:play-href xmlns:rhap=\"rhap\">http://www.rhapsody.com/goto?variant=play&amp;rcid=tra.42398486&amp;rws=%2Fmember%2FABCDEFGHIJKLMNOPQRSTUVWXYZ123456%2Ftrack-history.rss</rhap:play-href>\n\
+      <rhap:data-href xmlns:rhap=\"rhap\">http://www.rhapsody.com/goto?variant=data&amp;rcid=tra.42398486&amp;rws=%2Fmember%2FABCDEFGHIJKLMNOPQRSTUVWXYZ123456%2Ftrack-history.rss</rhap:data-href>\n\
+      <description><![CDATA[Only Girl (In The World) - Rihanna (Pop)]]></description>\n\
+      </item><item>\n\
+      <title>Fading - Rihanna (Pop)</title>\n\
+      <link>http://www.rhapsody.com/goto?variant=play&amp;rcid=tra.42398485&amp;rws=%2Fmember%2FABCDEFGHIJKLMNOPQRSTUVWXYZ123456%2Ftrack-history.rss</link>\n\
+      <category>Pop</category>\n\
+      <pubDate>Mon, 21 Feb 2011 17:29:00 -0800</pubDate>\n\
+      <source url=\"http://www.rhapsody.com/member/ABCDEFGHIJKLMNOPQRSTUVWXYZ123456?rws=%2Fmember%2FABCDEFGHIJKLMNOPQRSTUVWXYZ123456%2Ftrack-history.rss\">Tracks Fan 9876Z Recently Played on Rhapsody</source>\n\
+      <guid isPermaLink=\"false\">tra.42398485</guid>\n\
+      <rhap:rcid xmlns:rhap=\"rhap\">tra.42398485</rhap:rcid>\n\
+      <rhap:artist xmlns:rhap=\"rhap\">Rihanna</rhap:artist>\n\
+      <rhap:artist-rcid xmlns:rhap=\"rhap\">art.7375005</rhap:artist-rcid>\n\
+      <rhap:album xmlns:rhap=\"rhap\">Loud</rhap:album>\n\
+      <rhap:album-rcid xmlns:rhap=\"rhap\">alb.42398481</rhap:album-rcid>\n\
+      <rhap:album-art xmlns:rhap=\"rhap\">http://image.listen.com/img/170x170/1/6/0/7/2207061_170x170.jpg</rhap:album-art>\n\
+      <rhap:track xmlns:rhap=\"rhap\">Fading</rhap:track>\n\
+      <rhap:track-rcid xmlns:rhap=\"rhap\">tra.42398485</rhap:track-rcid>\n\
+      <rhap:duration xmlns:rhap=\"rhap\">199</rhap:duration>\n\
+      <rhap:play-href xmlns:rhap=\"rhap\">http://www.rhapsody.com/goto?variant=play&amp;rcid=tra.42398485&amp;rws=%2Fmember%2FABCDEFGHIJKLMNOPQRSTUVWXYZ123456%2Ftrack-history.rss</rhap:play-href>\n\
+      <rhap:data-href xmlns:rhap=\"rhap\">http://www.rhapsody.com/goto?variant=data&amp;rcid=tra.42398485&amp;rws=%2Fmember%2FABCDEFGHIJKLMNOPQRSTUVWXYZ123456%2Ftrack-history.rss</rhap:data-href>\n\
+      <description><![CDATA[Fading - Rihanna (Pop)]]></description>\n\
+      </item><item>\n\
+      <title>Cheers (Drink To That) - Rihanna (Pop)</title>\n\
+      <link>http://www.rhapsody.com/goto?variant=play&amp;rcid=tra.42398484&amp;rws=%2Fmember%2FABCDEFGHIJKLMNOPQRSTUVWXYZ123456%2Ftrack-history.rss</link>\n\
+      <category>Pop</category>\n\
+      <pubDate>Mon, 21 Feb 2011 17:26:00 -0800</pubDate>\n\
+      <source url=\"http://www.rhapsody.com/member/ABCDEFGHIJKLMNOPQRSTUVWXYZ123456?rws=%2Fmember%2FABCDEFGHIJKLMNOPQRSTUVWXYZ123456%2Ftrack-history.rss\">Tracks Fan 9876Z Recently Played on Rhapsody</source>\n\
+      <guid isPermaLink=\"false\">tra.42398484</guid>\n\
+      <rhap:rcid xmlns:rhap=\"rhap\">tra.42398484</rhap:rcid>\n\
+      <rhap:artist xmlns:rhap=\"rhap\">Rihanna</rhap:artist>\n\
+      <rhap:artist-rcid xmlns:rhap=\"rhap\">art.7375005</rhap:artist-rcid>\n\
+      <rhap:album xmlns:rhap=\"rhap\">Loud</rhap:album>\n\
+      <rhap:album-rcid xmlns:rhap=\"rhap\">alb.42398481</rhap:album-rcid>\n\
+      <rhap:album-art xmlns:rhap=\"rhap\">http://image.listen.com/img/170x170/1/6/0/7/2207061_170x170.jpg</rhap:album-art>\n\
+      <rhap:track xmlns:rhap=\"rhap\">Cheers (Drink To That)</rhap:track>\n\
+      <rhap:track-rcid xmlns:rhap=\"rhap\">tra.42398484</rhap:track-rcid>\n\
+      <rhap:duration xmlns:rhap=\"rhap\">261</rhap:duration>\n\
+      <rhap:play-href xmlns:rhap=\"rhap\">http://www.rhapsody.com/goto?variant=play&amp;rcid=tra.42398484&amp;rws=%2Fmember%2FABCDEFGHIJKLMNOPQRSTUVWXYZ123456%2Ftrack-history.rss</rhap:play-href>\n\
+      <rhap:data-href xmlns:rhap=\"rhap\">http://www.rhapsody.com/goto?variant=data&amp;rcid=tra.42398484&amp;rws=%2Fmember%2FABCDEFGHIJKLMNOPQRSTUVWXYZ123456%2Ftrack-history.rss</rhap:data-href>\n\
+      <description><![CDATA[Cheers (Drink To That) - Rihanna (Pop)]]></description>\n\
+      </item><item>\n\
+      <title>What's My Name? featuring Drake - Rihanna (Pop)</title>\n\
+      <link>http://www.rhapsody.com/goto?variant=play&amp;rcid=tra.42398483&amp;rws=%2Fmember%2FABCDEFGHIJKLMNOPQRSTUVWXYZ123456%2Ftrack-history.rss</link>\n\
+      <category>Pop</category>\n\
+      <pubDate>Mon, 21 Feb 2011 17:21:00 -0800</pubDate>\n\
+      <source url=\"http://www.rhapsody.com/member/ABCDEFGHIJKLMNOPQRSTUVWXYZ123456?rws=%2Fmember%2FABCDEFGHIJKLMNOPQRSTUVWXYZ123456%2Ftrack-history.rss\">Tracks Fan 9876Z Recently Played on Rhapsody</source>\n\
+      <guid isPermaLink=\"false\">tra.42398483</guid>\n\
+      <rhap:rcid xmlns:rhap=\"rhap\">tra.42398483</rhap:rcid>\n\
+      <rhap:artist xmlns:rhap=\"rhap\">Rihanna</rhap:artist>\n\
+      <rhap:artist-rcid xmlns:rhap=\"rhap\">art.7375005</rhap:artist-rcid>\n\
+      <rhap:album xmlns:rhap=\"rhap\">Loud</rhap:album>\n\
+      <rhap:album-rcid xmlns:rhap=\"rhap\">alb.42398481</rhap:album-rcid>\n\
+      <rhap:album-art xmlns:rhap=\"rhap\">http://image.listen.com/img/170x170/1/6/0/7/2207061_170x170.jpg</rhap:album-art>\n\
+      <rhap:track xmlns:rhap=\"rhap\">What's My Name? featuring Drake</rhap:track>\n\
+      <rhap:track-rcid xmlns:rhap=\"rhap\">tra.42398483</rhap:track-rcid>\n\
+      <rhap:duration xmlns:rhap=\"rhap\">263</rhap:duration>\n\
+      <rhap:play-href xmlns:rhap=\"rhap\">http://www.rhapsody.com/goto?variant=play&amp;rcid=tra.42398483&amp;rws=%2Fmember%2FABCDEFGHIJKLMNOPQRSTUVWXYZ123456%2Ftrack-history.rss</rhap:play-href>\n\
+      <rhap:data-href xmlns:rhap=\"rhap\">http://www.rhapsody.com/goto?variant=data&amp;rcid=tra.42398483&amp;rws=%2Fmember%2FABCDEFGHIJKLMNOPQRSTUVWXYZ123456%2Ftrack-history.rss</rhap:data-href>\n\
+      <description><![CDATA[What's My Name? featuring Drake - Rihanna (Pop)]]></description>\n\
+      </item><item>\n\
+      <title>S&amp;M - Rihanna (Pop)</title>\n\
+      <link>http://www.rhapsody.com/goto?variant=play&amp;rcid=tra.42398482&amp;rws=%2Fmember%2FABCDEFGHIJKLMNOPQRSTUVWXYZ123456%2Ftrack-history.rss</link>\n\
+      <category>Pop</category>\n\
+      <pubDate>Mon, 21 Feb 2011 17:17:00 -0800</pubDate>\n\
+      <source url=\"http://www.rhapsody.com/member/ABCDEFGHIJKLMNOPQRSTUVWXYZ123456?rws=%2Fmember%2FABCDEFGHIJKLMNOPQRSTUVWXYZ123456%2Ftrack-history.rss\">Tracks Fan 9876Z Recently Played on Rhapsody</source>\n\
+      <guid isPermaLink=\"false\">tra.42398482</guid>\n\
+      <rhap:rcid xmlns:rhap=\"rhap\">tra.42398482</rhap:rcid>\n\
+      <rhap:artist xmlns:rhap=\"rhap\">Rihanna</rhap:artist>\n\
+      <rhap:artist-rcid xmlns:rhap=\"rhap\">art.7375005</rhap:artist-rcid>\n\
+      <rhap:album xmlns:rhap=\"rhap\">Loud</rhap:album>\n\
+      <rhap:album-rcid xmlns:rhap=\"rhap\">alb.42398481</rhap:album-rcid>\n\
+      <rhap:album-art xmlns:rhap=\"rhap\">http://image.listen.com/img/170x170/1/6/0/7/2207061_170x170.jpg</rhap:album-art>\n\
+      <rhap:track xmlns:rhap=\"rhap\">S&amp;M</rhap:track>\n\
+      <rhap:track-rcid xmlns:rhap=\"rhap\">tra.42398482</rhap:track-rcid>\n\
+      <rhap:duration xmlns:rhap=\"rhap\">243</rhap:duration>\n\
+      <rhap:play-href xmlns:rhap=\"rhap\">http://www.rhapsody.com/goto?variant=play&amp;rcid=tra.42398482&amp;rws=%2Fmember%2FABCDEFGHIJKLMNOPQRSTUVWXYZ123456%2Ftrack-history.rss</rhap:play-href>\n\
+      <rhap:data-href xmlns:rhap=\"rhap\">http://www.rhapsody.com/goto?variant=data&amp;rcid=tra.42398482&amp;rws=%2Fmember%2FABCDEFGHIJKLMNOPQRSTUVWXYZ123456%2Ftrack-history.rss</rhap:data-href>\n\
+      <description><![CDATA[S&M - Rihanna (Pop)]]></description>\n\
+      </item><item>\n\
+      <title>Something Better - The Dirt Drifters</title>\n\
+      <link>http://www.rhapsody.com/goto?variant=play&amp;rcid=tra.41926089&amp;rws=%2Fmember%2FABCDEFGHIJKLMNOPQRSTUVWXYZ123456%2Ftrack-history.rss</link>\n\
+      <category />\n\
+      <pubDate>Sat, 19 Feb 2011 06:27:00 -0800</pubDate>\n\
+      <source url=\"http://www.rhapsody.com/member/ABCDEFGHIJKLMNOPQRSTUVWXYZ123456?rws=%2Fmember%2FABCDEFGHIJKLMNOPQRSTUVWXYZ123456%2Ftrack-history.rss\">Tracks Fan 9876Z Recently Played on Rhapsody</source>\n\
+      <guid isPermaLink=\"false\">tra.41926089</guid>\n\
+      <rhap:rcid xmlns:rhap=\"rhap\">tra.41926089</rhap:rcid>\n\
+      <rhap:artist xmlns:rhap=\"rhap\">The Dirt Drifters</rhap:artist>\n\
+      <rhap:artist-rcid xmlns:rhap=\"rhap\">art.41926085</rhap:artist-rcid>\n\
+      <rhap:album xmlns:rhap=\"rhap\">Something Better</rhap:album>\n\
+      <rhap:album-rcid xmlns:rhap=\"rhap\">alb.41926088</rhap:album-rcid>\n\
+      <rhap:album-art xmlns:rhap=\"rhap\">http://image.listen.com/img/170x170/1/5/1/3/2183151_170x170.jpg</rhap:album-art>\n\
+      <rhap:track xmlns:rhap=\"rhap\">Something Better</rhap:track>\n\
+      <rhap:track-rcid xmlns:rhap=\"rhap\">tra.41926089</rhap:track-rcid>\n\
+      <rhap:duration xmlns:rhap=\"rhap\">220</rhap:duration>\n\
+      <rhap:play-href xmlns:rhap=\"rhap\">http://www.rhapsody.com/goto?variant=play&amp;rcid=tra.41926089&amp;rws=%2Fmember%2FABCDEFGHIJKLMNOPQRSTUVWXYZ123456%2Ftrack-history.rss</rhap:play-href>\n\
+      <rhap:data-href xmlns:rhap=\"rhap\">http://www.rhapsody.com/goto?variant=data&amp;rcid=tra.41926089&amp;rws=%2Fmember%2FABCDEFGHIJKLMNOPQRSTUVWXYZ123456%2Ftrack-history.rss</rhap:data-href>\n\
+      <description><![CDATA[Something Better - The Dirt Drifters]]></description>\n\
+      </item><item>\n\
+      <title>She Left Me For Jesus - Hayes Carll (Country)</title>\n\
+      <link>http://www.rhapsody.com/goto?variant=play&amp;rcid=tra.20077407&amp;rws=%2Fmember%2FABCDEFGHIJKLMNOPQRSTUVWXYZ123456%2Ftrack-history.rss</link>\n\
+      <category>Country</category>\n\
+      <pubDate>Sat, 19 Feb 2011 06:23:00 -0800</pubDate>\n\
+      <source url=\"http://www.rhapsody.com/member/ABCDEFGHIJKLMNOPQRSTUVWXYZ123456?rws=%2Fmember%2FABCDEFGHIJKLMNOPQRSTUVWXYZ123456%2Ftrack-history.rss\">Tracks Fan 9876Z Recently Played on Rhapsody</source>\n\
+      <guid isPermaLink=\"false\">tra.20077407</guid>\n\
+      <rhap:rcid xmlns:rhap=\"rhap\">tra.20077407</rhap:rcid>\n\
+      <rhap:artist xmlns:rhap=\"rhap\">Hayes Carll</rhap:artist>\n\
+      <rhap:artist-rcid xmlns:rhap=\"rhap\">art.39697</rhap:artist-rcid>\n\
+      <rhap:album xmlns:rhap=\"rhap\">Trouble In Mind</rhap:album>\n\
+      <rhap:album-rcid xmlns:rhap=\"rhap\">alb.20068878</rhap:album-rcid>\n\
+      <rhap:album-art xmlns:rhap=\"rhap\">http://image.listen.com/img/170x170/1/0/1/6/1216101_170x170.jpg</rhap:album-art>\n\
+      <rhap:track xmlns:rhap=\"rhap\">She Left Me For Jesus</rhap:track>\n\
+      <rhap:track-rcid xmlns:rhap=\"rhap\">tra.20077407</rhap:track-rcid>\n\
+      <rhap:duration xmlns:rhap=\"rhap\">244</rhap:duration>\n\
+      <rhap:play-href xmlns:rhap=\"rhap\">http://www.rhapsody.com/goto?variant=play&amp;rcid=tra.20077407&amp;rws=%2Fmember%2FABCDEFGHIJKLMNOPQRSTUVWXYZ123456%2Ftrack-history.rss</rhap:play-href>\n\
+      <rhap:data-href xmlns:rhap=\"rhap\">http://www.rhapsody.com/goto?variant=data&amp;rcid=tra.20077407&amp;rws=%2Fmember%2FABCDEFGHIJKLMNOPQRSTUVWXYZ123456%2Ftrack-history.rss</rhap:data-href>\n\
+      <description><![CDATA[She Left Me For Jesus - Hayes Carll (Country)]]></description>\n\
+      </item><item>\n\
+      <title>Not That Far Away - Jennette McCurdy (New Country)</title>\n\
+      <link>http://www.rhapsody.com/goto?variant=play&amp;rcid=tra.39818531&amp;rws=%2Fmember%2FABCDEFGHIJKLMNOPQRSTUVWXYZ123456%2Ftrack-history.rss</link>\n\
+      <category>New Country</category>\n\
+      <pubDate>Sat, 19 Feb 2011 06:19:00 -0800</pubDate>\n\
+      <source url=\"http://www.rhapsody.com/member/ABCDEFGHIJKLMNOPQRSTUVWXYZ123456?rws=%2Fmember%2FABCDEFGHIJKLMNOPQRSTUVWXYZ123456%2Ftrack-history.rss\">Tracks Fan 9876Z Recently Played on Rhapsody</source>\n\
+      <guid isPermaLink=\"false\">tra.39818531</guid>\n\
+      <rhap:rcid xmlns:rhap=\"rhap\">tra.39818531</rhap:rcid>\n\
+      <rhap:artist xmlns:rhap=\"rhap\">Jennette McCurdy</rhap:artist>\n\
+      <rhap:artist-rcid xmlns:rhap=\"rhap\">art.31343897</rhap:artist-rcid>\n\
+      <rhap:album xmlns:rhap=\"rhap\">Not That Far Away EP</rhap:album>\n\
+      <rhap:album-rcid xmlns:rhap=\"rhap\">alb.39818530</rhap:album-rcid>\n\
+      <rhap:album-art xmlns:rhap=\"rhap\">http://image.listen.com/img/170x170/2/0/5/7/2077502_170x170.jpg</rhap:album-art>\n\
+      <rhap:track xmlns:rhap=\"rhap\">Not That Far Away</rhap:track>\n\
+      <rhap:track-rcid xmlns:rhap=\"rhap\">tra.39818531</rhap:track-rcid>\n\
+      <rhap:duration xmlns:rhap=\"rhap\">204</rhap:duration>\n\
+      <rhap:play-href xmlns:rhap=\"rhap\">http://www.rhapsody.com/goto?variant=play&amp;rcid=tra.39818531&amp;rws=%2Fmember%2FABCDEFGHIJKLMNOPQRSTUVWXYZ123456%2Ftrack-history.rss</rhap:play-href>\n\
+      <rhap:data-href xmlns:rhap=\"rhap\">http://www.rhapsody.com/goto?variant=data&amp;rcid=tra.39818531&amp;rws=%2Fmember%2FABCDEFGHIJKLMNOPQRSTUVWXYZ123456%2Ftrack-history.rss</rhap:data-href>\n\
+      <description><![CDATA[Not That Far Away - Jennette McCurdy (New Country)]]></description>\n\
+      </item><item>\n\
+      <title>Good Hands - Troy Olsen (New Country)</title>\n\
+      <link>http://www.rhapsody.com/goto?variant=play&amp;rcid=tra.40850605&amp;rws=%2Fmember%2FABCDEFGHIJKLMNOPQRSTUVWXYZ123456%2Ftrack-history.rss</link>\n\
+      <category>New Country</category>\n\
+      <pubDate>Sat, 19 Feb 2011 06:15:00 -0800</pubDate>\n\
+      <source url=\"http://www.rhapsody.com/member/ABCDEFGHIJKLMNOPQRSTUVWXYZ123456?rws=%2Fmember%2FABCDEFGHIJKLMNOPQRSTUVWXYZ123456%2Ftrack-history.rss\">Tracks Fan 9876Z Recently Played on Rhapsody</source>\n\
+      <guid isPermaLink=\"false\">tra.40850605</guid>\n\
+      <rhap:rcid xmlns:rhap=\"rhap\">tra.40850605</rhap:rcid>\n\
+      <rhap:artist xmlns:rhap=\"rhap\">Troy Olsen</rhap:artist>\n\
+      <rhap:artist-rcid xmlns:rhap=\"rhap\">art.38354951</rhap:artist-rcid>\n\
+      <rhap:album xmlns:rhap=\"rhap\">Troy Olsen EP</rhap:album>\n\
+      <rhap:album-rcid xmlns:rhap=\"rhap\">alb.40850604</rhap:album-rcid>\n\
+      <rhap:album-art xmlns:rhap=\"rhap\">http://image.listen.com/img/170x170/7/8/1/9/2129187_170x170.jpg</rhap:album-art>\n\
+      <rhap:track xmlns:rhap=\"rhap\">Good Hands</rhap:track>\n\
+      <rhap:track-rcid xmlns:rhap=\"rhap\">tra.40850605</rhap:track-rcid>\n\
+      <rhap:duration xmlns:rhap=\"rhap\">205</rhap:duration>\n\
+      <rhap:play-href xmlns:rhap=\"rhap\">http://www.rhapsody.com/goto?variant=play&amp;rcid=tra.40850605&amp;rws=%2Fmember%2FABCDEFGHIJKLMNOPQRSTUVWXYZ123456%2Ftrack-history.rss</rhap:play-href>\n\
+      <rhap:data-href xmlns:rhap=\"rhap\">http://www.rhapsody.com/goto?variant=data&amp;rcid=tra.40850605&amp;rws=%2Fmember%2FABCDEFGHIJKLMNOPQRSTUVWXYZ123456%2Ftrack-history.rss</rhap:data-href>\n\
+      <description><![CDATA[Good Hands - Troy Olsen (New Country)]]></description>\n\
+      </item><item>\n\
+      <title>Georgia Clay - Josh Kelley (Adult Alternative)</title>\n\
+      <link>http://www.rhapsody.com/goto?variant=play&amp;rcid=tra.39756340&amp;rws=%2Fmember%2FABCDEFGHIJKLMNOPQRSTUVWXYZ123456%2Ftrack-history.rss</link>\n\
+      <category>Adult Alternative</category>\n\
+      <pubDate>Sat, 19 Feb 2011 06:12:00 -0800</pubDate>\n\
+      <source url=\"http://www.rhapsody.com/member/ABCDEFGHIJKLMNOPQRSTUVWXYZ123456?rws=%2Fmember%2FABCDEFGHIJKLMNOPQRSTUVWXYZ123456%2Ftrack-history.rss\">Tracks Fan 9876Z Recently Played on Rhapsody</source>\n\
+      <guid isPermaLink=\"false\">tra.39756340</guid>\n\
+      <rhap:rcid xmlns:rhap=\"rhap\">tra.39756340</rhap:rcid>\n\
+      <rhap:artist xmlns:rhap=\"rhap\">Josh Kelley</rhap:artist>\n\
+      <rhap:artist-rcid xmlns:rhap=\"rhap\">art.66585</rhap:artist-rcid>\n\
+      <rhap:album xmlns:rhap=\"rhap\">Georgia Clay</rhap:album>\n\
+      <rhap:album-rcid xmlns:rhap=\"rhap\">alb.39756339</rhap:album-rcid>\n\
+      <rhap:album-art xmlns:rhap=\"rhap\">http://image.listen.com/img/170x170/9/5/5/4/2074559_170x170.jpg</rhap:album-art>\n\
+      <rhap:track xmlns:rhap=\"rhap\">Georgia Clay</rhap:track>\n\
+      <rhap:track-rcid xmlns:rhap=\"rhap\">tra.39756340</rhap:track-rcid>\n\
+      <rhap:duration xmlns:rhap=\"rhap\">184</rhap:duration>\n\
+      <rhap:play-href xmlns:rhap=\"rhap\">http://www.rhapsody.com/goto?variant=play&amp;rcid=tra.39756340&amp;rws=%2Fmember%2FABCDEFGHIJKLMNOPQRSTUVWXYZ123456%2Ftrack-history.rss</rhap:play-href>\n\
+      <rhap:data-href xmlns:rhap=\"rhap\">http://www.rhapsody.com/goto?variant=data&amp;rcid=tra.39756340&amp;rws=%2Fmember%2FABCDEFGHIJKLMNOPQRSTUVWXYZ123456%2Ftrack-history.rss</rhap:data-href>\n\
+      <description><![CDATA[Georgia Clay - Josh Kelley (Adult Alternative)]]></description>\n\
+      </item><item>\n\
+      <title>Gettin' Married - Joanna Smith</title>\n\
+      <link>http://www.rhapsody.com/goto?variant=play&amp;rcid=tra.40446317&amp;rws=%2Fmember%2FABCDEFGHIJKLMNOPQRSTUVWXYZ123456%2Ftrack-history.rss</link>\n\
+      <category />\n\
+      <pubDate>Sat, 19 Feb 1997 00:00:00 -0700</pubDate>\n\
+      <source url=\"http://www.rhapsody.com/member/ABCDEFGHIJKLMNOPQRSTUVWXYZ123456?rws=%2Fmember%2FABCDEFGHIJKLMNOPQRSTUVWXYZ123456%2Ftrack-history.rss\">Tracks Fan 9876Z Recently Played on Rhapsody</source>\n\
+      <guid isPermaLink=\"false\">tra.40446317</guid>\n\
+      <rhap:rcid xmlns:rhap=\"rhap\">tra.40446317</rhap:rcid>\n\
+      <rhap:artist xmlns:rhap=\"rhap\">Joanna Smith</rhap:artist>\n\
+      <rhap:artist-rcid xmlns:rhap=\"rhap\">art.16299027</rhap:artist-rcid>\n\
+      <rhap:album xmlns:rhap=\"rhap\">Gettin' Married</rhap:album>\n\
+      <rhap:album-rcid xmlns:rhap=\"rhap\">alb.40446316</rhap:album-rcid>\n\
+      <rhap:album-art xmlns:rhap=\"rhap\">http://image.listen.com/img/170x170/3/2/3/9/2109323_170x170.jpg</rhap:album-art>\n\
+      <rhap:track xmlns:rhap=\"rhap\">Gettin' Married</rhap:track>\n\
+      <rhap:track-rcid xmlns:rhap=\"rhap\">tra.40446317</rhap:track-rcid>\n\
+      <rhap:duration xmlns:rhap=\"rhap\">187</rhap:duration>\n\
+      <rhap:play-href xmlns:rhap=\"rhap\">http://www.rhapsody.com/goto?variant=play&amp;rcid=tra.40446317&amp;rws=%2Fmember%2FABCDEFGHIJKLMNOPQRSTUVWXYZ123456%2Ftrack-history.rss</rhap:play-href>\n\
+      <rhap:data-href xmlns:rhap=\"rhap\">http://www.rhapsody.com/goto?variant=data&amp;rcid=tra.40446317&amp;rws=%2Fmember%2FABCDEFGHIJKLMNOPQRSTUVWXYZ123456%2Ftrack-history.rss</rhap:data-href>\n\
+      <description><![CDATA[Gettin' Married - Joanna Smith]]></description>\n\
+      </item><item>\n\
+      <title>Last Night Again - Steel Magnolia (Country Pop) (New Country)</title>\n\
+      <link>http://www.rhapsody.com/goto?variant=play&amp;rcid=tra.43119896&amp;rws=%2Fmember%2FABCDEFGHIJKLMNOPQRSTUVWXYZ123456%2Ftrack-history.rss</link>\n\
+      <category>New Country</category>\n\
+      <pubDate>Sat, 19 Feb 2011 06:06:00 -0800</pubDate>\n\
+      <source url=\"http://www.rhapsody.com/member/ABCDEFGHIJKLMNOPQRSTUVWXYZ123456?rws=%2Fmember%2FABCDEFGHIJKLMNOPQRSTUVWXYZ123456%2Ftrack-history.rss\">Tracks Fan 9876Z Recently Played on Rhapsody</source>\n\
+      <guid isPermaLink=\"false\">tra.43119896</guid>\n\
+      <rhap:rcid xmlns:rhap=\"rhap\">tra.43119896</rhap:rcid>\n\
+      <rhap:artist xmlns:rhap=\"rhap\">Steel Magnolia (Country Pop)</rhap:artist>\n\
+      <rhap:artist-rcid xmlns:rhap=\"rhap\">art.29699698</rhap:artist-rcid>\n\
+      <rhap:album xmlns:rhap=\"rhap\">Steel Magnolia</rhap:album>\n\
+      <rhap:album-rcid xmlns:rhap=\"rhap\">alb.43119889</rhap:album-rcid>\n\
+      <rhap:album-art xmlns:rhap=\"rhap\">http://image.listen.com/img/170x170/4/4/6/5/2245644_170x170.jpg</rhap:album-art>\n\
+      <rhap:track xmlns:rhap=\"rhap\">Last Night Again</rhap:track>\n\
+      <rhap:track-rcid xmlns:rhap=\"rhap\">tra.43119896</rhap:track-rcid>\n\
+      <rhap:duration xmlns:rhap=\"rhap\">234</rhap:duration>\n\
+      <rhap:play-href xmlns:rhap=\"rhap\">http://www.rhapsody.com/goto?variant=play&amp;rcid=tra.43119896&amp;rws=%2Fmember%2FABCDEFGHIJKLMNOPQRSTUVWXYZ123456%2Ftrack-history.rss</rhap:play-href>\n\
+      <rhap:data-href xmlns:rhap=\"rhap\">http://www.rhapsody.com/goto?variant=data&amp;rcid=tra.43119896&amp;rws=%2Fmember%2FABCDEFGHIJKLMNOPQRSTUVWXYZ123456%2Ftrack-history.rss</rhap:data-href>\n\
+      <description><![CDATA[Last Night Again - Steel Magnolia (Country Pop) (New Country)]]></description>\n\
+      </item><item>\n\
+      <title>Pants - Walker Hayes (New Country)</title>\n\
+      <link>http://www.rhapsody.com/goto?variant=play&amp;rcid=tra.40427382&amp;rws=%2Fmember%2FABCDEFGHIJKLMNOPQRSTUVWXYZ123456%2Ftrack-history.rss</link>\n\
+      <category>New Country</category>\n\
+      <pubDate>Sat, 19 Feb 2011 06:02:00 -0800</pubDate>\n\
+      <source url=\"http://www.rhapsody.com/member/ABCDEFGHIJKLMNOPQRSTUVWXYZ123456?rws=%2Fmember%2FABCDEFGHIJKLMNOPQRSTUVWXYZ123456%2Ftrack-history.rss\">Tracks Fan 9876Z Recently Played on Rhapsody</source>\n\
+      <guid isPermaLink=\"false\">tra.40427382</guid>\n\
+      <rhap:rcid xmlns:rhap=\"rhap\">tra.40427382</rhap:rcid>\n\
+      <rhap:artist xmlns:rhap=\"rhap\">Walker Hayes</rhap:artist>\n\
+      <rhap:artist-rcid xmlns:rhap=\"rhap\">art.39347166</rhap:artist-rcid>\n\
+      <rhap:album xmlns:rhap=\"rhap\">Walker Hayes EP</rhap:album>\n\
+      <rhap:album-rcid xmlns:rhap=\"rhap\">alb.40427381</rhap:album-rcid>\n\
+      <rhap:album-art xmlns:rhap=\"rhap\">http://image.listen.com/img/170x170/6/1/7/0/2110716_170x170.jpg</rhap:album-art>\n\
+      <rhap:track xmlns:rhap=\"rhap\">Pants</rhap:track>\n\
+      <rhap:track-rcid xmlns:rhap=\"rhap\">tra.40427382</rhap:track-rcid>\n\
+      <rhap:duration xmlns:rhap=\"rhap\">212</rhap:duration>\n\
+      <rhap:play-href xmlns:rhap=\"rhap\">http://www.rhapsody.com/goto?variant=play&amp;rcid=tra.40427382&amp;rws=%2Fmember%2FABCDEFGHIJKLMNOPQRSTUVWXYZ123456%2Ftrack-history.rss</rhap:play-href>\n\
+      <rhap:data-href xmlns:rhap=\"rhap\">http://www.rhapsody.com/goto?variant=data&amp;rcid=tra.40427382&amp;rws=%2Fmember%2FABCDEFGHIJKLMNOPQRSTUVWXYZ123456%2Ftrack-history.rss</rhap:data-href>\n\
+      <description><![CDATA[Pants - Walker Hayes (New Country)]]></description>\n\
+      </item><item>\n\
+      <title>Assembly Line - Randy Montana (Country)</title>\n\
+      <link>http://www.rhapsody.com/goto?variant=play&amp;rcid=tra.43037240&amp;rws=%2Fmember%2FABCDEFGHIJKLMNOPQRSTUVWXYZ123456%2Ftrack-history.rss</link>\n\
+      <category>Country</category>\n\
+      <pubDate>Sat, 19 Feb 2011 05:58:00 -0800</pubDate>\n\
+      <source url=\"http://www.rhapsody.com/member/ABCDEFGHIJKLMNOPQRSTUVWXYZ123456?rws=%2Fmember%2FABCDEFGHIJKLMNOPQRSTUVWXYZ123456%2Ftrack-history.rss\">Tracks Fan 9876Z Recently Played on Rhapsody</source>\n\
+      <guid isPermaLink=\"false\">tra.43037240</guid>\n\
+      <rhap:rcid xmlns:rhap=\"rhap\">tra.43037240</rhap:rcid>\n\
+      <rhap:artist xmlns:rhap=\"rhap\">Randy Montana</rhap:artist>\n\
+      <rhap:artist-rcid xmlns:rhap=\"rhap\">art.32604386</rhap:artist-rcid>\n\
+      <rhap:album xmlns:rhap=\"rhap\">1,000 Faces</rhap:album>\n\
+      <rhap:album-rcid xmlns:rhap=\"rhap\">alb.43037237</rhap:album-rcid>\n\
+      <rhap:album-art xmlns:rhap=\"rhap\">http://image.listen.com/img/170x170/9/5/9/0/2240959_170x170.jpg</rhap:album-art>\n\
+      <rhap:track xmlns:rhap=\"rhap\">Assembly Line</rhap:track>\n\
+      <rhap:track-rcid xmlns:rhap=\"rhap\">tra.43037240</rhap:track-rcid>\n\
+      <rhap:duration xmlns:rhap=\"rhap\">246</rhap:duration>\n\
+      <rhap:play-href xmlns:rhap=\"rhap\">http://www.rhapsody.com/goto?variant=play&amp;rcid=tra.43037240&amp;rws=%2Fmember%2FABCDEFGHIJKLMNOPQRSTUVWXYZ123456%2Ftrack-history.rss</rhap:play-href>\n\
+      <rhap:data-href xmlns:rhap=\"rhap\">http://www.rhapsody.com/goto?variant=data&amp;rcid=tra.43037240&amp;rws=%2Fmember%2FABCDEFGHIJKLMNOPQRSTUVWXYZ123456%2Ftrack-history.rss</rhap:data-href>\n\
+      <description><![CDATA[Assembly Line - Randy Montana (Country)]]></description>\n\
+      </item><item>\n\
+      <title>Last Horse - Randy Montana (Country)</title>\n\
+      <link>http://www.rhapsody.com/goto?variant=play&amp;rcid=tra.43037239&amp;rws=%2Fmember%2FABCDEFGHIJKLMNOPQRSTUVWXYZ123456%2Ftrack-history.rss</link>\n\
+      <category>Country</category>\n\
+      <pubDate>Sat, 19 Feb 2011 05:54:00 -0800</pubDate>\n\
+      <source url=\"http://www.rhapsody.com/member/ABCDEFGHIJKLMNOPQRSTUVWXYZ123456?rws=%2Fmember%2FABCDEFGHIJKLMNOPQRSTUVWXYZ123456%2Ftrack-history.rss\">Tracks Fan 9876Z Recently Played on Rhapsody</source>\n\
+      <guid isPermaLink=\"false\">tra.43037239</guid>\n\
+      <rhap:rcid xmlns:rhap=\"rhap\">tra.43037239</rhap:rcid>\n\
+      <rhap:artist xmlns:rhap=\"rhap\">Randy Montana</rhap:artist>\n\
+      <rhap:artist-rcid xmlns:rhap=\"rhap\">art.32604386</rhap:artist-rcid>\n\
+      <rhap:album xmlns:rhap=\"rhap\">1,000 Faces</rhap:album>\n\
+      <rhap:album-rcid xmlns:rhap=\"rhap\">alb.43037237</rhap:album-rcid>\n\
+      <rhap:album-art xmlns:rhap=\"rhap\">http://image.listen.com/img/170x170/9/5/9/0/2240959_170x170.jpg</rhap:album-art>\n\
+      <rhap:track xmlns:rhap=\"rhap\">Last Horse</rhap:track>\n\
+      <rhap:track-rcid xmlns:rhap=\"rhap\">tra.43037239</rhap:track-rcid>\n\
+      <rhap:duration xmlns:rhap=\"rhap\">208</rhap:duration>\n\
+      <rhap:play-href xmlns:rhap=\"rhap\">http://www.rhapsody.com/goto?variant=play&amp;rcid=tra.43037239&amp;rws=%2Fmember%2FABCDEFGHIJKLMNOPQRSTUVWXYZ123456%2Ftrack-history.rss</rhap:play-href>\n\
+      <rhap:data-href xmlns:rhap=\"rhap\">http://www.rhapsody.com/goto?variant=data&amp;rcid=tra.43037239&amp;rws=%2Fmember%2FABCDEFGHIJKLMNOPQRSTUVWXYZ123456%2Ftrack-history.rss</rhap:data-href>\n\
+      <description><![CDATA[Last Horse - Randy Montana (Country)]]></description>\n\
+      </item><item>\n\
+      <title>1,000 Faces - Randy Montana (Country)</title>\n\
+      <link>http://www.rhapsody.com/goto?variant=play&amp;rcid=tra.43037238&amp;rws=%2Fmember%2FABCDEFGHIJKLMNOPQRSTUVWXYZ123456%2Ftrack-history.rss</link>\n\
+      <category>Country</category>\n\
+      <pubDate>Sat, 19 Feb 2011 05:50:00 -0800</pubDate>\n\
+      <source url=\"http://www.rhapsody.com/member/ABCDEFGHIJKLMNOPQRSTUVWXYZ123456?rws=%2Fmember%2FABCDEFGHIJKLMNOPQRSTUVWXYZ123456%2Ftrack-history.rss\">Tracks Fan 9876Z Recently Played on Rhapsody</source>\n\
+      <guid isPermaLink=\"false\">tra.43037238</guid>\n\
+      <rhap:rcid xmlns:rhap=\"rhap\">tra.43037238</rhap:rcid>\n\
+      <rhap:artist xmlns:rhap=\"rhap\">Randy Montana</rhap:artist>\n\
+      <rhap:artist-rcid xmlns:rhap=\"rhap\">art.32604386</rhap:artist-rcid>\n\
+      <rhap:album xmlns:rhap=\"rhap\">1,000 Faces</rhap:album>\n\
+      <rhap:album-rcid xmlns:rhap=\"rhap\">alb.43037237</rhap:album-rcid>\n\
+      <rhap:album-art xmlns:rhap=\"rhap\">http://image.listen.com/img/170x170/9/5/9/0/2240959_170x170.jpg</rhap:album-art>\n\
+      <rhap:track xmlns:rhap=\"rhap\">1,000 Faces</rhap:track>\n\
+      <rhap:track-rcid xmlns:rhap=\"rhap\">tra.43037238</rhap:track-rcid>\n\
+      <rhap:duration xmlns:rhap=\"rhap\">242</rhap:duration>\n\
+      <rhap:play-href xmlns:rhap=\"rhap\">http://www.rhapsody.com/goto?variant=play&amp;rcid=tra.43037238&amp;rws=%2Fmember%2FABCDEFGHIJKLMNOPQRSTUVWXYZ123456%2Ftrack-history.rss</rhap:play-href>\n\
+      <rhap:data-href xmlns:rhap=\"rhap\">http://www.rhapsody.com/goto?variant=data&amp;rcid=tra.43037238&amp;rws=%2Fmember%2FABCDEFGHIJKLMNOPQRSTUVWXYZ123456%2Ftrack-history.rss</rhap:data-href>\n\
+      <description><![CDATA[1,000 Faces - Randy Montana (Country)]]></description>\n\
+      </item><item>\n\
+      <title>Escoutas [Diga Diga Diga] - Carolina Chocolate Drops / Luminescent Orchestrii (Old-Time Revival)</title>\n\
+      <link>http://www.rhapsody.com/goto?variant=play&amp;rcid=tra.43677243&amp;rws=%2Fmember%2FABCDEFGHIJKLMNOPQRSTUVWXYZ123456%2Ftrack-history.rss</link>\n\
+      <category>Old-Time Revival</category>\n\
+      <pubDate>Sat, 19 Feb 2011 05:46:00 -0800</pubDate>\n\
+      <source url=\"http://www.rhapsody.com/member/ABCDEFGHIJKLMNOPQRSTUVWXYZ123456?rws=%2Fmember%2FABCDEFGHIJKLMNOPQRSTUVWXYZ123456%2Ftrack-history.rss\">Tracks Fan 9876Z Recently Played on Rhapsody</source>\n\
+      <guid isPermaLink=\"false\">tra.43677243</guid>\n\
+      <rhap:rcid xmlns:rhap=\"rhap\">tra.43677243</rhap:rcid>\n\
+      <rhap:artist xmlns:rhap=\"rhap\">Carolina Chocolate Drops / Luminescent Orchestrii</rhap:artist>\n\
+      <rhap:artist-rcid xmlns:rhap=\"rhap\">art.14881856</rhap:artist-rcid>\n\
+      <rhap:album xmlns:rhap=\"rhap\">Carolina Chocolate Drops / Luminescent Orchestrii</rhap:album>\n\
+      <rhap:album-rcid xmlns:rhap=\"rhap\">alb.43677234</rhap:album-rcid>\n\
+      <rhap:album-art xmlns:rhap=\"rhap\">http://image.listen.com/img/170x170/9/0/9/4/2274909_170x170.jpg</rhap:album-art>\n\
+      <rhap:track xmlns:rhap=\"rhap\">Escoutas [Diga Diga Diga]</rhap:track>\n\
+      <rhap:track-rcid xmlns:rhap=\"rhap\">tra.43677243</rhap:track-rcid>\n\
+      <rhap:duration xmlns:rhap=\"rhap\">279</rhap:duration>\n\
+      <rhap:play-href xmlns:rhap=\"rhap\">http://www.rhapsody.com/goto?variant=play&amp;rcid=tra.43677243&amp;rws=%2Fmember%2FABCDEFGHIJKLMNOPQRSTUVWXYZ123456%2Ftrack-history.rss</rhap:play-href>\n\
+      <rhap:data-href xmlns:rhap=\"rhap\">http://www.rhapsody.com/goto?variant=data&amp;rcid=tra.43677243&amp;rws=%2Fmember%2FABCDEFGHIJKLMNOPQRSTUVWXYZ123456%2Ftrack-history.rss</rhap:data-href>\n\
+      <description><![CDATA[Escoutas [Diga Diga Diga] - Carolina Chocolate Drops / Luminescent Orchestrii (Old-Time Revival)]]></description>\n\
+      </item><item>\n\
+      <title>Short Dress Gal - Carolina Chocolate Drops / Luminescent Orchestrii (Old-Time Revival)</title>\n\
+      <link>http://www.rhapsody.com/goto?variant=play&amp;rcid=tra.43677235&amp;rws=%2Fmember%2FABCDEFGHIJKLMNOPQRSTUVWXYZ123456%2Ftrack-history.rss</link>\n\
+      <category>Old-Time Revival</category>\n\
+      <pubDate>Sat, 19 Feb 2011 05:44:00 -0800</pubDate>\n\
+      <source url=\"http://www.rhapsody.com/member/ABCDEFGHIJKLMNOPQRSTUVWXYZ123456?rws=%2Fmember%2FABCDEFGHIJKLMNOPQRSTUVWXYZ123456%2Ftrack-history.rss\">Tracks Fan 9876Z Recently Played on Rhapsody</source>\n\
+      <guid isPermaLink=\"false\">tra.43677235</guid>\n\
+      <rhap:rcid xmlns:rhap=\"rhap\">tra.43677235</rhap:rcid>\n\
+      <rhap:artist xmlns:rhap=\"rhap\">Carolina Chocolate Drops / Luminescent Orchestrii</rhap:artist>\n\
+      <rhap:artist-rcid xmlns:rhap=\"rhap\">art.14881856</rhap:artist-rcid>\n\
+      <rhap:album xmlns:rhap=\"rhap\">Carolina Chocolate Drops / Luminescent Orchestrii</rhap:album>\n\
+      <rhap:album-rcid xmlns:rhap=\"rhap\">alb.43677234</rhap:album-rcid>\n\
+      <rhap:album-art xmlns:rhap=\"rhap\">http://image.listen.com/img/170x170/9/0/9/4/2274909_170x170.jpg</rhap:album-art>\n\
+      <rhap:track xmlns:rhap=\"rhap\">Short Dress Gal</rhap:track>\n\
+      <rhap:track-rcid xmlns:rhap=\"rhap\">tra.43677235</rhap:track-rcid>\n\
+      <rhap:duration xmlns:rhap=\"rhap\">202</rhap:duration>\n\
+      <rhap:play-href xmlns:rhap=\"rhap\">http://www.rhapsody.com/goto?variant=play&amp;rcid=tra.43677235&amp;rws=%2Fmember%2FABCDEFGHIJKLMNOPQRSTUVWXYZ123456%2Ftrack-history.rss</rhap:play-href>\n\
+      <rhap:data-href xmlns:rhap=\"rhap\">http://www.rhapsody.com/goto?variant=data&amp;rcid=tra.43677235&amp;rws=%2Fmember%2FABCDEFGHIJKLMNOPQRSTUVWXYZ123456%2Ftrack-history.rss</rhap:data-href>\n\
+      <description><![CDATA[Short Dress Gal - Carolina Chocolate Drops / Luminescent Orchestrii (Old-Time Revival)]]></description>\n\
+      </item><item>\n\
+      <title>From A Table Away - Sunny Sweeney (Honky-Tonk)</title>\n\
+      <link>http://www.rhapsody.com/goto?variant=play&amp;rcid=tra.43710797&amp;rws=%2Fmember%2FABCDEFGHIJKLMNOPQRSTUVWXYZ123456%2Ftrack-history.rss</link>\n\
+      <category>Honky-Tonk</category>\n\
+      <pubDate>Sat, 19 Feb 2011 05:40:00 -0800</pubDate>\n\
+      <source url=\"http://www.rhapsody.com/member/ABCDEFGHIJKLMNOPQRSTUVWXYZ123456?rws=%2Fmember%2FABCDEFGHIJKLMNOPQRSTUVWXYZ123456%2Ftrack-history.rss\">Tracks Fan 9876Z Recently Played on Rhapsody</source>\n\
+      <guid isPermaLink=\"false\">tra.43710797</guid>\n\
+      <rhap:rcid xmlns:rhap=\"rhap\">tra.43710797</rhap:rcid>\n\
+      <rhap:artist xmlns:rhap=\"rhap\">Sunny Sweeney</rhap:artist>\n\
+      <rhap:artist-rcid xmlns:rhap=\"rhap\">art.13689488</rhap:artist-rcid>\n\
+      <rhap:album xmlns:rhap=\"rhap\">Sunny Sweeney EP</rhap:album>\n\
+      <rhap:album-rcid xmlns:rhap=\"rhap\">alb.43710792</rhap:album-rcid>\n\
+      <rhap:album-art xmlns:rhap=\"rhap\">http://image.listen.com/img/170x170/9/7/6/6/2276679_170x170.jpg</rhap:album-art>\n\
+      <rhap:track xmlns:rhap=\"rhap\">From A Table Away</rhap:track>\n\
+      <rhap:track-rcid xmlns:rhap=\"rhap\">tra.43710797</rhap:track-rcid>\n\
+      <rhap:duration xmlns:rhap=\"rhap\">215</rhap:duration>\n\
+      <rhap:play-href xmlns:rhap=\"rhap\">http://www.rhapsody.com/goto?variant=play&amp;rcid=tra.43710797&amp;rws=%2Fmember%2FABCDEFGHIJKLMNOPQRSTUVWXYZ123456%2Ftrack-history.rss</rhap:play-href>\n\
+      <rhap:data-href xmlns:rhap=\"rhap\">http://www.rhapsody.com/goto?variant=data&amp;rcid=tra.43710797&amp;rws=%2Fmember%2FABCDEFGHIJKLMNOPQRSTUVWXYZ123456%2Ftrack-history.rss</rhap:data-href>\n\
+      <description><![CDATA[From A Table Away - Sunny Sweeney (Honky-Tonk)]]></description>\n\
+      </item><item>\n\
+      <title>Helluva Heart - Sunny Sweeney (Honky-Tonk)</title>\n\
+      <link>http://www.rhapsody.com/goto?variant=play&amp;rcid=tra.43710796&amp;rws=%2Fmember%2FABCDEFGHIJKLMNOPQRSTUVWXYZ123456%2Ftrack-history.rss</link>\n\
+      <category>Honky-Tonk</category>\n\
+      <pubDate>Sat, 19 Feb 2011 05:37:00 -0800</pubDate>\n\
+      <source url=\"http://www.rhapsody.com/member/ABCDEFGHIJKLMNOPQRSTUVWXYZ123456?rws=%2Fmember%2FABCDEFGHIJKLMNOPQRSTUVWXYZ123456%2Ftrack-history.rss\">Tracks Fan 9876Z Recently Played on Rhapsody</source>\n\
+      <guid isPermaLink=\"false\">tra.43710796</guid>\n\
+      <rhap:rcid xmlns:rhap=\"rhap\">tra.43710796</rhap:rcid>\n\
+      <rhap:artist xmlns:rhap=\"rhap\">Sunny Sweeney</rhap:artist>\n\
+      <rhap:artist-rcid xmlns:rhap=\"rhap\">art.13689488</rhap:artist-rcid>\n\
+      <rhap:album xmlns:rhap=\"rhap\">Sunny Sweeney EP</rhap:album>\n\
+      <rhap:album-rcid xmlns:rhap=\"rhap\">alb.43710792</rhap:album-rcid>\n\
+      <rhap:album-art xmlns:rhap=\"rhap\">http://image.listen.com/img/170x170/9/7/6/6/2276679_170x170.jpg</rhap:album-art>\n\
+      <rhap:track xmlns:rhap=\"rhap\">Helluva Heart</rhap:track>\n\
+      <rhap:track-rcid xmlns:rhap=\"rhap\">tra.43710796</rhap:track-rcid>\n\
+      <rhap:duration xmlns:rhap=\"rhap\">189</rhap:duration>\n\
+      <rhap:play-href xmlns:rhap=\"rhap\">http://www.rhapsody.com/goto?variant=play&amp;rcid=tra.43710796&amp;rws=%2Fmember%2FABCDEFGHIJKLMNOPQRSTUVWXYZ123456%2Ftrack-history.rss</rhap:play-href>\n\
+      <rhap:data-href xmlns:rhap=\"rhap\">http://www.rhapsody.com/goto?variant=data&amp;rcid=tra.43710796&amp;rws=%2Fmember%2FABCDEFGHIJKLMNOPQRSTUVWXYZ123456%2Ftrack-history.rss</rhap:data-href>\n\
+      <description><![CDATA[Helluva Heart - Sunny Sweeney (Honky-Tonk)]]></description>\n\
+      </item><item>\n\
+      <title>Staying\xE2\x80\x99s Worse Than Leaving - Sunny Sweeney (Honky-Tonk)</title>\n\
+      <link>http://www.rhapsody.com/goto?variant=play&amp;rcid=tra.43710795&amp;rws=%2Fmember%2FABCDEFGHIJKLMNOPQRSTUVWXYZ123456%2Ftrack-history.rss</link>\n\
+      <category>Honky-Tonk</category>\n\
+      <pubDate>Sat, 19 Feb 2011 05:33:00 -0800</pubDate>\n\
+      <source url=\"http://www.rhapsody.com/member/ABCDEFGHIJKLMNOPQRSTUVWXYZ123456?rws=%2Fmember%2FABCDEFGHIJKLMNOPQRSTUVWXYZ123456%2Ftrack-history.rss\">Tracks Fan 9876Z Recently Played on Rhapsody</source>\n\
+      <guid isPermaLink=\"false\">tra.43710795</guid>\n\
+      <rhap:rcid xmlns:rhap=\"rhap\">tra.43710795</rhap:rcid>\n\
+      <rhap:artist xmlns:rhap=\"rhap\">Sunny Sweeney</rhap:artist>\n\
+      <rhap:artist-rcid xmlns:rhap=\"rhap\">art.13689488</rhap:artist-rcid>\n\
+      <rhap:album xmlns:rhap=\"rhap\">Sunny Sweeney EP</rhap:album>\n\
+      <rhap:album-rcid xmlns:rhap=\"rhap\">alb.43710792</rhap:album-rcid>\n\
+      <rhap:album-art xmlns:rhap=\"rhap\">http://image.listen.com/img/170x170/9/7/6/6/2276679_170x170.jpg</rhap:album-art>\n\
+      <rhap:track xmlns:rhap=\"rhap\">Staying\xE2\x80\x99s Worse Than Leaving</rhap:track>\n\
+      <rhap:track-rcid xmlns:rhap=\"rhap\">tra.43710795</rhap:track-rcid>\n\
+      <rhap:duration xmlns:rhap=\"rhap\">205</rhap:duration>\n\
+      <rhap:play-href xmlns:rhap=\"rhap\">http://www.rhapsody.com/goto?variant=play&amp;rcid=tra.43710795&amp;rws=%2Fmember%2FABCDEFGHIJKLMNOPQRSTUVWXYZ123456%2Ftrack-history.rss</rhap:play-href>\n\
+      <rhap:data-href xmlns:rhap=\"rhap\">http://www.rhapsody.com/goto?variant=data&amp;rcid=tra.43710795&amp;rws=%2Fmember%2FABCDEFGHIJKLMNOPQRSTUVWXYZ123456%2Ftrack-history.rss</rhap:data-href>\n\
+      <description><![CDATA[Staying\xE2\x80\x99s Worse Than Leaving - Sunny Sweeney (Honky-Tonk)]]></description>\n\
+      </item><item>\n\
+      <title>Amy - Sunny Sweeney (Honky-Tonk)</title>\n\
+      <link>http://www.rhapsody.com/goto?variant=play&amp;rcid=tra.43710794&amp;rws=%2Fmember%2FABCDEFGHIJKLMNOPQRSTUVWXYZ123456%2Ftrack-history.rss</link>\n\
+      <category>Honky-Tonk</category>\n\
+      <pubDate>Sat, 19 Feb 2011 05:30:00 -0800</pubDate>\n\
+      <source url=\"http://www.rhapsody.com/member/ABCDEFGHIJKLMNOPQRSTUVWXYZ123456?rws=%2Fmember%2FABCDEFGHIJKLMNOPQRSTUVWXYZ123456%2Ftrack-history.rss\">Tracks Fan 9876Z Recently Played on Rhapsody</source>\n\
+      <guid isPermaLink=\"false\">tra.43710794</guid>\n\
+      <rhap:rcid xmlns:rhap=\"rhap\">tra.43710794</rhap:rcid>\n\
+      <rhap:artist xmlns:rhap=\"rhap\">Sunny Sweeney</rhap:artist>\n\
+      <rhap:artist-rcid xmlns:rhap=\"rhap\">art.13689488</rhap:artist-rcid>\n\
+      <rhap:album xmlns:rhap=\"rhap\">Sunny Sweeney EP</rhap:album>\n\
+      <rhap:album-rcid xmlns:rhap=\"rhap\">alb.43710792</rhap:album-rcid>\n\
+      <rhap:album-art xmlns:rhap=\"rhap\">http://image.listen.com/img/170x170/9/7/6/6/2276679_170x170.jpg</rhap:album-art>\n\
+      <rhap:track xmlns:rhap=\"rhap\">Amy</rhap:track>\n\
+      <rhap:track-rcid xmlns:rhap=\"rhap\">tra.43710794</rhap:track-rcid>\n\
+      <rhap:duration xmlns:rhap=\"rhap\">162</rhap:duration>\n\
+      <rhap:play-href xmlns:rhap=\"rhap\">http://www.rhapsody.com/goto?variant=play&amp;rcid=tra.43710794&amp;rws=%2Fmember%2FABCDEFGHIJKLMNOPQRSTUVWXYZ123456%2Ftrack-history.rss</rhap:play-href>\n\
+      <rhap:data-href xmlns:rhap=\"rhap\">http://www.rhapsody.com/goto?variant=data&amp;rcid=tra.43710794&amp;rws=%2Fmember%2FABCDEFGHIJKLMNOPQRSTUVWXYZ123456%2Ftrack-history.rss</rhap:data-href>\n\
+      <description><![CDATA[Amy - Sunny Sweeney (Honky-Tonk)]]></description>\n\
+      </item><item>\n\
+      <title>Drink Myself Single - Sunny Sweeney (Honky-Tonk)</title>\n\
+      <link>http://www.rhapsody.com/goto?variant=play&amp;rcid=tra.43710793&amp;rws=%2Fmember%2FABCDEFGHIJKLMNOPQRSTUVWXYZ123456%2Ftrack-history.rss</link>\n\
+      <category>Honky-Tonk</category>\n\
+      <pubDate>Sat, 19 Feb 2011 05:27:00 -0800</pubDate>\n\
+      <source url=\"http://www.rhapsody.com/member/ABCDEFGHIJKLMNOPQRSTUVWXYZ123456?rws=%2Fmember%2FABCDEFGHIJKLMNOPQRSTUVWXYZ123456%2Ftrack-history.rss\">Tracks Fan 9876Z Recently Played on Rhapsody</source>\n\
+      <guid isPermaLink=\"false\">tra.43710793</guid>\n\
+      <rhap:rcid xmlns:rhap=\"rhap\">tra.43710793</rhap:rcid>\n\
+      <rhap:artist xmlns:rhap=\"rhap\">Sunny Sweeney</rhap:artist>\n\
+      <rhap:artist-rcid xmlns:rhap=\"rhap\">art.13689488</rhap:artist-rcid>\n\
+      <rhap:album xmlns:rhap=\"rhap\">Sunny Sweeney EP</rhap:album>\n\
+      <rhap:album-rcid xmlns:rhap=\"rhap\">alb.43710792</rhap:album-rcid>\n\
+      <rhap:album-art xmlns:rhap=\"rhap\">http://image.listen.com/img/170x170/9/7/6/6/2276679_170x170.jpg</rhap:album-art>\n\
+      <rhap:track xmlns:rhap=\"rhap\">Drink Myself Single</rhap:track>\n\
+      <rhap:track-rcid xmlns:rhap=\"rhap\">tra.43710793</rhap:track-rcid>\n\
+      <rhap:duration xmlns:rhap=\"rhap\">180</rhap:duration>\n\
+      <rhap:play-href xmlns:rhap=\"rhap\">http://www.rhapsody.com/goto?variant=play&amp;rcid=tra.43710793&amp;rws=%2Fmember%2FABCDEFGHIJKLMNOPQRSTUVWXYZ123456%2Ftrack-history.rss</rhap:play-href>\n\
+      <rhap:data-href xmlns:rhap=\"rhap\">http://www.rhapsody.com/goto?variant=data&amp;rcid=tra.43710793&amp;rws=%2Fmember%2FABCDEFGHIJKLMNOPQRSTUVWXYZ123456%2Ftrack-history.rss</rhap:data-href>\n\
+      <description><![CDATA[Drink Myself Single - Sunny Sweeney (Honky-Tonk)]]></description>\n\
+      </item><item>\n\
+      <title>Colder Weather - Zac Brown Band (Country)</title>\n\
+      <link>http://www.rhapsody.com/goto?variant=play&amp;rcid=tra.40758264&amp;rws=%2Fmember%2FABCDEFGHIJKLMNOPQRSTUVWXYZ123456%2Ftrack-history.rss</link>\n\
+      <category>Country</category>\n\
+      <pubDate>Sat, 19 Feb 2011 05:24:00 -0800</pubDate>\n\
+      <source url=\"http://www.rhapsody.com/member/ABCDEFGHIJKLMNOPQRSTUVWXYZ123456?rws=%2Fmember%2FABCDEFGHIJKLMNOPQRSTUVWXYZ123456%2Ftrack-history.rss\">Tracks Fan 9876Z Recently Played on Rhapsody</source>\n\
+      <guid isPermaLink=\"false\">tra.40758264</guid>\n\
+      <rhap:rcid xmlns:rhap=\"rhap\">tra.40758264</rhap:rcid>\n\
+      <rhap:artist xmlns:rhap=\"rhap\">Zac Brown Band</rhap:artist>\n\
+      <rhap:artist-rcid xmlns:rhap=\"rhap\">art.22714272</rhap:artist-rcid>\n\
+      <rhap:album xmlns:rhap=\"rhap\">You Get What You Give</rhap:album>\n\
+      <rhap:album-rcid xmlns:rhap=\"rhap\">alb.40758242</rhap:album-rcid>\n\
+      <rhap:album-art xmlns:rhap=\"rhap\">http://image.listen.com/img/170x170/3/8/3/4/2124383_170x170.jpg</rhap:album-art>\n\
+      <rhap:track xmlns:rhap=\"rhap\">Colder Weather</rhap:track>\n\
+      <rhap:track-rcid xmlns:rhap=\"rhap\">tra.40758264</rhap:track-rcid>\n\
+      <rhap:duration xmlns:rhap=\"rhap\">273</rhap:duration>\n\
+      <rhap:play-href xmlns:rhap=\"rhap\">http://www.rhapsody.com/goto?variant=play&amp;rcid=tra.40758264&amp;rws=%2Fmember%2FABCDEFGHIJKLMNOPQRSTUVWXYZ123456%2Ftrack-history.rss</rhap:play-href>\n\
+      <rhap:data-href xmlns:rhap=\"rhap\">http://www.rhapsody.com/goto?variant=data&amp;rcid=tra.40758264&amp;rws=%2Fmember%2FABCDEFGHIJKLMNOPQRSTUVWXYZ123456%2Ftrack-history.rss</rhap:data-href>\n\
+      <description><![CDATA[Colder Weather - Zac Brown Band (Country)]]></description>\n\
+      </item><item>\n\
+      <title>Firework - Katy Perry (Pop)</title>\n\
+      <link>http://www.rhapsody.com/goto?variant=play&amp;rcid=tra.39818108&amp;rws=%2Fmember%2FABCDEFGHIJKLMNOPQRSTUVWXYZ123456%2Ftrack-history.rss</link>\n\
+      <category>Pop</category>\n\
+      <pubDate>Sat, 19 Feb 2011 05:19:00 -0800</pubDate>\n\
+      <source url=\"http://www.rhapsody.com/member/ABCDEFGHIJKLMNOPQRSTUVWXYZ123456?rws=%2Fmember%2FABCDEFGHIJKLMNOPQRSTUVWXYZ123456%2Ftrack-history.rss\">Tracks Fan 9876Z Recently Played on Rhapsody</source>\n\
+      <guid isPermaLink=\"false\">tra.39818108</guid>\n\
+      <rhap:rcid xmlns:rhap=\"rhap\">tra.39818108</rhap:rcid>\n\
+      <rhap:artist xmlns:rhap=\"rhap\">Katy Perry</rhap:artist>\n\
+      <rhap:artist-rcid xmlns:rhap=\"rhap\">art.7330911</rhap:artist-rcid>\n\
+      <rhap:album xmlns:rhap=\"rhap\">Teenage Dream</rhap:album>\n\
+      <rhap:album-rcid xmlns:rhap=\"rhap\">alb.39818104</rhap:album-rcid>\n\
+      <rhap:album-art xmlns:rhap=\"rhap\">http://image.listen.com/img/170x170/1/8/4/7/2077481_170x170.jpg</rhap:album-art>\n\
+      <rhap:track xmlns:rhap=\"rhap\">Firework</rhap:track>\n\
+      <rhap:track-rcid xmlns:rhap=\"rhap\">tra.39818108</rhap:track-rcid>\n\
+      <rhap:duration xmlns:rhap=\"rhap\">227</rhap:duration>\n\
+      <rhap:play-href xmlns:rhap=\"rhap\">http://www.rhapsody.com/goto?variant=play&amp;rcid=tra.39818108&amp;rws=%2Fmember%2FABCDEFGHIJKLMNOPQRSTUVWXYZ123456%2Ftrack-history.rss</rhap:play-href>\n\
+      <rhap:data-href xmlns:rhap=\"rhap\">http://www.rhapsody.com/goto?variant=data&amp;rcid=tra.39818108&amp;rws=%2Fmember%2FABCDEFGHIJKLMNOPQRSTUVWXYZ123456%2Ftrack-history.rss</rhap:data-href>\n\
+      <description><![CDATA[Firework - Katy Perry (Pop)]]></description>\n\
+      </item><item>\n\
+      <title>Born This Way - Lady Gaga (Dance Pop)</title>\n\
+      <link>http://www.rhapsody.com/goto?variant=play&amp;rcid=tra.44389250&amp;rws=%2Fmember%2FABCDEFGHIJKLMNOPQRSTUVWXYZ123456%2Ftrack-history.rss</link>\n\
+      <category>Dance Pop</category>\n\
+      <pubDate>Sat, 19 Feb 2011 05:15:00 -0800</pubDate>\n\
+      <source url=\"http://www.rhapsody.com/member/ABCDEFGHIJKLMNOPQRSTUVWXYZ123456?rws=%2Fmember%2FABCDEFGHIJKLMNOPQRSTUVWXYZ123456%2Ftrack-history.rss\">Tracks Fan 9876Z Recently Played on Rhapsody</source>\n\
+      <guid isPermaLink=\"false\">tra.44389250</guid>\n\
+      <rhap:rcid xmlns:rhap=\"rhap\">tra.44389250</rhap:rcid>\n\
+      <rhap:artist xmlns:rhap=\"rhap\">Lady Gaga</rhap:artist>\n\
+      <rhap:artist-rcid xmlns:rhap=\"rhap\">art.20067373</rhap:artist-rcid>\n\
+      <rhap:album xmlns:rhap=\"rhap\">Born This Way</rhap:album>\n\
+      <rhap:album-rcid xmlns:rhap=\"rhap\">alb.44389249</rhap:album-rcid>\n\
+      <rhap:album-art xmlns:rhap=\"rhap\">http://image.listen.com/img/170x170/2/3/4/5/2325432_170x170.jpg</rhap:album-art>\n\
+      <rhap:track xmlns:rhap=\"rhap\">Born This Way</rhap:track>\n\
+      <rhap:track-rcid xmlns:rhap=\"rhap\">tra.44389250</rhap:track-rcid>\n\
+      <rhap:duration xmlns:rhap=\"rhap\">260</rhap:duration>\n\
+      <rhap:play-href xmlns:rhap=\"rhap\">http://www.rhapsody.com/goto?variant=play&amp;rcid=tra.44389250&amp;rws=%2Fmember%2FABCDEFGHIJKLMNOPQRSTUVWXYZ123456%2Ftrack-history.rss</rhap:play-href>\n\
+      <rhap:data-href xmlns:rhap=\"rhap\">http://www.rhapsody.com/goto?variant=data&amp;rcid=tra.44389250&amp;rws=%2Fmember%2FABCDEFGHIJKLMNOPQRSTUVWXYZ123456%2Ftrack-history.rss</rhap:data-href>\n\
+      <description><![CDATA[Born This Way - Lady Gaga (Dance Pop)]]></description>\n\
+      </item><item>\n\
+      <title>I Can't Love You Back - Easton Corbin (New Country)</title>\n\
+      <link>http://www.rhapsody.com/goto?variant=play&amp;rcid=tra.32389573&amp;rws=%2Fmember%2FABCDEFGHIJKLMNOPQRSTUVWXYZ123456%2Ftrack-history.rss</link>\n\
+      <category>New Country</category>\n\
+      <pubDate>Fri, 18 Feb 2011 12:28:00 -0800</pubDate>\n\
+      <source url=\"http://www.rhapsody.com/member/ABCDEFGHIJKLMNOPQRSTUVWXYZ123456?rws=%2Fmember%2FABCDEFGHIJKLMNOPQRSTUVWXYZ123456%2Ftrack-history.rss\">Tracks Fan 9876Z Recently Played on Rhapsody</source>\n\
+      <guid isPermaLink=\"false\">tra.32389573</guid>\n\
+      <rhap:rcid xmlns:rhap=\"rhap\">tra.32389573</rhap:rcid>\n\
+      <rhap:artist xmlns:rhap=\"rhap\">Easton Corbin</rhap:artist>\n\
+      <rhap:artist-rcid xmlns:rhap=\"rhap\">art.29586387</rhap:artist-rcid>\n\
+      <rhap:album xmlns:rhap=\"rhap\">Easton Corbin</rhap:album>\n\
+      <rhap:album-rcid xmlns:rhap=\"rhap\">alb.32362983</rhap:album-rcid>\n\
+      <rhap:album-art xmlns:rhap=\"rhap\">http://image.listen.com/img/170x170/7/6/8/1/1951867_170x170.jpg</rhap:album-art>\n\
+      <rhap:track xmlns:rhap=\"rhap\">I Can't Love You Back</rhap:track>\n\
+      <rhap:track-rcid xmlns:rhap=\"rhap\">tra.32389573</rhap:track-rcid>\n\
+      <rhap:duration xmlns:rhap=\"rhap\">245</rhap:duration>\n\
+      <rhap:play-href xmlns:rhap=\"rhap\">http://www.rhapsody.com/goto?variant=play&amp;rcid=tra.32389573&amp;rws=%2Fmember%2FABCDEFGHIJKLMNOPQRSTUVWXYZ123456%2Ftrack-history.rss</rhap:play-href>\n\
+      <rhap:data-href xmlns:rhap=\"rhap\">http://www.rhapsody.com/goto?variant=data&amp;rcid=tra.32389573&amp;rws=%2Fmember%2FABCDEFGHIJKLMNOPQRSTUVWXYZ123456%2Ftrack-history.rss</rhap:data-href>\n\
+      <description><![CDATA[I Can't Love You Back - Easton Corbin (New Country)]]></description>\n\
+      </item><item>\n\
+      <title>Good Directions - Billy Currington (New Country)</title>\n\
+      <link>http://www.rhapsody.com/goto?variant=play&amp;rcid=tra.7688549&amp;rws=%2Fmember%2FABCDEFGHIJKLMNOPQRSTUVWXYZ123456%2Ftrack-history.rss</link>\n\
+      <category>New Country</category>\n\
+      <pubDate>Fri, 18 Feb 2011 12:27:00 -0800</pubDate>\n\
+      <source url=\"http://www.rhapsody.com/member/ABCDEFGHIJKLMNOPQRSTUVWXYZ123456?rws=%2Fmember%2FABCDEFGHIJKLMNOPQRSTUVWXYZ123456%2Ftrack-history.rss\">Tracks Fan 9876Z Recently Played on Rhapsody</source>\n\
+      <guid isPermaLink=\"false\">tra.7688549</guid>\n\
+      <rhap:rcid xmlns:rhap=\"rhap\">tra.7688549</rhap:rcid>\n\
+      <rhap:artist xmlns:rhap=\"rhap\">Billy Currington</rhap:artist>\n\
+      <rhap:artist-rcid xmlns:rhap=\"rhap\">art.66195</rhap:artist-rcid>\n\
+      <rhap:album xmlns:rhap=\"rhap\">Doin' Somethin' Right</rhap:album>\n\
+      <rhap:album-rcid xmlns:rhap=\"rhap\">alb.7688285</rhap:album-rcid>\n\
+      <rhap:album-art xmlns:rhap=\"rhap\">http://image.listen.com/img/170x170/5/8/2/2/742285_170x170.jpg</rhap:album-art>\n\
+      <rhap:track xmlns:rhap=\"rhap\">Good Directions</rhap:track>\n\
+      <rhap:track-rcid xmlns:rhap=\"rhap\">tra.7688549</rhap:track-rcid>\n\
+      <rhap:duration xmlns:rhap=\"rhap\">215</rhap:duration>\n\
+      <rhap:play-href xmlns:rhap=\"rhap\">http://www.rhapsody.com/goto?variant=play&amp;rcid=tra.7688549&amp;rws=%2Fmember%2FABCDEFGHIJKLMNOPQRSTUVWXYZ123456%2Ftrack-history.rss</rhap:play-href>\n\
+      <rhap:data-href xmlns:rhap=\"rhap\">http://www.rhapsody.com/goto?variant=data&amp;rcid=tra.7688549&amp;rws=%2Fmember%2FABCDEFGHIJKLMNOPQRSTUVWXYZ123456%2Ftrack-history.rss</rhap:data-href>\n\
+      <description><![CDATA[Good Directions - Billy Currington (New Country)]]></description>\n\
+      </item><item>\n\
+      <title>Heart Like Mine - Miranda Lambert (New Traditional)</title>\n\
+      <link>http://www.rhapsody.com/goto?variant=play&amp;rcid=tra.30182471&amp;rws=%2Fmember%2FABCDEFGHIJKLMNOPQRSTUVWXYZ123456%2Ftrack-history.rss</link>\n\
+      <category>New Traditional</category>\n\
+      <pubDate>Fri, 18 Feb 2011 12:24:00 -0800</pubDate>\n\
+      <source url=\"http://www.rhapsody.com/member/ABCDEFGHIJKLMNOPQRSTUVWXYZ123456?rws=%2Fmember%2FABCDEFGHIJKLMNOPQRSTUVWXYZ123456%2Ftrack-history.rss\">Tracks Fan 9876Z Recently Played on Rhapsody</source>\n\
+      <guid isPermaLink=\"false\">tra.30182471</guid>\n\
+      <rhap:rcid xmlns:rhap=\"rhap\">tra.30182471</rhap:rcid>\n\
+      <rhap:artist xmlns:rhap=\"rhap\">Miranda Lambert</rhap:artist>\n\
+      <rhap:artist-rcid xmlns:rhap=\"rhap\">art.65908</rhap:artist-rcid>\n\
+      <rhap:album xmlns:rhap=\"rhap\">Revolution</rhap:album>\n\
+      <rhap:album-rcid xmlns:rhap=\"rhap\">alb.30170235</rhap:album-rcid>\n\
+      <rhap:album-art xmlns:rhap=\"rhap\">http://image.listen.com/img/170x170/5/1/8/3/1803815_170x170.jpg</rhap:album-art>\n\
+      <rhap:track xmlns:rhap=\"rhap\">Heart Like Mine</rhap:track>\n\
+      <rhap:track-rcid xmlns:rhap=\"rhap\">tra.30182471</rhap:track-rcid>\n\
+      <rhap:duration xmlns:rhap=\"rhap\">177</rhap:duration>\n\
+      <rhap:play-href xmlns:rhap=\"rhap\">http://www.rhapsody.com/goto?variant=play&amp;rcid=tra.30182471&amp;rws=%2Fmember%2FABCDEFGHIJKLMNOPQRSTUVWXYZ123456%2Ftrack-history.rss</rhap:play-href>\n\
+      <rhap:data-href xmlns:rhap=\"rhap\">http://www.rhapsody.com/goto?variant=data&amp;rcid=tra.30182471&amp;rws=%2Fmember%2FABCDEFGHIJKLMNOPQRSTUVWXYZ123456%2Ftrack-history.rss</rhap:data-href>\n\
+      <description><![CDATA[Heart Like Mine - Miranda Lambert (New Traditional)]]></description>\n\
+      </item><item>\n\
+      <title>Little Miss - Sugarland (New Country)</title>\n\
+      <link>http://www.rhapsody.com/goto?variant=play&amp;rcid=tra.41589247&amp;rws=%2Fmember%2FABCDEFGHIJKLMNOPQRSTUVWXYZ123456%2Ftrack-history.rss</link>\n\
+      <category>New Country</category>\n\
+      <pubDate>Wed, 16 Feb 2011 03:48:00 -0800</pubDate>\n\
+      <source url=\"http://www.rhapsody.com/member/ABCDEFGHIJKLMNOPQRSTUVWXYZ123456?rws=%2Fmember%2FABCDEFGHIJKLMNOPQRSTUVWXYZ123456%2Ftrack-history.rss\">Tracks Fan 9876Z Recently Played on Rhapsody</source>\n\
+      <guid isPermaLink=\"false\">tra.41589247</guid>\n\
+      <rhap:rcid xmlns:rhap=\"rhap\">tra.41589247</rhap:rcid>\n\
+      <rhap:artist xmlns:rhap=\"rhap\">Sugarland</rhap:artist>\n\
+      <rhap:artist-rcid xmlns:rhap=\"rhap\">art.6222344</rhap:artist-rcid>\n\
+      <rhap:album xmlns:rhap=\"rhap\">The Incredible Machine</rhap:album>\n\
+      <rhap:album-rcid xmlns:rhap=\"rhap\">alb.41589239</rhap:album-rcid>\n\
+      <rhap:album-art xmlns:rhap=\"rhap\">http://image.listen.com/img/170x170/0/0/7/4/2164700_170x170.jpg</rhap:album-art>\n\
+      <rhap:track xmlns:rhap=\"rhap\">Little Miss</rhap:track>\n\
+      <rhap:track-rcid xmlns:rhap=\"rhap\">tra.41589247</rhap:track-rcid>\n\
+      <rhap:duration xmlns:rhap=\"rhap\">271</rhap:duration>\n\
+      <rhap:play-href xmlns:rhap=\"rhap\">http://www.rhapsody.com/goto?variant=play&amp;rcid=tra.41589247&amp;rws=%2Fmember%2FABCDEFGHIJKLMNOPQRSTUVWXYZ123456%2Ftrack-history.rss</rhap:play-href>\n\
+      <rhap:data-href xmlns:rhap=\"rhap\">http://www.rhapsody.com/goto?variant=data&amp;rcid=tra.41589247&amp;rws=%2Fmember%2FABCDEFGHIJKLMNOPQRSTUVWXYZ123456%2Ftrack-history.rss</rhap:data-href>\n\
+      <description><![CDATA[Little Miss - Sugarland (New Country)]]></description>\n\
+      </item></channel>\n\
+      </rss>"
+    http_version: "1.1"

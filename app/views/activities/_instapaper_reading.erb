@@ -1,0 +1,9 @@
+<% title = activity.title.blank? ? activity.url : activity.title %>
+<p class="summary"><%= link_to title, activity.url %></p>
+<p class="details">
+  <%= activity.domain %>
+  <% unless activity.description.blank? %>
+    &bull; <%= activity.description %>
+  <% end %>
+</p>
+
