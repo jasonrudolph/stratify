@@ -61,7 +61,7 @@ Now that you have the Rails app running, it's time to configure some collectors.
 
 ### Configure
 
-The collectors run via a Rake task (conveniently named `collectors:run`).  To set up your desired collectors, first make a copy of the [example rake task](http://github.com/jasonrudolph/stratify/lib/tasks/collectors.example.rake).
+The collectors run via a Rake task (conveniently named `collectors:run`).  To set up your desired collectors, first make a copy of the [example rake task](https://github.com/jasonrudolph/stratify/blob/master/lib/tasks/collectors.example.rake).
 
     cp lib/tasks/collectors.example.rake lib/tasks/collectors.rake
 
