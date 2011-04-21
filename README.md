@@ -96,7 +96,6 @@ TODO - Add easy mechanism for loading example data
 * UI for users to configure collectors
 * Rake task for loading sample data (currently handled via db/samples.rb)
 * More collectors (e.g., GitHub, Garmin, etc.)
-* Pagination (or appropriate mechanism for navigating historical data)
 * UI design
 * Better error notification in collectors
 * Plugin model for collectors (including extracting existing collectors into plugins)

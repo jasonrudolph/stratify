@@ -1,6 +1,6 @@
 class ActivitiesController < ApplicationController
   def index
-    @activities = Activity.desc(:created_at)
+    @activities = Activity.desc(:created_at).page params[:page]
   end
 
   def destroy

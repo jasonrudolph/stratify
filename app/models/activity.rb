@@ -9,6 +9,8 @@ class Activity
 
   validates_presence_of :created_at
 
+  paginates_per 200
+
   def permalink
     nil
   end

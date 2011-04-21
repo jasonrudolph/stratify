@@ -111,6 +111,8 @@ GEM
       thor (~> 0.14.4)
     json (1.5.1)
     json_pure (1.5.1)
+    kaminari (0.11.0)
+      kaminari
     launchy (0.4.0)
       configuration (>= 0.0.5)
       rake (>= 0.8.1)
@@ -220,6 +222,7 @@ DEPENDENCIES
   gowalla
   itunes_parser!
   jquery-rails
+  kaminari
   launchy
   mocha
   mongoid

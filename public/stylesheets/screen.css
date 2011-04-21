@@ -150,3 +150,21 @@ ul.days li article span.data-content p.details {
 #layers a {
   font-size: 80%;
 }
+
+/* Pagination styles */
+
+.pagination {
+  padding: .3em;
+  margin: 2em;
+  font-size: 90%;
+  text-align: center;
+}
+
+.pagination span.disabled {
+  color: #bbb;
+}
+
+.pagination span.separator {
+  padding: 0 .3em;
+  color: #ccc;
+}
