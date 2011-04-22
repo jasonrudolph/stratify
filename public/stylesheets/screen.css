@@ -63,8 +63,9 @@ ul.days {
 ul.days li p.date {
   font-weight: bold;
   font-size: 1.2em;
+  text-shadow: 0 1px 0 #eee;
   padding: .3em;
-  background-color: #CCC;
+  background-color: #ccc;
   border-radius: .2em;
 }
 
