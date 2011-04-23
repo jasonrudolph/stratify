@@ -120,6 +120,9 @@ Open a second terminal window and fire up Watchr:
     
 Enjoy sweet, speedy BDD/TDD bliss.
 
+## Contributors
+
+* [Jared Pace](http://github.com/jdpace)
 
 ## License
 

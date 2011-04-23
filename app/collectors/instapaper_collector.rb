@@ -7,6 +7,12 @@ class InstapaperCollector < AbstractActivityCollector
     @rss_url_suffix = rss_url_suffix
   end
 
+  def activities
+    raw_activities.map {|raw_activity| build_activity_from_raw_data(raw_activity)}
+  end
+
+  private
+
   def url
     "http://www.instapaper.com/archive/rss/" + rss_url_suffix
   end

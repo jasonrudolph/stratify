@@ -6,11 +6,17 @@ class RhapsodyCollector < AbstractActivityCollector
   def initialize(rss_member_id)
     @rss_member_id = rss_member_id
   end
+
+  def activities
+    raw_activities.map {|raw_activity| build_activity_from_raw_data(raw_activity)}
+  end
+
+  private
   
   def url
     "http://feeds.rhapsody.com/member/#{rss_member_id}/track-history.rss"
   end
-  
+       
   def raw_activities
     initialize_simple_rss_to_import_rhapsody_tags
     rss = SimpleRSS.parse open(url)
@@ -29,8 +35,6 @@ class RhapsodyCollector < AbstractActivityCollector
       :created_at => raw_activity[:pubDate]
     })
   end
-  
-  private
 
   def initialize_simple_rss_to_import_rhapsody_tags
     SimpleRSS.item_tags << :"rhap:track-rcid" << :"rhap:track" << :"rhap:artist-rcid" << :"rhap:artist"<< :"rhap:album-rcid" << :"rhap:album"

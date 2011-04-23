@@ -5,6 +5,12 @@ class TwitterCollector < AbstractActivityCollector
     @username = username
   end
 
+  def activities
+    raw_activities.map {|raw_activity| build_activity_from_raw_data(raw_activity)}
+  end
+
+  private
+  
   def raw_activities
     Twitter.user_timeline(username)
   end

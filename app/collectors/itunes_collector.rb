@@ -25,9 +25,11 @@ class ItunesCollector < AbstractActivityCollector
     @libary_path = libary_path
   end
 
-  def raw_activities
-    recently_played_tracks
+  def activities
+    recently_played_tracks.map {|track| build_activity_from_raw_data(track)}
   end
+
+  private
   
   def build_activity_from_raw_data(raw_activity)
     ItunesActivity.new({
@@ -47,8 +49,6 @@ class ItunesCollector < AbstractActivityCollector
     })
   end
 
-  private
-  
   def tracks
     ItunesParser.new(open(libary_path)).tracks
   end
