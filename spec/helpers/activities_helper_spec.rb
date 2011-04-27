@@ -1,6 +1,6 @@
 require 'spec_helper'
 
-describe ActivityHelper do
+describe ActivitiesHelper do
   describe "determining the partial that should render an activity " do
     it "uses 'tweet' for tweets" do
       helper.partial_for_activity(Tweet.new).should == "tweet"

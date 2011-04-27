@@ -1,4 +1,4 @@
-module ActivityHelper
+module ActivitiesHelper
   def css_class_for_activity(activity)
     activity.source.downcase
   end
