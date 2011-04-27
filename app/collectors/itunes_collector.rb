@@ -19,10 +19,10 @@ require 'open-uri'
 #   ItunesCollector.new("ftp://username:password@LivingRoomMacMini.local/Music/iTunes/iTunes%20Music%20Library.xml")
 # 
 class ItunesCollector < AbstractActivityCollector
-  attr_reader :libary_path
+  attr_reader :library_path
 
-  def initialize(libary_path)
-    @libary_path = libary_path
+  def initialize(library_path)
+    @library_path = library_path
   end
 
   def activities
@@ -50,7 +50,7 @@ class ItunesCollector < AbstractActivityCollector
   end
 
   def tracks
-    ItunesParser.new(open(libary_path)).tracks
+    ItunesParser.new(open(library_path)).tracks
   end
   
   def played_tracks
