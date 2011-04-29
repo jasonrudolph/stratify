@@ -13,10 +13,6 @@ class RhapsodyListening < Activity
   
   validates_presence_of :track_id, :track_title, :artist_id, :artist_name, :album_id, :album_title
 
-  def source
-    "Rhapsody"
-  end
-
   def permalink
     "http://www.rhapsody.com/goto?rcid=#{track_id}"
   end

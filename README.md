@@ -61,15 +61,11 @@ Now that you have the Rails app running, it's time to configure some collectors.
 
 ### Configure
 
-The collectors run via a Rake task (conveniently named `collectors:run`).  To set up your desired collectors, first make a copy of the [example rake task](https://github.com/jasonrudolph/stratify/blob/master/lib/tasks/collectors.example.rake).
-
-    cp lib/tasks/collectors.example.rake lib/tasks/collectors.rake
-
-Then, open `lib/tasks/collectors.rake` in your favorite editor and configure your desired collectors.
+To set up your desired collectors, pop open the UI and follow the "Configure collectors" link.  Add your desired collectors, and then you'll be ready to start pulling data into your timeline.
 
 ### Test
 
-Once you've updated `collectors.rake`, you're ready to start pulling data into your timeline.
+The collectors run via a Rake task (conveniently named `collectors:run`).  Run it like so ...
 
     `RAILS_ENV=production rake collectors:run`
 
@@ -93,7 +89,7 @@ TODO - Add easy mechanism for loading example data
 
 ## TODO
 
-* UI for users to configure collectors
+* More polished UI for users to configure collectors
 * Rake task for loading sample data (currently handled via db/samples.rb)
 * More collectors (e.g., GitHub, Garmin, etc.)
 * UI design

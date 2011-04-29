@@ -1,9 +1,9 @@
-Given /^my Instapaper RSS feed URL suffix is "([^"]*)"$/ do |url|
-  @instapaper_rss_url_suffix = url
+Given /^my Instapaper RSS URL is "([^"]*)"$/ do |url|
+  @instapaper_rss_url = url
 end
 
 Given /^an Instapaper data collector is configured with that URL$/ do
-  @instapaper_collector = InstapaperCollector.new(@instapaper_rss_url_suffix)
+  @instapaper_collector = InstapaperCollector.new(:rss_url => @instapaper_rss_url)
 end
 
 Given /^I read "([^"]*)" via Instapaper at (\d+:\d+ [a|p]m) on (\w* \d+, \d+)$/ do |title, time, date|

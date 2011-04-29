@@ -1,5 +1,5 @@
 Given /^a Gowalla data collector is configured for username "([^"]*)" with password "([^"]*)"$/ do |username, password|
-  @gowalla_collector = GowallaCollector.new(username, password)
+  @gowalla_collector = GowallaCollector.new(:username => username, :password => password)
 end
 
 Given /^I checked in on Gowalla at "([^"]*)" in "([^"]*)" at (\d+:\d+ [a|p]m) on (\w* \d+, \d+)$/ do |spot_name, spot_city_state, time, date|

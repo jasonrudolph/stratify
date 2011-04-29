@@ -1,11 +1,14 @@
 require 'open-uri'
  
-class InstapaperCollector < AbstractActivityCollector
-  attr_reader :rss_url_suffix
+class InstapaperCollector < Collector
+  source "Instapaper"
+  
+  field :rss_url
+  alias_method :configuration_summary, :rss_url
 
-  def initialize(rss_url_suffix)
-    @rss_url_suffix = rss_url_suffix
-  end
+  validates_presence_of :rss_url
+
+  validates_uniqueness_of :rss_url
 
   def activities
     raw_activities.map {|raw_activity| build_activity_from_raw_data(raw_activity)}
@@ -13,17 +16,14 @@ class InstapaperCollector < AbstractActivityCollector
 
   private
 
-  def url
-    "http://www.instapaper.com/archive/rss/" + rss_url_suffix
-  end
-
   def raw_activities
-    rss = SimpleRSS.parse open(url)
+    rss = SimpleRSS.parse open(rss_url)
     rss.items
   end
 
   def build_activity_from_raw_data(raw_activity)
     InstapaperReading.new({
+      :collector => self,
       :url => raw_activity.link, 
       :title => raw_activity.title, 
       :description => raw_activity.description, 

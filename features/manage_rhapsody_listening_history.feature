@@ -4,13 +4,13 @@ Feature: Manage Rhapsody listening history
   I want to view my Rhapsody listening history
 
   Scenario: Collect Rhapsody listenings
-    Given my Rhapsody RSS feed member ID is "ABCDEFGHIJKLMNOPQRSTUVWXYZ123456"
+    Given my Rhapsody RSS URL is "http://feeds.rhapsody.com/member/ABCDEFGHIJKLMNOPQRSTUVWXYZ123456/track-history.rss"
     And a Rhapsody data collector is configured with that member ID
     When the Rhapsody data collector runs
     Then my most recent Rhapsody listenings should exist in the archive
 
   Scenario: Avoid import of duplicate Rhapsody listenings
-    Given my Rhapsody RSS feed member ID is "ABCDEFGHIJKLMNOPQRSTUVWXYZ123456"
+    Given my Rhapsody RSS URL is "http://feeds.rhapsody.com/member/ABCDEFGHIJKLMNOPQRSTUVWXYZ123456/track-history.rss"
     And a Rhapsody data collector is configured with that member ID
     When the Rhapsody data collector runs
     And the Rhapsody data collector runs again

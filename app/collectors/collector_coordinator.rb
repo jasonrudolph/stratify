@@ -1,14 +1,6 @@
 class CollectorCoordinator
-  def initialize
-    @collectors = []
-  end
-  
-  def add(collector)
-    @collectors << collector
-  end
-  
-  def run
-    @collectors.each do |collector|
+  def self.run_all
+    Collector.all.each do |collector|
       begin
         collector.run
       rescue => e

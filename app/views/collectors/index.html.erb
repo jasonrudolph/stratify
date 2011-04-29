@@ -1,0 +1,23 @@
+<h1>Collectors</h1>
+
+<table>
+  <tr>
+    <th>Source</th>
+    <th>Configured For</th>
+  </tr>
+
+  <% @collectors.each do |collector| %>
+    <tr class="collector">
+      <td class="collector-source"><%= collector.source %></td>
+      <td class="collector-configuration"><%= collector.configuration_summary %></td>
+    </tr>
+  <% end %>
+</table>
+
+<br />
+
+<%= form_tag(new_collector_path, :method => :get) do %>
+  <%= label_tag "collector[source]", 'Sources' %>
+  <%= select_tag "collector[source]", options_for_select(Collector.sources) %>
+  <div><%= submit_tag 'Add collector' %></div>
+<% end %>

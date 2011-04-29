@@ -1,29 +1,14 @@
 require 'open-uri'
  
-# An ItunesCollector pulls in your latest iTunes activity from the given
-# "iTunes Music Library.xml" file.  On OS X, this file typically resides at:
-# 
-#   ~/Music/iTunes/iTunes Music Library.xml
-# 
-# To initialize the ItunesCollector, you simply need to tell it where to find
-# the XML file.  To pull in activity from a local iTunes library, just provide
-# the file path, and you're all set:
-# 
-#   ItunesCollector.new("/Users/jason/Music/iTunes/iTunes Music Library.xml")
-# 
-# You can also pull in activity from an iTunes XML file at a remote location;
-# just provide any valid URL.
-# 
-#   ItunesCollector.new("http://dl.dropbox.com/u/1234567/iTunes%20Music%20Library.xml")
-# 
-#   ItunesCollector.new("ftp://username:password@LivingRoomMacMini.local/Music/iTunes/iTunes%20Music%20Library.xml")
-# 
-class ItunesCollector < AbstractActivityCollector
-  attr_reader :library_path
+class ItunesCollector < Collector
+  source "iTunes"
 
-  def initialize(library_path)
-    @library_path = library_path
-  end
+  field :library_path
+  alias_method :configuration_summary, :library_path
+
+  validates_presence_of :library_path
+
+  validates_uniqueness_of :library_path
 
   def activities
     recently_played_tracks.map {|track| build_activity_from_raw_data(track)}
@@ -33,6 +18,7 @@ class ItunesCollector < AbstractActivityCollector
   
   def build_activity_from_raw_data(raw_activity)
     ItunesActivity.new({
+      :collector => self,
       :album => raw_activity["Album"],
       :artist => raw_activity["Artist"],
       :composer => raw_activity["Composer"],

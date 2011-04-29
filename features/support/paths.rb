@@ -11,6 +11,9 @@ module NavigationHelpers
     when /the archive/
       '/'
 
+    when /the collectors page/
+      '/collectors'
+
     # Add more mappings here.
     # Here is an example that pulls values out of the Regexp:
     #

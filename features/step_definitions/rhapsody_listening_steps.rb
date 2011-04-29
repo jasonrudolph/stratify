@@ -1,9 +1,9 @@
-Given /^my Rhapsody RSS feed member ID is "([^"]*)"$/ do |member_id|
-  @rhapsody_rss_member_id = member_id
+Given /^my Rhapsody RSS URL is "([^"]*)"$/ do |url|
+  @rhapsody_rss_url = url
 end
 
 Given /^a Rhapsody data collector is configured with that member ID$/ do
-  @rhapsody_collector = RhapsodyCollector.new(@rhapsody_rss_member_id)
+  @rhapsody_collector = RhapsodyCollector.new(:rss_url => @rhapsody_rss_url)
 end
 
 Given /^I listened to "([^"]*)" by "([^"]*)" on Rhapsody at (\d+:\d+ [a|p]m) on (\w* \d+, \d+)$/ do |track, artist, time, date|

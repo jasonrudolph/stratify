@@ -52,7 +52,6 @@ header {
 #mainContent {
 	display: table-cell;
   min-width: 700px;
-	width: 80%;
   padding-right: 1em;
 }
 

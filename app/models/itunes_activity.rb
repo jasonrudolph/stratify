@@ -23,8 +23,4 @@ class ItunesActivity < Activity
 
   # For TV shows, iTunes stores the show name in the Artist field
   alias_attribute :show, :artist
-
-  def source
-    "iTunes"
-  end
 end

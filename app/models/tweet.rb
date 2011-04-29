@@ -9,10 +9,6 @@ class Tweet < Activity
   
   validates_presence_of :status_id, :username, :text
   
-  def source
-    "Twitter"
-  end
-  
   def permalink
     "http://twitter.com/#{username}/status/#{status_id}"
   end

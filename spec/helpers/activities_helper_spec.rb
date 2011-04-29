@@ -21,21 +21,9 @@ describe ActivitiesHelper do
   end
 
   describe ".css_class_for_activity" do
-    it "uses 'twitter' for tweets" do
-      helper.css_class_for_activity(Tweet.new).should == "twitter"
-    end
-
-    it "uses 'gowalla' for Gowalla checkins" do
-      helper.css_class_for_activity(GowallaCheckin.new).should == "gowalla"
-    end
-    
     it "uses the downcased version of the name of the activity's source" do
-      klass = Class.new(Activity) do
-        def source
-          "Pandora"
-        end
-      end
-      helper.css_class_for_activity(klass.new).should == "pandora"
+      activity = stub(:source => "iTunes")
+      helper.css_class_for_activity(activity).should == "itunes"
     end
   end
 end

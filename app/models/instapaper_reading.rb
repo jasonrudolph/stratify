@@ -9,10 +9,6 @@ class InstapaperReading < Activity
   
   validates_presence_of :url
 
-  def source
-    "Instapaper"
-  end
-
   def domain
     URI.parse(url).host
   end

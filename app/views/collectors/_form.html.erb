@@ -1,0 +1,19 @@
+<%= form_for(@collector, :as => :collector, :url => "/collectors") do |f| %>
+  <%= f.hidden_field :source %>
+  <% if @collector.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@collector.errors.count, "error") %> prohibited this collector from being saved:</h2>
+
+      <ul>
+      <% @collector.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <%= render :partial => form_partial_for_source(@collector.source), :locals => {:f => f} %>
+  <div class="actions">
+    <%= f.submit "Save" %>
+  </div>
+<% end %>

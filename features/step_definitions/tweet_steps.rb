@@ -1,5 +1,5 @@
 Given /^a Twitter data collector is configured for username "([^"]*)"$/ do |username|
-  @twitter_collector = TwitterCollector.new(username)
+  @twitter_collector = TwitterCollector.new(:username => username)
 end
 
 Given /^I tweeted "([^"]*)" at (\d+:\d+ [a|p]m) on (\w* \d+, \d+)$/ do |text, time, date|
