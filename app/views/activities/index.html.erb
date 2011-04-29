@@ -31,32 +31,19 @@
 <%= content_for :sidebar do %>
   <aside id="sidebar">
     <div id="layers">
-  	  <h2>Layers</h2>
-  		<form action="#" method="get">
-  		  <ul>
-  		    <li>
-    		    <input type="checkbox" id="gowalla-toggle" name="gowalla" checked="checked"/>
-    		    <label for="gowalla-toggle">Gowalla<img src="images/gowalla-icon-16.png" alt="gowalla icon"></label>
-          </li>
-          <li>
-    		    <input type="checkbox" id="instapaper-toggle" name="instapaper" checked="checked"/>
-    		    <label for="instapaper-toggle">Instapaper<img src="images/instapaper-icon-16.png" alt="instapaper icon"></label>
-          </li>
-          <li>
-    		    <input type="checkbox" id="itunes-toggle" name="itunes" checked="checked"/>
-    		    <label for="itunes-toggle">iTunes<img src="images/itunes-icon-16.png" alt="itunes icon"></label>
-          </li>
-          <li>
-    		    <input type="checkbox" id="rhapsody-toggle" name="rhapsody" checked="checked"/>
-    		    <label for="rhapsody-toggle">Rhapsody<img src="images/rhapsody-icon-16.png" alt="rhapsody icon"></label>
-          </li>
-  		    <li>
-    		    <input type="checkbox" id="twitter-toggle" name="twitter" checked="checked"/>
-    		    <label for="twitter-toggle">Twitter<img src="images/twitter-icon-16.png" alt="twitter icon"></label>
-  		    </li>
-  		  </ul>
-  		</form>
-  		<%= link_to "Configure collectors", collectors_path %>
+      <h2>Layers</h2>
+      <form action="#" method="get">
+        <ul>
+          <% Collector.sources.each do |source| %>
+            <% lowercase_source_name = source.downcase %>
+            <li>
+              <input type="checkbox" id="<%= lowercase_source_name %>-toggle" name="<%= lowercase_source_name %>" checked="checked"/>
+              <label for="<%= lowercase_source_name %>-toggle"><%= source %><img src="images/<%= lowercase_source_name %>-icon-16.png" alt="<%= lowercase_source_name %> icon"></label>
+            </li>
+          <% end %>
+        </ul>
+      </form>
+      <%= link_to "Configure collectors", collectors_path %>
     </div>
   </aside>
 <% end %>
