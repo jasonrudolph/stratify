@@ -8,12 +8,14 @@
     <tr>
       <th>Source</th>
       <th>Configured For</th>
+      <th>Last Ran</th>
     </tr>
 
     <% @collectors.each do |collector| %>
       <tr class="collector">
         <td class="collector-source"><%= collector.source %></td>
         <td class="collector-configuration"><%= collector.configuration_summary %></td>
+        <td><%= collector.last_ran_at ? "#{time_ago_in_words(collector.last_ran_at)} ago" : "Never" %></td>
       </tr>
     <% end %>
   </table>

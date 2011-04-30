@@ -6,6 +6,38 @@ end
 
 describe Collector do
 
+  describe ".run" do
+    context "when the collection succeeds" do
+      it "updates the last_ran_at timestamp for the collector" do
+        stub_current_timestamp = Time.parse "2011-04-30 14:11:02"
+        Time.stubs(:now).returns stub_current_timestamp
+        
+        collector = Collector.create
+        collector.stubs(:collect_activities)
+        collector.run
+        collector.last_ran_at.should == stub_current_timestamp
+      end
+    end
+
+    context "when an exception occurs during collection" do
+      it "propagates the exception to the caller" do
+        collector = Collector.create
+        collector.stubs(:collect_activities).raises("some gnarly error") 
+        lambda { collector.run }.should raise_error
+      end
+
+      it "updates the last_ran_at timestamp for the collector" do
+        stub_current_timestamp = Time.parse "2011-04-30 14:11:02"
+        Time.stubs(:now).returns stub_current_timestamp
+
+        collector = Collector.create
+        collector.stubs(:collect_activities).raises("some gnarly error") 
+        collector.run rescue nil
+        collector.last_ran_at.should == stub_current_timestamp
+      end
+    end
+  end
+
   describe ".collector_class_for" do
     example do 
       TwitterCollector # make sure the collector class is loaded

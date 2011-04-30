@@ -1,10 +1,12 @@
 class Collector
   include Mongoid::Document
+  
+  field :last_ran_at, :type => DateTime
 
   def run
-    activities.each do |activity|
-      persist_activity(activity)
-    end
+    collect_activities
+  ensure
+    record_collection_statistics
   end
 
   # To be implemented by subclasses
@@ -46,6 +48,12 @@ class Collector
 
   protected
 
+  def collect_activities
+    activities.each do |activity|
+      persist_activity(activity)
+    end
+  end
+
   def persist_activity(activity)
     # Since we run the collectors frequently, it is very common to encounter 
     # objects that we have already imported.  If this activity is a duplicate
@@ -55,5 +63,9 @@ class Collector
     unless activity.save
       Rails.logger.error("Failed to persist activity: #{activity}.\nValidation errors: #{activity.errors}")
     end
+  end
+  
+  def record_collection_statistics
+    self.update_attribute :last_ran_at, Time.now
   end
 end

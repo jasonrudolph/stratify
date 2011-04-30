@@ -1,6 +1,6 @@
 Given /^an iTunes data collector is configured with the location of my iTunes library XML file$/ do
   path = Rails.root.join("features", "fixtures", "iTunes Music Library.xml")
-  @itunes_collector = ItunesCollector.new(:library_path => path)
+  @itunes_collector = ItunesCollector.new(:library_path => path.to_s)
 end
 
 Given /^I listened to "([^"]*)" by "([^"]*)" in iTunes at (\d+:\d+ [a|p]m) on (\w* \d+, \d+)$/ do |track, artist, time, date|
