@@ -11,6 +11,12 @@
     <h1>Stratify</h1>
   </header>
   <div id="content">
+    <ul id="flash">
+      <% [:success, :notice, :error].each do |type| %>
+        <% next unless flash[type].present? %>
+        <li class="<%= type %>"><%= flash[type] %></li>
+      <% end %>
+    </ul>
   	<div id="mainContent">
       <%= yield %>
   	</div>
