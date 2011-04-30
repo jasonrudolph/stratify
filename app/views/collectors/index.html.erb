@@ -24,5 +24,5 @@
 <%= form_tag(new_collector_path, :method => :get) do %>
   <%= label_tag "collector[source]", 'Sources' %>
   <%= select_tag "collector[source]", options_for_select(Collector.sources) %>
-  <div><%= submit_tag 'Add collector' %></div>
+  <%= submit_tag 'Add collector' %>
 <% end %>
