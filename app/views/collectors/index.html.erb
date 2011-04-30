@@ -1,18 +1,23 @@
 <h1>Collectors</h1>
 
-<table>
-  <tr>
-    <th>Source</th>
-    <th>Configured For</th>
-  </tr>
-
-  <% @collectors.each do |collector| %>
-    <tr class="collector">
-      <td class="collector-source"><%= collector.source %></td>
-      <td class="collector-configuration"><%= collector.configuration_summary %></td>
+<% if @collectors.empty? %>
+  <p>Welcome to Stratify.  You're ready to set up your collectors and start gathering data.</p>
+  <p>It's quick and simple.  So, go ahead and give it a shot.</p>
+<% else %>
+  <table>
+    <tr>
+      <th>Source</th>
+      <th>Configured For</th>
     </tr>
-  <% end %>
-</table>
+
+    <% @collectors.each do |collector| %>
+      <tr class="collector">
+        <td class="collector-source"><%= collector.source %></td>
+        <td class="collector-configuration"><%= collector.configuration_summary %></td>
+      </tr>
+    <% end %>
+  </table>
+<% end  %>
 
 <br />
 

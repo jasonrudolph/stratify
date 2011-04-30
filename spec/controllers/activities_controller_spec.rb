@@ -2,6 +2,16 @@ require 'spec_helper'
 
 describe ActivitiesController do
 
+  describe "GET index" do
+    describe "when no activies exist" do
+      it "redirects to the collectors UI for the user to configure collectors" do
+        Activity.stubs(:count).returns(0)
+        get :index
+        response.should redirect_to(collectors_path)
+      end
+    end
+  end
+
   describe "DELETE destroy" do
     it "soft-deletes the requested activity" do
       activity = mock
