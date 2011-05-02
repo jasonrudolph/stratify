@@ -2,6 +2,15 @@ require 'spec_helper'
 
 describe CollectorCoordinator do
   describe ".run_all" do
+    it "runs all collectors" do
+      collector_1 = mock(:run)
+      collector_2 = mock(:run)
+      
+      Collector.stubs(:all).returns([collector_1, collector_2])
+
+      CollectorCoordinator.run_all
+    end
+    
     context "when an exception occurs in a collector" do
       it "logs the exception" do
         collector = stub
