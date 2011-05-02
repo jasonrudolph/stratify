@@ -3,11 +3,13 @@ Feature: Manage Gowalla checkins
   As a reflective dude
   I want to view my past Gowalla checkins
 
+  @gowalla_cassette
   Scenario: Collect Gowalla checkins
     Given a Gowalla data collector is configured for username "jasonrudolph" with password "secret"
     When the Gowalla data collector runs
     Then the most recent checkins from "jasonrudolph" should exist in the archive
 
+  @gowalla_cassette
   Scenario: Avoid import of duplicate Gowalla checkins
     Given a Gowalla data collector is configured for username "jasonrudolph" with password "secret"
     When the Gowalla data collector runs

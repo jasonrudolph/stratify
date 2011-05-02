@@ -6,3 +6,7 @@ VCR.config do |c|
   c.ignore_localhost = true
   c.default_cassette_options = { :record => :none }
 end
+
+VCR.cucumber_tags do |t|
+  t.tags '@gowalla_cassette', '@instapaper_cassette', '@rhapsody_cassette', '@twitter_cassette'
+end

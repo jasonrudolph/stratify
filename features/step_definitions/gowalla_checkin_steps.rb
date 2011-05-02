@@ -12,9 +12,7 @@ Given /^I checked in on Gowalla at "([^"]*)" in "([^"]*)" at (\d+:\d+ [a|p]m) on
 end
 
 When /^the Gowalla data collector runs( again)?$/ do |args|
-  VCR.use_cassette('jasonrudolph') do
-    @gowalla_collector.run
-  end
+  @gowalla_collector.run
 end
 
 Then /^I should see a Gowalla event saying "([^"]*)" at (\d+:\d+ [a|p]m) on (\w* \d+, \d+)$/ do |checkin_summary, time, date|
@@ -28,7 +26,7 @@ Then /^I should see a Gowalla event saying "([^"]*)" at (\d+:\d+ [a|p]m) on (\w*
 end
 
 Then /^the most recent checkins from "jasonrudolph" should exist in the archive$/ do
-  # The following assertions assume use of the VCR gowalla fixture
+  # The following assertions assume use of the "gowalla_cassette" VCR fixture
 
   checkin = GowallaCheckin.where(:checkin_id => 27148218).first
   checkin.should_not be_nil

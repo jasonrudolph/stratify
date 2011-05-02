@@ -3,11 +3,13 @@ Feature: Manage tweets
   As a reflective dude
   I want to view my past tweets
 
+  @twitter_cassette
   Scenario: Collect tweets
     Given a Twitter data collector is configured for username "jasonrudolph"
     When the Twitter data collector runs
     Then the most recent tweets from "jasonrudolph" should exist in the archive
 
+  @twitter_cassette
   Scenario: Avoid import of duplicate Twitter posts
     Given a Twitter data collector is configured for username "jasonrudolph"
     When the Twitter data collector runs

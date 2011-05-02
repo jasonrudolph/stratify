@@ -11,6 +11,7 @@ Feature: Manage activities
     Then I should no longer see the activity
     But it should exist in the database in a soft-deleted fashion
 
+  @twitter_cassette
   Scenario: Soft deleted activities do not get re-imported
     Given a data collector imports an activity
     When I go to the archive

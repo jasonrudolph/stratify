@@ -12,13 +12,11 @@ Given /^I read "([^"]*)" via Instapaper at (\d+:\d+ [a|p]m) on (\w* \d+, \d+)$/ 
 end
 
 When /^the Instapaper data collector runs( again)?$/ do |args|
-  VCR.use_cassette('instapaper') do
-    @instapaper_collector.run
-  end
+  @instapaper_collector.run
 end
 
 Then /^my most recent Instapaper readings should exist in the archive$/ do
-  # The following assertions assume use of the VCR "instapaper" fixture
+  # The following assertions assume use of the "instapaper_cassette" VCR fixture
 
   InstapaperReading.where(
     :title =>  "Gowalla Begins Connecting The Dots On Travel", 

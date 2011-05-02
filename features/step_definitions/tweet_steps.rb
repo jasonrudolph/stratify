@@ -8,9 +8,7 @@ Given /^I tweeted "([^"]*)" at (\d+:\d+ [a|p]m) on (\w* \d+, \d+)$/ do |text, ti
 end
 
 When /^the Twitter data collector runs( again)?$/ do |args|
-  VCR.use_cassette('jasonrudolph') do
-    @twitter_collector.run
-  end
+  @twitter_collector.run
 end
 
 Then /^I should see a tweet saying "([^"]*)" at (\d+:\d+ [a|p]m) on (\w* \d+, \d+)$/ do |text, time, date|
@@ -24,7 +22,7 @@ Then /^I should see a tweet saying "([^"]*)" at (\d+:\d+ [a|p]m) on (\w* \d+, \d
 end
 
 Then /^the most recent tweets from "jasonrudolph" should exist in the archive$/ do
-  # The following assertions assume use of the VCR "jasonrudolph" fixture
+  # The following assertions assume use of the "twitter_cassette" VCR fixture
   
   tweet = Tweet.where(:status_id => 28832200464011265, :username => "jasonrudolph").first
   tweet.should_not be_nil

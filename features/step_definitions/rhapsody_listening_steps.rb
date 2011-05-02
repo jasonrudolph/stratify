@@ -12,13 +12,11 @@ Given /^I listened to "([^"]*)" by "([^"]*)" on Rhapsody at (\d+:\d+ [a|p]m) on 
 end
 
 When /^the Rhapsody data collector runs( again)?$/ do |args|
-  VCR.use_cassette('rhapsody') do
-    @rhapsody_collector.run
-  end
+  @rhapsody_collector.run
 end
 
 Then /^my most recent Rhapsody listenings should exist in the archive$/ do
-  # The following assertions assume use of the VCR "rhapsody" fixture
+  # The following assertions assume use of the "rhapsody_cassette" VCR fixture
 
   RhapsodyListening.where(
     :track_id => "tra.1956653", 

@@ -3,12 +3,14 @@ Feature: Manage Instapaper archive
   As a reflective dude
   I want to view my past Instapaper articles
 
+  @instapaper_cassette
   Scenario: Collect Instapaper readings
     Given my Instapaper RSS URL is "http://www.instapaper.com/archive/rss/012345/6789abcdefghijklmnopqrstuvw"
     And an Instapaper data collector is configured with that URL
     When the Instapaper data collector runs
     Then my most recent Instapaper readings should exist in the archive
 
+  @instapaper_cassette
   Scenario: Avoid import of duplicate Instapaper readings
     Given my Instapaper RSS URL is "http://www.instapaper.com/archive/rss/012345/6789abcdefghijklmnopqrstuvw"
     And an Instapaper data collector is configured with that URL

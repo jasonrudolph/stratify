@@ -3,12 +3,14 @@ Feature: Manage Rhapsody listening history
   As a reflective dude
   I want to view my Rhapsody listening history
 
+  @rhapsody_cassette
   Scenario: Collect Rhapsody listenings
     Given my Rhapsody RSS URL is "http://feeds.rhapsody.com/member/ABCDEFGHIJKLMNOPQRSTUVWXYZ123456/track-history.rss"
     And a Rhapsody data collector is configured with that member ID
     When the Rhapsody data collector runs
     Then my most recent Rhapsody listenings should exist in the archive
 
+  @rhapsody_cassette
   Scenario: Avoid import of duplicate Rhapsody listenings
     Given my Rhapsody RSS URL is "http://feeds.rhapsody.com/member/ABCDEFGHIJKLMNOPQRSTUVWXYZ123456/track-history.rss"
     And a Rhapsody data collector is configured with that member ID
