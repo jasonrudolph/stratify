@@ -1,15 +1,11 @@
-Given /^an iTunes data collector is configured with the location of my iTunes library XML file$/ do
+Given /^an iTunes collector is configured with the location of my iTunes library XML file$/ do
   path = Rails.root.join("features", "fixtures", "iTunes Music Library.xml")
-  @itunes_collector = ItunesCollector.new(:library_path => path.to_s)
+  @collector = ItunesCollector.create(:library_path => path.to_s)
 end
 
 Given /^I listened to "([^"]*)" by "([^"]*)" in iTunes at (\d+:\d+ [a|p]m) on (\w* \d+, \d+)$/ do |track, artist, time, date|
   timestamp = DateTime.parse "#{date} #{time}"
   Factory(:itunes_activity, :name => track, :artist => artist, :created_at => timestamp)
-end
-
-When /^the iTunes data collector runs( again)?$/ do |args|
-  @itunes_collector.run
 end
 
 Then /^my most recent iTunes music activity should exist in the archive$/ do

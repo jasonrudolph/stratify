@@ -1,14 +1,10 @@
-Given /^a Twitter data collector is configured for username "([^"]*)"$/ do |username|
-  @twitter_collector = TwitterCollector.new(:username => username)
+Given /^a Twitter collector is configured for username "([^"]*)"$/ do |username|
+  @collector = TwitterCollector.find_or_create_by(:username => username)
 end
 
 Given /^I tweeted "([^"]*)" at (\d+:\d+ [a|p]m) on (\w* \d+, \d+)$/ do |text, time, date|
   timestamp = DateTime.parse "#{date} #{time}"
   Factory(:tweet, :text => text, :created_at => timestamp)
-end
-
-When /^the Twitter data collector runs( again)?$/ do |args|
-  @twitter_collector.run
 end
 
 Then /^I should see a tweet saying "([^"]*)" at (\d+:\d+ [a|p]m) on (\w* \d+, \d+)$/ do |text, time, date|

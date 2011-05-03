@@ -17,6 +17,12 @@ class CollectorsController < ApplicationController
       render :action => "new"      
     end
   end
+
+  def run
+    collector = ::Collector.find(params[:id])
+    collector.run # TODO Run via delayed_job (or similar solution)
+    redirect_to collectors_path
+  end
   
   private
 

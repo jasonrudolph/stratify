@@ -4,8 +4,8 @@ Feature: Manage iTunes history
   I want to view my iTunes history
 
   Scenario: Collect iTunes activity
-    Given an iTunes data collector is configured with the location of my iTunes library XML file
-    When the iTunes data collector runs
+    Given an iTunes collector is configured with the location of my iTunes library XML file
+    When I run the iTunes collector
     Then my most recent iTunes music activity should exist in the archive
     And my most recent iTunes podcast activity should exist in the archive
     And my most recent iTunes TV show activity should exist in the archive
@@ -13,14 +13,14 @@ Feature: Manage iTunes history
     And my most recent iTunes audiobook activity should exist in the archive
 
   Scenario: Avoid import of unplayed iTunes items
-    Given an iTunes data collector is configured with the location of my iTunes library XML file
-    When the iTunes data collector runs
+    Given an iTunes collector is configured with the location of my iTunes library XML file
+    When I run the iTunes collector
     Then unplayed iTunes items should not exist in the archive
 
   Scenario: Avoid import of duplicate iTunes activities
-    Given an iTunes data collector is configured with the location of my iTunes library XML file
-    When the iTunes data collector runs
-    And the iTunes data collector runs again
+    Given an iTunes collector is configured with the location of my iTunes library XML file
+    When I run the iTunes collector
+    And I run the iTunes collector again
     Then the archive should not include duplicate iTunes activities
 
   Scenario: View music activity in iTunes history

@@ -6,16 +6,16 @@ Feature: Manage Rhapsody listening history
   @rhapsody_cassette
   Scenario: Collect Rhapsody listenings
     Given my Rhapsody RSS URL is "http://feeds.rhapsody.com/member/ABCDEFGHIJKLMNOPQRSTUVWXYZ123456/track-history.rss"
-    And a Rhapsody data collector is configured with that member ID
-    When the Rhapsody data collector runs
+    And a Rhapsody collector is configured with that URL
+    When I run the Rhapsody collector
     Then my most recent Rhapsody listenings should exist in the archive
 
   @rhapsody_cassette
   Scenario: Avoid import of duplicate Rhapsody listenings
     Given my Rhapsody RSS URL is "http://feeds.rhapsody.com/member/ABCDEFGHIJKLMNOPQRSTUVWXYZ123456/track-history.rss"
-    And a Rhapsody data collector is configured with that member ID
-    When the Rhapsody data collector runs
-    And the Rhapsody data collector runs again
+    And a Rhapsody collector is configured with that URL
+    When I run the Rhapsody collector
+    And I run the Rhapsody collector again
     Then the archive should not include duplicate Rhapsody listenings
 
   Scenario: View Rhapsody listening history

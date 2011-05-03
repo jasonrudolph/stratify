@@ -2,17 +2,13 @@ Given /^my Instapaper RSS URL is "([^"]*)"$/ do |url|
   @instapaper_rss_url = url
 end
 
-Given /^an Instapaper data collector is configured with that URL$/ do
-  @instapaper_collector = InstapaperCollector.new(:rss_url => @instapaper_rss_url)
+Given /^an Instapaper collector is configured with that URL$/ do
+  @collector = InstapaperCollector.create(:rss_url => @instapaper_rss_url)
 end
 
 Given /^I read "([^"]*)" via Instapaper at (\d+:\d+ [a|p]m) on (\w* \d+, \d+)$/ do |title, time, date|
   timestamp = DateTime.parse "#{date} #{time}"
   Factory(:instapaper_reading, :title => title, :created_at => timestamp)
-end
-
-When /^the Instapaper data collector runs( again)?$/ do |args|
-  @instapaper_collector.run
 end
 
 Then /^my most recent Instapaper readings should exist in the archive$/ do

@@ -5,15 +5,15 @@ Feature: Manage Gowalla checkins
 
   @gowalla_cassette
   Scenario: Collect Gowalla checkins
-    Given a Gowalla data collector is configured for username "jasonrudolph" with password "secret"
-    When the Gowalla data collector runs
+    Given a Gowalla collector is configured for username "jasonrudolph" with password "secret"
+    When I run the Gowalla collector
     Then the most recent checkins from "jasonrudolph" should exist in the archive
 
   @gowalla_cassette
   Scenario: Avoid import of duplicate Gowalla checkins
-    Given a Gowalla data collector is configured for username "jasonrudolph" with password "secret"
-    When the Gowalla data collector runs
-    And the Gowalla data collector runs again
+    Given a Gowalla collector is configured for username "jasonrudolph" with password "secret"
+    When I run the Gowalla collector
+    And I run the Gowalla collector again
     Then the archive should not include duplicate checkins
 
   Scenario: View Gowalla checkins

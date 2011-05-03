@@ -1,5 +1,5 @@
-Given /^a Gowalla data collector is configured for username "([^"]*)" with password "([^"]*)"$/ do |username, password|
-  @gowalla_collector = GowallaCollector.new(:username => username, :password => password)
+Given /^a Gowalla collector is configured for username "([^"]*)" with password "([^"]*)"$/ do |username, password|
+  @collector = GowallaCollector.create(:username => username, :password => password)
 end
 
 Given /^I checked in on Gowalla at "([^"]*)" in "([^"]*)" at (\d+:\d+ [a|p]m) on (\w* \d+, \d+)$/ do |spot_name, spot_city_state, time, date|
@@ -9,10 +9,6 @@ Given /^I checked in on Gowalla at "([^"]*)" in "([^"]*)" at (\d+:\d+ [a|p]m) on
     :spot_city_state => spot_city_state,
     :created_at => timestamp
   )
-end
-
-When /^the Gowalla data collector runs( again)?$/ do |args|
-  @gowalla_collector.run
 end
 
 Then /^I should see a Gowalla event saying "([^"]*)" at (\d+:\d+ [a|p]m) on (\w* \d+, \d+)$/ do |checkin_summary, time, date|

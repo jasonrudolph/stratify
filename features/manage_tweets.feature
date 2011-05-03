@@ -5,15 +5,15 @@ Feature: Manage tweets
 
   @twitter_cassette
   Scenario: Collect tweets
-    Given a Twitter data collector is configured for username "jasonrudolph"
-    When the Twitter data collector runs
+    Given a Twitter collector is configured for username "jasonrudolph"
+    When I run the Twitter collector
     Then the most recent tweets from "jasonrudolph" should exist in the archive
 
   @twitter_cassette
   Scenario: Avoid import of duplicate Twitter posts
-    Given a Twitter data collector is configured for username "jasonrudolph"
-    When the Twitter data collector runs
-    And the Twitter data collector runs again
+    Given a Twitter collector is configured for username "jasonrudolph"
+    When I run the Twitter collector
+    And I run the Twitter collector again
     Then the archive should not include duplicate tweets
 
   Scenario: View tweets

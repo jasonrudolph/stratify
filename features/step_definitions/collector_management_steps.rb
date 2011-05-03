@@ -1,3 +1,10 @@
+When /^I run the (.*) collector( again)?$/ do |*args|
+  visit path_to("the collectors page")
+  within("##{ActionController::RecordIdentifier.dom_id(@collector)}") do
+    click_button("Run now")
+  end
+end
+
 Then /^I should see a form for adding a new (.*) collector$/ do |source|
   page.should have_content("New #{source} Collector")
 end

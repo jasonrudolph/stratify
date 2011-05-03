@@ -2,17 +2,13 @@ Given /^my Rhapsody RSS URL is "([^"]*)"$/ do |url|
   @rhapsody_rss_url = url
 end
 
-Given /^a Rhapsody data collector is configured with that member ID$/ do
-  @rhapsody_collector = RhapsodyCollector.new(:rss_url => @rhapsody_rss_url)
+Given /^a Rhapsody collector is configured with that URL$/ do
+  @collector = RhapsodyCollector.create(:rss_url => @rhapsody_rss_url)
 end
 
 Given /^I listened to "([^"]*)" by "([^"]*)" on Rhapsody at (\d+:\d+ [a|p]m) on (\w* \d+, \d+)$/ do |track, artist, time, date|
   timestamp = DateTime.parse "#{date} #{time}"
   Factory(:rhapsody_listening, :track_title => track, :artist_name => artist, :created_at => timestamp)
-end
-
-When /^the Rhapsody data collector runs( again)?$/ do |args|
-  @rhapsody_collector.run
 end
 
 Then /^my most recent Rhapsody listenings should exist in the archive$/ do

@@ -7,8 +7,8 @@ Given /^the archive includes an activity$/ do
 end
 
 Given /^(a|the) data collector runs( again)?$/ do |*args|
-  Given 'a Twitter data collector is configured for username "jasonrudolph"'
-  When 'the Twitter data collector runs'
+  Given 'a Twitter collector is configured for username "jasonrudolph"'
+  When 'I run the Twitter collector'
 end
 
 Given /^a data collector imports an activity$/ do

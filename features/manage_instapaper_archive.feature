@@ -6,16 +6,16 @@ Feature: Manage Instapaper archive
   @instapaper_cassette
   Scenario: Collect Instapaper readings
     Given my Instapaper RSS URL is "http://www.instapaper.com/archive/rss/012345/6789abcdefghijklmnopqrstuvw"
-    And an Instapaper data collector is configured with that URL
-    When the Instapaper data collector runs
+    And an Instapaper collector is configured with that URL
+    When I run the Instapaper collector
     Then my most recent Instapaper readings should exist in the archive
 
   @instapaper_cassette
   Scenario: Avoid import of duplicate Instapaper readings
     Given my Instapaper RSS URL is "http://www.instapaper.com/archive/rss/012345/6789abcdefghijklmnopqrstuvw"
-    And an Instapaper data collector is configured with that URL
-    When the Instapaper data collector runs
-    And the Instapaper data collector runs again
+    And an Instapaper collector is configured with that URL
+    When I run the Instapaper collector
+    And I run the Instapaper collector again
     Then the archive should not include duplicate Instapaper readings
   
   Scenario: View Instapaper readings
