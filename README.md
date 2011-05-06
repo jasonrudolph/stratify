@@ -118,7 +118,7 @@ Enjoy sweet, speedy BDD/TDD bliss.
 
 ## Contributors
 
-* [Jared Pace](http://github.com/jdpace)
+Thanks to [Jared Pace](http://github.com/jdpace) and [Michael Parenteau](http://github.com/michaelparenteau) for their contributions.
 
 ## License
 

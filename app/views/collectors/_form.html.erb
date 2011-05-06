@@ -1,4 +1,4 @@
-<%= form_for(@collector, :as => :collector, :url => "/collectors") do |f| %>
+<%= form_for(@collector, :as => :collector, :url => "/collectors", :html => { :class => "content-core" }) do |f| %>
   <%= f.hidden_field :source %>
   <% if @collector.errors.any? %>
     <div id="error_explanation">

@@ -1,7 +1,7 @@
-<ul class="days">
+<div id="archive">
   <% @activities.group_by(&:created_on).each do |day, activities| %>
-    <li>
-      <p class="date"><%= l day, :format => :pretty %></p>
+    <section class="day">
+      <header class="date"><%= l day, :format => :pretty %></header>
       <% activities.each do |activity| %>
         <article class="<%= css_class_for_activity(activity) %>" id="<%= dom_id(activity) %>">
           <span class="data-source">
@@ -12,34 +12,32 @@
           </span>
           <span class="data-time">
             <%= l activity.created_at, :format => :time_only %>
-          
+      
             <%# TODO Move this functionality to the activity detail page (once such a page exists). Deleting an activity is too rare of an event to warrant cluttering up the index view with all these delete icons. %>
-            <%= link_to image_tag("trash-icon-16.gif"), activity_path(activity), :confirm => 'Are you sure?', :method => :delete, :title => "Delete" %>
+            <%= link_to image_tag("icons/trash-icon-16.gif"), activity_path(activity), :confirm => 'Are you sure?', :method => :delete, :title => "Delete" %>
           </span>
         </article>
       <% end %>
-    </li>
+    </section>
   <% end %>
-</ul>
 
-<%= paginate @activities %>
+  <%= paginate @activities %>
+</div>
 
-<%= content_for :sidebar do %>
-  <aside id="sidebar">
-    <div id="layers">
-      <h2>Layers</h2>
-      <form action="#" method="get">
-        <ul>
-          <% Collector.sources.each do |source| %>
-            <% lowercase_source_name = source.downcase %>
-            <li>
-              <input type="checkbox" id="<%= lowercase_source_name %>-toggle" name="<%= lowercase_source_name %>" checked="checked"/>
-              <label for="<%= lowercase_source_name %>-toggle"><%= source %><img src="images/<%= lowercase_source_name %>-icon-16.png" alt="<%= lowercase_source_name %> icon"></label>
-            </li>
-          <% end %>
-        </ul>
-      </form>
-      <%= link_to "Configure collectors", collectors_path %>
-    </div>
-  </aside>
-<% end %>
+<aside id="sidebar">
+  <div id="layers">
+    <h2>Layers</h2>
+    <form action="#" method="get">
+      <ul>
+        <% Collector.sources.each do |source| %>
+          <% lowercase_source_name = source.downcase %>
+          <li>
+            <input type="checkbox" id="<%= lowercase_source_name %>-toggle" name="<%= lowercase_source_name %>" checked="checked"/>
+            <label for="<%= lowercase_source_name %>-toggle"><%= source %><img src="images/icons/<%= lowercase_source_name %>-icon-16.png" alt="<%= lowercase_source_name %> icon"></label>
+          </li>
+        <% end %>
+      </ul>
+    </form>
+    <%= link_to "Configure collectors", collectors_path %>
+  </div>
+</aside>

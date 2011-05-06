@@ -28,8 +28,8 @@ Then /^my most recent Instapaper readings should exist in the archive$/ do
 end
 
 Then /^I should see an Instapaper reading for "([^"]*)" at (\d+:\d+ [a|p]m) on (\w* \d+, \d+)$/ do |title, time, date|
-  within(:css, ".days li") do
-    page.should have_css('p.date', :text => date)
+  within(:css, ".day") do
+    page.should have_css('header.date', :text => date)
     within(:css, "article.instapaper") do
       page.should have_css('.data-time', :text => time)
       page.should have_css('.data-content', :text => title)

@@ -7,20 +7,19 @@
   <%= csrf_meta_tag %>
 </head>
 <body>
-  <header>
-    <h1>Stratify</h1>
+  <header id="header">
+    <div class="centered-app">
+      <h1><%= link_to "Stratify", root_path %></h1>
+    </div>
   </header>
-  <div id="content">
+  <div id="content" class="centered-app">
     <ul id="flash">
       <% [:success, :notice, :error].each do |type| %>
         <% next unless flash[type].present? %>
         <li class="<%= type %>"><%= flash[type] %></li>
       <% end %>
     </ul>
-  	<div id="mainContent">
-      <%= yield %>
-  	</div>
-  	<%= yield :sidebar %>
+    <%= yield %>
   </div>
 </body>
 </html>

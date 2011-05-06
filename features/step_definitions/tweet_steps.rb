@@ -8,8 +8,8 @@ Given /^I tweeted "([^"]*)" at (\d+:\d+ [a|p]m) on (\w* \d+, \d+)$/ do |text, ti
 end
 
 Then /^I should see a tweet saying "([^"]*)" at (\d+:\d+ [a|p]m) on (\w* \d+, \d+)$/ do |text, time, date|
-  within(:css, ".days li") do
-    page.should have_css('p.date', :text => date)
+  within(:css, ".day") do
+    page.should have_css('header.date', :text => date)
     within(:css, "article.twitter") do
       page.should have_css('.data-time', :text => time)
       page.should have_css('.data-content', :text => text)

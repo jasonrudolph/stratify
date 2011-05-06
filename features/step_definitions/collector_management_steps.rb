@@ -1,3 +1,8 @@
+When /^I select "([^"]*)" and press "Add collector"$/ do |source|
+  select(source, :from => "collector[source]")
+  click_button("Add collector")
+end
+
 When /^I run the (.*) collector( again)?$/ do |*args|
   visit path_to("the collectors page")
   within("##{ActionController::RecordIdentifier.dom_id(@collector)}") do

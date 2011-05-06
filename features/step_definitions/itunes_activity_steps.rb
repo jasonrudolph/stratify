@@ -86,8 +86,8 @@ Then /^unplayed iTunes items should not exist in the archive$/ do
 end
 
 Then /^I should see an iTunes activity for "([^"]*)" by "([^"]*)" at (\d+:\d+ [a|p]m) on (\w* \d+, \d+)$/ do |track, artist, time, date|
-  within(:css, ".days li") do
-    page.should have_css('p.date', :text => date)
+  within(:css, ".day") do
+    page.should have_css('header.date', :text => date)
     within(:css, "article.itunes") do
       page.should have_css('.data-time', :text => time)
       page.should have_css('.data-content', :text => track)

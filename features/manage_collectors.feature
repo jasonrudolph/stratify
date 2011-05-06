@@ -5,8 +5,7 @@ Feature: Manage collectors
 
   Scenario: Add Gowalla collector
     Given I am on the collectors page
-    When I select "Gowalla" from "Sources"
-    And I press "Add collector"
+    When I select "Gowalla" and press "Add collector"
     Then I should see a form for adding a new Gowalla collector
     When I fill in "Username" with "johndoe"
     And I fill in "Password" with "password"
@@ -16,8 +15,7 @@ Feature: Manage collectors
 
   Scenario: Add Instapaper collector
     Given I am on the collectors page
-    When I select "Instapaper" from "Sources"
-    And I press "Add collector"
+    When I select "Instapaper" and press "Add collector"
     Then I should see a form for adding a new Instapaper collector
     When I fill in "RSS URL" with "http://www.instapaper.com/archive/rss/987654/0123456789abcdefghijklmnopq"
     And I press "Save"
@@ -26,8 +24,7 @@ Feature: Manage collectors
 
   Scenario: Add iTunes collector
     Given I am on the collectors page
-    When I select "iTunes" from "Sources"
-    And I press "Add collector"
+    When I select "iTunes" and press "Add collector"
     Then I should see a form for adding a new iTunes collector
     When I fill in "Location of 'iTunes Music Library.xml' file" with "/Users/jason/Music/iTunes/iTunes Music Library.xml"
     And I press "Save"
@@ -36,8 +33,7 @@ Feature: Manage collectors
 
   Scenario: Add Rhapsody collector
     Given I am on the collectors page
-    When I select "Rhapsody" from "Sources"
-    And I press "Add collector"
+    When I select "Rhapsody" and press "Add collector"
     Then I should see a form for adding a new Rhapsody collector
     When I fill in "RSS URL" with "http://feeds.rhapsody.com/member/ABCDEF0123456789ABCDEF0000000000/track-history.rss"
     And I press "Save"
@@ -46,8 +42,7 @@ Feature: Manage collectors
     
   Scenario: Add Twitter collector
     Given I am on the collectors page
-    When I select "Twitter" from "Sources"
-    And I press "Add collector"
+    When I select "Twitter" and press "Add collector"
     Then I should see a form for adding a new Twitter collector
     When I fill in "Username" with "johndoe"
     And I press "Save"

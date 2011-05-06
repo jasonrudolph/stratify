@@ -12,8 +12,8 @@ Given /^I checked in on Gowalla at "([^"]*)" in "([^"]*)" at (\d+:\d+ [a|p]m) on
 end
 
 Then /^I should see a Gowalla event saying "([^"]*)" at (\d+:\d+ [a|p]m) on (\w* \d+, \d+)$/ do |checkin_summary, time, date|
-  within(:css, ".days li") do
-    page.should have_css('p.date', :text => date)
+  within(:css, ".day") do
+    page.should have_css('header.date', :text => date)
     within(:css, "article.gowalla") do
       page.should have_css('.data-time', :text => time)
       page.should have_css('.data-content', :text => checkin_summary)
