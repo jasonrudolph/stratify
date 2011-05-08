@@ -2,7 +2,7 @@ class CollectorsController < ApplicationController
   before_filter :find_collector_class_for_source, :only => [:new, :create]
   
   def index
-    @collectors = ::Collector.all
+    @collectors = ::Collector.asc(:source)
   end
 
   def new
