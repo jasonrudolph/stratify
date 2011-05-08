@@ -14,6 +14,9 @@ class ActivitiesController < ApplicationController
   private
   
   def prompt_user_to_setup_collectors_if_no_activities_exist
-    redirect_to collectors_path if Activity.count == 0
+    if Activity.count == 0
+      flash_message = "You don't have any activities yet. Try running a collector." if ::Collector.count > 0
+      redirect_to(collectors_path, :notice => flash_message)
+    end
   end
 end
