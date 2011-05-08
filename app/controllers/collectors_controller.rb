@@ -32,6 +32,12 @@ class CollectorsController < ApplicationController
     end
   end
 
+  def destroy
+    @collector = ::Collector.find(params[:id])
+    @collector.delete
+    redirect_to collectors_path
+  end
+
   def run
     collector = ::Collector.find(params[:id])
     collector.run # TODO Run via delayed_job (or similar solution)

@@ -77,4 +77,20 @@ describe CollectorsController do
       end
     end
   end
+  
+  describe "DELETE destroy" do
+    it "deletes the requested collector" do
+      collector = mock
+      collector.expects(:delete)
+
+      Collector.stubs(:find).with("42").returns(collector)
+      delete :destroy, :id => "42"
+    end
+
+    it "redirects to the collector list" do
+      Collector.stubs(:find).returns(stub_everything)
+      delete :destroy, :id => "42"
+      response.should redirect_to(collectors_path)
+    end
+  end
 end
