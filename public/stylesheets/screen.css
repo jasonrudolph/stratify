@@ -57,7 +57,7 @@ code {
   line-height: 1.5em;
 }
 
-input[type=text] {
+input[type=text], input[type=password] {
   font-size: 1.2em;
   padding: 3px;
   width: 70%;
