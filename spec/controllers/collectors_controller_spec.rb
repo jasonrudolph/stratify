@@ -37,4 +37,44 @@ describe CollectorsController do
       end
     end
   end  
+  
+  describe "GET edit" do
+    it "assigns the requested collector as @collector" do
+      Collector.stubs(:find).with("42").returns(stub_collector = stub)
+      get :edit, :id => "42"
+      assigns(:collector).should be(stub_collector)
+    end
+  end
+  
+  describe "PUT update" do
+    describe "with valid params" do
+      it "updates the requested collector" do
+        Collector.stubs(:find).with("42").returns(mock_collector = mock)
+        mock_collector.expects(:update_attributes).with({'these' => 'params'})
+        put :update, :id => "42", :collector => {'these' => 'params'}
+      end
+
+      it "redirects to the collector list" do
+        Collector.stubs(:find).returns(stub(:update_attributes => true))
+        put :update, :id => "42"
+        response.should redirect_to(collectors_path)
+      end
+    end
+
+    describe "with invalid params" do
+      it "assigns the collector as @collector" do
+        mock_collector = mock(:update_attributes => false)
+        Collector.stubs(:find).returns(mock_collector)
+        put :update, :id => "42"
+        assigns(:collector).should be(mock_collector)
+      end
+
+      it "re-renders the 'edit' template" do
+        mock_collector = mock(:update_attributes => false)
+        Collector.stubs(:find).returns(mock_collector)
+        put :update, :id => "42"
+        response.should render_template("edit")
+      end
+    end
+  end
 end

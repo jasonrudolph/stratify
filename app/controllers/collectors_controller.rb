@@ -8,6 +8,10 @@ class CollectorsController < ApplicationController
   def new
     @collector = @collector_class.new
   end
+
+  def edit
+    @collector = ::Collector.find(params[:id])
+  end
   
   def create
     @collector = @collector_class.new(params[:collector])
@@ -15,6 +19,16 @@ class CollectorsController < ApplicationController
       redirect_to collectors_path, :notice => 'Collector was successfully created.'
     else
       render :action => "new"      
+    end
+  end
+
+  def update
+    @collector = ::Collector.find(params[:id])
+
+    if @collector.update_attributes(params[:collector])
+      redirect_to collectors_path, :notice => 'Collector was successfully updated.'
+    else
+      render :action => "edit"
     end
   end
 

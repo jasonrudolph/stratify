@@ -18,7 +18,7 @@
       <% @collectors.each do |collector| %>
         <tr class="collector" id="<%= dom_id(collector) %>">
           <td class="collector-source"><%= collector.source %></td>
-          <td class="collector-configuration"><%= collector.configuration_summary %></td>
+          <td class="collector-configuration"><%= link_to collector.configuration_summary, edit_collector_path(collector) %></td>
           <td><%= collector.last_ran_at ? "#{time_ago_in_words(collector.last_ran_at)} ago" : "Never" %></td>
           <td class="actions"><%= button_to "Run now", run_collector_path(collector) %></td>
         </tr>

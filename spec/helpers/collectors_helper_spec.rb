@@ -1,6 +1,23 @@
 require 'spec_helper'
 
 describe CollectorsHelper do
+  describe "form_url_for" do
+    describe "with a new collector" do
+      it "returns /collectors" do
+        helper.form_url_for(Collector.new).should == collectors_path
+      end
+    end
+
+    describe "with an existing collector" do
+      it "returns a URL with the pattern /collectors/:id" do
+        collector = Collector.new
+        collector.stubs(:persisted? => true)
+        collector.stubs(:id => 42)
+        helper.form_url_for(collector).should == "/collectors/42"
+      end
+    end
+  end
+
   describe "determining the form partial to use for a given collector source" do
     example { helper.form_partial_for_source("Twitter").should == "twitter_form" }
 
