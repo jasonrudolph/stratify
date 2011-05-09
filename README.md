@@ -24,10 +24,10 @@ new activities and automatically adds them to your history.
 
 Stratify is a Rails app, but most of the core logic (i.e., all of the data
 collection logic) is just Ruby. Stratify uses Rails to provide the (currently
-very vanilla) UI for displaying the activity timeline. I hope to eventually
+very simple) UI for displaying the activity timeline. I hope to eventually
 provide a more rich user interface experience.
 
-[![Stratify Screenshot](https://img.skitch.com/20110417-fkjd9gse8ubsjbnc51ganks1y3.medium.jpg)](https://skitch.com/jasonrudolph/r4155/stratify "Stratify Screenshot")
+[![Stratify Screenshot](https://img.skitch.com/20110509-tjkykqb8w25gf1bngm4mee17k5.medium.jpg)](https://skitch.com/jasonrudolph/r6efc/stratify "Stratify Screenshot")
 
 
 ## Open source, but not an "open source project"
@@ -61,19 +61,15 @@ Now that you have the Rails app running, it's time to configure some collectors.
 
 ### Configure
 
-To set up your desired collectors, pop open the UI and follow the "Configure collectors" link.  Add your desired collectors, and then you'll be ready to start pulling data into your timeline.
-
-### Test
-
-The collectors run via a Rake task (conveniently named `collectors:run`).  Run it like so ...
-
-    `RAILS_ENV=production rake collectors:run`
-
-After the rake task completes, head back to the UI, and you should see your latest activities in your timeline.
+To set up your desired collectors, pop open the UI and follow the yellow brick road.  Add your desired collectors, run them, and then you'll start seeing data show up in your timeline.
 
 ### Automate
 
-Now you're ready to set up your collectors to run automatically.  Stratify runs the collectors via cron using the [whenever](http://github.com/javan/whenever) gem.  By default, the cron job will execute the `collectors:run` task every two hours.  You can change these settings in `config/schedule.rb`.
+Running the collectors via the UI is useful for making sure that you've got them configured correctly.  But once you've verified that they're working, you'll want to set up your collectors to automatically run on a regular basis.
+
+Stratify provides a Rake task for running all your collectors at once.  It's conveniently named `collectors:run`.  
+
+To provide the automation we're looking for, Stratify runs the collectors via cron using the [whenever](http://github.com/javan/whenever) gem.  By default, the cron job will execute the `collectors:run` task every two hours.  You can change these settings in `config/schedule.rb`.
 
 To install the cron job ...
 
@@ -89,7 +85,6 @@ TODO - Add easy mechanism for loading example data
 
 ## TODO
 
-* More polished UI for users to configure collectors
 * Rake task for loading sample data (currently handled via db/samples.rb)
 * More collectors (e.g., GitHub, Garmin, etc.)
 * UI design
