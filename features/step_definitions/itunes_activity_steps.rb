@@ -44,16 +44,16 @@ Then /^my most recent iTunes TV show activity should exist in the archive$/ do
   # The following assertion assumes use of the "iTunes Music Library.xml" fixture
 
   ItunesActivity.where(
-    :persistent_id => "7CF760E31F789363",
-    :name => "Sneak Peek", 
-    :album => "Comedy Central Presents, Season 15",
-    :artist => "Comedy Central Stand-Up",
-    :genre => "Comedy",
-    :season_number => 15,
-    :track_number => 101,
-    :year => 2010,
+    :persistent_id => "401802E7B506C475",
+    :name => "A No-Rough-Stuff Type Deal", 
+    :album => "Breaking Bad, Season 1",
+    :artist => "Breaking Bad",
+    :genre => "Drama",
+    :season_number => 1,
+    :episode_number => 7,
+    :year => 2008,
     :tv_show => true,
-    :created_at => Time.parse("2011-02-27T23:24:26Z")
+    :created_at => Time.parse("2010-05-31T18:52:27Z")
   ).should exist
 end
 

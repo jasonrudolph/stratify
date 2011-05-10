@@ -26,8 +26,9 @@ class ItunesActivityPresenter
   end
 
   def episode_number
-    return unless @activity.episode_number
-    "Episode #{@activity.episode_number}"
+    number = @activity.episode_number || @activity.track_number
+    return unless number
+    "Episode #{number}"
   end
   
   def method_missing(*args)

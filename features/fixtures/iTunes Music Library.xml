@@ -1165,45 +1165,46 @@
 			<key>File Folder Count</key><integer>4</integer>
 			<key>Library Folder Count</key><integer>1</integer>
 		</dict>
-		<key>176</key>
+		<key>163</key>
 		<dict>
-			<key>Track ID</key><integer>176</integer>
-			<key>Name</key><string>Sneak Peek</string>
-			<key>Artist</key><string>Comedy Central Stand-Up</string>
-			<key>Album Artist</key><string>Comedy Central Stand-Up</string>
-			<key>Album</key><string>Comedy Central Presents, Season 15</string>
-			<key>Genre</key><string>Comedy</string>
+			<key>Track ID</key><integer>163</integer>
+			<key>Name</key><string>A No-Rough-Stuff Type Deal</string>
+			<key>Artist</key><string>Breaking Bad</string>
+			<key>Album Artist</key><string>Breaking Bad</string>
+			<key>Album</key><string>Breaking Bad, Season 1</string>
+			<key>Genre</key><string>Drama</string>
 			<key>Kind</key><string>Protected MPEG-4 video file</string>
-			<key>Size</key><integer>687417352</integer>
-			<key>Total Time</key><integer>1271271</integer>
+			<key>Size</key><integer>731698470</integer>
+			<key>Total Time</key><integer>2855522</integer>
 			<key>Disc Number</key><integer>1</integer>
 			<key>Disc Count</key><integer>1</integer>
-			<key>Track Number</key><integer>101</integer>
-			<key>Year</key><integer>2010</integer>
-			<key>Date Modified</key><date>2011-02-27T23:47:09Z</date>
-			<key>Date Added</key><date>2011-02-27T21:48:55Z</date>
-			<key>Bit Rate</key><integer>156</integer>
+			<key>Track Number</key><integer>7</integer>
+			<key>Year</key><integer>2008</integer>
+			<key>Date Modified</key><date>2010-05-31T18:19:16Z</date>
+			<key>Date Added</key><date>2010-05-31T18:04:26Z</date>
+			<key>Bit Rate</key><integer>125</integer>
 			<key>Play Count</key><integer>1</integer>
-			<key>Play Date</key><integer>3381679466</integer>
-			<key>Play Date UTC</key><date>2011-02-27T23:24:26Z</date>
-			<key>Release Date</key><date>2010-12-20T08:00:00Z</date>
+			<key>Play Date</key><integer>3358162347</integer>
+			<key>Play Date UTC</key><date>2010-05-31T18:52:27Z</date>
+			<key>Release Date</key><date>2008-03-09T08:00:00Z</date>
 			<key>Artwork Count</key><integer>1</integer>
-			<key>Series</key><string>Comedy Central Stand-Up</string>
-			<key>Season</key><integer>15</integer>
-			<key>Episode</key><string>1500</string>
-			<key>Episode Order</key><integer>101</integer>
-			<key>Sort Album</key><string>Comedy Central Presents, Season 15</string>
-			<key>Persistent ID</key><string>7CF760E31F789363</string>
+			<key>Series</key><string>Breaking Bad</string>
+			<key>Season</key><integer>1</integer>
+			<key>Episode</key><string>0106</string>
+			<key>Episode Order</key><integer>7</integer>
+			<key>Sort Album</key><string>Breaking Bad, Season 1</string>
+			<key>Sort Name</key><string>No-Rough-Stuff Type Deal</string>
+			<key>Persistent ID</key><string>401802E7B506C475</string>
 			<key>Content Rating</key><string>us-tv|TV-14|500|</string>
 			<key>Track Type</key><string>File</string>
 			<key>Protected</key><true/>
 			<key>Purchased</key><true/>
 			<key>Has Video</key><true/>
-			<key>HD</key><true/>
-			<key>Video Width</key><integer>960</integer>
-			<key>Video Height</key><integer>720</integer>
+			<key>HD</key><false/>
+			<key>Video Width</key><integer>640</integer>
+			<key>Video Height</key><integer>480</integer>
 			<key>TV Show</key><true/>
-			<key>Location</key><string>file://localhost/Users/z/Music/iTunes/iTunes%20Media/TV%20Shows/Comedy%20Central%20Stand-Up/Season%2015/101%20Sneak%20Peek%20(HD).m4v</string>
+			<key>Location</key><string>file://localhost/Users/z/Music/iTunes/iTunes%20Media/TV%20Shows/Breaking%20Bad/Season%201/07%20A%20No-Rough-Stuff%20Type%20Deal.m4v</string>
 			<key>File Folder Count</key><integer>5</integer>
 			<key>Library Folder Count</key><integer>1</integer>
 		</dict>

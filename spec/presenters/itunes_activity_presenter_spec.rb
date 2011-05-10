@@ -45,13 +45,32 @@ describe ItunesActivityPresenter do
   end
   
   context "TV show" do
-    before do
-      @activity = ItunesActivity.new(:tv_show => true, :name => "Crazy Handful of Nothin", :artist => "Breaking Bad",
-                                     :season_number => 1, :track_number => 6, :year => 2008)
-      @presenter = ItunesActivityPresenter.new(@activity)
+    describe "episode_number" do
+      it "provides the episode number if it is present" do
+        activity = ItunesActivity.new(:tv_show => true, :episode_number => 4)
+        presenter = ItunesActivityPresenter.new(activity)
+        presenter.episode_number.should == "Episode 4"
+      end
+
+      it "provides the track number if it is present and the episode number is nil" do
+        activity = ItunesActivity.new(:tv_show => true, :episode_number => nil, :track_number => 4)
+        presenter = ItunesActivityPresenter.new(activity)
+        presenter.episode_number.should == "Episode 4"
+      end
+
+      it "returns nil if both the episode number and the track number are nil" do
+        activity = ItunesActivity.new(:tv_show => true, :episode_number => nil, :track_number => nil)
+        presenter = ItunesActivityPresenter.new(activity)
+        presenter.episode_number.should == nil
+      end
     end
     
     describe "summary" do
+      before do
+        @activity = ItunesActivity.new(:tv_show => true, :name => "Crazy Handful of Nothin", :artist => "Breaking Bad")
+        @presenter = ItunesActivityPresenter.new(@activity)
+      end
+
       it "provides the episode name and the show name" do
         @presenter.summary.should == "Crazy Handful of Nothin \u2022 Breaking Bad"
       end
@@ -68,6 +87,11 @@ describe ItunesActivityPresenter do
     end
     
     describe "details" do
+      before do
+        @activity = ItunesActivity.new(:tv_show => true, :season_number => 1, :episode_number => 6, :year => 2008)
+        @presenter = ItunesActivityPresenter.new(@activity)
+      end
+
       it "provides the season number, episode number, and year" do
         @presenter.details.should == "Season 1 \u2022 Episode 6 \u2022 2008"
       end
@@ -77,8 +101,8 @@ describe ItunesActivityPresenter do
         @presenter.details.should == "Episode 6 \u2022 2008"
       end
 
-      it "omits the episode number if it is blank" do
-        @activity.track_number = nil
+      it "omits the episode number if it is nil" do
+        @activity.episode_number = nil
         @presenter.details.should == "Season 1 \u2022 2008"
       end
       

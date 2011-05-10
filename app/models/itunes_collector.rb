@@ -23,6 +23,7 @@ class ItunesCollector < Collector
       :artist => raw_activity["Artist"],
       :composer => raw_activity["Composer"],
       :created_at => raw_activity["Play Date UTC"],
+      :episode_number => raw_activity["Episode Order"],
       :genre => raw_activity["Genre"],
       :movie => raw_activity["Movie"],
       :name => raw_activity["Name"],
