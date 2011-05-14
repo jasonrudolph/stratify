@@ -4,9 +4,7 @@ class Collector
   field :last_ran_at, :type => DateTime
 
   def run
-    collect_activities
-  ensure
-    record_collection_statistics
+    Archiver.new(self).run
   end
 
   # To be implemented by subclasses
@@ -44,29 +42,5 @@ class Collector
   
   def self.collector_class_for(source)
     Collector.collector_classes.find {|clazz| clazz.source == source}
-  end
-
-  protected
-
-  def collect_activities
-    activities.each do |activity|
-      persist_activity(activity)
-    end
-  end
-
-  def persist_activity(activity)
-    # Since we run the collectors frequently, it is very common to encounter 
-    # objects that we have already imported.  If this activity is a duplicate
-    # of an existing object, then we skip importing this activity.
-    return if activity.duplicate? 
-
-    activity.collector_name = self.class
-    unless activity.save
-      Rails.logger.error("Failed to persist activity: #{activity}.\nValidation errors: #{activity.errors}")
-    end
-  end
-  
-  def record_collection_statistics
-    self.update_attribute :last_ran_at, Time.now
   end
 end
