@@ -1,5 +1,3 @@
-require 'open-uri'
- 
 class InstapaperCollector < Collector
   source "Instapaper"
   
@@ -11,23 +9,10 @@ class InstapaperCollector < Collector
   validates_uniqueness_of :rss_url
 
   def activities
-    raw_activities.map {|raw_activity| build_activity_from_raw_data(raw_activity)}
+    query.activities
   end
 
-  private
-
-  def raw_activities
-    rss = SimpleRSS.parse open(rss_url)
-    rss.items
+  def query
+    InstapaperQuery.new(rss_url)
   end
-
-  def build_activity_from_raw_data(raw_activity)
-    InstapaperReading.new({
-      :collector => self,
-      :url => raw_activity.link, 
-      :title => raw_activity.title, 
-      :description => raw_activity.description, 
-      :created_at => raw_activity.pubDate
-    })
-  end
-end  
+end

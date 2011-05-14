@@ -9,22 +9,10 @@ class TwitterCollector < Collector
   validates_uniqueness_of :username
 
   def activities
-    raw_activities.map {|raw_activity| build_activity_from_raw_data(raw_activity)}
+    query.activities
   end
 
-  private
-  
-  def raw_activities
-    Twitter.user_timeline(username)
+  def query
+    TwitterQuery.new(username)
   end
-  
-  def build_activity_from_raw_data(raw_activity)
-    Tweet.new({
-      :collector => self,
-      :status_id => raw_activity.id,
-      :username => raw_activity.user.screen_name,
-      :text => raw_activity.text,
-      :created_at => raw_activity.created_at
-    })
-  end
-end  
+end

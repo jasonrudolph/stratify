@@ -59,7 +59,8 @@ class Collector
     # objects that we have already imported.  If this activity is a duplicate
     # of an existing object, then we skip importing this activity.
     return if activity.duplicate? 
-    
+
+    activity.collector_name = self.class
     unless activity.save
       Rails.logger.error("Failed to persist activity: #{activity}.\nValidation errors: #{activity.errors}")
     end

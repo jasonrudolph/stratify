@@ -21,12 +21,12 @@ SampleCheckinHash = {
   "_comments_count" => 0
 }
 
-describe GowallaCollector do
+describe GowallaQuery do
 
   describe "building a GowallaCheckin from the hash returned by the Gowalla API" do
     before do
-      collector = GowallaCollector.new
-      @checkin = collector.send :build_activity_from_raw_data, Hashie::Mash.new(SampleCheckinHash)
+      query = GowallaQuery.new('johndoe', 'password')
+      @checkin = query.send :build_activity_from_raw_data, Hashie::Mash.new(SampleCheckinHash)
     end
 
     it "sets the checkin ID" do
