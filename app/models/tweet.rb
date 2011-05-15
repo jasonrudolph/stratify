@@ -1,6 +1,4 @@
 class Tweet < Activity
-  include Mongoid::Document
-
   field :status_id, :type => Integer
   field :username
   field :text

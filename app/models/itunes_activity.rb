@@ -1,6 +1,4 @@
 class ItunesActivity < Activity
-  include Mongoid::Document
-
   field :persistent_id, :type => Integer
   field :album
   field :artist

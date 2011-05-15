@@ -1,6 +1,4 @@
 class GowallaCheckin < Activity
-  include Mongoid::Document
-
   field :checkin_id, :type => Integer
   field :spot_name
   field :spot_city_state

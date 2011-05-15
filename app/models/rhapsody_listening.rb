@@ -1,6 +1,4 @@
 class RhapsodyListening < Activity
-  include Mongoid::Document
-
   field :track_id # Rhapsody Track GUID / "RCID" (e.g., tra.39893452)
   field :track_title
   field :artist_id # Rhapsody Artist GUID / "RCID" (e.g., art.32992347)

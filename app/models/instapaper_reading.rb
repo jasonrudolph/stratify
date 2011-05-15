@@ -1,6 +1,4 @@
 class InstapaperReading < Activity
-  include Mongoid::Document
-
   field :url
   field :title
   field :description
