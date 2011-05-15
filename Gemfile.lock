@@ -130,6 +130,11 @@ GEM
       mongo (~> 1.2)
       tzinfo (~> 0.3.22)
       will_paginate (~> 3.0.pre)
+    mongoid_rails_migrations (0.0.10)
+      activesupport (~> 3.0.0)
+      bundler (>= 0.9.19)
+      rails (~> 3.0.0)
+      railties (~> 3.0.0)
     multi_json (0.0.5)
     multi_xml (0.2.2)
     multipart-post (1.1.0)
@@ -226,6 +231,7 @@ DEPENDENCIES
   launchy
   mocha
   mongoid
+  mongoid_rails_migrations
   rails
   rake (~> 0.8.7)
   rspec
