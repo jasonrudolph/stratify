@@ -21,7 +21,7 @@ class Archiver
   end
 
   def document_activity_source(activity)
-    activity.collector_name = collector.class
+    activity.source = collector.source
   end
 
   def persist_activity(activity)

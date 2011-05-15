@@ -36,8 +36,9 @@ describe Archiver do
   
   describe ".collect_activities" do
     it "documents the source of each activity" do
-      ExampleCollector = Class.new(Collector)
-      collector = ExampleCollector.new
+      example_collector_class = Class.new(Collector)
+      example_collector_class.source("some-example-source")
+      collector = example_collector_class.new
 
       activity = Activity.new
       collector.stubs(:activities).returns [activity]
@@ -45,7 +46,7 @@ describe Archiver do
       archiver = Archiver.new(collector)
       archiver.stubs(:persist_activity)
       archiver.send(:collect_activities)
-      activity.collector_name.should == "ExampleCollector"
+      activity.source.should == "some-example-source"
     end
     
     it "persists each activity" do

@@ -5,25 +5,12 @@ class Activity
   include Mongoid::Paranoia
   include Extensions::Mongoid::NaturalKey
   
-  field :collector_name, :type => String
+  field :source, :type => String
   field :created_at, :type => DateTime
 
   validates_presence_of :created_at
 
   paginates_per 200
-
-  def collector=(collector)
-    self.collector_name = collector.class.name
-  end
-
-  def collector
-    return unless collector_name
-    collector_name.constantize
-  end
-
-  def source
-    collector.source
-  end
 
   def permalink
     nil

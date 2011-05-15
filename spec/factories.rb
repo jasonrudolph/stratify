@@ -19,7 +19,7 @@ Factory.sequence :tweet_status_id do |n|
 end
 
 Factory.define :gowalla_checkin do |f|
-  f.collector_name  GowallaCollector.name
+  f.source          GowallaCollector.source
   f.checkin_id      { Factory.next :gowalla_checkin_id }
   f.spot_name       { Faker::Company.name }
   f.spot_city_state { "#{Faker::Address.city}, #{Faker::Address.state}" }
@@ -29,7 +29,7 @@ Factory.define :gowalla_checkin do |f|
 end
 
 Factory.define :instapaper_reading do |f|
-  f.collector_name InstapaperCollector.name
+  f.source         InstapaperCollector.source
   f.url            { "http://#{Faker::Internet.domain_name}/#{Faker::Internet.domain_word}" }
   f.title          { Faker::Company.catch_phrase }
   f.description    { Faker::Lorem.paragraph }
@@ -37,7 +37,7 @@ Factory.define :instapaper_reading do |f|
 end
 
 Factory.define :itunes_activity do |f|
-  f.collector_name ItunesCollector.name
+  f.source         ItunesCollector.source
   f.persistent_id  { ActiveSupport::SecureRandom.hex(8).upcase }
   f.name           { Faker::Company.catch_phrase }
   f.artist         { Faker::Name.name }
@@ -48,7 +48,7 @@ Factory.define :itunes_activity do |f|
 end
 
 Factory.define :rhapsody_listening do |f|
-  f.collector_name RhapsodyCollector.name
+  f.source         RhapsodyCollector.source
   f.track_id       { Factory.next :rhapsody_track_id }
   f.track_title    { Faker::Company.catch_phrase }
   f.artist_id      { Factory.next :rhapsody_artist_id }
@@ -60,7 +60,7 @@ Factory.define :rhapsody_listening do |f|
 end
 
 Factory.define :tweet do |f|
-  f.collector_name TwitterCollector.name
+  f.source         TwitterCollector.source
   f.status_id      { Factory.next :tweet_status_id }
   f.username       "jasonrudolph"
   f.text           { Faker::Lorem.sentence(rand(30)).truncate(140) }
