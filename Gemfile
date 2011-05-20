@@ -1,5 +1,6 @@
 source "http://rubygems.org"
 
+gem "rake", "~> 0.8.7"
 gem "bson_ext"
 gem "gowalla"
 gem "itunes_parser", :git => "git://github.com/phiggins/itunes_parser.git"
