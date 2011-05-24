@@ -22,7 +22,7 @@ group "development", "test" do
 end
 
 group "test" do
-  gem "capybara"
+  gem "capybara", "~> 1.0.0.beta1"
   gem "cucumber-rails"
   gem "database_cleaner"
   gem "fakeweb"
