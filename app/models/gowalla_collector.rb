@@ -1,13 +1,8 @@
 class GowallaCollector < Collector
   source "Gowalla"
 
-  field :username
-  field :password
-  alias_method :configuration_summary, :username
-
-  validates_presence_of :username, :password
-
-  validates_uniqueness_of :username
+  configuration_fields :username => {:type => :string},
+                       :password => {:type => :password}
 
   def activities
     query.activities

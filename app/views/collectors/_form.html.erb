@@ -12,7 +12,21 @@
     </div>
   <% end %>
 
-  <%= render :partial => form_partial_for_source(@collector.source), :locals => {:f => f} %>
+  <% if @collector.configuration_instructions %>
+    <div class="instructions"><%= @collector.configuration_instructions.html_safe %></div>
+  <% end %>
+
+  <% @collector.configuration_fields.each do |field| %>
+    <div class="field">
+      <%= f.label field.name, field.label %>
+      <% if field.type == :string %>
+        <%= f.text_field field.name %>
+      <% elsif field.type == :password %>
+        <%= f.password_field field.name %>
+      <% end %>
+    </div>
+  <% end %>
+
   <div class="actions">
     <%= f.submit "Save" %>
   </div>
