@@ -10,4 +10,8 @@ class Tweet < Activity
   def permalink
     "http://twitter.com/#{username}/status/#{status_id}"
   end
+  
+  def to_html
+    TweetPresenter.new(self).text
+  end
 end

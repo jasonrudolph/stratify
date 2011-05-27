@@ -8,7 +8,7 @@
             <%= activity.permalink ? link_to(image_tag_for_activity(activity), activity.permalink) : image_tag_for_activity(activity) %>
           </span>
           <span class="data-content">
-            <%= render :partial => partial_for_activity(activity), :locals => { :activity => activity } %>
+            <%= activity.to_html.html_safe %>
           </span>
           <span class="data-time">
             <%= l activity.created_at, :format => :time_only %>

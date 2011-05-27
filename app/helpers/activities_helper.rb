@@ -7,8 +7,4 @@ module ActivitiesHelper
     source = activity.source.downcase
     image_tag("icons/#{source}-icon-24.png", :alt => "#{source} icon")
   end
-
-  def partial_for_activity(activity)
-    activity.class.to_s.underscore
-  end
 end

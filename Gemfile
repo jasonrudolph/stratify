@@ -10,6 +10,7 @@ gem "mongoid"
 gem "mongoid_rails_migrations"
 gem "rails"
 gem "simple-rss", :git => "git://github.com/jasonrudolph/simple-rss.git"
+gem "tilt"
 gem "twitter"
 gem 'whenever', :require => false
 
