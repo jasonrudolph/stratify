@@ -1,9 +1,3 @@
-<% summary = title.blank? ? url : title %>
 <p class="summary"><a href="<%= url %>"><%= summary %></a></p>
-<p class="details">
-  <%= domain %>
-  <% unless description.blank? %>
-    &bull; <%= description %>
-  <% end %>
-</p>
+<p class="details"><%= details %></p>
 

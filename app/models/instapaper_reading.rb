@@ -7,11 +7,11 @@ class InstapaperReading < Activity
   
   validates_presence_of :url
 
-  def domain
-    URI.parse(url).host
-  end
-  
   def permalink
     url
+  end
+  
+  def presenter
+    InstapaperReadingPresenter.new(self)
   end
 end
