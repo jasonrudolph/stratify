@@ -37,8 +37,7 @@ Spork.prefork do
 end
 
 Spork.each_run do
-  # This code will be run each time you run your specs.
-
+  Dir["#{Rails.root}/lib/**/*.rb"].each { |f| load f }
 end
 
 # --- Instructions ---
