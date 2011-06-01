@@ -229,7 +229,6 @@ DEPENDENCIES
   mongoid_rails_migrations
   rails
   rake (~> 0.8.7)
-  rspec
   rspec-rails
   simple-rss!
   spork

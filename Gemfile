@@ -17,7 +17,6 @@ gem 'whenever', :require => false
 group "development", "test" do
   gem "factory_girl_rails", :require => nil
   gem "faker"
-  gem "rspec"
   gem "rspec-rails"
   gem "spork"
 end
