@@ -94,23 +94,6 @@ TODO - Add easy mechanism for loading example data
 * Statistical analysis (e.g., trends)
 
 
-## Developers, developers, developers, ...
-
-If you find yourself hacking on Stratify, get your TDD on with Spork an Watchr.  [Spork rocks](http://chrismdp.github.com/2010/11/getting-spork-working-now-on-rails-3-rspec-2-and-cucumber/).  Watchr rocks.  Behold!
-
-Open a terminal window and start a Spork instance for RSpec and Cucumber:
-
-    # The RSpec and Cucumber versions of spork use different ports, 
-    # so there’s no problem running them together. Just run one as a
-    # background process.
-    bundle exec spork cucumber & bundle exec spork
-
-Open a second terminal window and fire up Watchr:
-
-    bundle exec watchr specs.watchr
-    
-Enjoy sweet, speedy BDD/TDD bliss.
-
 ## Contributors
 
 Thanks to [Jared Pace](http://github.com/jdpace) and [Michael Parenteau](http://github.com/michaelparenteau) for their contributions.

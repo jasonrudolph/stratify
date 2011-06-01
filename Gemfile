@@ -18,7 +18,6 @@ group "development", "test" do
   gem "factory_girl_rails", :require => nil
   gem "faker"
   gem "rspec-rails"
-  gem "spork"
 end
 
 group "test" do
@@ -26,11 +25,16 @@ group "test" do
   gem "cucumber-rails"
   gem "database_cleaner"
   gem "fakeweb"
+  gem "growl" # for Guard notifications
+  gem "guard-cucumber"
+  gem "guard-rspec"
+  gem "guard-spork"
   gem "launchy"
   gem "mocha"
+  gem "rb-fsevent", :require => false if RUBY_PLATFORM =~ /darwin/i
+  gem "spork"
   gem "test-unit"
   gem "vcr"
-  gem "watchr"
 end
 
 # Deploy with Capistrano
