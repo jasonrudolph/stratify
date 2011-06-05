@@ -1,5 +1,8 @@
 source "http://rubygems.org"
 
+gem "rails", '3.1.0.rc1'
+gem "rails_autolink", "~> 1.0.1"
+
 gem "rake", "~> 0.9.1"
 gem "bson_ext"
 gem "gowalla"
@@ -8,11 +11,15 @@ gem "jquery-rails"
 gem "kaminari"
 gem "mongoid"
 gem "mongoid_rails_migrations"
-gem "rails"
 gem "simple-rss", :git => "git://github.com/jasonrudolph/simple-rss.git"
 gem "tilt"
 gem "twitter"
 gem 'whenever', :require => false
+
+# Asset template engines
+gem "sass"
+gem "coffee-script"
+gem "uglifier"
 
 group "development", "test" do
   gem "factory_girl_rails", :require => nil
@@ -33,7 +40,6 @@ group "test" do
   gem "mocha"
   gem "rb-fsevent", :require => false if RUBY_PLATFORM =~ /darwin/i
   gem "spork"
-  gem "test-unit"
   gem "vcr"
 end
 

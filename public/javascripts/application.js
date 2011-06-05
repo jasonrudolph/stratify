@@ -1,3 +1,0 @@
-$(function(){
-  Stratify.setup();
-});
