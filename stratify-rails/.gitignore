@@ -1,0 +1,6 @@
+.bundle
+.sass-cache/
+config/deploy.rb
+config/mongoid.yml
+log/*.log
+tmp/**/*
