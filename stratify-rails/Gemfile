@@ -1,17 +1,16 @@
 source "http://rubygems.org"
 
 gem "rails", '3.1.0.rc1'
-gem "rails_autolink", "~> 1.0.1"
-
 gem "rake", "~> 0.9.1"
+
 gem "stratify-base"
+gem "stratify-twitter"
 gem "gowalla"
 gem "itunes_parser", :git => "git://github.com/phiggins/itunes_parser.git"
 gem "jquery-rails"
 gem "kaminari"
 gem "mongoid_rails_migrations"
 gem "simple-rss", :git => "git://github.com/jasonrudolph/simple-rss.git"
-gem "twitter"
 gem 'whenever', :require => false
 
 # Asset template engines

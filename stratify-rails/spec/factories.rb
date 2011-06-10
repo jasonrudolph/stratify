@@ -59,8 +59,8 @@ Factory.define :rhapsody_listening do |f|
   f.created_at     { rand(1000).hours.ago }
 end
 
-Factory.define :tweet do |f|
-  f.source         TwitterCollector.source
+Factory.define :tweet, :class => Stratify::Twitter::Activity do |f|
+  f.source         Stratify::Twitter::Collector.source
   f.status_id      { Factory.next :tweet_status_id }
   f.username       "jasonrudolph"
   f.text           { Faker::Lorem.sentence(rand(30)).truncate(140) }

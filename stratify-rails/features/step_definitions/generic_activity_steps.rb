@@ -13,7 +13,7 @@ end
 
 Given /^a data collector imports an activity$/ do
   Given 'a data collector runs'
-  @activity = Tweet.desc(:created_at).first
+  @activity = Stratify::Twitter::Activity.desc(:created_at).first
 end
 
 When /^I delete the activity$/ do
