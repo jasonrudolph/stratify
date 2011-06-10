@@ -1,4 +1,4 @@
-class InstapaperReading < Activity
+class InstapaperReading < Stratify::Activity
   field :url
   field :title
   field :description
@@ -6,6 +6,11 @@ class InstapaperReading < Activity
   natural_key :url, :created_at
   
   validates_presence_of :url
+
+  template %q[
+    <p class="summary"><a href="<%= url %>"><%= summary %></a></p>
+    <p class="details"><%= details %></p>
+  ]
 
   def permalink
     url

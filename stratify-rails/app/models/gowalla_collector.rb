@@ -1,4 +1,4 @@
-class GowallaCollector < Collector
+class GowallaCollector < Stratify::Collector
   source "Gowalla"
 
   configuration_fields :username => {:type => :string},

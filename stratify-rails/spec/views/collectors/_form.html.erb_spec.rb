@@ -1,7 +1,7 @@
 require 'spec_helper'
 
 # TODO Replace with a "factory" that provides a default collector subclass for testing
-example_collector_class = Class.new(Collector) do
+example_collector_class = Class.new(Stratify::Collector) do
   configuration_fields :username => {:type => :string}
 end
 

@@ -33,7 +33,7 @@
 
 <div class="sources">
   <%= form_tag(new_collector_path, :method => :get) do %>
-    <%= select_tag "collector[source]", options_for_select(Collector.sources) %>
+    <%= select_tag "collector[source]", options_for_select(Stratify::Collector.sources) %>
     <%= submit_tag 'Add collector' %>
   <% end %>
 </div>

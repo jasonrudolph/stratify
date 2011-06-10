@@ -1,4 +1,4 @@
-class RhapsodyListening < Activity
+class RhapsodyListening < Stratify::Activity
   field :track_id # Rhapsody Track GUID / "RCID" (e.g., tra.39893452)
   field :track_title
   field :artist_id # Rhapsody Artist GUID / "RCID" (e.g., art.32992347)
@@ -11,6 +11,11 @@ class RhapsodyListening < Activity
   
   validates_presence_of :track_id, :track_title, :artist_id, :artist_name, :album_id, :album_title
 
+  template %q[
+    <p class="summary"><%= track_title %> &bull; <%= artist_name %></p>
+    <p class="details"><%= album_title %> &bull; <%= genre %></p>
+  ]
+  
   def permalink
     "http://www.rhapsody.com/goto?rcid=#{track_id}"
   end

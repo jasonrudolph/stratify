@@ -1,4 +1,4 @@
-class Tweet < Activity
+class Tweet < Stratify::Activity
   field :status_id, :type => Integer
   field :username
   field :text

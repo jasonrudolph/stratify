@@ -1,4 +1,4 @@
-class ItunesActivity < Activity
+class ItunesActivity < Stratify::Activity
   field :persistent_id, :type => Integer
   field :album
   field :artist
@@ -19,6 +19,11 @@ class ItunesActivity < Activity
 
   # For TV shows, iTunes stores the show name in the Artist field
   alias_attribute :show, :artist
+
+  template %q[
+    <p class="summary"><%= summary %></p>
+    <p class="details"><%= details %></p>
+  ]
   
   def presenter
     ItunesActivityPresenter.new(self)

@@ -1,4 +1,4 @@
-class ItunesCollector < Collector
+class ItunesCollector < Stratify::Collector
   source "iTunes"
 
   configuration_fields :library_path => {:type => :string, :label => "Location of 'iTunes Music Library.xml' file"}

@@ -1,37 +1,41 @@
 require 'spec_helper'
 
-describe CollectorCoordinator do
+describe Stratify::CollectorCoordinator do
+
   describe ".run_all" do
     it "runs all collectors" do
       collector_1 = mock(:run)
       collector_2 = mock(:run)
       
-      Collector.stubs(:all).returns([collector_1, collector_2])
+      Stratify::Collector.stubs(:all).returns([collector_1, collector_2])
 
-      CollectorCoordinator.run_all
+      Stratify::CollectorCoordinator.run_all
     end
     
     context "when an exception occurs in a collector" do
       it "logs the exception" do
         collector = stub
         collector.stubs(:run).raises("some gnarly error") 
-        Collector.stubs(:all).returns([collector])
+        Stratify::Collector.stubs(:all).returns([collector])
         
-        Rails.logger.expects(:error).with() { |value| value.include? "some gnarly error" }
-        CollectorCoordinator.run_all
+        Stratify.logger.expects(:error).with() { |value| value.include? "some gnarly error" }
+        Stratify::CollectorCoordinator.run_all
       end
       
       it "runs the remaining collectors" do
+        silence_stratify_logging # Silence the logger so as not to clutter the test output
+
         troublesome_collector = stub
         troublesome_collector.stubs(:run).raises("some gnarly error") 
         
         other_collector = mock
         other_collector.expects(:run).returns(nil)
 
-        Collector.stubs(:all).returns([troublesome_collector, other_collector])
+        Stratify::Collector.stubs(:all).returns([troublesome_collector, other_collector])
 
-        CollectorCoordinator.run_all
+        Stratify::CollectorCoordinator.run_all
       end
     end
   end
+
 end

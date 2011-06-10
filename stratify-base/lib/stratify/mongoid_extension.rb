@@ -1,5 +1,5 @@
-module Extensions
-  module Mongoid
+module Stratify
+  module MongoidExtension
     module NaturalKey
       module ClassMethods
         attr_reader :natural_key_fields

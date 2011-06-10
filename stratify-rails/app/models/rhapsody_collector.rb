@@ -1,4 +1,4 @@
-class RhapsodyCollector < Collector
+class RhapsodyCollector < Stratify::Collector
   source "Rhapsody"
   
   configuration_fields :rss_url => {:type => :string, :label => "RSS URL"}

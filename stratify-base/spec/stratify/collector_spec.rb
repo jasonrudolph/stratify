@@ -1,39 +1,35 @@
 require 'spec_helper'
 
-class TestCollector < Collector
+class TestCollector < Stratify::Collector
   configuration_fields :username => {:type => :string},
                        :password => {:type => :password}
 end
 
 def anonymous_collector_subclass
-  Class.new(Collector)
+  Class.new(Stratify::Collector)
 end
 
-describe Collector do
+describe Stratify::Collector do
 
   describe ".collector_class_for" do
-    example do 
-      TwitterCollector # make sure the collector class is loaded
-      Collector.collector_class_for("Twitter").should == TwitterCollector
+    it "returns the collector subclass associated with the given source" do
+      example_collector_subclass = anonymous_collector_subclass
+      example_collector_subclass.source("Twitter")
+      Stratify::Collector.collector_class_for("Twitter").should == example_collector_subclass
     end
 
-    example do
-      ItunesCollector # make sure the collector class is loaded
-      Collector.collector_class_for("iTunes").should == ItunesCollector
-    end
-
-    it "returns nil when no collector class exists for the given source" do
-      Collector.collector_class_for("lol").should be_nil
+    it "returns nil when no collector subclass exists for the given source" do
+      Stratify::Collector.collector_class_for("lol").should be_nil
     end
   end
 
   describe ".sources" do
-    before { Collector.collector_classes.clear }
+    before { Stratify::Collector.collector_classes.clear }
     
     it "returns the list of sources for all collectors" do
       anonymous_collector_subclass.source("FourSquare")
       anonymous_collector_subclass.source("Twitter")
-      Collector.sources.should =~ ["FourSquare", "Twitter"]
+      Stratify::Collector.sources.should =~ ["FourSquare", "Twitter"]
     end
     
     it "returns the sources in case-insensitive alphabetical order" do
@@ -41,7 +37,7 @@ describe Collector do
       anonymous_collector_subclass.source("iTunes")
       anonymous_collector_subclass.source("Instapaper")
       anonymous_collector_subclass.source("Pandora")
-      Collector.sources.should == %w(Instapaper iTunes Pandora Twitter)
+      Stratify::Collector.sources.should == %w(Instapaper iTunes Pandora Twitter)
     end
   end
 
@@ -95,7 +91,7 @@ describe Collector do
   describe "#configuration_summary" do
     context "when the collector's class has one configuration field" do
       it "returns the value of the field" do
-        collector_subclass = Class.new(Collector) do
+        collector_subclass = Class.new(Stratify::Collector) do
           configuration_fields :username => {:type => :string}
         end
         collector = collector_subclass.new
@@ -106,7 +102,7 @@ describe Collector do
 
     context "when the collector's class has multiple configuration fields" do
       it "returns the value of the first field" do
-        collector_subclass = Class.new(Collector) do
+        collector_subclass = Class.new(Stratify::Collector) do
           configuration_fields :username => {:type => :string},
                                :tag => {:type => :string}
         end
@@ -119,7 +115,7 @@ describe Collector do
 
     context "when the collector's class has no configuration fields" do
       it "returns nil" do
-        collector_subclass = Class.new(Collector)
+        collector_subclass = Class.new(Stratify::Collector)
         collector = collector_subclass.new
         collector.configuration_summary.should == nil
       end

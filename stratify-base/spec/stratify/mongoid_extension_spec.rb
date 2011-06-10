@@ -3,12 +3,12 @@ require 'spec_helper'
 def class_with_natural_key_mixin(&blk)
   Class.new do
     include Mongoid::Document
-    include Extensions::Mongoid::NaturalKey
+    include Stratify::MongoidExtension::NaturalKey
     yield(self) if block_given?
   end
 end
 
-describe Extensions::Mongoid::NaturalKey do
+describe Stratify::MongoidExtension::NaturalKey do
   describe ".natural_key" do
     context "given a single field as the key" do
       it "stores the field in an array of key fields" do

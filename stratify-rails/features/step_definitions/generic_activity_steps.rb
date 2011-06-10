@@ -31,5 +31,5 @@ Then /^I should (no longer|still not) see the activity$/ do |args|
 end
 
 Then /^it should exist in the database in a soft\-deleted fashion$/ do
-  Activity.deleted.find(@activity.id).should_not be_nil
+  Stratify::Activity.deleted.find(@activity.id).should_not be_nil
 end

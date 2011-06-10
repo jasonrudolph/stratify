@@ -1,4 +1,4 @@
-class TwitterCollector < Collector
+class TwitterCollector < Stratify::Collector
   source "Twitter"
 
   configuration_fields :username => {:type => :string}

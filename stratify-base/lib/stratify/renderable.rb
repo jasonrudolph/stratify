@@ -1,3 +1,5 @@
+require "tilt"
+
 module Stratify
   module Renderable
     def self.included(base)

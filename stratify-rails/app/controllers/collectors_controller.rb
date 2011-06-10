@@ -2,7 +2,7 @@ class CollectorsController < ApplicationController
   before_filter :find_collector_class_for_source, :only => [:new, :create]
   
   def index
-    @collectors = ::Collector.asc(:source)
+    @collectors = Stratify::Collector.asc(:source)
   end
 
   def new
@@ -10,7 +10,7 @@ class CollectorsController < ApplicationController
   end
 
   def edit
-    @collector = ::Collector.find(params[:id])
+    @collector = Stratify::Collector.find(params[:id])
   end
   
   def create
@@ -23,7 +23,7 @@ class CollectorsController < ApplicationController
   end
 
   def update
-    @collector = ::Collector.find(params[:id])
+    @collector = Stratify::Collector.find(params[:id])
 
     if @collector.update_attributes(params[:collector])
       redirect_to collectors_path, :notice => 'Collector was successfully updated.'
@@ -33,13 +33,13 @@ class CollectorsController < ApplicationController
   end
 
   def destroy
-    @collector = ::Collector.find(params[:id])
+    @collector = Stratify::Collector.find(params[:id])
     @collector.delete
     redirect_to collectors_path
   end
 
   def run
-    collector = ::Collector.find(params[:id])
+    collector = Stratify::Collector.find(params[:id])
     collector.run # TODO Run via delayed_job (or similar solution)
     redirect_to collectors_path
   end
@@ -48,7 +48,7 @@ class CollectorsController < ApplicationController
 
   def find_collector_class_for_source
     source = params[:collector] && params[:collector][:source]
-    @collector_class = ::Collector.collector_class_for(source)
+    @collector_class = Stratify::Collector.collector_class_for(source)
     redirect_to collectors_path unless @collector_class
   end
 end

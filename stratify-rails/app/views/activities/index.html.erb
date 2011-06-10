@@ -29,7 +29,7 @@
     <h2>Layers</h2>
     <form action="#" method="get">
       <ul>
-        <% Collector.sources.each do |source| %>
+        <% Stratify::Collector.sources.each do |source| %>
           <% lowercase_source_name = source.downcase %>
           <li>
             <input type="checkbox" id="<%= lowercase_source_name %>-toggle" name="<%= lowercase_source_name %>" checked="checked"/>
