@@ -5,6 +5,8 @@ require 'stratify/field_definition'
 module Stratify
   class Collector
     include Mongoid::Document
+
+    store_in :collectors
   
     field :last_ran_at, :type => DateTime
 

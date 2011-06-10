@@ -9,6 +9,8 @@ module Stratify
     include MongoidExtension::NaturalKey
     include Renderable
 
+    store_in :activities
+    
     field :source, :type => String
     field :created_at, :type => DateTime
 
