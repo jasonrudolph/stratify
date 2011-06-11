@@ -22,11 +22,11 @@ SampleCheckinHash = {
   "_comments_count" => 0
 }
 
-describe GowallaQuery do
+describe Stratify::Gowalla::Query do
 
-  describe "building a GowallaCheckin from the hash returned by the Gowalla API" do
+  describe "building a Stratify::Gowalla::Activity from the hash returned by the Gowalla API" do
     before do
-      query = GowallaQuery.new('johndoe', 'password')
+      query = Stratify::Gowalla::Query.new('johndoe', 'password')
       @checkin = query.send :build_activity_from_raw_data, Hashie::Mash.new(SampleCheckinHash)
     end
 

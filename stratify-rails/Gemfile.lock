@@ -224,6 +224,10 @@ GEM
       bson_ext (~> 1.3.1)
       mongoid (~> 2.0.2)
       tilt (~> 1.3.2)
+    stratify-gowalla (0.1.0)
+      gowalla (~> 0.5.6)
+      railties (~> 3.1.0.rc1)
+      stratify-base (~> 0.1.0)
     stratify-twitter (0.1.0)
       actionpack (~> 3.1.0.rc1)
       rinku (~> 1.0.0)
@@ -265,7 +269,6 @@ DEPENDENCIES
   factory_girl_rails
   faker
   fakeweb
-  gowalla
   growl
   guard-cucumber
   guard-rspec
@@ -284,6 +287,7 @@ DEPENDENCIES
   simple-rss!
   spork
   stratify-base
+  stratify-gowalla
   stratify-twitter
   uglifier
   vcr

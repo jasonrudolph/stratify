@@ -18,8 +18,8 @@ Factory.sequence :tweet_status_id do |n|
   n
 end
 
-Factory.define :gowalla_checkin do |f|
-  f.source          GowallaCollector.source
+Factory.define :gowalla_checkin, :class => Stratify::Gowalla::Activity do |f|
+  f.source          Stratify::Gowalla::Collector.source
   f.checkin_id      { Factory.next :gowalla_checkin_id }
   f.spot_name       { Faker::Company.name }
   f.spot_city_state { "#{Faker::Address.city}, #{Faker::Address.state}" }

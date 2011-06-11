@@ -4,8 +4,8 @@ gem "rails", '3.1.0.rc1'
 gem "rake", "~> 0.9.1"
 
 gem "stratify-base"
+gem "stratify-gowalla"
 gem "stratify-twitter"
-gem "gowalla"
 gem "itunes_parser", :git => "git://github.com/phiggins/itunes_parser.git"
 gem "jquery-rails"
 gem "kaminari"
