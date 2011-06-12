@@ -10,7 +10,7 @@ gem "itunes-library", :git => "git://github.com/jasonrudolph/itunes-library.git"
 gem "jquery-rails"
 gem "kaminari"
 gem "mongoid_rails_migrations"
-gem "simple-rss", :git => "git://github.com/jasonrudolph/simple-rss.git"
+gem "thoughtafter-simple-rss", :require => "simple-rss"
 gem 'whenever', :require => false
 
 # Asset template engines
