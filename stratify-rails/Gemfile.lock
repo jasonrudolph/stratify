@@ -1,11 +1,3 @@
-GIT
-  remote: git://github.com/jasonrudolph/itunes-library.git
-  revision: d5b2ab50fd550197ab93e9b5d483b30ddf890e2e
-  branch: additional_accessors
-  specs:
-    itunes-library (0.1.0)
-      plist
-
 GEM
   remote: http://rubygems.org/
   specs:
@@ -118,6 +110,8 @@ GEM
     highline (1.6.2)
     hike (1.0.0)
     i18n (0.6.0)
+    itunes-library (0.1.1)
+      plist
     jquery-rails (1.0.9)
       railties (~> 3.0)
       thor (~> 0.14)
@@ -273,7 +267,7 @@ DEPENDENCIES
   guard-cucumber
   guard-rspec
   guard-spork
-  itunes-library!
+  itunes-library
   jquery-rails
   kaminari
   launchy
