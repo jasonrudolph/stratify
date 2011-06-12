@@ -28,8 +28,8 @@ Factory.define :gowalla_checkin, :class => Stratify::Gowalla::Activity do |f|
   f.created_at      { rand(1000).hours.ago }
 end
 
-Factory.define :instapaper_reading do |f|
-  f.source         InstapaperCollector.source
+Factory.define :instapaper_reading, :class => Stratify::Instapaper::Activity do |f|
+  f.source         Stratify::Instapaper::Collector.source
   f.url            { "http://#{Faker::Internet.domain_name}/#{Faker::Internet.domain_word}" }
   f.title          { Faker::Company.catch_phrase }
   f.description    { Faker::Lorem.paragraph }

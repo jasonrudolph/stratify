@@ -224,6 +224,9 @@ GEM
       gowalla (~> 0.5.6)
       railties (~> 3.1.0.rc1)
       stratify-base (~> 0.1.0)
+    stratify-instapaper (0.1.0)
+      railties (~> 3.1.0.rc1)
+      stratify-base (~> 0.1.0)
     stratify-twitter (0.1.0)
       actionpack (~> 3.1.0.rc1)
       rinku (~> 1.0.0)
@@ -284,6 +287,7 @@ DEPENDENCIES
   spork
   stratify-base
   stratify-gowalla
+  stratify-instapaper
   stratify-twitter
   thoughtafter-simple-rss
   uglifier

@@ -11,11 +11,12 @@ gem "rake", "~> 0.9.1"
 # Stratify-specific dependencies
 gem "stratify-base"
 gem "stratify-gowalla"
+gem "stratify-instapaper"
 gem "stratify-twitter"
 gem "itunes-library", :git => "git://github.com/jasonrudolph/itunes-library.git", :branch => "additional_accessors"
 gem "kaminari"
 gem "mongoid_rails_migrations"
-gem "thoughtafter-simple-rss", :require => "simple-rss"
+gem "thoughtafter-simple-rss", :require => "simple-rss" # TODO remove once Rhapsody collector is extracted into a gem
 gem 'whenever', :require => false
 gem 'capistrano' # for deployment
 

@@ -3,7 +3,7 @@ Given /^my Instapaper RSS URL is "([^"]*)"$/ do |url|
 end
 
 Given /^an Instapaper collector is configured with that URL$/ do
-  @collector = InstapaperCollector.create(:rss_url => @instapaper_rss_url)
+  @collector = Stratify::Instapaper::Collector.create(:rss_url => @instapaper_rss_url)
 end
 
 Given /^I read "([^"]*)" via Instapaper at (\d+:\d+ [a|p]m) on (\w* \d+, \d+)$/ do |title, time, date|
@@ -14,12 +14,12 @@ end
 Then /^my most recent Instapaper readings should exist in the archive$/ do
   # The following assertions assume use of the "instapaper_cassette" VCR fixture
 
-  InstapaperReading.where(
+  Stratify::Instapaper::Activity.where(
     :title =>  "Gowalla Begins Connecting The Dots On Travel", 
     :url => "http://techcrunch.com/2011/01/28/gowalla-travel/",
   ).should exist
 
-  InstapaperReading.where(
+  Stratify::Instapaper::Activity.where(
     :title => "A List Apart: Articles: Kick Ass Kickoff Meetings", 
     :url => "http://www.alistapart.com/articles/kick-ass-kickoff-meetings/", 
     :description => "jessmartin: Project kickoff meetings need to be well designed: http://bit.ly/duPjmZ Also: http://bit.ly/gE480U", 
@@ -38,6 +38,6 @@ Then /^I should see an Instapaper reading for "([^"]*)" at (\d+:\d+ [a|p]m) on (
 end
 
 Then /^the archive should not include duplicate Instapaper readings$/ do
-  grouped_readings = InstapaperReading.only(:url, :created_at).aggregate # => [{"url"=>"http://techcrunch.com/2011/01/28/gowalla-travel/", "created_at"=>2011-02-22 02:57:27 UTC, "count"=>1.0}, {"url"=>"http://www.alistapart.com/articles/kick-ass-kickoff-meetings/", "created_at"=>2011-02-21 04:19:46 UTC, "count"=>1.0}, ...]
+  grouped_readings = Stratify::Instapaper::Activity.only(:url, :created_at).aggregate # => [{"url"=>"http://techcrunch.com/2011/01/28/gowalla-travel/", "created_at"=>2011-02-22 02:57:27 UTC, "count"=>1.0}, {"url"=>"http://www.alistapart.com/articles/kick-ass-kickoff-meetings/", "created_at"=>2011-02-21 04:19:46 UTC, "count"=>1.0}, ...]
   grouped_readings.all? { |reading| reading["count"] == 1 }.should be_true
 end
