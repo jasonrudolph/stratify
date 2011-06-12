@@ -1,15 +1,16 @@
 GIT
+  remote: git://github.com/jasonrudolph/itunes-library.git
+  revision: d5b2ab50fd550197ab93e9b5d483b30ddf890e2e
+  branch: additional_accessors
+  specs:
+    itunes-library (0.1.0)
+      plist
+
+GIT
   remote: git://github.com/jasonrudolph/simple-rss.git
   revision: 01e5b0409b5042171605384c75e929ed12df730b
   specs:
     simple-rss (1.2.3)
-
-GIT
-  remote: git://github.com/phiggins/itunes_parser.git
-  revision: efbff5d6a54df203df8ab3d1106012ddc63a6913
-  specs:
-    itunes_parser (0.1.0)
-      nokogiri (~> 1.4)
 
 GEM
   remote: http://rubygems.org/
@@ -165,6 +166,7 @@ GEM
     oauth2 (0.4.1)
       faraday (~> 0.6.1)
       multi_json (>= 0.0.5)
+    plist (3.1.0)
     polyglot (0.3.1)
     rack (1.3.0)
     rack-cache (1.0.2)
@@ -273,7 +275,7 @@ DEPENDENCIES
   guard-cucumber
   guard-rspec
   guard-spork
-  itunes_parser!
+  itunes-library!
   jquery-rails
   kaminari
   launchy

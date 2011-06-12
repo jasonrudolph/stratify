@@ -1,4 +1,4 @@
-require 'open-uri'
+require 'itunes/library'
  
 class ItunesQuery
   attr_reader :library_path, :limit
@@ -13,36 +13,40 @@ class ItunesQuery
   end
 
   private
+
+  def library_xml
+    open(@library_path).read    
+  end
   
-  def build_activity_from_raw_data(raw_activity)
+  def build_activity_from_raw_data(track)
     ItunesActivity.new({
-      :album => raw_activity["Album"],
-      :artist => raw_activity["Artist"],
-      :composer => raw_activity["Composer"],
-      :created_at => raw_activity["Play Date UTC"],
-      :episode_number => raw_activity["Episode Order"],
-      :genre => raw_activity["Genre"],
-      :movie => raw_activity["Movie"],
-      :name => raw_activity["Name"],
-      :persistent_id => raw_activity["Persistent ID"],
-      :podcast => raw_activity["Podcast"],
-      :season_number => raw_activity["Season"],
-      :track_number => raw_activity["Track Number"],
-      :tv_show => raw_activity["TV Show"],
-      :year => raw_activity["Year"],
+      :album => track.album,
+      :artist => track.artist,
+      :composer => track.composer,
+      :created_at => track.last_played_at.to_time,
+      :episode_number => track.episode_number,
+      :genre => track.genre,
+      :movie => track.movie?,
+      :name => track.name,
+      :persistent_id => track.persistent_id,
+      :podcast => track.podcast?,
+      :season_number => track.season_number,
+      :track_number => track.number, 
+      :tv_show => track.tv_show?,
+      :year => track.year,
     })
   end
 
   def tracks
-    ItunesParser.new(open(library_path)).tracks
+    ITunes::Library.load(library_xml).tracks
   end
   
   def played_tracks
-    tracks.reject { |t| t["Play Date UTC"].nil? }
+    tracks.select { |t| t.played? }
   end
 
   def recently_played_tracks
-    sorted_tracks = played_tracks.sort_by { |t| t["Play Date UTC"].to_s }
+    sorted_tracks = played_tracks.sort_by(&:last_played_at)
     sorted_tracks.last(limit)
   end
 end  
