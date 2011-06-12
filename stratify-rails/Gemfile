@@ -1,22 +1,23 @@
 source "http://rubygems.org"
 
+# Default Rails dependencies
 gem "rails", '3.1.0.rc1'
+gem "sass"
+gem "coffee-script"
+gem "uglifier"
+gem "jquery-rails"
 gem "rake", "~> 0.9.1"
 
+# Stratify-specific dependencies
 gem "stratify-base"
 gem "stratify-gowalla"
 gem "stratify-twitter"
 gem "itunes-library", :git => "git://github.com/jasonrudolph/itunes-library.git", :branch => "additional_accessors"
-gem "jquery-rails"
 gem "kaminari"
 gem "mongoid_rails_migrations"
 gem "thoughtafter-simple-rss", :require => "simple-rss"
 gem 'whenever', :require => false
-
-# Asset template engines
-gem "sass"
-gem "coffee-script"
-gem "uglifier"
+gem 'capistrano' # for deployment
 
 group "development", "test" do
   gem "factory_girl_rails", :require => nil
@@ -39,6 +40,3 @@ group "test" do
   gem "spork"
   gem "vcr"
 end
-
-# Deploy with Capistrano
-gem 'capistrano'
