@@ -3,7 +3,7 @@ Given /^my Rhapsody RSS URL is "([^"]*)"$/ do |url|
 end
 
 Given /^a Rhapsody collector is configured with that URL$/ do
-  @collector = RhapsodyCollector.create(:rss_url => @rhapsody_rss_url)
+  @collector = Stratify::Rhapsody::Collector.create(:rss_url => @rhapsody_rss_url)
 end
 
 Given /^I listened to "([^"]*)" by "([^"]*)" on Rhapsody at (\d+:\d+ [a|p]m) on (\w* \d+, \d+)$/ do |track, artist, time, date|
@@ -14,7 +14,7 @@ end
 Then /^my most recent Rhapsody listenings should exist in the archive$/ do
   # The following assertions assume use of the "rhapsody_cassette" VCR fixture
 
-  RhapsodyListening.where(
+  Stratify::Rhapsody::Activity.where(
     :track_id => "tra.1956653", 
     :track_title => "Drain You",
     :artist_id => "art.69299",
@@ -25,7 +25,7 @@ Then /^my most recent Rhapsody listenings should exist in the archive$/ do
     :created_at => Time.parse("Tue, 22 Feb 2011 03:28:00 -0800")
   ).should exist
 
-  RhapsodyListening.where(
+  Stratify::Rhapsody::Activity.where(
     :track_id => "tra.43710797", 
     :track_title => "From A Table Away",
     :artist_id => "art.13689488",
@@ -49,6 +49,6 @@ Then /^I should see a Rhapsody listening for "([^"]*)" by "([^"]*)" at (\d+:\d+ 
 end
 
 Then /^the archive should not include duplicate Rhapsody listenings$/ do
-  grouped_listenings = RhapsodyListening.only(:track_id, :created_at).aggregate # => [{"track_id"=>"tra.2023754", "created_at"=>2011-02-22 11:52:00 UTC, "count"=>1.0}, {"track_id"=>"tra.1956646", "created_at"=>2011-02-22 11:52:00 UTC, "count"=>1.0}, ...]
+  grouped_listenings = Stratify::Rhapsody::Activity.only(:track_id, :created_at).aggregate # => [{"track_id"=>"tra.2023754", "created_at"=>2011-02-22 11:52:00 UTC, "count"=>1.0}, {"track_id"=>"tra.1956646", "created_at"=>2011-02-22 11:52:00 UTC, "count"=>1.0}, ...]
   grouped_listenings.all? { |listening| listening["count"] == 1 }.should be_true
 end

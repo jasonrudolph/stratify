@@ -47,8 +47,8 @@ Factory.define :itunes_activity, :class => Stratify::ITunes::Activity do |f|
   f.created_at     { rand(1000).hours.ago }
 end
 
-Factory.define :rhapsody_listening do |f|
-  f.source         RhapsodyCollector.source
+Factory.define :rhapsody_listening, :class => Stratify::Rhapsody::Activity do |f|
+  f.source         Stratify::Rhapsody::Collector.source
   f.track_id       { Factory.next :rhapsody_track_id }
   f.track_title    { Faker::Company.catch_phrase }
   f.artist_id      { Factory.next :rhapsody_artist_id }
