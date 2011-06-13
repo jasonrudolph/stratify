@@ -36,8 +36,8 @@ Factory.define :instapaper_reading, :class => Stratify::Instapaper::Activity do 
   f.created_at     { rand(1000).hours.ago }
 end
 
-Factory.define :itunes_activity do |f|
-  f.source         ItunesCollector.source
+Factory.define :itunes_activity, :class => Stratify::ITunes::Activity do |f|
+  f.source         Stratify::ITunes::Collector.source
   f.persistent_id  { ActiveSupport::SecureRandom.hex(8).upcase }
   f.name           { Faker::Company.catch_phrase }
   f.artist         { Faker::Name.name }

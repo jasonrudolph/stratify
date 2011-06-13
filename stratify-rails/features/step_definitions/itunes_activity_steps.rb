@@ -1,6 +1,6 @@
 Given /^an iTunes collector is configured with the location of my iTunes library XML file$/ do
   path = Rails.root.join("features", "fixtures", "iTunes Music Library.xml")
-  @collector = ItunesCollector.create(:library_path => path.to_s)
+  @collector = Stratify::ITunes::Collector.create(:library_path => path.to_s)
 end
 
 Given /^I listened to "([^"]*)" by "([^"]*)" in iTunes at (\d+:\d+ [a|p]m) on (\w* \d+, \d+)$/ do |track, artist, time, date|
@@ -11,7 +11,7 @@ end
 Then /^my most recent iTunes music activity should exist in the archive$/ do
   # The following assertion assumes use of the "iTunes Music Library.xml" fixture
 
-  ItunesActivity.where(
+  Stratify::ITunes::Activity.where(
     :persistent_id => "83B3927542025FDC",
     :name => "Smells Like Teen Spirit", 
     :album => "Nevermind",
@@ -27,7 +27,7 @@ end
 Then /^my most recent iTunes podcast activity should exist in the archive$/ do
   # The following assertion assumes use of the "iTunes Music Library.xml" fixture
 
-  ItunesActivity.where(
+  Stratify::ITunes::Activity.where(
     :persistent_id => "90228FA50E9DF82D",
     :name => "Tech News Today 186: Who Are Yooodle?", 
     :album => "Tech News Today",
@@ -43,7 +43,7 @@ end
 Then /^my most recent iTunes TV show activity should exist in the archive$/ do
   # The following assertion assumes use of the "iTunes Music Library.xml" fixture
 
-  ItunesActivity.where(
+  Stratify::ITunes::Activity.where(
     :persistent_id => "401802E7B506C475",
     :name => "A No-Rough-Stuff Type Deal", 
     :album => "Breaking Bad, Season 1",
@@ -60,7 +60,7 @@ end
 Then /^my most recent iTunes movie activity should exist in the archive$/ do
   # The following assertion assumes use of the "iTunes Music Library.xml" fixture
 
-  ItunesActivity.where(
+  Stratify::ITunes::Activity.where(
     :persistent_id => "3B7824E068FB05A6",
     :name => "V for Vendetta", 
     :genre => "Action & Adventure",
@@ -72,7 +72,7 @@ end
 Then /^my most recent iTunes audiobook activity should exist in the archive$/ do
   # The following assertion assumes use of the "iTunes Music Library.xml" fixture
 
-  ItunesActivity.where(
+  Stratify::ITunes::Activity.where(
     :persistent_id => "DB6F370B2A647633",
     :name => "Born Standing Up: A Comic's Life (Unabridged)", 
     :artist => "Steve Martin",
@@ -82,7 +82,7 @@ Then /^my most recent iTunes audiobook activity should exist in the archive$/ do
 end
 
 Then /^unplayed iTunes items should not exist in the archive$/ do
-  ItunesActivity.where(:persistent_id => "8780A3C7A0117B2B").should_not exist
+  Stratify::ITunes::Activity.where(:persistent_id => "8780A3C7A0117B2B").should_not exist
 end
 
 Then /^I should see an iTunes activity for "([^"]*)" by "([^"]*)" at (\d+:\d+ [a|p]m) on (\w* \d+, \d+)$/ do |track, artist, time, date|
@@ -97,6 +97,6 @@ Then /^I should see an iTunes activity for "([^"]*)" by "([^"]*)" at (\d+:\d+ [a
 end
 
 Then /^the archive should not include duplicate iTunes activities$/ do
-  grouped_activities = ItunesActivity.only(:persistent_id, :created_at).aggregate # => [{"persistent_id"=>"DB6F370B2A647633", "created_at"=>2011-02-22 11:52:00 UTC, "count"=>1.0}, {"persistent_id"=>"DB6F370B2A647633", "created_at"=>2011-02-22 11:52:00 UTC, "count"=>1.0}, ...]
+  grouped_activities = Stratify::ITunes::Activity.only(:persistent_id, :created_at).aggregate # => [{"persistent_id"=>"DB6F370B2A647633", "created_at"=>2011-02-22 11:52:00 UTC, "count"=>1.0}, {"persistent_id"=>"DB6F370B2A647633", "created_at"=>2011-02-22 11:52:00 UTC, "count"=>1.0}, ...]
   grouped_activities.all? { |activity| activity["count"] == 1 }.should be_true
 end

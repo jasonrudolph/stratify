@@ -221,6 +221,10 @@ GEM
     stratify-instapaper (0.1.0)
       railties (~> 3.1.0.rc1)
       stratify-base (~> 0.1.0)
+    stratify-itunes (0.1.0)
+      itunes-library (~> 0.1.1)
+      railties (~> 3.1.0.rc1)
+      stratify-base (~> 0.1.0)
     stratify-twitter (0.1.0)
       actionpack (~> 3.1.0.rc1)
       rinku (~> 1.0.0)
@@ -267,7 +271,6 @@ DEPENDENCIES
   guard-cucumber
   guard-rspec
   guard-spork
-  itunes-library
   jquery-rails
   kaminari
   launchy
@@ -282,6 +285,7 @@ DEPENDENCIES
   stratify-base
   stratify-gowalla
   stratify-instapaper
+  stratify-itunes
   stratify-twitter
   thoughtafter-simple-rss
   uglifier

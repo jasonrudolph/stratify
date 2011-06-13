@@ -1,9 +1,12 @@
-describe ItunesActivityPresenter do
+require 'spec_helper'
+
+describe Stratify::ITunes::Presenter do
+
   context "audio track" do
     before do
-      @activity = ItunesActivity.new(:name => "In Bloom", :artist => "Nirvana", :album => "Nevermind", 
-                                     :year => 1999, :genre => "Rock")
-      @presenter = ItunesActivityPresenter.new(@activity)
+      @activity = Stratify::ITunes::Activity.new(:name => "In Bloom", :artist => "Nirvana", :album => "Nevermind", 
+                                                 :year => 1999, :genre => "Rock")
+      @presenter = Stratify::ITunes::Presenter.new(@activity)
     end
     
     describe "summary" do
@@ -47,28 +50,28 @@ describe ItunesActivityPresenter do
   context "TV show" do
     describe "episode_number" do
       it "provides the episode number if it is present" do
-        activity = ItunesActivity.new(:tv_show => true, :episode_number => 4)
-        presenter = ItunesActivityPresenter.new(activity)
+        activity = Stratify::ITunes::Activity.new(:tv_show => true, :episode_number => 4)
+        presenter = Stratify::ITunes::Presenter.new(activity)
         presenter.episode_number.should == "Episode 4"
       end
 
       it "provides the track number if it is present and the episode number is nil" do
-        activity = ItunesActivity.new(:tv_show => true, :episode_number => nil, :track_number => 4)
-        presenter = ItunesActivityPresenter.new(activity)
+        activity = Stratify::ITunes::Activity.new(:tv_show => true, :episode_number => nil, :track_number => 4)
+        presenter = Stratify::ITunes::Presenter.new(activity)
         presenter.episode_number.should == "Episode 4"
       end
 
       it "returns nil if both the episode number and the track number are nil" do
-        activity = ItunesActivity.new(:tv_show => true, :episode_number => nil, :track_number => nil)
-        presenter = ItunesActivityPresenter.new(activity)
+        activity = Stratify::ITunes::Activity.new(:tv_show => true, :episode_number => nil, :track_number => nil)
+        presenter = Stratify::ITunes::Presenter.new(activity)
         presenter.episode_number.should == nil
       end
     end
     
     describe "summary" do
       before do
-        @activity = ItunesActivity.new(:tv_show => true, :name => "Crazy Handful of Nothin", :artist => "Breaking Bad")
-        @presenter = ItunesActivityPresenter.new(@activity)
+        @activity = Stratify::ITunes::Activity.new(:tv_show => true, :name => "Crazy Handful of Nothin", :artist => "Breaking Bad")
+        @presenter = Stratify::ITunes::Presenter.new(@activity)
       end
 
       it "provides the episode name and the show name" do
@@ -88,8 +91,8 @@ describe ItunesActivityPresenter do
     
     describe "details" do
       before do
-        @activity = ItunesActivity.new(:tv_show => true, :season_number => 1, :episode_number => 6, :year => 2008)
-        @presenter = ItunesActivityPresenter.new(@activity)
+        @activity = Stratify::ITunes::Activity.new(:tv_show => true, :season_number => 1, :episode_number => 6, :year => 2008)
+        @presenter = Stratify::ITunes::Presenter.new(@activity)
       end
 
       it "provides the season number, episode number, and year" do
@@ -115,9 +118,9 @@ describe ItunesActivityPresenter do
 
   context "movie" do
     before do
-      @activity = ItunesActivity.new(:movie => true, :name => "V for Vendetta", :artist => "James McTeigue",
-                                     :year => 2006, :genre => "Action & Adventure")
-      @presenter = ItunesActivityPresenter.new(@activity)
+      @activity = Stratify::ITunes::Activity.new(:movie => true, :name => "V for Vendetta", :artist => "James McTeigue",
+                                                 :year => 2006, :genre => "Action & Adventure")
+      @presenter = Stratify::ITunes::Presenter.new(@activity)
     end
     
     describe "summary" do
