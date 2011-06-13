@@ -14,7 +14,7 @@
             <%= l activity.created_at, :format => :time_only %>
       
             <%# TODO Move this functionality to the activity detail page (once such a page exists). Deleting an activity is too rare of an event to warrant cluttering up the index view with all these delete icons. %>
-            <%= link_to image_tag("icons/trash-icon-16.gif"), activity_path(activity), :confirm => 'Are you sure?', :method => :delete, :title => "Delete" %>
+            <%= link_to image_tag("trash-icon-16.gif"), activity_path(activity), :confirm => 'Are you sure?', :method => :delete, :title => "Delete" %>
           </span>
         </article>
       <% end %>
