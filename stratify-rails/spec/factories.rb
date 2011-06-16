@@ -1,3 +1,12 @@
+module ClassFactory
+  def self.collector_subclass(&blk)
+    Class.new(Stratify::Collector) do
+      source "SomeExampleSource"
+      yield self if block_given?
+    end
+  end
+end
+
 Factory.sequence :gowalla_checkin_id do |n| 
   n
 end
@@ -14,7 +23,7 @@ Factory.sequence :rhapsody_track_id do |n|
   "tra.#{n}"
 end
 
-Factory.sequence :tweet_status_id do |n| 
+Factory.sequence :twitter_status_id do |n| 
   n
 end
 
@@ -28,7 +37,7 @@ Factory.define :gowalla_checkin, :class => Stratify::Gowalla::Activity do |f|
   f.created_at      { rand(1000).hours.ago }
 end
 
-Factory.define :instapaper_reading, :class => Stratify::Instapaper::Activity do |f|
+Factory.define :instapaper_activity, :class => Stratify::Instapaper::Activity do |f|
   f.source         Stratify::Instapaper::Collector.source
   f.url            { "http://#{Faker::Internet.domain_name}/#{Faker::Internet.domain_word}" }
   f.title          { Faker::Company.catch_phrase }
@@ -47,7 +56,7 @@ Factory.define :itunes_activity, :class => Stratify::ITunes::Activity do |f|
   f.created_at     { rand(1000).hours.ago }
 end
 
-Factory.define :rhapsody_listening, :class => Stratify::Rhapsody::Activity do |f|
+Factory.define :rhapsody_activity, :class => Stratify::Rhapsody::Activity do |f|
   f.source         Stratify::Rhapsody::Collector.source
   f.track_id       { Factory.next :rhapsody_track_id }
   f.track_title    { Faker::Company.catch_phrase }
@@ -61,7 +70,7 @@ end
 
 Factory.define :tweet, :class => Stratify::Twitter::Activity do |f|
   f.source         Stratify::Twitter::Collector.source
-  f.status_id      { Factory.next :tweet_status_id }
+  f.status_id      { Factory.next :twitter_status_id }
   f.username       "jasonrudolph"
   f.text           { Faker::Lorem.sentence(rand(30)).truncate(140) }
   f.created_at     { rand(1000).hours.ago }

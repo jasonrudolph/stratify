@@ -3,7 +3,7 @@ require 'spec_helper'
 describe CollectorsController do
   describe "GET new" do
     it "assigns a new collector for the specified source as @collector" do
-      example_collector_class = Class.new(Stratify::Collector)
+      example_collector_class = ClassFactory.collector_subclass
       Stratify::Collector.stubs(:collector_class_for).with("Twitter").returns(example_collector_class)
       get :new, :collector => {:source => "Twitter"}
       assigns(:collector).should be_instance_of(example_collector_class)
@@ -18,7 +18,7 @@ describe CollectorsController do
   describe "POST create" do
     describe "with invalid params" do
       before do
-        @example_collector_class = Class.new(Stratify::Collector)
+        @example_collector_class = ClassFactory.collector_subclass
         Stratify::Collector.stubs(:collector_class_for).returns(@example_collector_class)
       end
 

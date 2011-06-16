@@ -9,6 +9,8 @@ Dir["#{File.dirname(__FILE__)}/support/**/*.rb"].each {|f| require f}
 
 require 'database_cleaner'
 
+require 'prototypes/bacon'
+
 RSpec.configure do |config|
   config.color_enabled = true
   config.formatter = :progress

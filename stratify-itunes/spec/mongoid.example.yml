@@ -1,0 +1,3 @@
+persist_in_safe_mode: true
+host: localhost
+database: stratify_itunes_test

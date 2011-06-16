@@ -14,6 +14,9 @@ Spork.prefork do
   # in spec/support/ and its subdirectories.
   Dir[Rails.root.join("spec/support/**/*.rb")].each {|f| require f}
 
+  require 'prototypes/bacon'
+
+  require 'capybara/rspec'
   require 'database_cleaner'
 
   RSpec.configure do |config|

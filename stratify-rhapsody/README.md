@@ -14,6 +14,7 @@ To get set up for development on stratify-rhapsody, clone the repo, and ...
     cd stratify/stratify-rhapsody
     gem install bundler
     bundle
+    cp spec/mongoid.example.yml spec/mongoid.yml
     rake
 
 ## License

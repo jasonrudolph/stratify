@@ -1,16 +1,13 @@
 require 'spec_helper'
 
-# TODO Replace with a "factory" that provides a default collector subclass for testing
-example_collector_class = Class.new(Stratify::Collector) do
-  configuration_fields :username => {:type => :string}
-end
-
 describe "collectors/_form.html.erb" do
+
   context "for a collector with configuration instructions" do
     it "renders the instructions" do
-      collector_class = example_collector_class
-      collector_class.stubs(:configuration_instructions).returns("Provide your username and ...")
-      assign(:collector, collector_class.new)
+      example_collector_class = ClassFactory.collector_subclass do |subclass|
+        subclass.configuration_instructions "Provide your username and ..."
+      end
+      assign(:collector, example_collector_class.new)
 
       render
 
@@ -20,6 +17,7 @@ describe "collectors/_form.html.erb" do
 
   context "for a collector with no configuration instructions" do
     it "does not render the instructions" do
+      example_collector_class = ClassFactory.collector_subclass
       assign(:collector, example_collector_class.new)
 
       render
