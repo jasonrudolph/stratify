@@ -14,7 +14,6 @@ To get set up for development on stratify-itunes, clone the repo, and ...
     cd stratify/stratify-itunes
     gem install bundler
     bundle
-    cp spec/mongoid.example.yml spec/mongoid.yml
     rake
 
 ## License
