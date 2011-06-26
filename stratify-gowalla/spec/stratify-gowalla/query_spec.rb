@@ -49,6 +49,10 @@ describe Stratify::Gowalla::Query do
     it "sets the longitude of the checkin spot" do
       @checkin.spot_longitude.should == -78.7846096333
     end
+
+    it "sets the message" do
+      @checkin.message.should == "True Grit"
+    end
   end
   
 end

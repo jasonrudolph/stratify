@@ -28,6 +28,7 @@ module Stratify
           :spot_city_state => data.spot.city_state,
           :spot_latitude => data.spot.lat,
           :spot_longitude => data.spot.lng,
+          :message => data.message,
           :created_at => data.created_at
         })
       end

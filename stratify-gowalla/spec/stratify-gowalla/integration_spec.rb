@@ -8,10 +8,11 @@ describe "stratify-gowalla" do
     collector.run
 
     Stratify::Gowalla::Activity.where(
-      :checkin_id => 27148218,
-      :spot_name => "Caribou Coffee",
-      :spot_city_state => "Raleigh, NC",
-      :created_at => Time.parse("2011-01-22T17:57:34Z")
+      :checkin_id => 27147302,
+      :spot_name => "Dick's Sporting Goods",
+      :spot_city_state => "Morrisville, NC",
+      :message => "Final prep for Breckenridge trip!",
+      :created_at => Time.parse("2011-01-22T17:47:33Z")
     ).should exist
 
     Stratify::Gowalla::Activity.where(

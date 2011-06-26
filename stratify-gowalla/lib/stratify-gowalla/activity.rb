@@ -6,12 +6,16 @@ module Stratify
       field :spot_city_state
       field :spot_latitude, :type => BigDecimal
       field :spot_longitude, :type => BigDecimal
+      field :message
 
       natural_key :checkin_id
 
       validates_presence_of :checkin_id, :spot_name, :spot_latitude, :spot_longitude
 
-      template "Checked in at <strong><%= spot_name %></strong> in <strong><%= spot_city_state %></strong>"
+      template %q[
+        <p class="summary">Checked in at <strong><%= spot_name %></strong> in <strong><%= spot_city_state %></strong></p>
+        <p class="details"><%= message %></p>
+      ]
 
       def permalink
         "http://gowalla.com/checkins/#{checkin_id}"
