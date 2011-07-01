@@ -14,6 +14,7 @@ To get set up for development on stratify-rails, clone the repo, and ...
     cd stratify/stratify-rails
     gem install bundler
     bundle
+    cp config/mongoid.example.yml config/mongoid.yml
     rake
 
 ## License
