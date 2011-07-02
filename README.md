@@ -33,7 +33,7 @@ This data practically begs for visualization.  Stratify currently provides a "pu
 
 This data is ripe with opportunities for rich visualization.  (Thanks to GitHub for [the idea for this particular graph](https://github.com/jasonrudolph/stratify/graphs/punch_card).)
 
-[![Stratify Punch Card Graph Screenshot](https://img.skitch.com/20110702-jmu63tjdtd3628rs1wuc8i8mh5.medium.jpg)](https://skitch.com/jasonrudolph/r6efc/stratify "Stratify Punch Card Graph Screenshot")
+[![Stratify Punch Card Graph Screenshot](https://img.skitch.com/20110702-jmu63tjdtd3628rs1wuc8i8mh5.medium.jpg)](https://skitch.com/jasonrudolph/f85he/stratify-punch-card-graph-screenshot "Stratify Punch Card Graph Screenshot")
 
 ## Components
 
