@@ -21,8 +21,19 @@ collection logic) is just Ruby. Stratify uses Rails to provide the (currently
 very simple) UI for displaying the activity timeline. I hope to eventually
 provide a more rich user interface experience.
 
-[![Stratify Screenshot](https://img.skitch.com/20110509-tjkykqb8w25gf1bngm4mee17k5.medium.jpg)](https://skitch.com/jasonrudolph/r6efc/stratify "Stratify Screenshot")
+### Screenshots
 
+#### Activity Timeline
+
+[![Stratify Activity Timeline  Screenshot](https://img.skitch.com/20110509-tjkykqb8w25gf1bngm4mee17k5.medium.jpg)](https://skitch.com/jasonrudolph/r6efc/stratify "Stratify Activity Timeline Screenshot")
+
+#### Punch Card Graph
+
+This data practically begs for visualization.  Stratify currently provides a "punch card" graph for each of your activity sources. In the screenshot below, the Instapaper activity reveals a clear pattern: apparently I do most of my Instapaper reading at night and on weekend mornings. (This graph is generated from real data. And yeah, that pattern sounds about right.)
+
+This data is ripe with opportunities for rich visualization.  (Thanks to GitHub for [the idea for this particular graph](https://github.com/jasonrudolph/stratify/graphs/punch_card).)
+
+[![Stratify Punch Card Graph Screenshot](https://img.skitch.com/20110702-jmu63tjdtd3628rs1wuc8i8mh5.medium.jpg)](https://skitch.com/jasonrudolph/r6efc/stratify "Stratify Punch Card Graph Screenshot")
 
 ## Components
 
@@ -91,7 +102,7 @@ TODO - Add easy mechanism for loading example data
 * UI design
 * Better error notification in collectors
 * Ability to search for activities
-* Statistical analysis (e.g., trends)
+* Additional statistical analysis (e.g., trends)
 
 
 ## Contributors

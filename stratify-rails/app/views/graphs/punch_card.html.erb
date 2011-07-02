@@ -1,0 +1,8 @@
+<% @graphs.each do |graph| %>
+  <div class="punch_card_graph <%= graph.source.downcase %>">
+    <h2><%= graph.source %> Activity by Day and Hour</h2>
+
+    <img src="<%= graph.url.html_safe %>"/>
+  </div>
+<% end %>
+
