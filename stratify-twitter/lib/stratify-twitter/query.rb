@@ -10,22 +10,30 @@ module Stratify
       end
 
       def activities
-        raw_activities.map {|raw_activity| build_activity_from_raw_data(raw_activity)}
+        status_updates_from_api.map {|status_update| build_activity_from_api_response_hash(status_update)}
       end
 
       private
   
-      def raw_activities
-        ::Twitter.user_timeline(username)
+      def status_updates_from_api
+        ::Twitter.user_timeline(username, :include_rts => true)
+      end
+
+      def build_activity_from_api_response_hash(api_hash)
+        attribute_hash = build_status_update_hash(api_hash)
+        Stratify::Twitter::Activity.new(attribute_hash)
       end
   
-      def build_activity_from_raw_data(raw_activity)
-        Stratify::Twitter::Activity.new({
-          :status_id => raw_activity.id,
-          :username => raw_activity.user.screen_name,
-          :text => raw_activity.text,
-          :created_at => raw_activity.created_at
-        })
+      def build_status_update_hash(api_response_hash)
+        return nil if api_response_hash.nil?
+        
+        {
+          :status_id => api_response_hash.id,
+          :username => api_response_hash.user.screen_name,
+          :text => api_response_hash.text,
+          :created_at => api_response_hash.created_at,
+          :retweeted_status => build_status_update_hash(api_response_hash[:retweeted_status])
+        }
       end
     end
   end  

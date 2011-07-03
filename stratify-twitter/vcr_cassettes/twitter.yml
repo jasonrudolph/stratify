@@ -2,40 +2,44 @@
 - !ruby/struct:VCR::HTTPInteraction 
   request: !ruby/struct:VCR::Request 
     method: :get
-    uri: https://api.twitter.com:443/1/statuses/user_timeline.json?screen_name=jasonrudolph
+    uri: https://api.twitter.com:443/1/statuses/user_timeline.json?include_rts=true&screen_name=jasonrudolph
     body: 
     headers: 
       accept: 
       - application/json
       user-agent: 
-      - Twitter Ruby Gem 1.0.0
+      - Twitter Ruby Gem 1.5.0
+      accept-encoding: 
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
   response: !ruby/struct:VCR::Response 
     status: !ruby/struct:VCR::ResponseStatus 
       code: 200
       message: OK
     headers: 
       date: 
-      - Mon, 24 Jan 2011 01:01:30 GMT
+      - Sat, 02 Jul 2011 23:57:26 GMT
       server: 
       - hi
       status: 
       - 200 OK
       x-transaction: 
-      - 1295830889-38307-3583
+      - 1309651046-78606-29628
       x-ratelimit-limit: 
       - "150"
       etag: 
-      - "\"e9f88e3b66e34f99f089ddfcdbf8197c\""
+      - "\"2ed2bd074a816eb72eb0b8e1bb802272\"-gzip"
+      x-frame-options: 
+      - SAMEORIGIN
       last-modified: 
-      - Mon, 24 Jan 2011 01:01:30 GMT
+      - Sat, 02 Jul 2011 23:57:26 GMT
       x-ratelimit-remaining: 
-      - "146"
+      - "143"
       x-runtime: 
-      - "0.03269"
+      - "0.05163"
+      x-transaction-mask: 
+      - a6183ffa5f8ca943ff1b53b5644ef1144d1160fd
       content-type: 
       - application/json; charset=utf-8
-      content-length: 
-      - "26139"
       pragma: 
       - no-cache
       x-ratelimit-class: 
@@ -46,13 +50,155 @@
       - Tue, 31 Mar 1981 05:00:00 GMT
       cache-control: 
       - no-cache, no-store, must-revalidate, pre-check=0, post-check=0
+      x-mid: 
+      - 664f93b9dd0e62b436dea81ad854e7310d6f4c9c
       x-ratelimit-reset: 
-      - "1295832697"
+      - "1309651839"
       set-cookie: 
-      - k=24.136.206.3.1295830889991683; path=/; expires=Mon, 31-Jan-11 01:01:29 GMT; domain=.twitter.com
-      - guest_id=129583088999599378; path=/; expires=Wed, 23 Feb 2011 01:01:29 GMT
-      - _twitter_sess=BAh7CDoHaWQiJTI5ZDVlMjc3NTY4ZTI3NjVhODZkMGM2ZGM4MTIyZTkxIgpm%250AbGFzaElDOidBY3Rpb25Db250cm9sbGVyOjpGbGFzaDo6Rmxhc2hIYXNoewAG%250AOgpAdXNlZHsAOg9jcmVhdGVkX2F0bCsIDDaKtS0B--8fe758c1a15a762f7b3c45276ddb68c131d4897e; domain=.twitter.com; path=/
+      - k=24.136.206.3.1309651046043740; path=/; expires=Sat, 09-Jul-11 23:57:26 GMT; domain=.twitter.com
+      - guest_id=v1%3A130965104604816168; domain=.twitter.com; path=/; expires=Tue, 02 Jul 2013 11:57:26 GMT
+      - _twitter_sess=BAh7CDoPY3JlYXRlZF9hdGwrCKIOSe0wAToHaWQiJTRhNTE1OWU3NjRkZDgz%250AYzEyODk2Zjk5ZTJiZDc1NzMzIgpmbGFzaElDOidBY3Rpb25Db250cm9sbGVy%250AOjpGbGFzaDo6Rmxhc2hIYXNoewAGOgpAdXNlZHsA--a0082ed72f3eb78dd6573a5f7d9aae68a6287f10; domain=.twitter.com; path=/; HttpOnly
       vary: 
       - Accept-Encoding
-    body: "[{\"in_reply_to_user_id_str\":null,\"text\":\"\\\"I'm afraid for the state of the nation. ... I wouldn't hire you to sweep my floors.\\\" @dhh tells it like it is. http:\\/\\/t.co\\/8Wk7j8C #hiring\",\"retweeted\":false,\"retweet_count\":0,\"place\":null,\"in_reply_to_status_id\":null,\"source\":\"\\u003Ca href=\\\"http:\\/\\/itunes.apple.com\\/us\\/app\\/twitter\\/id409789998?mt=12\\\" rel=\\\"nofollow\\\"\\u003ETwitter for Mac\\u003C\\/a\\u003E\",\"id_str\":\"28832200464011265\",\"in_reply_to_user_id\":null,\"truncated\":false,\"geo\":null,\"favorited\":false,\"in_reply_to_status_id_str\":null,\"user\":{\"profile_sidebar_fill_color\":\"e5e8e3\",\"url\":\"http:\\/\\/jasonrudolph.com\",\"profile_background_tile\":false,\"time_zone\":\"Quito\",\"friends_count\":71,\"description\":\"\",\"follow_request_sent\":false,\"following\":false,\"location\":\"Raleigh, NC\",\"statuses_count\":532,\"profile_link_color\":\"005ab4\",\"profile_sidebar_border_color\":\"BDDCAD\",\"id_str\":\"14188383\",\"listed_count\":43,\"profile_use_background_image\":false,\"followers_count\":347,\"show_all_inline_media\":false,\"verified\":false,\"profile_background_color\":\"ff6c1f\",\"protected\":false,\"contributors_enabled\":false,\"notifications\":false,\"profile_background_image_url\":\"http:\\/\\/a3.twimg.com\\/a\\/1295051201\\/images\\/themes\\/theme9\\/bg.gif\",\"profile_image_url\":\"http:\\/\\/a2.twimg.com\\/profile_images\\/52658686\\/twitter_normal.png\",\"name\":\"Jason Rudolph\",\"id\":14188383,\"is_translator\":false,\"lang\":\"en\",\"geo_enabled\":false,\"utc_offset\":-18000,\"favourites_count\":53,\"created_at\":\"Fri Mar 21 00:19:18 +0000 2008\",\"profile_text_color\":\"333333\",\"screen_name\":\"jasonrudolph\"},\"id\":28832200464011265,\"contributors\":null,\"coordinates\":null,\"in_reply_to_screen_name\":null,\"created_at\":\"Sat Jan 22 15:11:46 +0000 2011\"},{\"in_reply_to_user_id_str\":\"1476511\",\"text\":\"@shayfrendt I heard that such a thing was in the works. I suspect it will be sufficiently neutered for safe American consumption. :-\\/\",\"retweeted\":false,\"retweet_count\":0,\"place\":null,\"in_reply_to_status_id\":27199444852146178,\"source\":\"\\u003Ca href=\\\"http:\\/\\/twitter.com\\/\\\" rel=\\\"nofollow\\\"\\u003ETwitter for iPhone\\u003C\\/a\\u003E\",\"id_str\":\"27206056148996097\",\"in_reply_to_user_id\":1476511,\"truncated\":false,\"geo\":null,\"favorited\":false,\"in_reply_to_status_id_str\":\"27199444852146178\",\"user\":{\"friends_count\":71,\"profile_sidebar_fill_color\":\"e5e8e3\",\"url\":\"http:\\/\\/jasonrudolph.com\",\"follow_request_sent\":false,\"profile_background_tile\":false,\"time_zone\":\"Quito\",\"description\":\"\",\"following\":false,\"verified\":false,\"location\":\"Raleigh, NC\",\"profile_link_color\":\"005ab4\",\"show_all_inline_media\":false,\"geo_enabled\":false,\"profile_sidebar_border_color\":\"BDDCAD\",\"id_str\":\"14188383\",\"listed_count\":43,\"profile_use_background_image\":false,\"followers_count\":347,\"contributors_enabled\":false,\"profile_background_color\":\"ff6c1f\",\"protected\":false,\"notifications\":false,\"profile_background_image_url\":\"http:\\/\\/a3.twimg.com\\/a\\/1295051201\\/images\\/themes\\/theme9\\/bg.gif\",\"profile_image_url\":\"http:\\/\\/a2.twimg.com\\/profile_images\\/52658686\\/twitter_normal.png\",\"name\":\"Jason Rudolph\",\"is_translator\":false,\"statuses_count\":532,\"id\":14188383,\"lang\":\"en\",\"utc_offset\":-18000,\"favourites_count\":53,\"created_at\":\"Fri Mar 21 00:19:18 +0000 2008\",\"profile_text_color\":\"333333\",\"screen_name\":\"jasonrudolph\"},\"id\":27206056148996097,\"contributors\":null,\"coordinates\":null,\"in_reply_to_screen_name\":\"shayfrendt\",\"created_at\":\"Tue Jan 18 03:30:03 +0000 2011\"},{\"in_reply_to_user_id_str\":null,\"text\":\"http:\\/\\/candorville.com\\/2011\\/01\\/16\\/quotes-2\\/\\n\\nDon't be \\\"that guy.\\\" ;-)\",\"retweeted\":false,\"retweet_count\":0,\"place\":null,\"in_reply_to_status_id\":null,\"source\":\"web\",\"id_str\":\"26662832850341888\",\"in_reply_to_user_id\":null,\"truncated\":false,\"geo\":null,\"favorited\":false,\"in_reply_to_status_id_str\":null,\"user\":{\"friends_count\":71,\"profile_sidebar_fill_color\":\"e5e8e3\",\"url\":\"http:\\/\\/jasonrudolph.com\",\"follow_request_sent\":false,\"profile_background_tile\":false,\"time_zone\":\"Quito\",\"description\":\"\",\"following\":true,\"verified\":false,\"location\":\"Raleigh, NC\",\"profile_link_color\":\"005ab4\",\"show_all_inline_media\":false,\"geo_enabled\":false,\"profile_sidebar_border_color\":\"BDDCAD\",\"id_str\":\"14188383\",\"listed_count\":43,\"profile_use_background_image\":false,\"followers_count\":347,\"contributors_enabled\":false,\"profile_background_color\":\"ff6c1f\",\"protected\":false,\"notifications\":false,\"profile_background_image_url\":\"http:\\/\\/a3.twimg.com\\/a\\/1295051201\\/images\\/themes\\/theme9\\/bg.gif\",\"profile_image_url\":\"http:\\/\\/a2.twimg.com\\/profile_images\\/52658686\\/twitter_normal.png\",\"name\":\"Jason Rudolph\",\"is_translator\":false,\"statuses_count\":532,\"id\":14188383,\"lang\":\"en\",\"utc_offset\":-18000,\"favourites_count\":53,\"created_at\":\"Fri Mar 21 00:19:18 +0000 2008\",\"profile_text_color\":\"333333\",\"screen_name\":\"jasonrudolph\"},\"id\":26662832850341888,\"contributors\":null,\"coordinates\":null,\"in_reply_to_screen_name\":null,\"created_at\":\"Sun Jan 16 15:31:29 +0000 2011\"},{\"in_reply_to_user_id_str\":null,\"text\":\"PlainText + @dropbox + TextMate feels nice. http:\\/\\/t.co\\/U8KRP3c \\n\\nPlainText is missing 10% of @simplenoteapp's elegance, but I'll live.\",\"retweeted\":false,\"retweet_count\":0,\"place\":null,\"in_reply_to_status_id\":null,\"source\":\"\\u003Ca href=\\\"http:\\/\\/itunes.apple.com\\/us\\/app\\/twitter\\/id409789998?mt=12\\\" rel=\\\"nofollow\\\"\\u003ETwitter for Mac\\u003C\\/a\\u003E\",\"id_str\":\"26654420448055296\",\"in_reply_to_user_id\":null,\"truncated\":false,\"geo\":null,\"favorited\":false,\"in_reply_to_status_id_str\":null,\"user\":{\"friends_count\":71,\"profile_sidebar_fill_color\":\"e5e8e3\",\"url\":\"http:\\/\\/jasonrudolph.com\",\"follow_request_sent\":false,\"profile_background_tile\":false,\"time_zone\":\"Quito\",\"description\":\"\",\"following\":false,\"verified\":false,\"location\":\"Raleigh, NC\",\"profile_link_color\":\"005ab4\",\"show_all_inline_media\":false,\"geo_enabled\":false,\"profile_sidebar_border_color\":\"BDDCAD\",\"id_str\":\"14188383\",\"listed_count\":43,\"profile_use_background_image\":false,\"followers_count\":347,\"contributors_enabled\":false,\"profile_background_color\":\"ff6c1f\",\"protected\":false,\"notifications\":false,\"profile_background_image_url\":\"http:\\/\\/a3.twimg.com\\/a\\/1295051201\\/images\\/themes\\/theme9\\/bg.gif\",\"profile_image_url\":\"http:\\/\\/a2.twimg.com\\/profile_images\\/52658686\\/twitter_normal.png\",\"name\":\"Jason Rudolph\",\"is_translator\":false,\"statuses_count\":532,\"id\":14188383,\"lang\":\"en\",\"utc_offset\":-18000,\"favourites_count\":53,\"created_at\":\"Fri Mar 21 00:19:18 +0000 2008\",\"profile_text_color\":\"333333\",\"screen_name\":\"jasonrudolph\"},\"id\":26654420448055296,\"contributors\":null,\"coordinates\":null,\"in_reply_to_screen_name\":null,\"created_at\":\"Sun Jan 16 14:58:03 +0000 2011\"},{\"text\":\"Reference point for teams tasked with providing \\\"five nines\\\" - RT @gmail Gmail was available 99.984% of the time in 2010 http:\\/\\/goo.gl\\/nLdlf\",\"id_str\":\"26312110145282049\",\"place\":null,\"truncated\":false,\"in_reply_to_status_id\":null,\"favorited\":false,\"source\":\"web\",\"in_reply_to_status_id_str\":null,\"contributors\":null,\"in_reply_to_screen_name\":null,\"in_reply_to_user_id\":null,\"in_reply_to_user_id_str\":null,\"geo\":null,\"retweeted\":false,\"retweet_count\":0,\"user\":{\"show_all_inline_media\":false,\"geo_enabled\":false,\"profile_sidebar_border_color\":\"BDDCAD\",\"url\":\"http:\\/\\/jasonrudolph.com\",\"id_str\":\"14188383\",\"listed_count\":43,\"description\":\"\",\"following\":false,\"profile_use_background_image\":false,\"location\":\"Raleigh, NC\",\"contributors_enabled\":false,\"profile_background_color\":\"ff6c1f\",\"profile_background_image_url\":\"http:\\/\\/a3.twimg.com\\/a\\/1295051201\\/images\\/themes\\/theme9\\/bg.gif\",\"is_translator\":false,\"statuses_count\":531,\"favourites_count\":53,\"profile_text_color\":\"333333\",\"followers_count\":347,\"friends_count\":71,\"profile_sidebar_fill_color\":\"e5e8e3\",\"protected\":false,\"follow_request_sent\":false,\"notifications\":false,\"profile_background_tile\":false,\"time_zone\":\"Quito\",\"profile_image_url\":\"http:\\/\\/a2.twimg.com\\/profile_images\\/52658686\\/twitter_normal.png\",\"name\":\"Jason Rudolph\",\"verified\":false,\"id\":14188383,\"lang\":\"en\",\"utc_offset\":-18000,\"created_at\":\"Fri Mar 21 00:19:18 +0000 2008\",\"profile_link_color\":\"005ab4\",\"screen_name\":\"jasonrudolph\"},\"id\":26312110145282049,\"coordinates\":null,\"created_at\":\"Sat Jan 15 16:17:50 +0000 2011\"},{\"in_reply_to_user_id_str\":\"194185273\",\"text\":\"@ErgoBibamus6512 #bandnamegame seems to be some weird derivative of Solitaire. Are you winning? ;-)\",\"retweeted\":false,\"retweet_count\":0,\"place\":null,\"in_reply_to_status_id\":25597915607080960,\"source\":\"\\u003Ca href=\\\"http:\\/\\/twitter.com\\/\\\" rel=\\\"nofollow\\\"\\u003ETwitter for iPhone\\u003C\\/a\\u003E\",\"id_str\":\"25600708489252865\",\"in_reply_to_user_id\":194185273,\"truncated\":false,\"geo\":null,\"favorited\":false,\"in_reply_to_status_id_str\":\"25597915607080960\",\"user\":{\"friends_count\":71,\"profile_sidebar_fill_color\":\"e5e8e3\",\"url\":\"http:\\/\\/jasonrudolph.com\",\"follow_request_sent\":false,\"profile_background_tile\":false,\"time_zone\":\"Quito\",\"description\":\"\",\"following\":false,\"verified\":false,\"location\":\"Raleigh, NC\",\"profile_link_color\":\"005ab4\",\"show_all_inline_media\":false,\"geo_enabled\":false,\"profile_sidebar_border_color\":\"BDDCAD\",\"id_str\":\"14188383\",\"listed_count\":43,\"profile_use_background_image\":false,\"followers_count\":347,\"contributors_enabled\":false,\"profile_background_color\":\"ff6c1f\",\"protected\":false,\"notifications\":false,\"profile_background_image_url\":\"http:\\/\\/a3.twimg.com\\/a\\/1295051201\\/images\\/themes\\/theme9\\/bg.gif\",\"profile_image_url\":\"http:\\/\\/a2.twimg.com\\/profile_images\\/52658686\\/twitter_normal.png\",\"name\":\"Jason Rudolph\",\"is_translator\":false,\"statuses_count\":532,\"id\":14188383,\"lang\":\"en\",\"utc_offset\":-18000,\"favourites_count\":53,\"created_at\":\"Fri Mar 21 00:19:18 +0000 2008\",\"profile_text_color\":\"333333\",\"screen_name\":\"jasonrudolph\"},\"id\":25600708489252865,\"contributors\":null,\"coordinates\":null,\"in_reply_to_screen_name\":\"ErgoBibamus6512\",\"created_at\":\"Thu Jan 13 17:10:59 +0000 2011\"},{\"in_reply_to_user_id_str\":\"83468155\",\"text\":\"@billysixstring First Git, and now Rails and MongoDB? Rock on!\\n\\nBy the way, what Mongo library are you using? I recommend mongoid.\",\"retweeted\":false,\"retweet_count\":0,\"place\":null,\"in_reply_to_status_id\":25021694351515648,\"source\":\"\\u003Ca href=\\\"http:\\/\\/twitter.com\\/\\\" rel=\\\"nofollow\\\"\\u003ETwitter for iPhone\\u003C\\/a\\u003E\",\"id_str\":\"25156558581145600\",\"in_reply_to_user_id\":83468155,\"truncated\":false,\"geo\":null,\"favorited\":false,\"in_reply_to_status_id_str\":\"25021694351515648\",\"user\":{\"profile_sidebar_fill_color\":\"e5e8e3\",\"url\":\"http:\\/\\/jasonrudolph.com\",\"profile_background_tile\":false,\"time_zone\":\"Quito\",\"description\":\"\",\"following\":true,\"location\":\"Raleigh, NC\",\"listed_count\":43,\"profile_link_color\":\"005ab4\",\"profile_sidebar_border_color\":\"BDDCAD\",\"id_str\":\"14188383\",\"contributors_enabled\":false,\"statuses_count\":532,\"geo_enabled\":false,\"profile_use_background_image\":false,\"followers_count\":347,\"is_translator\":false,\"profile_background_color\":\"ff6c1f\",\"protected\":false,\"notifications\":false,\"profile_background_image_url\":\"http:\\/\\/a3.twimg.com\\/a\\/1295051201\\/images\\/themes\\/theme9\\/bg.gif\",\"profile_image_url\":\"http:\\/\\/a2.twimg.com\\/profile_images\\/52658686\\/twitter_normal.png\",\"name\":\"Jason Rudolph\",\"friends_count\":71,\"id\":14188383,\"show_all_inline_media\":false,\"follow_request_sent\":false,\"lang\":\"en\",\"verified\":false,\"utc_offset\":-18000,\"favourites_count\":53,\"created_at\":\"Fri Mar 21 00:19:18 +0000 2008\",\"profile_text_color\":\"333333\",\"screen_name\":\"jasonrudolph\"},\"id\":25156558581145600,\"contributors\":null,\"coordinates\":null,\"in_reply_to_screen_name\":\"billysixstring\",\"created_at\":\"Wed Jan 12 11:46:05 +0000 2011\"},{\"in_reply_to_user_id_str\":\"1566201\",\"text\":\"@zapnap RailsRumble app waiting to happen: Submit your Google Voice transcriptions. Compare transcriptions to reality. Laugh. Lather. Repeat\",\"retweeted\":false,\"retweet_count\":0,\"place\":null,\"in_reply_to_status_id\":24972816671580160,\"source\":\"\\u003Ca href=\\\"http:\\/\\/twitter.com\\/\\\" rel=\\\"nofollow\\\"\\u003ETwitter for iPhone\\u003C\\/a\\u003E\",\"id_str\":\"24982275036811264\",\"in_reply_to_user_id\":1566201,\"truncated\":false,\"geo\":null,\"favorited\":false,\"in_reply_to_status_id_str\":\"24972816671580160\",\"user\":{\"friends_count\":71,\"profile_sidebar_fill_color\":\"e5e8e3\",\"url\":\"http:\\/\\/jasonrudolph.com\",\"follow_request_sent\":false,\"profile_background_tile\":false,\"time_zone\":\"Quito\",\"description\":\"\",\"following\":false,\"verified\":false,\"location\":\"Raleigh, NC\",\"profile_link_color\":\"005ab4\",\"show_all_inline_media\":false,\"geo_enabled\":false,\"profile_sidebar_border_color\":\"BDDCAD\",\"id_str\":\"14188383\",\"listed_count\":43,\"profile_use_background_image\":false,\"followers_count\":347,\"contributors_enabled\":false,\"profile_background_color\":\"ff6c1f\",\"protected\":false,\"notifications\":false,\"profile_background_image_url\":\"http:\\/\\/a3.twimg.com\\/a\\/1295051201\\/images\\/themes\\/theme9\\/bg.gif\",\"profile_image_url\":\"http:\\/\\/a2.twimg.com\\/profile_images\\/52658686\\/twitter_normal.png\",\"name\":\"Jason Rudolph\",\"is_translator\":false,\"statuses_count\":532,\"id\":14188383,\"lang\":\"en\",\"utc_offset\":-18000,\"favourites_count\":53,\"created_at\":\"Fri Mar 21 00:19:18 +0000 2008\",\"profile_text_color\":\"333333\",\"screen_name\":\"jasonrudolph\"},\"id\":24982275036811264,\"contributors\":null,\"coordinates\":null,\"in_reply_to_screen_name\":\"zapnap\",\"created_at\":\"Wed Jan 12 00:13:33 +0000 2011\"},{\"in_reply_to_user_id_str\":\"11166162\",\"text\":\"@spicycode I've been seeing similar wonkiness yesterday and today.\",\"retweeted\":false,\"retweet_count\":0,\"place\":null,\"in_reply_to_status_id\":24894332775436288,\"source\":\"\\u003Ca href=\\\"http:\\/\\/twitter.com\\/\\\" rel=\\\"nofollow\\\"\\u003ETwitter for iPhone\\u003C\\/a\\u003E\",\"id_str\":\"24900954553847808\",\"in_reply_to_user_id\":11166162,\"truncated\":false,\"geo\":null,\"favorited\":false,\"in_reply_to_status_id_str\":\"24894332775436288\",\"user\":{\"friends_count\":71,\"profile_sidebar_fill_color\":\"e5e8e3\",\"url\":\"http:\\/\\/jasonrudolph.com\",\"follow_request_sent\":false,\"profile_background_tile\":false,\"time_zone\":\"Quito\",\"description\":\"\",\"following\":false,\"verified\":false,\"location\":\"Raleigh, NC\",\"profile_link_color\":\"005ab4\",\"show_all_inline_media\":false,\"geo_enabled\":false,\"profile_sidebar_border_color\":\"BDDCAD\",\"id_str\":\"14188383\",\"listed_count\":43,\"profile_use_background_image\":false,\"followers_count\":347,\"contributors_enabled\":false,\"profile_background_color\":\"ff6c1f\",\"protected\":false,\"notifications\":false,\"profile_background_image_url\":\"http:\\/\\/a3.twimg.com\\/a\\/1295051201\\/images\\/themes\\/theme9\\/bg.gif\",\"profile_image_url\":\"http:\\/\\/a2.twimg.com\\/profile_images\\/52658686\\/twitter_normal.png\",\"name\":\"Jason Rudolph\",\"is_translator\":false,\"statuses_count\":532,\"id\":14188383,\"lang\":\"en\",\"utc_offset\":-18000,\"favourites_count\":53,\"created_at\":\"Fri Mar 21 00:19:18 +0000 2008\",\"profile_text_color\":\"333333\",\"screen_name\":\"jasonrudolph\"},\"id\":24900954553847808,\"contributors\":null,\"coordinates\":null,\"in_reply_to_screen_name\":\"spicycode\",\"created_at\":\"Tue Jan 11 18:50:24 +0000 2011\"},{\"in_reply_to_user_id_str\":\"6141442\",\"text\":\"@rsanheim Methinks you have a few more weeks of anticipation before that shiny new unicorn is actually in your hands.\",\"retweeted\":false,\"retweet_count\":0,\"place\":null,\"in_reply_to_status_id\":24600180359692288,\"source\":\"\\u003Ca href=\\\"http:\\/\\/twitter.com\\/\\\" rel=\\\"nofollow\\\"\\u003ETwitter for iPhone\\u003C\\/a\\u003E\",\"id_str\":\"24605159568965633\",\"in_reply_to_user_id\":6141442,\"truncated\":false,\"geo\":null,\"favorited\":false,\"in_reply_to_status_id_str\":\"24600180359692288\",\"user\":{\"friends_count\":71,\"profile_sidebar_fill_color\":\"e5e8e3\",\"url\":\"http:\\/\\/jasonrudolph.com\",\"follow_request_sent\":false,\"profile_background_tile\":false,\"time_zone\":\"Quito\",\"description\":\"\",\"following\":false,\"verified\":false,\"location\":\"Raleigh, NC\",\"profile_link_color\":\"005ab4\",\"show_all_inline_media\":false,\"geo_enabled\":false,\"profile_sidebar_border_color\":\"BDDCAD\",\"id_str\":\"14188383\",\"listed_count\":43,\"profile_use_background_image\":false,\"followers_count\":347,\"contributors_enabled\":false,\"profile_background_color\":\"ff6c1f\",\"protected\":false,\"notifications\":false,\"profile_background_image_url\":\"http:\\/\\/a3.twimg.com\\/a\\/1295051201\\/images\\/themes\\/theme9\\/bg.gif\",\"profile_image_url\":\"http:\\/\\/a2.twimg.com\\/profile_images\\/52658686\\/twitter_normal.png\",\"name\":\"Jason Rudolph\",\"is_translator\":false,\"statuses_count\":532,\"id\":14188383,\"lang\":\"en\",\"utc_offset\":-18000,\"favourites_count\":53,\"created_at\":\"Fri Mar 21 00:19:18 +0000 2008\",\"profile_text_color\":\"333333\",\"screen_name\":\"jasonrudolph\"},\"id\":24605159568965633,\"contributors\":null,\"coordinates\":null,\"in_reply_to_screen_name\":\"rsanheim\",\"created_at\":\"Mon Jan 10 23:15:01 +0000 2011\"},{\"in_reply_to_user_id_str\":\"931471\",\"text\":\"@michellerudolph It's the hardest part of a human or of *you*? I'm not qualified to comment on the former; I shouldn't on the latter. ;-)\",\"retweeted\":false,\"retweet_count\":0,\"place\":null,\"in_reply_to_status_id\":24534278922575872,\"source\":\"\\u003Ca href=\\\"http:\\/\\/itunes.apple.com\\/us\\/app\\/twitter\\/id409789998?mt=12\\\" rel=\\\"nofollow\\\"\\u003ETwitter for Mac\\u003C\\/a\\u003E\",\"id_str\":\"24573822304788480\",\"in_reply_to_user_id\":931471,\"truncated\":false,\"geo\":null,\"favorited\":false,\"in_reply_to_status_id_str\":\"24534278922575872\",\"user\":{\"friends_count\":71,\"profile_sidebar_fill_color\":\"e5e8e3\",\"url\":\"http:\\/\\/jasonrudolph.com\",\"follow_request_sent\":false,\"profile_background_tile\":false,\"time_zone\":\"Quito\",\"description\":\"\",\"following\":false,\"verified\":false,\"location\":\"Raleigh, NC\",\"profile_link_color\":\"005ab4\",\"show_all_inline_media\":false,\"geo_enabled\":false,\"profile_sidebar_border_color\":\"BDDCAD\",\"id_str\":\"14188383\",\"listed_count\":43,\"profile_use_background_image\":false,\"followers_count\":347,\"contributors_enabled\":false,\"profile_background_color\":\"ff6c1f\",\"protected\":false,\"notifications\":false,\"profile_background_image_url\":\"http:\\/\\/a3.twimg.com\\/a\\/1295051201\\/images\\/themes\\/theme9\\/bg.gif\",\"profile_image_url\":\"http:\\/\\/a2.twimg.com\\/profile_images\\/52658686\\/twitter_normal.png\",\"name\":\"Jason Rudolph\",\"is_translator\":false,\"statuses_count\":532,\"id\":14188383,\"lang\":\"en\",\"utc_offset\":-18000,\"favourites_count\":53,\"created_at\":\"Fri Mar 21 00:19:18 +0000 2008\",\"profile_text_color\":\"333333\",\"screen_name\":\"jasonrudolph\"},\"id\":24573822304788480,\"contributors\":null,\"coordinates\":null,\"in_reply_to_screen_name\":\"michellerudolph\",\"created_at\":\"Mon Jan 10 21:10:30 +0000 2011\"},{\"in_reply_to_user_id_str\":\"74635622\",\"text\":\"@rotatedtoenails I'm well aware of the \\\"Secure Text Entry\\\" option. I've always had it disabled. NV still intermittently breaks TextExpander\",\"retweeted\":false,\"retweet_count\":0,\"place\":null,\"in_reply_to_status_id\":22491620704260097,\"source\":\"\\u003Ca href=\\\"http:\\/\\/twitter.com\\/\\\" rel=\\\"nofollow\\\"\\u003ETwitter for iPhone\\u003C\\/a\\u003E\",\"id_str\":\"22494553978179584\",\"in_reply_to_user_id\":74635622,\"truncated\":false,\"geo\":null,\"favorited\":false,\"in_reply_to_status_id_str\":\"22491620704260097\",\"user\":{\"friends_count\":71,\"profile_sidebar_fill_color\":\"e5e8e3\",\"url\":\"http:\\/\\/jasonrudolph.com\",\"follow_request_sent\":false,\"profile_background_tile\":false,\"time_zone\":\"Quito\",\"description\":\"\",\"following\":false,\"verified\":false,\"location\":\"Raleigh, NC\",\"profile_link_color\":\"005ab4\",\"show_all_inline_media\":false,\"geo_enabled\":false,\"profile_sidebar_border_color\":\"BDDCAD\",\"id_str\":\"14188383\",\"listed_count\":43,\"profile_use_background_image\":false,\"followers_count\":347,\"contributors_enabled\":false,\"profile_background_color\":\"ff6c1f\",\"protected\":false,\"notifications\":false,\"profile_background_image_url\":\"http:\\/\\/a3.twimg.com\\/a\\/1295051201\\/images\\/themes\\/theme9\\/bg.gif\",\"profile_image_url\":\"http:\\/\\/a2.twimg.com\\/profile_images\\/52658686\\/twitter_normal.png\",\"name\":\"Jason Rudolph\",\"is_translator\":false,\"statuses_count\":532,\"id\":14188383,\"lang\":\"en\",\"utc_offset\":-18000,\"favourites_count\":53,\"created_at\":\"Fri Mar 21 00:19:18 +0000 2008\",\"profile_text_color\":\"333333\",\"screen_name\":\"jasonrudolph\"},\"id\":22494553978179584,\"contributors\":null,\"coordinates\":null,\"in_reply_to_screen_name\":\"rotatedtoenails\",\"created_at\":\"Wed Jan 05 03:28:14 +0000 2011\"},{\"in_reply_to_user_id_str\":null,\"text\":\"Notational Velocity + Simplenote is elegant simplicity (http:\\/\\/is.gd\\/k7TXg). But NV keeps breaking TextExpander, so NV's gotta go. #sadpanda\",\"retweeted\":false,\"retweet_count\":0,\"place\":null,\"in_reply_to_status_id\":null,\"source\":\"web\",\"id_str\":\"22485166844809216\",\"in_reply_to_user_id\":null,\"truncated\":false,\"geo\":null,\"favorited\":false,\"in_reply_to_status_id_str\":null,\"user\":{\"friends_count\":71,\"profile_sidebar_fill_color\":\"e5e8e3\",\"url\":\"http:\\/\\/jasonrudolph.com\",\"follow_request_sent\":null,\"profile_background_tile\":false,\"time_zone\":\"Quito\",\"description\":\"\",\"following\":null,\"verified\":false,\"location\":\"Raleigh, NC\",\"profile_link_color\":\"005ab4\",\"show_all_inline_media\":false,\"geo_enabled\":false,\"profile_sidebar_border_color\":\"BDDCAD\",\"id_str\":\"14188383\",\"listed_count\":43,\"profile_use_background_image\":false,\"followers_count\":347,\"contributors_enabled\":false,\"profile_background_color\":\"ff6c1f\",\"protected\":false,\"notifications\":null,\"profile_background_image_url\":\"http:\\/\\/a3.twimg.com\\/a\\/1295051201\\/images\\/themes\\/theme9\\/bg.gif\",\"profile_image_url\":\"http:\\/\\/a2.twimg.com\\/profile_images\\/52658686\\/twitter_normal.png\",\"name\":\"Jason Rudolph\",\"is_translator\":false,\"statuses_count\":532,\"id\":14188383,\"lang\":\"en\",\"utc_offset\":-18000,\"favourites_count\":53,\"created_at\":\"Fri Mar 21 00:19:18 +0000 2008\",\"profile_text_color\":\"333333\",\"screen_name\":\"jasonrudolph\"},\"id\":22485166844809216,\"contributors\":null,\"coordinates\":null,\"in_reply_to_screen_name\":null,\"created_at\":\"Wed Jan 05 02:50:56 +0000 2011\"},{\"in_reply_to_user_id_str\":null,\"text\":\"\\\"Live as though it were the early days of a better nation.\\\" -- @doctorow\",\"retweeted\":false,\"retweet_count\":1,\"place\":null,\"in_reply_to_status_id\":null,\"source\":\"web\",\"id_str\":\"20595784953102338\",\"in_reply_to_user_id\":null,\"truncated\":false,\"geo\":null,\"favorited\":false,\"in_reply_to_status_id_str\":null,\"user\":{\"friends_count\":71,\"profile_sidebar_fill_color\":\"e5e8e3\",\"url\":\"http:\\/\\/jasonrudolph.com\",\"follow_request_sent\":false,\"profile_background_tile\":false,\"time_zone\":\"Quito\",\"description\":\"\",\"following\":false,\"verified\":false,\"location\":\"Raleigh, NC\",\"profile_link_color\":\"005ab4\",\"show_all_inline_media\":false,\"geo_enabled\":false,\"profile_sidebar_border_color\":\"BDDCAD\",\"id_str\":\"14188383\",\"listed_count\":43,\"profile_use_background_image\":false,\"followers_count\":347,\"contributors_enabled\":false,\"profile_background_color\":\"ff6c1f\",\"protected\":false,\"notifications\":false,\"profile_background_image_url\":\"http:\\/\\/a3.twimg.com\\/a\\/1295051201\\/images\\/themes\\/theme9\\/bg.gif\",\"profile_image_url\":\"http:\\/\\/a2.twimg.com\\/profile_images\\/52658686\\/twitter_normal.png\",\"name\":\"Jason Rudolph\",\"is_translator\":false,\"statuses_count\":532,\"id\":14188383,\"lang\":\"en\",\"utc_offset\":-18000,\"favourites_count\":53,\"created_at\":\"Fri Mar 21 00:19:18 +0000 2008\",\"profile_text_color\":\"333333\",\"screen_name\":\"jasonrudolph\"},\"id\":20595784953102338,\"contributors\":null,\"coordinates\":null,\"in_reply_to_screen_name\":null,\"created_at\":\"Thu Dec 30 21:43:12 +0000 2010\"},{\"in_reply_to_user_id_str\":\"5676102\",\"text\":\"@shanselman Congrats on yet another great episode. The second half of 1.1.0 was *very* familiar. Thanks for sharing that conversation.\",\"retweeted\":false,\"retweet_count\":0,\"place\":null,\"in_reply_to_status_id\":null,\"source\":\"web\",\"id_str\":\"20497377014054912\",\"in_reply_to_user_id\":5676102,\"truncated\":false,\"geo\":null,\"favorited\":false,\"in_reply_to_status_id_str\":null,\"user\":{\"friends_count\":71,\"profile_sidebar_fill_color\":\"e5e8e3\",\"url\":\"http:\\/\\/jasonrudolph.com\",\"follow_request_sent\":false,\"profile_background_tile\":false,\"time_zone\":\"Quito\",\"description\":\"\",\"following\":false,\"verified\":false,\"location\":\"Raleigh, NC\",\"profile_link_color\":\"005ab4\",\"show_all_inline_media\":false,\"geo_enabled\":false,\"profile_sidebar_border_color\":\"BDDCAD\",\"id_str\":\"14188383\",\"listed_count\":43,\"profile_use_background_image\":false,\"followers_count\":347,\"contributors_enabled\":false,\"profile_background_color\":\"ff6c1f\",\"protected\":false,\"notifications\":false,\"profile_background_image_url\":\"http:\\/\\/a3.twimg.com\\/a\\/1295051201\\/images\\/themes\\/theme9\\/bg.gif\",\"profile_image_url\":\"http:\\/\\/a2.twimg.com\\/profile_images\\/52658686\\/twitter_normal.png\",\"name\":\"Jason Rudolph\",\"is_translator\":false,\"statuses_count\":532,\"id\":14188383,\"lang\":\"en\",\"utc_offset\":-18000,\"favourites_count\":53,\"created_at\":\"Fri Mar 21 00:19:18 +0000 2008\",\"profile_text_color\":\"333333\",\"screen_name\":\"jasonrudolph\"},\"id\":20497377014054912,\"contributors\":null,\"coordinates\":null,\"in_reply_to_screen_name\":\"shanselman\",\"created_at\":\"Thu Dec 30 15:12:10 +0000 2010\"},{\"in_reply_to_user_id_str\":\"226246919\",\"text\":\"A timely episode on disconnecting and the importance of being \\\"present\\\" with your loved ones.\\n\\n@thisdevslife 1.1.0 http:\\/\\/is.gd\\/jJr9O\",\"retweeted\":false,\"retweet_count\":0,\"place\":null,\"in_reply_to_status_id\":null,\"source\":\"web\",\"id_str\":\"20497095169409024\",\"in_reply_to_user_id\":226246919,\"truncated\":false,\"geo\":null,\"favorited\":false,\"in_reply_to_status_id_str\":null,\"user\":{\"friends_count\":71,\"profile_sidebar_fill_color\":\"e5e8e3\",\"url\":\"http:\\/\\/jasonrudolph.com\",\"follow_request_sent\":false,\"profile_background_tile\":false,\"time_zone\":\"Quito\",\"description\":\"\",\"following\":false,\"verified\":false,\"location\":\"Raleigh, NC\",\"profile_link_color\":\"005ab4\",\"show_all_inline_media\":false,\"geo_enabled\":false,\"profile_sidebar_border_color\":\"BDDCAD\",\"id_str\":\"14188383\",\"listed_count\":43,\"profile_use_background_image\":false,\"followers_count\":347,\"contributors_enabled\":false,\"profile_background_color\":\"ff6c1f\",\"protected\":false,\"notifications\":false,\"profile_background_image_url\":\"http:\\/\\/a3.twimg.com\\/a\\/1295051201\\/images\\/themes\\/theme9\\/bg.gif\",\"profile_image_url\":\"http:\\/\\/a2.twimg.com\\/profile_images\\/52658686\\/twitter_normal.png\",\"name\":\"Jason Rudolph\",\"is_translator\":false,\"statuses_count\":532,\"id\":14188383,\"lang\":\"en\",\"utc_offset\":-18000,\"favourites_count\":53,\"created_at\":\"Fri Mar 21 00:19:18 +0000 2008\",\"profile_text_color\":\"333333\",\"screen_name\":\"jasonrudolph\"},\"id\":20497095169409024,\"contributors\":null,\"coordinates\":null,\"in_reply_to_screen_name\":\"thisdevslife\",\"created_at\":\"Thu Dec 30 15:11:02 +0000 2010\"}]"
+      content-encoding: 
+      - gzip
+      content-length: 
+      - "6051"
+    body: !binary |
+      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
+      sB4ae+eb8afH3v//D83CeXjlywAA
+
     http_version: "1.1"

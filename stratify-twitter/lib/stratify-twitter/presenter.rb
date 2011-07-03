@@ -11,7 +11,12 @@ module Stratify
       end
 
       def text
-        linkify_usernames(linkify_urls(@activity.text))
+        return @activity.text unless @activity.retweet?
+        "RT @#{@activity.retweeted_status['username']} #{@activity.retweeted_status['text']}"
+      end
+      
+      def to_html
+        linkify_usernames(linkify_urls(text))
       end
 
       private
