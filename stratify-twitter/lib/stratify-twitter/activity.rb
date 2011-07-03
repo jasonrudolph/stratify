@@ -1,8 +1,11 @@
 require 'stratify-twitter/presenter'
+require 'stratify-twitter/translation'
 
 module Stratify
   module Twitter
     class Activity < Stratify::Activity
+      extend Stratify::Twitter::Translation
+      
       field :status_id, :type => Integer
       field :username
       field :text
