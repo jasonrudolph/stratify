@@ -97,6 +97,7 @@ TODO - Add easy mechanism for loading example data
 
 ## TODO
 
+* Move each component into its own repository
 * Rake task for loading sample data (currently handled via db/samples.rb)
 * More collectors (e.g., GitHub, Garmin, etc.)
 * UI design
