@@ -1,3 +1,10 @@
+# Builds the URL needed to render a "punch card" graph using the Google
+# Charts API.  
+# 
+# API docs:
+# 
+#   http://code.google.com/apis/chart/image/docs/gallery/scatter_charts.html
+# 
 module PunchCardGraph
   class Builder
     attr_accessor :timestamps
