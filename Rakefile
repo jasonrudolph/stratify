@@ -1,5 +1,6 @@
 stratify_gems = [
   'stratify-base',
+  'stratify-garmin',
   'stratify-gowalla',
   'stratify-instapaper',
   'stratify-itunes',

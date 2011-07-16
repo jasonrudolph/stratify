@@ -10,6 +10,7 @@ gem "rake", "~> 0.9.1"
 
 # Stratify-specific dependencies
 gem "stratify-base"
+gem "stratify-garmin"
 gem "stratify-gowalla"
 gem "stratify-instapaper"
 gem "stratify-itunes"

@@ -25,7 +25,7 @@ provide a more rich user interface experience.
 
 #### Activity Timeline
 
-[![Stratify Activity Timeline  Screenshot](https://img.skitch.com/20110509-tjkykqb8w25gf1bngm4mee17k5.medium.jpg)](https://skitch.com/jasonrudolph/r6efc/stratify "Stratify Activity Timeline Screenshot")
+[![Stratify Activity Timeline  Screenshot](http://img.skitch.com/20110716-n6ns38f9ai83e8p8h9jqw6wxak.medium.jpg)](https://skitch.com/jasonrudolph/fkftt/stratify "Stratify Activity Timeline Screenshot")
 
 #### Punch Card Graph
 
@@ -41,6 +41,7 @@ Stratify consists of the following parts:
 
 * **stratify-base**: Core collector and activity componentry.
 * **stratify-rails**: Rails app for configuring collectors and displaying collected activities.
+* **stratify-garmin**: Collects your runs, bike rides, etc. from Garmin Connect.
 * **stratify-gowalla**: Collects your checkins from Gowalla.
 * **stratify-instapaper**: Collects the articles you've archived on Instapaper.
 * **stratify-itunes**: Collects the songs you've listened to, shows you've watched, and so on, from iTunes.
@@ -99,7 +100,7 @@ TODO - Add easy mechanism for loading example data
 
 * Move each component into its own repository
 * Rake task for loading sample data (currently handled via db/samples.rb)
-* More collectors (e.g., GitHub, Garmin, etc.)
+* More collectors (e.g., GitHub, etc.)
 * UI design
 * Better error notification in collectors
 * Ability to search for activities

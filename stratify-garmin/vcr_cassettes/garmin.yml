@@ -1,0 +1,160 @@
+--- 
+- !ruby/struct:VCR::HTTPInteraction 
+  request: !ruby/struct:VCR::Request 
+    method: :get
+    uri: http://connect.garmin.com:80/feed/rss/activities?feedname=Garmin%20Connect%20-%20johndoe&owner=johndoe
+    body: 
+    headers: 
+  response: !ruby/struct:VCR::Response 
+    status: !ruby/struct:VCR::ResponseStatus 
+      code: 200
+      message: OK
+    headers: 
+      server: 
+      - Apache/2.2.14 (Ubuntu)
+      pragma: 
+      - no-cache
+      content-type: 
+      - text/xml;charset=UTF-8
+      cache-control: 
+      - private, no-cache, no-store, must-revalidate
+      expires: 
+      - Fri, 15 Jul 2011 21:04:16 GMT
+      date: 
+      - Fri, 15 Jul 2011 21:04:16 GMT
+      content-length: 
+      - "14243"
+      connection: 
+      - keep-alive
+    body: |
+      <?xml version="1.0" encoding="UTF-8"?>
+      <rss version="2.0" xmlns:gml="http://www.opengis.net/gml" xmlns:georss="http://www.georss.org/georss">
+        <channel>
+          <title>Garmin Connect - johndoe</title>
+          <description><![CDATA[Garmin Connect RSS Feed]]></description>
+          <link>http://connect.garmin.com/</link>
+          <copyright>Copyright 1996-2009 Garmin Ltd. or its subsidiaries</copyright>
+          <item>
+            <title>4x800 intervals</title>
+            <category>Running</category>
+            <category>running</category>
+            <category>Uncategorized</category>
+            <category>uncategorized</category>
+            <description><![CDATA[<table width="500" border="0" cellpadding="0" cellspacing="5"><tr><td colspan=2 valign="top">Approach: For each interval, aim for 5:35 pace or 185 bpm heart rate (whichever comes first).</td><td rowspan="8" valign="top"><img src="http://dev.virtualearth.net/REST/v1/Imagery/Map/Road/38.0361161,-78.503148/14?mapSize=250,250&pp=38.0361161,-78.503148;1;S&key=Ai6VSxrizWV03n4cSybVIDly6a_jDQB_ianC9MAn4qSEs2gUiQIdmAHT7S2n_tX7" alt="Bing Map" /></td></tr><tr valign="top"><td width="120">Owner: </td><td>johndoe</td></tr><tr valign="top"><td width="120">Location: </td><td>--</td></tr><tr valign="top"><td width="120">Activity Type: </td><td>Running</td></tr><tr valign="top"><td width="120">Event Type: </td><td>Uncategorized</td></tr><tr valign="top"><td width="120">Distance: </td><td>5.76 Mile</td></tr><tr valign="top"><td width="120">Time: </td><td>00:50:43</td></tr><tr valign="top"><td width="120">Elevation Gain: </td><td>472 Feet</td></tr></table>]]></description>
+            <link>http://connect.garmin.com/activity/11111111</link>
+            <guid>http://connect.garmin.com/activity/11111111</guid>
+            <pubDate>Tue, 12 Jul 2011 06:02:04 -0400</pubDate>
+            <georss:point>38.0361161 -78.503148</georss:point>
+          </item>
+          <item>
+            <title>7 miles @ easy pace</title>
+            <category>Running</category>
+            <category>running</category>
+            <category>Uncategorized</category>
+            <category>uncategorized</category>
+            <description><![CDATA[<table width="500" border="0" cellpadding="0" cellspacing="5"><tr><td colspan=2 valign="top">77 degrees and sunny</td><td rowspan="8" valign="top"><img src="http://dev.virtualearth.net/REST/v1/Imagery/Map/Road/38.0361161,-78.503148/14?mapSize=250,250&pp=38.0361161,-78.503148;1;S&key=Ai6VSxrizWV03n4cSybVIDly6a_jDQB_ianC9MAn4qSEs2gUiQIdmAHT7S2n_tX7" alt="Bing Map" /></td></tr><tr valign="top"><td width="120">Owner: </td><td>johndoe</td></tr><tr valign="top"><td width="120">Location: </td><td>--</td></tr><tr valign="top"><td width="120">Activity Type: </td><td>Running</td></tr><tr valign="top"><td width="120">Event Type: </td><td>Uncategorized</td></tr><tr valign="top"><td width="120">Distance: </td><td>7.00 Mile</td></tr><tr valign="top"><td width="120">Time: </td><td>01:00:13</td></tr><tr valign="top"><td width="120">Elevation Gain: </td><td>168 Feet</td></tr></table>]]></description>
+            <link>http://connect.garmin.com/activity/22222222</link>
+            <guid>http://connect.garmin.com/activity/22222222</guid>
+            <pubDate>Sun, 10 Jul 2011 07:50:53 -0400</pubDate>
+            <georss:point>38.0361161 -78.503148</georss:point>
+          </item>
+          <item>
+            <title>3 miles @ easy pace</title>
+            <category>Running</category>
+            <category>running</category>
+            <category>Uncategorized</category>
+            <category>uncategorized</category>
+            <description><![CDATA[<table width="500" border="0" cellpadding="0" cellspacing="5"><tr><td colspan=2 valign="top"></td><td rowspan="8" valign="top"><img src="http://dev.virtualearth.net/REST/v1/Imagery/Map/Road/38.0361161,-78.503148/14?mapSize=250,250&pp=38.0361161,-78.503148;1;S&key=Ai6VSxrizWV03n4cSybVIDly6a_jDQB_ianC9MAn4qSEs2gUiQIdmAHT7S2n_tX7" alt="Bing Map" /></td></tr><tr valign="top"><td width="120">Owner: </td><td>johndoe</td></tr><tr valign="top"><td width="120">Location: </td><td>--</td></tr><tr valign="top"><td width="120">Activity Type: </td><td>Running</td></tr><tr valign="top"><td width="120">Event Type: </td><td>Uncategorized</td></tr><tr valign="top"><td width="120">Distance: </td><td>3.00 Mile</td></tr><tr valign="top"><td width="120">Time: </td><td>00:26:28</td></tr><tr valign="top"><td width="120">Elevation Gain: </td><td>146 Feet</td></tr></table>]]></description>
+            <link>http://connect.garmin.com/activity/33333333</link>
+            <guid>http://connect.garmin.com/activity/33333333</guid>
+            <pubDate>Sat, 09 Jul 2011 08:19:43 -0400</pubDate>
+            <georss:point>38.0361161 -78.503148</georss:point>
+          </item>
+          <item>
+            <title>4 miles w/ 2-mile fartlek</title>
+            <category>Running</category>
+            <category>running</category>
+            <category>Uncategorized</category>
+            <category>uncategorized</category>
+            <description><![CDATA[<table width="500" border="0" cellpadding="0" cellspacing="5"><tr><td colspan=2 valign="top">81 degrees and sunny. Ran in the sun most of the way. Hot!</td><td rowspan="8" valign="top"><img src="http://dev.virtualearth.net/REST/v1/Imagery/Map/Road/38.0361161,-78.503148/14?mapSize=250,250&pp=38.0361161,-78.503148;1;S&key=Ai6VSxrizWV03n4cSybVIDly6a_jDQB_ianC9MAn4qSEs2gUiQIdmAHT7S2n_tX7" alt="Bing Map" /></td></tr><tr valign="top"><td width="120">Owner: </td><td>johndoe</td></tr><tr valign="top"><td width="120">Location: </td><td>--</td></tr><tr valign="top"><td width="120">Activity Type: </td><td>Running</td></tr><tr valign="top"><td width="120">Event Type: </td><td>Uncategorized</td></tr><tr valign="top"><td width="120">Distance: </td><td>4.00 Mile</td></tr><tr valign="top"><td width="120">Time: </td><td>00:34:10</td></tr><tr valign="top"><td width="120">Elevation Gain: </td><td>213 Feet</td></tr></table>]]></description>
+            <link>http://connect.garmin.com/activity/44444444</link>
+            <guid>http://connect.garmin.com/activity/44444444</guid>
+            <pubDate>Fri, 08 Jul 2011 17:51:50 -0400</pubDate>
+            <georss:point>38.0361161 -78.503148</georss:point>
+          </item>
+          <item>
+            <title>Strides</title>
+            <category>Running</category>
+            <category>running</category>
+            <category>Uncategorized</category>
+            <category>uncategorized</category>
+            <description><![CDATA[<table width="500" border="0" cellpadding="0" cellspacing="5"><tr><td colspan=2 valign="top"></td><td rowspan="8" valign="top"><img src="http://dev.virtualearth.net/REST/v1/Imagery/Map/Road/38.0361161,-78.503148/14?mapSize=250,250&pp=38.0361161,-78.503148;1;S&key=Ai6VSxrizWV03n4cSybVIDly6a_jDQB_ianC9MAn4qSEs2gUiQIdmAHT7S2n_tX7" alt="Bing Map" /></td></tr><tr valign="top"><td width="120">Owner: </td><td>johndoe</td></tr><tr valign="top"><td width="120">Location: </td><td>--</td></tr><tr valign="top"><td width="120">Activity Type: </td><td>Running</td></tr><tr valign="top"><td width="120">Event Type: </td><td>Uncategorized</td></tr><tr valign="top"><td width="120">Distance: </td><td>0.27 Mile</td></tr><tr valign="top"><td width="120">Time: </td><td>00:01:57</td></tr><tr valign="top"><td width="120">Elevation Gain: </td><td>0 Feet</td></tr></table>]]></description>
+            <link>http://connect.garmin.com/activity/55555555</link>
+            <guid>http://connect.garmin.com/activity/55555555</guid>
+            <pubDate>Wed, 06 Jul 2011 06:45:11 -0400</pubDate>
+            <georss:point>38.0361161 -78.503148</georss:point>
+          </item>
+          <item>
+            <title>4 miles @ easy pace</title>
+            <category>Running</category>
+            <category>running</category>
+            <category>Uncategorized</category>
+            <category>uncategorized</category>
+            <description><![CDATA[<table width="500" border="0" cellpadding="0" cellspacing="5"><tr><td colspan=2 valign="top"></td><td rowspan="8" valign="top"><img src="http://dev.virtualearth.net/REST/v1/Imagery/Map/Road/38.0361161,-78.503148/14?mapSize=250,250&pp=38.0361161,-78.503148;1;S&key=Ai6VSxrizWV03n4cSybVIDly6a_jDQB_ianC9MAn4qSEs2gUiQIdmAHT7S2n_tX7" alt="Bing Map" /></td></tr><tr valign="top"><td width="120">Owner: </td><td>johndoe</td></tr><tr valign="top"><td width="120">Location: </td><td>--</td></tr><tr valign="top"><td width="120">Activity Type: </td><td>Running</td></tr><tr valign="top"><td width="120">Event Type: </td><td>Uncategorized</td></tr><tr valign="top"><td width="120">Distance: </td><td>4.00 Mile</td></tr><tr valign="top"><td width="120">Time: </td><td>00:34:48</td></tr><tr valign="top"><td width="120">Elevation Gain: </td><td>200 Feet</td></tr></table>]]></description>
+            <link>http://connect.garmin.com/activity/66666666</link>
+            <guid>http://connect.garmin.com/activity/66666666</guid>
+            <pubDate>Wed, 06 Jul 2011 06:05:46 -0400</pubDate>
+            <georss:point>38.0361161 -78.503148</georss:point>
+          </item>
+          <item>
+            <title>6 miles @ easy pace</title>
+            <category>Running</category>
+            <category>running</category>
+            <category>Uncategorized</category>
+            <category>uncategorized</category>
+            <description><![CDATA[<table width="500" border="0" cellpadding="0" cellspacing="5"><tr><td colspan=2 valign="top"></td><td rowspan="8" valign="top"><img src="http://dev.virtualearth.net/REST/v1/Imagery/Map/Road/38.0361161,-78.503148/14?mapSize=250,250&pp=38.0361161,-78.503148;1;S&key=Ai6VSxrizWV03n4cSybVIDly6a_jDQB_ianC9MAn4qSEs2gUiQIdmAHT7S2n_tX7" alt="Bing Map" /></td></tr><tr valign="top"><td width="120">Owner: </td><td>johndoe</td></tr><tr valign="top"><td width="120">Location: </td><td>--</td></tr><tr valign="top"><td width="120">Activity Type: </td><td>Running</td></tr><tr valign="top"><td width="120">Event Type: </td><td>Uncategorized</td></tr><tr valign="top"><td width="120">Distance: </td><td>6.00 Mile</td></tr><tr valign="top"><td width="120">Time: </td><td>00:55:40</td></tr><tr valign="top"><td width="120">Elevation Gain: </td><td>114 Feet</td></tr></table>]]></description>
+            <link>http://connect.garmin.com/activity/77777777</link>
+            <guid>http://connect.garmin.com/activity/77777777</guid>
+            <pubDate>Mon, 04 Jul 2011 07:18:32 -0400</pubDate>
+            <georss:point>38.0361161 -78.503148</georss:point>
+          </item>
+          <item>
+            <title>3 miles @ easy pace</title>
+            <category>Running</category>
+            <category>running</category>
+            <category>Uncategorized</category>
+            <category>uncategorized</category>
+            <description><![CDATA[<table width="500" border="0" cellpadding="0" cellspacing="5"><tr><td colspan=2 valign="top"></td><td rowspan="8" valign="top"><img src="http://dev.virtualearth.net/REST/v1/Imagery/Map/Road/38.0361161,-78.503148/14?mapSize=250,250&pp=38.0361161,-78.503148;1;S&key=Ai6VSxrizWV03n4cSybVIDly6a_jDQB_ianC9MAn4qSEs2gUiQIdmAHT7S2n_tX7" alt="Bing Map" /></td></tr><tr valign="top"><td width="120">Owner: </td><td>johndoe</td></tr><tr valign="top"><td width="120">Location: </td><td>--</td></tr><tr valign="top"><td width="120">Activity Type: </td><td>Running</td></tr><tr valign="top"><td width="120">Event Type: </td><td>Uncategorized</td></tr><tr valign="top"><td width="120">Distance: </td><td>3.00 Mile</td></tr><tr valign="top"><td width="120">Time: </td><td>00:27:16</td></tr><tr valign="top"><td width="120">Elevation Gain: </td><td>131 Feet</td></tr></table>]]></description>
+            <link>http://connect.garmin.com/activity/88888888</link>
+            <guid>http://connect.garmin.com/activity/88888888</guid>
+            <pubDate>Thu, 30 Jun 2011 06:17:20 -0400</pubDate>
+            <georss:point>38.0361161 -78.503148</georss:point>
+          </item>
+          <item>
+            <title>3 miles @ easy pace</title>
+            <category>Running</category>
+            <category>running</category>
+            <category>Uncategorized</category>
+            <category>uncategorized</category>
+            <description><![CDATA[<table width="500" border="0" cellpadding="0" cellspacing="5"><tr><td colspan=2 valign="top"></td><td rowspan="8" valign="top"><img src="http://dev.virtualearth.net/REST/v1/Imagery/Map/Road/38.9505955,-77.3536567/14?mapSize=250,250&pp=38.9505955,-77.3536567;1;S&key=Ai6VSxrizWV03n4cSybVIDly6a_jDQB_ianC9MAn4qSEs2gUiQIdmAHT7S2n_tX7" alt="Bing Map" /></td></tr><tr valign="top"><td width="120">Owner: </td><td>johndoe</td></tr><tr valign="top"><td width="120">Location: </td><td>--</td></tr><tr valign="top"><td width="120">Activity Type: </td><td>Running</td></tr><tr valign="top"><td width="120">Event Type: </td><td>Uncategorized</td></tr><tr valign="top"><td width="120">Distance: </td><td>3.00 Mile</td></tr><tr valign="top"><td width="120">Time: </td><td>00:26:12</td></tr><tr valign="top"><td width="120">Elevation Gain: </td><td>184 Feet</td></tr></table>]]></description>
+            <link>http://connect.garmin.com/activity/99999998</link>
+            <guid>http://connect.garmin.com/activity/99999998</guid>
+            <pubDate>Thu, 23 Jun 2011 06:21:09 -0400</pubDate>
+            <georss:point>38.9505955 -77.3536567</georss:point>
+          </item>
+          <item>
+            <title>7 miles @ easy pace</title>
+            <category>Running</category>
+            <category>running</category>
+            <category>Uncategorized</category>
+            <category>uncategorized</category>
+            <description><![CDATA[<table width="500" border="0" cellpadding="0" cellspacing="5"><tr><td colspan=2 valign="top"></td><td rowspan="8" valign="top"><img src="http://dev.virtualearth.net/REST/v1/Imagery/Map/Road/38.8634934,-77.0668116/14?mapSize=250,250&pp=38.8634934,-77.0668116;1;S&key=Ai6VSxrizWV03n4cSybVIDly6a_jDQB_ianC9MAn4qSEs2gUiQIdmAHT7S2n_tX7" alt="Bing Map" /></td></tr><tr valign="top"><td width="120">Owner: </td><td>johndoe</td></tr><tr valign="top"><td width="120">Location: </td><td>--</td></tr><tr valign="top"><td width="120">Activity Type: </td><td>Running</td></tr><tr valign="top"><td width="120">Event Type: </td><td>Uncategorized</td></tr><tr valign="top"><td width="120">Distance: </td><td>7.00 Mile</td></tr><tr valign="top"><td width="120">Time: </td><td>01:00:52</td></tr><tr valign="top"><td width="120">Elevation Gain: </td><td>216 Feet</td></tr></table>]]></description>
+            <link>http://connect.garmin.com/activity/99999999</link>
+            <guid>http://connect.garmin.com/activity/99999999</guid>
+            <pubDate>Sun, 19 Jun 2011 07:35:53 -0400</pubDate>
+            <georss:point>38.8634934 -77.0668116</georss:point>
+          </item>
+        </channel>
+      </rss>
+
+    http_version: "1.1"
