@@ -1,6 +1,6 @@
 require 'spec_helper'
 
-describe "stratify-instpaper" do
+describe "stratify-instapaper" do
   use_vcr_cassette "instapaper"
 
   it "collects and stores data from Instapaper", :database => true do
