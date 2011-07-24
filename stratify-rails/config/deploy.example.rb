@@ -29,7 +29,7 @@ set :scm_verbose, true
 set(:current_branch) { `git branch`.match(/\* (\S+)\s/m)[1] || raise("Couldn't determine current branch") }
 set :branch, defer { current_branch }
 
-after "deploy:update_code", "stratify:precompile_assets", "stratify:symlink_configs", "deploy:migrate"
+after "deploy:update_code", "stratify:symlink_configs", "stratify:precompile_assets", "deploy:migrate"
 after "deploy", "deploy:tag_last_deploy"
 set :rails_env, "production"
 
