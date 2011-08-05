@@ -20,7 +20,7 @@ Gem::Specification.new do |s|
   s.require_paths = ["lib"]
 
   s.add_runtime_dependency "nokogiri", "~> 1.4.4"
-  s.add_runtime_dependency "railties", "~> 3.1.0.rc1"
+  s.add_runtime_dependency "railties", "~> 3.1.0.rc5"
   s.add_runtime_dependency "stratify-base", "~> 0.1.0"
   s.add_runtime_dependency "thoughtafter-simple-rss", "~> 1.2.3"
 
