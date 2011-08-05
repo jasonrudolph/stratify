@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    stratify-instapaper (0.1.0)
+    stratify-instapaper (0.1.2)
       railties (~> 3.1.0.rc5)
       stratify-base (~> 0.1.0)
       thoughtafter-simple-rss (~> 1.2.3)
