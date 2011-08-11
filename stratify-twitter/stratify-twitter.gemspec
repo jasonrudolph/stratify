@@ -22,7 +22,7 @@ Gem::Specification.new do |s|
   s.add_runtime_dependency "actionpack", "~> 3.1.0.rc5"
   s.add_runtime_dependency "railties", "~> 3.1.0.rc5"
   s.add_runtime_dependency "rinku", "~> 1.0.0"
-  s.add_runtime_dependency "stratify-base", "~> 0.1.0"
+  s.add_runtime_dependency "stratify-base", "~> 0.1.2"
   s.add_runtime_dependency "twitter", "~> 1.5.0"
 
   s.add_development_dependency "database_cleaner", "~> 0.6.7"
