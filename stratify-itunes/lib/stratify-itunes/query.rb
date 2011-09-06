@@ -17,7 +17,8 @@ module Stratify
       private
 
       def library_xml
-        open(@library_path).read    
+        raw_xml_string = open(@library_path).read
+        raw_xml_string.force_encoding("UTF-8")
       end
 
       def build_activity_from_raw_data(track)

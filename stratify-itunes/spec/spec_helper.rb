@@ -18,6 +18,8 @@ RSpec.configure do |config|
   config.run_all_when_everything_filtered = true
   config.alias_example_to :fit, :focused => true
 
+  config.extend VCR::RSpec::Macros
+
   # Configure RSpec to truncate the database before any spec tagged with ":database => true"
   DatabaseCleaner.strategy = :truncation
   DatabaseCleaner.orm = "mongoid"

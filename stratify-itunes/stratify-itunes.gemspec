@@ -24,5 +24,7 @@ Gem::Specification.new do |s|
   s.add_runtime_dependency "itunes-library", "~> 0.1.1"
 
   s.add_development_dependency "database_cleaner", "~> 0.6.7"
+  s.add_development_dependency "fakeweb", "~> 1.3.0"
   s.add_development_dependency "rspec", "~> 2.6.0"
+  s.add_development_dependency "vcr", "~> 1.10.0"
 end

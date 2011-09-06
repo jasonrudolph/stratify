@@ -1,6 +1,6 @@
 require 'spec_helper'
 
-describe "stratify-itunes", :database => true do
+describe "collecting and storing iTunes data", :database => true do
   before do
     itunes_library_path = File.expand_path('../../fixtures/iTunes Music Library.xml', __FILE__)
     collector = Stratify::ITunes::Collector.create!(:library_path => itunes_library_path)
@@ -74,3 +74,16 @@ describe "stratify-itunes", :database => true do
     Stratify::ITunes::Activity.where(:persistent_id => "8780A3C7A0117B2B").should_not exist
   end
 end
+
+describe "reading a remote iTunes library file", :database => true do
+  use_vcr_cassette "itunes"
+
+  it "works over HTTP" do
+    itunes_library_path = "http://dl.dropbox.com/u/1234567/iTunes%20Music%20Library.xml"
+    collector = Stratify::ITunes::Collector.create!(:library_path => itunes_library_path)
+    collector.run
+    
+    Stratify::ITunes::Activity.where(:persistent_id => "83B3927542025FDC").should exist
+  end
+end
+
