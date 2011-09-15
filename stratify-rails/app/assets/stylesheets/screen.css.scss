@@ -12,7 +12,7 @@ article, aside {
 }
 
 body {
-  background: #ebebeb url(<%= asset_path 'body-background.png' %>);
+  background: #ebebeb url(image_path('body-background.png'));
   font-family: Helvetica, Arial, sans-serif;
   font-size-adjust: none;
   font-style: normal;
