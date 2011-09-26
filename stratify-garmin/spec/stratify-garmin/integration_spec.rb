@@ -1,6 +1,6 @@
 require 'spec_helper'
 
-describe "stratify-instapaper" do
+describe "stratify-garmin" do
   use_vcr_cassette "garmin"
 
   it "collects and stores data from Garmin Connect", :database => true do
