@@ -16,7 +16,7 @@ module Stratify
       end
 
       def domain
-        URI.parse(url).host
+        URI.parse(URI.escape(url)).host
       end
 
       private
