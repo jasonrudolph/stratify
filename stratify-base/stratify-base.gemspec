@@ -19,8 +19,8 @@ Gem::Specification.new do |s|
   s.executables   = `git ls-files -- bin/*`.split("\n").map{ |f| File.basename(f) }
   s.require_paths = ["lib"]
 
-  s.add_runtime_dependency "bson_ext", "~> 1.3.1"
-  s.add_runtime_dependency "mongoid", "~> 2.0.2"
+  s.add_runtime_dependency "bson_ext", "~> 1.6.0"
+  s.add_runtime_dependency "mongoid", "~> 2.4.0"
   s.add_runtime_dependency "tilt", "~> 1.3.2"
 
   s.add_development_dependency "rake", "~> 0.9.2"
