@@ -24,7 +24,7 @@ Gem::Specification.new do |s|
   s.add_runtime_dependency "stratify-base", "~> 0.1.3"
   s.add_runtime_dependency "thoughtafter-simple-rss", "~> 1.2.3"
 
-  s.add_development_dependency "database_cleaner", "~> 0.6.7"
+  s.add_development_dependency "database_cleaner", "~> 0.7.2"
   s.add_development_dependency "fakeweb", "~> 1.3.0"
   s.add_development_dependency "rake", "~> 0.9.2"
   s.add_development_dependency "rspec", "~> 2.6.0"
