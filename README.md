@@ -1,7 +1,7 @@
 ## Introduction
 
 We are a product of our experiences. Increasingly, we deposit digital traces
-of those experiences around the web (e.g., Twitter, Gowalla, GitHub, Last.fm,
+of those experiences around the web (e.g., Twitter, Foursquare, GitHub, Last.fm,
 etc.) and on our various computing devices. Together, these deposits form a
 rich archeological history. Stratify gathers (excavates, if you will) that
 data from those disparate sources and provides a consolidated timeline of
@@ -9,7 +9,7 @@ your experiences.
 
 Stratify allows you to configure *collectors* for the data sources from which
 you want to pull in your activities.  Stratify currently provides collectors
-for Twitter, Gowalla, iTunes, and other sources as well.
+for Twitter, Foursquare, iTunes, and other sources as well.
 
 Once you've decided which collectors you want to use, Stratify goes to work
 building a consolidated history for you. And then, when you add a new tweet
@@ -41,6 +41,7 @@ Stratify consists of the following parts:
 
 * **stratify-base**: Core collector and activity componentry.
 * **stratify-rails**: Rails app for configuring collectors and displaying collected activities.
+* **stratify-foursquare**: Collects your checkins from Foursquare.
 * **stratify-garmin**: Collects your runs, bike rides, etc. from Garmin Connect.
 * **stratify-gowalla**: Collects your checkins from Gowalla.
 * **stratify-instapaper**: Collects the articles you've archived on Instapaper.

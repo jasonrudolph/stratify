@@ -14,6 +14,7 @@ end
 
 # Stratify-specific dependencies
 gem "stratify-base"
+gem "stratify-foursquare"
 gem "stratify-garmin"
 gem "stratify-gowalla"
 gem "stratify-instapaper"
