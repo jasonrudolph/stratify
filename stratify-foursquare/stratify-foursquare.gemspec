@@ -19,7 +19,7 @@ Gem::Specification.new do |s|
   s.executables   = `git ls-files -- bin/*`.split("\n").map{ |f| File.basename(f) }
   s.require_paths = ["lib"]
 
-  s.add_runtime_dependency "foursquare2", "~> 1.1.1"
+  s.add_runtime_dependency "foursquare2", "~> 1.3.6"
   s.add_runtime_dependency "railties", "~> 3.2.0"
   s.add_runtime_dependency "stratify-base", "~> 0.1.4"
 
