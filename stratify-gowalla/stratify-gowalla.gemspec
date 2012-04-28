@@ -19,13 +19,10 @@ Gem::Specification.new do |s|
   s.executables   = `git ls-files -- bin/*`.split("\n").map{ |f| File.basename(f) }
   s.require_paths = ["lib"]
 
-  s.add_runtime_dependency "gowalla", "~> 0.5.6"
   s.add_runtime_dependency "railties", "~> 3.2.0"
   s.add_runtime_dependency "stratify-base", "~> 0.1.4"
 
   s.add_development_dependency "database_cleaner", "~> 0.7.2"
-  s.add_development_dependency "fakeweb", "~> 1.3.0"
   s.add_development_dependency "rake", "~> 0.9.2"
   s.add_development_dependency "rspec", "~> 2.9.0"
-  s.add_development_dependency "vcr", "~> 1.10.0"
 end
