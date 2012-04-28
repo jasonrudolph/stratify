@@ -14,11 +14,11 @@ stratify_components = stratify_gems + ['stratify-rails']
 ROOT = File.dirname(__FILE__)
 
 def gem_command(command, *args)
-  sh "#{RUBY} -S gem #{command} #{args.join(' ')}"
+  ruby "-S gem #{command} #{args.join(' ')}"
 end
 
 def rake_command(command)
-  sh "#{RUBY} -S bundle exec rake #{command}"
+  ruby "-S bundle exec rake #{command}"
 end
 
 namespace :components do
