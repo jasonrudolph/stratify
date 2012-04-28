@@ -34,7 +34,7 @@ namespace :gems do
   desc "Install all Stratify gems"
   task :install do
     stratify_gems.each do |gem_name|
-      Dir.chdir(File.join(ROOT, gem_name)) { rake_command "install" }
+      Dir.chdir(File.join(ROOT, gem_name)) { ruby "-S rake install" }
     end
   end
 
