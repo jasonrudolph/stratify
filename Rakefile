@@ -22,6 +22,18 @@ def rake_command(command)
 end
 
 namespace :components do
+  desc 'Runs the given shell command in each component directory (e.g., rake components:run["bundle update"]'
+  task :run, [:command] do |t, args|
+    command = args.command
+    if command.nil?
+      raise "Usage: rake components:run[<command>]"
+    end
+
+    stratify_components.each do |gem_name|
+      Dir.chdir(File.join(ROOT, gem_name)) { sh command }
+    end
+  end
+
   desc "Run specs for all Stratify components"
   task :spec do
     stratify_components.each do |component_name|
