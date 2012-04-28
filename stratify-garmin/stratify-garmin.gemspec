@@ -21,7 +21,7 @@ Gem::Specification.new do |s|
 
   s.add_runtime_dependency "nokogiri", "~> 1.4.4"
   s.add_runtime_dependency "railties", "~> 3.2.0"
-  s.add_runtime_dependency "stratify-base", "~> 0.1.3"
+  s.add_runtime_dependency "stratify-base", "~> 0.1.4"
   s.add_runtime_dependency "thoughtafter-simple-rss", "~> 1.2.3"
 
   s.add_development_dependency "database_cleaner", "~> 0.7.2"
