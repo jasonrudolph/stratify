@@ -19,7 +19,7 @@ Gem::Specification.new do |s|
   s.executables   = `git ls-files -- bin/*`.split("\n").map{ |f| File.basename(f) }
   s.require_paths = ["lib"]
 
-  s.add_runtime_dependency "railties", "~> 3.1.0"
+  s.add_runtime_dependency "railties", "~> 3.2.0"
   s.add_runtime_dependency "stratify-base", "~> 0.1.3"
   s.add_runtime_dependency "thoughtafter-simple-rss", "~> 1.2.3"
 

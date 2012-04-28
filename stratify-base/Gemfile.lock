@@ -9,14 +9,12 @@ PATH
 GEM
   remote: http://rubygems.org/
   specs:
-    activemodel (3.1.0)
-      activesupport (= 3.1.0)
-      bcrypt-ruby (~> 3.0.0)
+    activemodel (3.2.3)
+      activesupport (= 3.2.3)
       builder (~> 3.0.0)
+    activesupport (3.2.3)
       i18n (~> 0.6)
-    activesupport (3.1.0)
       multi_json (~> 1.0)
-    bcrypt-ruby (3.0.1)
     bson (1.6.2)
     bson_ext (1.6.2)
       bson (~> 1.6.2)
