@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    stratify-twitter (0.1.3)
+    stratify-twitter (0.1.4)
       actionpack (~> 3.2.0)
       railties (~> 3.2.0)
       rinku (~> 1.0.0)
