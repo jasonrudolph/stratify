@@ -13,6 +13,12 @@ stratify_components = stratify_gems + ['stratify-rails']
 
 ROOT = File.dirname(__FILE__)
 
+def in_each_dir(dirs, &command)
+  dirs.each do |dir_name|
+    Dir.chdir(File.join(ROOT, dir_name)) { command.call }
+  end
+end
+
 def gem_command(command, *args)
   ruby "-S gem #{command} #{args.join(' ')}"
 end
@@ -29,25 +35,19 @@ namespace :components do
       raise "Usage: rake components:run[<command>]"
     end
 
-    stratify_components.each do |gem_name|
-      Dir.chdir(File.join(ROOT, gem_name)) { sh command }
-    end
+    in_each_dir(stratify_components) { sh command }
   end
 
   desc "Run specs for all Stratify components"
   task :spec do
-    stratify_components.each do |component_name|
-      Dir.chdir(File.join(ROOT, component_name)) { rake_command "spec" }
-    end
+    in_each_dir(stratify_components) { rake_command "spec" }
   end
 end
 
 namespace :gems do
   desc "Install all Stratify gems"
   task :install do
-    stratify_gems.each do |gem_name|
-      Dir.chdir(File.join(ROOT, gem_name)) { ruby "-S rake install" }
-    end
+    in_each_dir(stratify_gems) { ruby "-S rake install" }
   end
 
   desc "Build all Stratify gems"
