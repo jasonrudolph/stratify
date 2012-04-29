@@ -29,8 +29,9 @@ set :scm_verbose, true
 set(:current_branch) { `git branch`.match(/\* (\S+)\s/m)[1] || raise("Couldn't determine current branch") }
 set :branch, defer { current_branch }
 
-after "deploy:update_code", "stratify:symlink_configs", "stratify:precompile_assets", "deploy:migrate"
+after "deploy:update_code", "stratify:symlink_configs", "deploy:migrate"
 after "deploy", "deploy:tag_last_deploy"
+after "deploy:restart", "deploy:cleanup"
 set :rails_env, "production"
 
 set :whenever_command, "bundle exec whenever"
@@ -53,10 +54,6 @@ namespace :deploy do
 end
 
 namespace :stratify do
-  task :precompile_assets do
-    run "cd #{release_path}; RAILS_ENV=#{rails_env} bundle exec rake assets:precompile"
-  end
-
   task :symlink_configs do
     shared_configs = File.join(shared_path, 'config')
     release_configs = File.join(release_path, 'config')
