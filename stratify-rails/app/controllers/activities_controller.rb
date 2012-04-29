@@ -2,7 +2,10 @@ class ActivitiesController < ApplicationController
   before_filter :prompt_user_to_setup_collectors_if_no_activities_exist, :only => :index
 
   def index
-    @activities = Stratify::Activity.desc(:created_at).page params[:page]
+    # TODO Simplify the logic below once this bug is fixed in Kaminari:
+    #      https://github.com/amatsuda/kaminari/issues/145
+    activity_criteria = Stratify::Activity.desc(:created_at)
+    @activities = Kaminari.paginate_array(activity_criteria).page(params[:page])
   end
 
   def destroy
