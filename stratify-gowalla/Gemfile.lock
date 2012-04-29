@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    stratify-gowalla (0.1.4)
+    stratify-gowalla (0.1.4.1)
       railties (~> 3.2.0)
       stratify-base (~> 0.1.4)
 
@@ -41,7 +41,7 @@ GEM
       activemodel (~> 3.1)
       mongo (~> 1.3)
       tzinfo (~> 0.3.22)
-    multi_json (1.3.2)
+    multi_json (1.3.4)
     rack (1.4.1)
     rack-cache (1.2)
       rack (>= 0.4)

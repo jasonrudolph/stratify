@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    stratify-foursquare (0.1.4)
+    stratify-foursquare (0.1.4.1)
       foursquare2 (~> 1.3.6)
       railties (~> 3.2.0)
       stratify-base (~> 0.1.4)
