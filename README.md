@@ -55,7 +55,7 @@ Stratify consists of the following parts:
 Stratify is developed and tested with the following dependencies.
 
 * Ruby 1.9.2
-* MongoDB 1.8
+* MongoDB 2.0
 
 
 ## Getting started

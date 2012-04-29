@@ -5,7 +5,7 @@
 Stratify is developed and tested with the following dependencies.
 
 * Ruby 1.9.2 (See `.rvmrc` for the specific version.)
-* MongoDB 1.8
+* MongoDB 2.0
 
 ## Development
 
