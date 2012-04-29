@@ -6,5 +6,7 @@ require File.expand_path('../config/application', __FILE__)
 
 Stratify::Application.load_tasks
 
-Rake::Task[:default].clear
-task :default => :spec
+unless Rails.env.production?
+  task(:default).clear
+  task :default => ["spec"]
+end
