@@ -27,7 +27,7 @@ describe Stratify::Renderable do
       renderable_class.template_format.should == :haml
     end
   end
-  
+
   describe "#presenter" do
     it "returns the object" do
       renderable_object = anonymous_class_with_renderable_mixin.new
@@ -46,7 +46,7 @@ describe Stratify::Renderable do
           "Kilgore"
         end
       end
-      
+
       renderable_object.to_html.should == "Hello, Kilgore"
     end
   end

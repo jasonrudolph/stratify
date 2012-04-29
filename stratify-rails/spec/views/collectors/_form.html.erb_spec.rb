@@ -25,5 +25,5 @@ describe "collectors/_form.html.erb" do
       rendered.should_not have_css(".instructions")
     end
   end
-  
+
 end

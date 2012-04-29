@@ -8,7 +8,7 @@ module Stratify
           @natural_key_fields = fields.dup
           validates_uniqueness_of_natural_key
         end
-        
+
         def validates_uniqueness_of_natural_key
           first, *rest = *natural_key_fields
           if rest.empty?

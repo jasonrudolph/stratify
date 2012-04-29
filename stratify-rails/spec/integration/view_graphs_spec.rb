@@ -12,7 +12,7 @@ feature "Viewing graphs" do
     graph_url = graph_image_tag[:src]
 
     graph_url.should =~ %r[^https://chart.googleapis.com/chart]
-    
+
     params = CGI.parse(URI.parse(URI.encode(graph_url)).query)
     params["cht"].should  == ["s"]
     params["chxt"].should == ["x,y"]

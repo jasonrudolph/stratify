@@ -14,9 +14,9 @@ module Stratify
       end
 
       private
-      
+
       def activities_from_api
-        ::Twitter.user_timeline(username, :include_rts => true)        
+        ::Twitter.user_timeline(username, :include_rts => true)
       end
     end
   end

@@ -33,14 +33,14 @@ describe Stratify::Instapaper::Presenter do
 
   describe "details" do
     it "provides the Instapaper item's domain and description" do
-      activity = Stratify::Instapaper::Activity.new(:url => "http://nex-3.com/posts/104-haml-and-sass-3-1-are-released", 
+      activity = Stratify::Instapaper::Activity.new(:url => "http://nex-3.com/posts/104-haml-and-sass-3-1-are-released",
                                        :description => "dhh: Great new stuff for Sass 3.1")
       presenter = Stratify::Instapaper::Presenter.new(activity)
       presenter.details.should == "nex-3.com \u2022 dhh: Great new stuff for Sass 3.1"
     end
 
     it "provides only the Instapaper item's domain when the description is blank" do
-      activity = Stratify::Instapaper::Activity.new(:url => "http://nex-3.com/posts/104-haml-and-sass-3-1-are-released", 
+      activity = Stratify::Instapaper::Activity.new(:url => "http://nex-3.com/posts/104-haml-and-sass-3-1-are-released",
                                        :description => "")
       presenter = Stratify::Instapaper::Presenter.new(activity)
       presenter.details.should == "nex-3.com"

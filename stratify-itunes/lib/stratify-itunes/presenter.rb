@@ -21,7 +21,7 @@ module Stratify
           join_fields_with_separator album, year, genre
         end
       end
-  
+
       def season_number
         return unless @activity.season_number
         "Season #{@activity.season_number}"
@@ -32,17 +32,17 @@ module Stratify
         return unless number
         "Episode #{number}"
       end
-  
+
       def method_missing(*args)
         @activity.send(*args)
       end
-  
+
       private
 
       def separator
         "\u2022"
       end
-  
+
       def join_fields_with_separator(*fields)
         fields.reject(&:blank?).join(" #{separator} ")
       end

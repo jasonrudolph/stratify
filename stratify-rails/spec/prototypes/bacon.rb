@@ -1,12 +1,12 @@
 # This file defines an example Stratify collector and activity for testing
-# purposes.  
-# 
-# Stratify::Bacon::Activity and Stratify::Bacon::Collector represent a 
-# (fictitious, unfortunately) service for tracking your bacon-related 
-# achievements. This also happens to be an *amazing* idea for a service. 
+# purposes.
+#
+# Stratify::Bacon::Activity and Stratify::Bacon::Collector represent a
+# (fictitious, unfortunately) service for tracking your bacon-related
+# achievements. This also happens to be an *amazing* idea for a service.
 # You know you want to track your bacon-related achievements. You just know it.
 
-# Stratify::Bacon::Activity implements all *mandatory* functionality required 
+# Stratify::Bacon::Activity implements all *mandatory* functionality required
 # for it to be a valid activity.
 module Stratify
   module Bacon
@@ -20,7 +20,7 @@ module Stratify
   end
 end
 
-# Stratify::Bacon::Collector implements all *mandatory* functionality required 
+# Stratify::Bacon::Collector implements all *mandatory* functionality required
 # for it to be a valid collector.
 module Stratify
   module Bacon
@@ -30,9 +30,9 @@ module Stratify
       configuration_fields :username => {:type => :string},
                            :password => {:type => :password}
 
-      # Return a fixed set of Stratify::Bacon::Activity objects.  (A real 
-      # collector would tend to return new data as time goes by.  For testing 
-      # purposes, it's convenient to have a fixed set of data returned by the 
+      # Return a fixed set of Stratify::Bacon::Activity objects.  (A real
+      # collector would tend to return new data as time goes by.  For testing
+      # purposes, it's convenient to have a fixed set of data returned by the
       # collector.)
       def activities
         [

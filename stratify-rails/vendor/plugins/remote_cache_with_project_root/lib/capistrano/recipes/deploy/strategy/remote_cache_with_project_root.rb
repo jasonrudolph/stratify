@@ -13,15 +13,15 @@ module Capistrano
       class RemoteCacheWithProjectRoot < RemoteCache
 
         def copy_repository_cache
-          cached_project_root = File.join(repository_cache, project_root) 
+          cached_project_root = File.join(repository_cache, project_root)
 
           logger.trace "copying the cached version from #{cached_project_root} to #{configuration[:release_path]}"
 
-          if copy_exclude.empty? 
-            run "cp -RPp #{cached_project_root} #{configuration[:release_path]} && #{mark}"  
+          if copy_exclude.empty?
+            run "cp -RPp #{cached_project_root} #{configuration[:release_path]} && #{mark}"
           else
             exclusions = copy_exclude.map { |e| "--exclude=\"#{e}\"" }.join(' ')
-            run "rsync -lrpt #{exclusions} #{cached_project_root}/* #{configuration[:release_path]} && #{mark}" 
+            run "rsync -lrpt #{exclusions} #{cached_project_root}/* #{configuration[:release_path]} && #{mark}"
           end
         end
 

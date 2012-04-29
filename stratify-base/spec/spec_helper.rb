@@ -26,7 +26,7 @@ RSpec.configure do |config|
   DatabaseCleaner.orm = "mongoid"
   config.before(:each, :database => true) do
     DatabaseCleaner.clean
-  end    
+  end
 
   config.before(:suite) do
     silence_mongoid_logging

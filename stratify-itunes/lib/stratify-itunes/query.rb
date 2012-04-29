@@ -34,7 +34,7 @@ module Stratify
           :persistent_id => track.persistent_id,
           :podcast => track.podcast?,
           :season_number => track.season_number,
-          :track_number => track.number, 
+          :track_number => track.number,
           :tv_show => track.tv_show?,
           :year => track.year,
         })
@@ -53,5 +53,5 @@ module Stratify
         sorted_tracks.last(limit)
       end
     end
-  end  
+  end
 end

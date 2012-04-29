@@ -5,10 +5,10 @@ module Stratify
     end
 
     private
-    
+
     def initialize_logger
       return Rails.logger if defined?(Rails)
       Logger.new(STDOUT)
-    end    
+    end
   end
 end

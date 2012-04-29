@@ -22,7 +22,7 @@ module Stratify
         rss.items
       end
 
-      def build_activity_from_raw_data(raw_activity)    
+      def build_activity_from_raw_data(raw_activity)
         Stratify::Rhapsody::Activity.new({
           :track_id => raw_activity[:"rhap_track-rcid"],
           :track_title => raw_activity[:rhap_track],
@@ -39,5 +39,5 @@ module Stratify
         SimpleRSS.item_tags << :"rhap:track-rcid" << :"rhap:track" << :"rhap:artist-rcid" << :"rhap:artist"<< :"rhap:album-rcid" << :"rhap:album"
       end
     end
-  end  
+  end
 end

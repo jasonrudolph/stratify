@@ -7,23 +7,23 @@ module ClassFactory
   end
 end
 
-Factory.sequence :gowalla_checkin_id do |n| 
+Factory.sequence :gowalla_checkin_id do |n|
   n
 end
 
-Factory.sequence :rhapsody_album_id do |n| 
+Factory.sequence :rhapsody_album_id do |n|
   "alb.#{n}"
 end
 
-Factory.sequence :rhapsody_artist_id do |n| 
+Factory.sequence :rhapsody_artist_id do |n|
   "art.#{n}"
 end
 
-Factory.sequence :rhapsody_track_id do |n| 
+Factory.sequence :rhapsody_track_id do |n|
   "tra.#{n}"
 end
 
-Factory.sequence :twitter_status_id do |n| 
+Factory.sequence :twitter_status_id do |n|
   n
 end
 

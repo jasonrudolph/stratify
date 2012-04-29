@@ -3,8 +3,8 @@
   request: !ruby/struct:VCR::Request
     method: :get
     uri: http://dl.dropbox.com:80/u/1234567/iTunes%20Music%20Library.xml
-    body: 
-    headers: 
+    body:
+    headers:
   response: !ruby/struct:VCR::Response
     status: !ruby/struct:VCR::ResponseStatus
       code: 200

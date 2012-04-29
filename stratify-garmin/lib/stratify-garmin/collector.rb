@@ -6,7 +6,7 @@ module Stratify
   module Garmin
     class Collector < Stratify::Collector
       source "Garmin"
-  
+
       configuration_fields :rss_url => {:type => :string, :label => "RSS URL"}
 
       configuration_instructions %q[
@@ -52,7 +52,7 @@ module Stratify
           :starting_longitude => adapter.starting_longitude,
           :guid => adapter.guid,
           :created_at => adapter.created_at
-        )        
+        )
       end
     end
   end

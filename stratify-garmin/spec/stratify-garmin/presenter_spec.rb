@@ -12,7 +12,7 @@ describe Stratify::Garmin::Presenter do
   describe "details" do
     it "provides the activity's distance, time, and description" do
       activity = Stratify::Garmin::Activity.new(
-        :distance_in_miles => 7, 
+        :distance_in_miles => 7,
         :time_in_seconds => 3613,
         :description => "77 degrees and sunny"
       )
@@ -22,7 +22,7 @@ describe Stratify::Garmin::Presenter do
 
     it "provides only the activity's distance and time when the description is blank" do
       activity = Stratify::Garmin::Activity.new(
-        :distance_in_miles => 7, 
+        :distance_in_miles => 7,
         :time_in_seconds => 3613,
         :description => ""
       )

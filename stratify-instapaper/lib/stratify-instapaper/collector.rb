@@ -4,7 +4,7 @@ module Stratify
   module Instapaper
     class Collector < Stratify::Collector
       source "Instapaper"
-  
+
       configuration_fields :rss_url => {:type => :string, :label => "RSS URL"}
 
       configuration_instructions %q[

@@ -4,11 +4,11 @@ describe Stratify::ITunes::Presenter do
 
   context "audio track" do
     before do
-      @activity = Stratify::ITunes::Activity.new(:name => "In Bloom", :artist => "Nirvana", :album => "Nevermind", 
+      @activity = Stratify::ITunes::Activity.new(:name => "In Bloom", :artist => "Nirvana", :album => "Nevermind",
                                                  :year => 1999, :genre => "Rock")
       @presenter = Stratify::ITunes::Presenter.new(@activity)
     end
-    
+
     describe "summary" do
       it "provides the track name and the artist name" do
         @presenter.summary.should == "In Bloom \u2022 Nirvana"
@@ -24,7 +24,7 @@ describe Stratify::ITunes::Presenter do
         @presenter.summary.should == "Untitled \u2022 Nirvana"
       end
     end
-    
+
     describe "details" do
       it "provides the album, year, and genre" do
         @presenter.details.should == "Nevermind \u2022 1999 \u2022 Rock"
@@ -46,7 +46,7 @@ describe Stratify::ITunes::Presenter do
       end
     end
   end
-  
+
   context "TV show" do
     describe "episode_number" do
       it "provides the episode number if it is present" do
@@ -67,7 +67,7 @@ describe Stratify::ITunes::Presenter do
         presenter.episode_number.should == nil
       end
     end
-    
+
     describe "summary" do
       before do
         @activity = Stratify::ITunes::Activity.new(:tv_show => true, :name => "Crazy Handful of Nothin", :artist => "Breaking Bad")
@@ -88,7 +88,7 @@ describe Stratify::ITunes::Presenter do
         @presenter.summary.should == "Untitled \u2022 Breaking Bad"
       end
     end
-    
+
     describe "details" do
       before do
         @activity = Stratify::ITunes::Activity.new(:tv_show => true, :season_number => 1, :episode_number => 6, :year => 2008)
@@ -108,12 +108,12 @@ describe Stratify::ITunes::Presenter do
         @activity.episode_number = nil
         @presenter.details.should == "Season 1 \u2022 2008"
       end
-      
+
       it "omits the year if it is nil" do
         @activity.year = nil
         @presenter.details.should == "Season 1 \u2022 Episode 6"
       end
-    end    
+    end
   end
 
   context "movie" do
@@ -122,18 +122,18 @@ describe Stratify::ITunes::Presenter do
                                                  :year => 2006, :genre => "Action & Adventure")
       @presenter = Stratify::ITunes::Presenter.new(@activity)
     end
-    
+
     describe "summary" do
       it "provides the name" do
         @presenter.summary.should == "V for Vendetta"
       end
     end
-    
+
     describe "details" do
       it "provides the year and the genre" do
         @presenter.details.should == "2006 \u2022 Action & Adventure"
       end
-      
+
       it "omits the year if it is nil" do
         @activity.year = nil
         @presenter.details.should == "Action & Adventure"
@@ -143,6 +143,6 @@ describe Stratify::ITunes::Presenter do
         @activity.genre = nil
         @presenter.details.should == "2006"
       end
-    end    
+    end
   end
 end

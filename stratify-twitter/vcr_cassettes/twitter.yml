@@ -1,68 +1,68 @@
---- 
-- !ruby/struct:VCR::HTTPInteraction 
-  request: !ruby/struct:VCR::Request 
+---
+- !ruby/struct:VCR::HTTPInteraction
+  request: !ruby/struct:VCR::Request
     method: :get
     uri: https://api.twitter.com:443/1/statuses/user_timeline.json?include_rts=true&screen_name=jasonrudolph
-    body: 
-    headers: 
-      accept: 
+    body:
+    headers:
+      accept:
       - application/json
-      user-agent: 
+      user-agent:
       - Twitter Ruby Gem 1.5.0
-      accept-encoding: 
+      accept-encoding:
       - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-  response: !ruby/struct:VCR::Response 
-    status: !ruby/struct:VCR::ResponseStatus 
+  response: !ruby/struct:VCR::Response
+    status: !ruby/struct:VCR::ResponseStatus
       code: 200
       message: OK
-    headers: 
-      date: 
+    headers:
+      date:
       - Sat, 02 Jul 2011 23:57:26 GMT
-      server: 
+      server:
       - hi
-      status: 
+      status:
       - 200 OK
-      x-transaction: 
+      x-transaction:
       - 1309651046-78606-29628
-      x-ratelimit-limit: 
+      x-ratelimit-limit:
       - "150"
-      etag: 
+      etag:
       - "\"2ed2bd074a816eb72eb0b8e1bb802272\"-gzip"
-      x-frame-options: 
+      x-frame-options:
       - SAMEORIGIN
-      last-modified: 
+      last-modified:
       - Sat, 02 Jul 2011 23:57:26 GMT
-      x-ratelimit-remaining: 
+      x-ratelimit-remaining:
       - "143"
-      x-runtime: 
+      x-runtime:
       - "0.05163"
-      x-transaction-mask: 
+      x-transaction-mask:
       - a6183ffa5f8ca943ff1b53b5644ef1144d1160fd
-      content-type: 
+      content-type:
       - application/json; charset=utf-8
-      pragma: 
+      pragma:
       - no-cache
-      x-ratelimit-class: 
+      x-ratelimit-class:
       - api
-      x-revision: 
+      x-revision:
       - DEV
-      expires: 
+      expires:
       - Tue, 31 Mar 1981 05:00:00 GMT
-      cache-control: 
+      cache-control:
       - no-cache, no-store, must-revalidate, pre-check=0, post-check=0
-      x-mid: 
+      x-mid:
       - 664f93b9dd0e62b436dea81ad854e7310d6f4c9c
-      x-ratelimit-reset: 
+      x-ratelimit-reset:
       - "1309651839"
-      set-cookie: 
+      set-cookie:
       - k=24.136.206.3.1309651046043740; path=/; expires=Sat, 09-Jul-11 23:57:26 GMT; domain=.twitter.com
       - guest_id=v1%3A130965104604816168; domain=.twitter.com; path=/; expires=Tue, 02 Jul 2013 11:57:26 GMT
       - _twitter_sess=BAh7CDoPY3JlYXRlZF9hdGwrCKIOSe0wAToHaWQiJTRhNTE1OWU3NjRkZDgz%250AYzEyODk2Zjk5ZTJiZDc1NzMzIgpmbGFzaElDOidBY3Rpb25Db250cm9sbGVy%250AOjpGbGFzaDo6Rmxhc2hIYXNoewAGOgpAdXNlZHsA--a0082ed72f3eb78dd6573a5f7d9aae68a6287f10; domain=.twitter.com; path=/; HttpOnly
-      vary: 
+      vary:
       - Accept-Encoding
-      content-encoding: 
+      content-encoding:
       - gzip
-      content-length: 
+      content-length:
       - "6051"
     body: !binary |
       H4sIAAAAAAAAA+1dC3PbNrb+K4g6s72dtWUABF+6s5M4dpImjZs0dm9u9+qO

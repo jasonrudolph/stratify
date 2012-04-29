@@ -19,7 +19,7 @@ describe Stratify::Archiver do
     context "when an exception occurs during collection" do
       it "propagates the exception to the caller" do
         archiver = Stratify::Archiver.new(collector = stub)
-        archiver.stubs(:collect_activities).raises("some gnarly error") 
+        archiver.stubs(:collect_activities).raises("some gnarly error")
         lambda { archiver.run }.should raise_error
       end
 
@@ -29,13 +29,13 @@ describe Stratify::Archiver do
 
         collector = Stratify::Collector.create
         archiver = Stratify::Archiver.new(collector)
-        archiver.stubs(:collect_activities).raises("some gnarly error") 
+        archiver.stubs(:collect_activities).raises("some gnarly error")
         archiver.run rescue nil
         collector.last_ran_at.should == stub_current_timestamp
       end
     end
   end
-  
+
   describe ".collect_activities" do
     it "documents the source of each activity" do
       example_collector_class = Class.new(Stratify::Collector)
@@ -44,18 +44,18 @@ describe Stratify::Archiver do
 
       activity = Stratify::Activity.new
       collector.stubs(:activities).returns [activity]
-      
+
       archiver = Stratify::Archiver.new(collector)
       archiver.stubs(:persist_activity)
       archiver.send(:collect_activities)
       activity.source.should == "some-example-source"
     end
-    
+
     it "persists each activity" do
       collector = Stratify::Collector.new
       activity = Stratify::Activity.new
       collector.stubs(:activities).returns [activity]
-      
+
       archiver = Stratify::Archiver.new(collector)
       archiver.expects(:persist_activity).with(activity)
       archiver.send(:collect_activities)

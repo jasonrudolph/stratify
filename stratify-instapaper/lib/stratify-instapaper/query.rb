@@ -23,12 +23,12 @@ module Stratify
 
       def build_activity_from_raw_data(raw_activity)
         Stratify::Instapaper::Activity.new({
-          :url => raw_activity.link, 
-          :title => raw_activity.title, 
-          :description => raw_activity.description, 
+          :url => raw_activity.link,
+          :title => raw_activity.title,
+          :description => raw_activity.description,
           :created_at => raw_activity.pubDate
         })
       end
     end
-  end  
+  end
 end

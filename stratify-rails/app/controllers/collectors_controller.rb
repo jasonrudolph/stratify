@@ -1,6 +1,6 @@
 class CollectorsController < ApplicationController
   before_filter :find_collector_class_for_source, :only => [:new, :create]
-  
+
   def index
     @collectors = Stratify::Collector.asc(:source)
   end
@@ -12,13 +12,13 @@ class CollectorsController < ApplicationController
   def edit
     @collector = Stratify::Collector.find(params[:id])
   end
-  
+
   def create
     @collector = @collector_class.new(params[:collector])
     if @collector.save
       redirect_to collectors_path, :notice => 'Collector was successfully created.'
     else
-      render :action => "new"      
+      render :action => "new"
     end
   end
 
@@ -43,7 +43,7 @@ class CollectorsController < ApplicationController
     collector.run # TODO Run via delayed_job (or similar solution)
     redirect_to collectors_path
   end
-  
+
   private
 
   def find_collector_class_for_source

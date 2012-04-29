@@ -33,7 +33,7 @@ describe Stratify::Gowalla::Query do
     it "sets the checkin ID" do
       @checkin.checkin_id.should == 26106798
     end
-    
+
     it "sets the name of the checkin spot" do
       @checkin.spot_name.should == "Regal Cinemas Brier Creek"
     end
@@ -45,7 +45,7 @@ describe Stratify::Gowalla::Query do
     it "sets the latitude of the checkin spot" do
       @checkin.spot_latitude.should == 35.9040261833
     end
-    
+
     it "sets the longitude of the checkin spot" do
       @checkin.spot_longitude.should == -78.7846096333
     end
@@ -54,5 +54,5 @@ describe Stratify::Gowalla::Query do
       @checkin.message.should == "True Grit"
     end
   end
-  
+
 end

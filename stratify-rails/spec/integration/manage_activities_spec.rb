@@ -3,7 +3,7 @@ require 'spec_helper'
 feature "Managing activities" do
   scenario "View activities" do
     Stratify::Bacon::Activity.create!(
-      :slices => 3, 
+      :slices => 3,
       :created_at => Time.parse("Sun, 12 Jun 2011 08:28 EDT"),
       :source => Stratify::Bacon::Collector.source,
     )
@@ -18,7 +18,7 @@ feature "Managing activities" do
       end
     end
   end
-  
+
   scenario "Soft delete an activity" do
     activity = Factory(:bacon_activity)
     css_selector_for_activity = "article##{ActionController::RecordIdentifier.dom_id(activity)}"

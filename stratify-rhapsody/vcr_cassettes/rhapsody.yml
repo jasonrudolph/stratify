@@ -1,36 +1,36 @@
---- 
-- !ruby/struct:VCR::HTTPInteraction 
-  request: !ruby/struct:VCR::Request 
+---
+- !ruby/struct:VCR::HTTPInteraction
+  request: !ruby/struct:VCR::Request
     method: :get
     uri: http://feeds.rhapsody.com:80/member/ABCDEFGHIJKLMNOPQRSTUVWXYZ123456/track-history.rss
-    body: 
-    headers: 
-  response: !ruby/struct:VCR::Response 
-    status: !ruby/struct:VCR::ResponseStatus 
+    body:
+    headers:
+  response: !ruby/struct:VCR::Response
+    status: !ruby/struct:VCR::ResponseStatus
       code: 200
       message: OK
-    headers: 
-      server: 
+    headers:
+      server:
       - Apache Coyote/1.0
-      p3p: 
+      p3p:
       - CP="CAO DSP COR CUR DEV TAI PSA IVD CONo OUR DELi SAMi BUS PRE"
-      pragma: 
+      pragma:
       - ""
-      rotwversion: 
+      rotwversion:
       - 01_42_00_136_branch_3
-      rotwbid: 
+      rotwbid:
       - "1716221367"
-      rotwexpire: 
+      rotwexpire:
       - PageIdMatch(rss-feed-user-listening-history:usr.ABCDEFGHIJKLMNOPQRSTUVWXYZ123456)-Ttl(1800000)
-      content-type: 
+      content-type:
       - text/xml; charset=UTF-8
-      expires: 
+      expires:
       - Wed, 23 Feb 2011 01:39:02 GMT
-      date: 
+      date:
       - Wed, 23 Feb 2011 01:09:56 GMT
-      transfer-encoding: 
+      transfer-encoding:
       - chunked
-      connection: 
+      connection:
       - keep-alive
       - Transfer-Encoding
     body: "<?xml version=\"1.0\" encoding=\"UTF-8\" ?>\n\

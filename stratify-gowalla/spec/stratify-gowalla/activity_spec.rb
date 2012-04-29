@@ -8,5 +8,5 @@ describe Stratify::Gowalla::Activity do
       checkin.permalink.should == "http://gowalla.com/checkins/26106798"
     end
   end
-  
+
 end

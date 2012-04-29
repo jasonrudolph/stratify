@@ -15,7 +15,7 @@ describe "stratify-twitter" do
       :retweeted_status => nil
     ).should exist
   end
-  
+
   it "collects and stores retweets from Twitter", :database => true do
     collector = Stratify::Twitter::Collector.create!(:username => "jasonrudolph")
     collector.run

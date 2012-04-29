@@ -38,5 +38,5 @@ module Stratify
         url.slice(/\d*$/) # parse the checkin_id out of the url "/checkins/18805305"
       end
     end
-  end  
+  end
 end

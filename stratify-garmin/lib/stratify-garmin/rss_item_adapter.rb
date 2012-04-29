@@ -4,7 +4,7 @@ module Stratify
   module Garmin
     class RssItemAdapter
       attr_reader :item
-      
+
       def initialize(item)
         @item = item
       end
@@ -30,7 +30,7 @@ module Stratify
         elevation_gain_string = description_content_in_table_row(8)
         elevation_gain_string.to_i
       end
-      
+
       def event_type
         description_content_in_table_row(5)
       end
@@ -68,11 +68,11 @@ module Stratify
       def description_as_nokogiri_doc
         @description_doc ||= Nokogiri::HTML(item.description)
       end
-      
+
       def description_content_in_table_row(row_index)
         description_as_nokogiri_doc.at_xpath("//table/tr[#{row_index}]/td[2]").content
       end
-      
+
       def starting_location
         lat_long_pair_as_strings = item.georss_point.split
         lat_long_pair_as_floats = lat_long_pair_as_strings.map(&:to_f)

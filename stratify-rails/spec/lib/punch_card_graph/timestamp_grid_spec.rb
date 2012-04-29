@@ -39,7 +39,7 @@ describe PunchCardGraph::TimestampGrid do
       grid = PunchCardGraph::TimestampGrid.new(timestamps)
       grid.counts_by_day_and_hour[0][9].should == 2
     end
-    
+
     it "treats midnight as the first hour of the day" do
       timestamps = [
         Time.zone.parse("Sun, 26 Jun 2011 0:00:00 UTC"),
@@ -48,7 +48,7 @@ describe PunchCardGraph::TimestampGrid do
       grid = PunchCardGraph::TimestampGrid.new(timestamps)
       grid.counts_by_day_and_hour[0][0].should == 2
     end
-    
+
     it "handles timestamps that were created using different timezones" do
       timestamps = [
         Time.zone.parse("Sun, 26 Jun 2011 13:00:00 GMT"),

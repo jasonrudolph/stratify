@@ -7,7 +7,7 @@ module Stratify
     include Mongoid::Document
 
     store_in :collectors
-  
+
     field :last_ran_at, :type => DateTime
 
     def self.configuration_fields(fields_hash = nil)
@@ -32,7 +32,7 @@ module Stratify
       return nil if configuration_fields.empty?
       read_attribute(configuration_fields.first.name)
     end
-  
+
     def run
       Archiver.new(self).run
     end
@@ -62,14 +62,14 @@ module Stratify
     class << self
       attr_reader :collector_classes
     end
-  
+
     @collector_classes = []
-  
+
     def self.inherited(subclass)
       super
       Collector.collector_classes << subclass
     end
-  
+
     def self.collector_class_for(source)
       Collector.collector_classes.find {|clazz| clazz.source == source}
     end
@@ -86,10 +86,10 @@ module Stratify
       fields_hash.map do |f|
         name = f[0]
         attributes = f[1]
-        Stratify::FieldDefinition.new(name, attributes) 
+        Stratify::FieldDefinition.new(name, attributes)
       end
     end
-  
+
     def self.apply_fields_to_class(field_definitions)
       field_definitions.each do |field|
         field field.name

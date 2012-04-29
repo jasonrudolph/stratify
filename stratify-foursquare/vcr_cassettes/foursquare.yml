@@ -3,7 +3,7 @@
   request: !ruby/struct:VCR::Request
     method: :get
     uri: https://api.foursquare.com:443/v2/users/self/checkins?oauth_token=NEFB1MA3VGSHFEGJ4YW0JESYWRXMREUEMZCRGGYO34XECCGK
-    body: !!null 
+    body: !!null
     headers:
       accept:
       - application/json

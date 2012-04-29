@@ -26,7 +26,7 @@ module Stratify
       def permalink
         "http://connect.garmin.com/activity/#{guid}"
       end
-      
+
       def presenter
         Stratify::Garmin::Presenter.new(self)
       end

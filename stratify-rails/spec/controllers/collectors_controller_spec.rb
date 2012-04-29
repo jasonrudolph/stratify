@@ -36,8 +36,8 @@ describe CollectorsController do
         response.should render_template("new")
       end
     end
-  end  
-  
+  end
+
   describe "GET edit" do
     it "assigns the requested collector as @collector" do
       Stratify::Collector.stubs(:find).with("42").returns(stub_collector = stub)
@@ -45,7 +45,7 @@ describe CollectorsController do
       assigns(:collector).should be(stub_collector)
     end
   end
-  
+
   describe "PUT update" do
     describe "with valid params" do
       it "updates the requested collector" do
@@ -77,7 +77,7 @@ describe CollectorsController do
       end
     end
   end
-  
+
   describe "DELETE destroy" do
     it "deletes the requested collector" do
       collector = mock

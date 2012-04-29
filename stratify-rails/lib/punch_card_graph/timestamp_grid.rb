@@ -21,6 +21,6 @@ module PunchCardGraph
 
     def default_counts_by_hour
       Array.new(24, 0)
-    end    
+    end
   end
 end

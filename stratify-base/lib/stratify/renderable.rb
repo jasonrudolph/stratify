@@ -21,17 +21,17 @@ module Stratify
         :erb
       end
     end
-    
+
     def to_html
       template_handler = Tilt[self.class.template_format].new { self.class.template.strip }
       template_handler.render(presenter)
     end
 
     # Returns the object that will be passed to the template for rendering.
-    # 
+    #
     # The default implementation returns 'self' (i.e., the renderable object).
     #
-    # Subclasses may optionally override this method to provide an object 
+    # Subclasses may optionally override this method to provide an object
     # better suited for use in rendering (e.g., an object implementing the
     # presenter pattern).
     def presenter

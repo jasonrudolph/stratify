@@ -81,7 +81,7 @@ To set up your desired collectors, pop open the UI and follow the yellow brick r
 
 Running the collectors via the UI is useful for making sure that you've got them configured correctly.  But once you've verified that they're working, you'll want to set up your collectors to automatically run on a regular basis.
 
-Stratify provides a Rake task for running all your collectors at once.  It's conveniently named `collectors:run`.  
+Stratify provides a Rake task for running all your collectors at once.  It's conveniently named `collectors:run`.
 
 To provide the automation we're looking for, Stratify runs the collectors via cron using the [whenever](http://github.com/javan/whenever) gem.  By default, the cron job will execute the `collectors:run` task every two hours.  You can change these settings in `config/schedule.rb`.
 

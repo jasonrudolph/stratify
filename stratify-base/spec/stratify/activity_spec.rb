@@ -13,23 +13,23 @@ describe Stratify::Activity do
       activity.created_on.should be_nil
     end
   end
-  
+
   describe "#delete", :database => true do
     it "soft-deletes the activity" do
       creation_time = Time.now
       activity = Stratify::Bacon::Activity.create!(:slices => 42, :created_at => creation_time)
       activity.delete
-      
+
       Stratify::Bacon::Activity.where(:slices => 42, :created_at => creation_time).should_not exist
       Stratify::Bacon::Activity.deleted.where(:slices => 42, :created_at => creation_time).should exist
     end
   end
-  
+
   describe "#duplicate?", :database => true do
     class ActivityForTestingDuplicates < Stratify::Activity
       field :foo
       field :bar
-      
+
       natural_key :foo, :bar
     end
 
@@ -47,7 +47,7 @@ describe Stratify::Activity do
       original = ActivityForTestingDuplicates.new(:foo => "a", :bar => "b", :created_at => Time.now)
       original.save!
       original.delete
-      
+
       ActivityForTestingDuplicates.new(:foo => "a", :bar => "b").should be_duplicate
     end
   end

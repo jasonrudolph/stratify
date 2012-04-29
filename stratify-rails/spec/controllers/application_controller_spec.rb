@@ -4,7 +4,7 @@ describe ApplicationController do
   describe "#prompt_user_to_setup_collectors_if_no_activities_exist" do
     controller do
       before_filter :prompt_user_to_setup_collectors_if_no_activities_exist
-      
+
       def index
         render :text => "bacon"
       end
@@ -12,7 +12,7 @@ describe ApplicationController do
 
     describe "when no activies exist" do
       before { Stratify::Activity.stubs(:count).returns(0) }
-      
+
       it "redirects to the collectors UI for the user to configure collectors" do
         get :index
         response.should redirect_to(collectors_path)

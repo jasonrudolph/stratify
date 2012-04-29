@@ -6,11 +6,11 @@ describe "collecting and storing iTunes data", :database => true do
     collector = Stratify::ITunes::Collector.create!(:library_path => itunes_library_path)
     collector.run
   end
-  
+
   it "collects and stores recently-played music from iTunes" do
     Stratify::ITunes::Activity.where(
       :persistent_id => "83B3927542025FDC",
-      :name => "Smells Like Teen Spirit", 
+      :name => "Smells Like Teen Spirit",
       :album => "Nevermind",
       :artist => "Nirvana",
       :composer => "Kurt Cobain, David Grohl, Chris Novoselic",
@@ -24,7 +24,7 @@ describe "collecting and storing iTunes data", :database => true do
   it "collects and stores recently-played podcasts from iTunes" do
     Stratify::ITunes::Activity.where(
       :persistent_id => "90228FA50E9DF82D",
-      :name => "Tech News Today 186: Who Are Yooodle?", 
+      :name => "Tech News Today 186: Who Are Yooodle?",
       :album => "Tech News Today",
       :artist => "Tom Merritt, Becky Worley, Sarah Lane and Jason Howell",
       :genre => "Podcast",
@@ -38,7 +38,7 @@ describe "collecting and storing iTunes data", :database => true do
   it "collects and stores recently-played TV shows from iTunes" do
     Stratify::ITunes::Activity.where(
       :persistent_id => "401802E7B506C475",
-      :name => "A No-Rough-Stuff Type Deal", 
+      :name => "A No-Rough-Stuff Type Deal",
       :album => "Breaking Bad, Season 1",
       :artist => "Breaking Bad",
       :genre => "Drama",
@@ -53,7 +53,7 @@ describe "collecting and storing iTunes data", :database => true do
   it "collects and stores recently-played movies from iTunes" do
     Stratify::ITunes::Activity.where(
       :persistent_id => "3B7824E068FB05A6",
-      :name => "V for Vendetta", 
+      :name => "V for Vendetta",
       :genre => "Action & Adventure",
       :movie => true,
       :created_at => Time.parse("2011-02-27T23:24:35Z")
@@ -63,13 +63,13 @@ describe "collecting and storing iTunes data", :database => true do
   it "collects and stores recently-played audiobooks from iTunes" do
     Stratify::ITunes::Activity.where(
       :persistent_id => "DB6F370B2A647633",
-      :name => "Born Standing Up: A Comic's Life (Unabridged)", 
+      :name => "Born Standing Up: A Comic's Life (Unabridged)",
       :artist => "Steve Martin",
       :genre => "Biography & Memoir",
       :created_at => Time.parse("2011-02-27T21:52:43Z")
     ).should exist
   end
-  
+
   it "does not collect unplayed items from iTunes" do
     Stratify::ITunes::Activity.where(:persistent_id => "8780A3C7A0117B2B").should_not exist
   end
@@ -82,7 +82,7 @@ describe "reading a remote iTunes library file", :database => true do
     itunes_library_path = "http://dl.dropbox.com/u/1234567/iTunes%20Music%20Library.xml"
     collector = Stratify::ITunes::Collector.create!(:library_path => itunes_library_path)
     collector.run
-    
+
     Stratify::ITunes::Activity.where(:persistent_id => "83B3927542025FDC").should exist
   end
 end

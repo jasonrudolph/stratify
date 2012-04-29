@@ -25,13 +25,13 @@ describe Stratify::Collector do
 
   describe ".sources" do
     before { Stratify::Collector.collector_classes.clear }
-    
+
     it "returns the list of sources for all collectors" do
       anonymous_collector_subclass.source("FourSquare")
       anonymous_collector_subclass.source("Twitter")
       Stratify::Collector.sources.should =~ ["FourSquare", "Twitter"]
     end
-    
+
     it "returns the sources in case-insensitive alphabetical order" do
       anonymous_collector_subclass.source("Twitter")
       anonymous_collector_subclass.source("iTunes")
@@ -47,18 +47,18 @@ describe Stratify::Collector do
       fields.find {|f| f.name == :username && f.type == :string}.should be
       fields.find {|f| f.name == :password && f.type == :password}.should be
     end
-    
+
     it "registers the given fields with Mongoid" do
       TestCollector.fields.should include("username", "password")
     end
-    
+
     describe "influences validation" do
       it "adds an error when a collector instance fails to provide a value for each field" do
         collector = TestCollector.new
         collector.should_not be_valid
         collector.errors[:username].should include("can't be blank")
       end
-    
+
       it "adds NO errors when a collector instance provides a value for each field" do
         collector = TestCollector.new(:username => "foo")
         collector.valid?
@@ -78,7 +78,7 @@ describe Stratify::Collector do
       anonymous_collector_subclass.configuration_instructions.should == nil
     end
   end
-  
+
   describe "#configuration_instructions (instance method)" do
     it "returns the configuration instructions defined in the class" do
       collector_subclass = anonymous_collector_subclass
@@ -87,7 +87,7 @@ describe Stratify::Collector do
       collector.configuration_instructions.should == "Provide your username and ..."
     end
   end
-  
+
   describe "#configuration_summary" do
     context "when the collector's class has one configuration field" do
       it "returns the value of the field" do
@@ -121,5 +121,5 @@ describe Stratify::Collector do
       end
     end
   end
-  
+
 end

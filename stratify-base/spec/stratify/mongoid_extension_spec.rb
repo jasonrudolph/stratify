@@ -27,7 +27,7 @@ describe Stratify::MongoidExtension::NaturalKey do
         klass.natural_key_fields.should == [:url, :created_at]
       end
     end
-    
+
     it "declares a uniqueness validator for the natural key" do
       klass = class_with_natural_key_mixin
       klass.expects(:validates_uniqueness_of_natural_key)
@@ -63,7 +63,7 @@ describe Stratify::MongoidExtension::NaturalKey do
       end
     end
   end
-  
+
   describe "#natural_key_hash" do
     it "returns the field name and value for the object's natural key" do
       klass = class_with_natural_key_mixin do |k|
