@@ -1,0 +1,139 @@
+---
+- !ruby/struct:VCR::HTTPInteraction
+  request: !ruby/struct:VCR::Request
+    method: :get
+    uri: https://github.com:443/daemianmack.json
+    body: 
+    headers: 
+  response: !ruby/struct:VCR::Response
+    status: !ruby/struct:VCR::ResponseStatus
+      code: 200
+      message: OK
+    headers:
+      server:
+      - nginx/1.0.13
+      date:
+      - Sun, 05 Aug 2012 02:31:32 GMT
+      content-type:
+      - application/json; charset=utf-8
+      connection:
+      - keep-alive
+      status:
+      - 200 OK
+      strict-transport-security:
+      - max-age=2592000
+      etag:
+      - ! '"bcae5ff1ca8d06bfca58637cb8b01453"'
+      x-runtime:
+      - '61'
+      x-frame-options:
+      - deny
+      content-length:
+      - '28789'
+      cache-control:
+      - private, max-age=0, must-revalidate
+    body: ! '[{"actor_attributes":{"blog":"daemianmack.com","location":"Raleigh,
+      NC","gravatar_id":"dc2592b56f80dafd7ba86f4ccef552c1","email":"daemianmack@gmail.com","type":"User","company":"","login":"daemianmack","name":"Daemian
+      Mack"},"repository":{"owner":"daemianmack","created_at":"2012-08-04T17:04:37-07:00","has_downloads":true,"stargazers":1,"has_wiki":true,"watchers":1,"fork":false,"size":92,"has_issues":true,"pushed_at":"2012-08-04T17:08:09-07:00","name":"fake_ruby_project","url":"https://github.com/daemianmack/fake_ruby_project","forks":0,"language":"Ruby","description":"","private":false,"open_issues":0},"url":"https://github.com/daemianmack/fake_ruby_project/wiki/Home","created_at":"2012-08-04T17:59:39-07:00","type":"GollumEvent","payload":{"pages":[{"page_name":"Home","action":"edited","html_url":"https://github.com/daemianmack/fake_ruby_project/wiki/Home","summary":null,"sha":"858555e9f85f76040c3a6e4e25b80a90c6cbb41b","title":"Home"}]},"actor":"daemianmack","public":true},{"actor_attributes":{"blog":"daemianmack.com","location":"Raleigh,
+      NC","gravatar_id":"dc2592b56f80dafd7ba86f4ccef552c1","email":"daemianmack@gmail.com","type":"User","company":"","login":"daemianmack","name":"Daemian
+      Mack"},"repository":{"owner":"daemianmack","created_at":"2012-08-04T17:04:37-07:00","has_downloads":true,"stargazers":1,"has_wiki":true,"watchers":1,"fork":false,"size":92,"has_issues":true,"pushed_at":"2012-08-04T17:08:09-07:00","name":"fake_ruby_project","url":"https://github.com/daemianmack/fake_ruby_project","forks":0,"language":"Ruby","description":"","private":false,"open_issues":0},"url":"https://github.com/daemianmack/fake_ruby_project/wiki/Home","created_at":"2012-08-04T17:50:09-07:00","type":"GollumEvent","payload":{"pages":[{"page_name":"Home","action":"created","html_url":"https://github.com/daemianmack/fake_ruby_project/wiki/Home","summary":null,"sha":"35ccd25e8992a942077488074bd6ca7d33dc55f6","title":"Home"}]},"actor":"daemianmack","public":true},{"actor_attributes":{"blog":"daemianmack.com","location":"Raleigh,
+      NC","gravatar_id":"dc2592b56f80dafd7ba86f4ccef552c1","email":"daemianmack@gmail.com","type":"User","company":"","login":"daemianmack","name":"Daemian
+      Mack"},"repository":{"owner":"daemianmack","created_at":"2012-08-04T17:04:37-07:00","has_downloads":true,"stargazers":1,"has_wiki":true,"watchers":1,"fork":false,"size":92,"has_issues":true,"pushed_at":"2012-08-04T17:08:09-07:00","name":"fake_ruby_project","url":"https://github.com/daemianmack/fake_ruby_project","forks":0,"language":"Ruby","description":"","private":false,"open_issues":0},"url":"https://github.com/daemianmack/fake_ruby_project/compare/new","created_at":"2012-08-04T17:08:09-07:00","type":"CreateEvent","payload":{"ref_type":"branch","description":"","master_branch":"master","ref":"new"},"actor":"daemianmack","public":true},{"actor_attributes":{"blog":"daemianmack.com","location":"Raleigh,
+      NC","gravatar_id":"dc2592b56f80dafd7ba86f4ccef552c1","email":"daemianmack@gmail.com","type":"User","company":"","login":"daemianmack","name":"Daemian
+      Mack"},"repository":{"owner":"daemianmack","created_at":"2012-08-04T17:04:37-07:00","has_downloads":true,"stargazers":1,"has_wiki":true,"watchers":1,"fork":false,"size":92,"has_issues":true,"pushed_at":"2012-08-04T17:08:09-07:00","name":"fake_ruby_project","url":"https://github.com/daemianmack/fake_ruby_project","forks":0,"language":"Ruby","description":"","private":false,"open_issues":0},"url":"https://github.com/daemianmack/fake_ruby_project/compare/master","created_at":"2012-08-04T17:06:02-07:00","type":"CreateEvent","payload":{"ref_type":"branch","description":"","master_branch":"master","ref":"master"},"actor":"daemianmack","public":true},{"actor_attributes":{"blog":"daemianmack.com","location":"Raleigh,
+      NC","gravatar_id":"dc2592b56f80dafd7ba86f4ccef552c1","email":"daemianmack@gmail.com","type":"User","company":"","login":"daemianmack","name":"Daemian
+      Mack"},"repository":{"owner":"daemianmack","created_at":"2012-08-04T17:04:37-07:00","has_downloads":true,"stargazers":1,"has_wiki":true,"watchers":1,"fork":false,"size":92,"has_issues":true,"pushed_at":"2012-08-04T17:08:09-07:00","name":"fake_ruby_project","url":"https://github.com/daemianmack/fake_ruby_project","forks":0,"language":"Ruby","description":"","private":false,"open_issues":0},"url":"https://github.com/daemianmack/fake_ruby_project","created_at":"2012-08-04T17:04:37-07:00","type":"CreateEvent","payload":{"ref_type":"repository","description":"","master_branch":"master","ref":null},"actor":"daemianmack","public":true},{"actor_attributes":{"blog":"daemianmack.com","location":"Raleigh,
+      NC","gravatar_id":"dc2592b56f80dafd7ba86f4ccef552c1","email":"daemianmack@gmail.com","type":"User","company":"","login":"daemianmack","name":"Daemian
+      Mack"},"url":"https://github.com/daemianmack/fake_ruby_project","created_at":"2012-08-04T16:58:45-07:00","type":"MemberEvent","payload":{"action":"added","member":{"gravatar_id":"777892eb38d2e6a4eb915d558068c971","url":"https://api.github.com/users/chrispatterson","avatar_url":"https://secure.gravatar.com/avatar/777892eb38d2e6a4eb915d558068c971?d=https://a248.e.akamai.net/assets.github.com%2Fimages%2Fgravatars%2Fgravatar-140.png","id":24543,"login":"chrispatterson"}},"actor":"daemianmack","public":true},{"actor_attributes":{"blog":"daemianmack.com","location":"Raleigh,
+      NC","gravatar_id":"dc2592b56f80dafd7ba86f4ccef552c1","email":"daemianmack@gmail.com","type":"User","company":"","login":"daemianmack","name":"Daemian
+      Mack"},"repository":{"owner":"daemianmack","created_at":"2012-06-20T06:16:26-07:00","has_downloads":true,"stargazers":1,"homepage":"","has_wiki":true,"watchers":1,"fork":true,"size":132,"has_issues":false,"pushed_at":"2012-04-03T04:31:08-07:00","name":"cronviz","url":"https://github.com/daemianmack/cronviz","forks":0,"language":"Ruby","description":"A
+      crontab visualizer","private":false,"open_issues":0},"url":"https://github.com/daemianmack/cronviz","created_at":"2012-08-04T16:51:00-07:00","type":"MemberEvent","payload":{"action":"added","member":{"gravatar_id":"8a630bbe398902117b85afab5d524e18","url":"https://api.github.com/users/ploats","avatar_url":"https://secure.gravatar.com/avatar/8a630bbe398902117b85afab5d524e18?d=https://a248.e.akamai.net/assets.github.com%2Fimages%2Fgravatars%2Fgravatar-140.png","id":229847,"login":"ploats"}},"actor":"daemianmack","public":true},{"actor_attributes":{"blog":"daemianmack.com","location":"Raleigh,
+      NC","gravatar_id":"dc2592b56f80dafd7ba86f4ccef552c1","email":"daemianmack@gmail.com","type":"User","company":"","login":"daemianmack","name":"Daemian
+      Mack"},"repository":{"owner":"jasonrudolph","created_at":"2011-04-17T08:36:10-07:00","has_downloads":true,"stargazers":13,"homepage":"","has_wiki":true,"watchers":13,"fork":false,"size":124,"has_issues":true,"pushed_at":"2012-05-04T14:41:42-07:00","name":"stratify","url":"https://github.com/jasonrudolph/stratify","forks":2,"language":"Ruby","description":"Rails
+      + MongoDB app for building a consolidated timeline of your data from disparate
+      sources (e.g.,  Twitter, Foursquare, etc.)","private":false,"open_issues":0},"url":"https://github.com/daemianmack/stratify","created_at":"2012-08-03T07:18:47-07:00","type":"ForkEvent","payload":{},"actor":"daemianmack","public":true},{"actor_attributes":{"blog":"daemianmack.com","location":"Raleigh,
+      NC","gravatar_id":"dc2592b56f80dafd7ba86f4ccef552c1","email":"daemianmack@gmail.com","type":"User","company":"","login":"daemianmack","name":"Daemian
+      Mack"},"repository":{"owner":"daemianmack","created_at":"2009-07-18T09:50:15-07:00","has_downloads":true,"stargazers":3,"homepage":"","has_wiki":true,"watchers":3,"fork":false,"size":1612,"has_issues":true,"pushed_at":"2012-07-24T13:09:46-07:00","name":"dotfiles","url":"https://github.com/daemianmack/dotfiles","forks":1,"language":"Python","description":"Some
+      of the best files start with a dot.","private":false,"open_issues":0},"url":"https://github.com/daemianmack/dotfiles/compare/4db0fcd2fd...ab5f28ec6b","created_at":"2012-07-24T13:09:47-07:00","type":"PushEvent","payload":{"head":"ab5f28ec6b087c9983ec2f20784d033c23243b95","size":1,"shas":[["ab5f28ec6b087c9983ec2f20784d033c23243b95","dmack@rpath.com","-f,
+      not -z, to check for virtualenvwrapper.sh existance.","Daemian Mack",true]],"ref":"refs/heads/master"},"actor":"daemianmack","public":true},{"actor_attributes":{"blog":"daemianmack.com","location":"Raleigh,
+      NC","gravatar_id":"dc2592b56f80dafd7ba86f4ccef552c1","email":"daemianmack@gmail.com","type":"User","company":"","login":"daemianmack","name":"Daemian
+      Mack"},"repository":{"owner":"daemianmack","created_at":"2009-07-18T09:50:15-07:00","has_downloads":true,"stargazers":3,"homepage":"","has_wiki":true,"watchers":3,"fork":false,"size":1612,"has_issues":true,"pushed_at":"2012-07-24T13:09:46-07:00","name":"dotfiles","url":"https://github.com/daemianmack/dotfiles","forks":1,"language":"Python","description":"Some
+      of the best files start with a dot.","private":false,"open_issues":0},"url":"https://github.com/daemianmack/dotfiles/compare/b48d7923ef...4db0fcd2fd","created_at":"2012-07-24T13:06:11-07:00","type":"PushEvent","payload":{"head":"4db0fcd2fdd9724cfd259aaa07398f571bf92308","size":2,"shas":[["bce81a55d4dcd540531ae45b18cb0fc1992fc6bd","dmack@rpath.com","Snip
+      outmoded aliases.","Daemian Mack",true],["4db0fcd2fdd9724cfd259aaa07398f571bf92308","dmack@rpath.com","Snip
+      outmoded exports.","Daemian Mack",true]],"ref":"refs/heads/master"},"actor":"daemianmack","public":true},{"actor_attributes":{"blog":"daemianmack.com","location":"Raleigh,
+      NC","gravatar_id":"dc2592b56f80dafd7ba86f4ccef552c1","email":"daemianmack@gmail.com","type":"User","company":"","login":"daemianmack","name":"Daemian
+      Mack"},"repository":{"owner":"daemianmack","created_at":"2009-07-18T09:50:15-07:00","has_downloads":true,"stargazers":3,"homepage":"","has_wiki":true,"watchers":3,"fork":false,"size":1612,"has_issues":true,"pushed_at":"2012-07-24T13:09:46-07:00","name":"dotfiles","url":"https://github.com/daemianmack/dotfiles","forks":1,"language":"Python","description":"Some
+      of the best files start with a dot.","private":false,"open_issues":0},"url":"https://github.com/daemianmack/dotfiles/compare/65b58a4dc7...b48d7923ef","created_at":"2012-07-24T13:01:25-07:00","type":"PushEvent","payload":{"head":"b48d7923ef667336bfc0081f256d418066c125b9","size":2,"shas":[["e486721f4fdd44cfc4bab9ff38b7c4eaf3e3a517","dmack@rpath.com","Trivial.","Daemian
+      Mack",true],["b48d7923ef667336bfc0081f256d418066c125b9","dmack@rpath.com","Snip
+      hacky checkout-last-git-branch maneuver in favor of native one.","Daemian Mack",true]],"ref":"refs/heads/master"},"actor":"daemianmack","public":true},{"actor_attributes":{"blog":"daemianmack.com","location":"Raleigh,
+      NC","gravatar_id":"dc2592b56f80dafd7ba86f4ccef552c1","email":"daemianmack@gmail.com","type":"User","company":"","login":"daemianmack","name":"Daemian
+      Mack"},"repository":{"owner":"daemianmack","created_at":"2009-07-18T09:50:15-07:00","has_downloads":true,"stargazers":3,"homepage":"","has_wiki":true,"watchers":3,"fork":false,"size":1612,"has_issues":true,"pushed_at":"2012-07-24T13:09:46-07:00","name":"dotfiles","url":"https://github.com/daemianmack/dotfiles","forks":1,"language":"Python","description":"Some
+      of the best files start with a dot.","private":false,"open_issues":0},"url":"https://github.com/daemianmack/dotfiles/compare/2a932c7f4e...65b58a4dc7","created_at":"2012-07-24T12:56:05-07:00","type":"PushEvent","payload":{"head":"65b58a4dc7bd5012240b0f756720a56fe9167996","size":1,"shas":[["65b58a4dc7bd5012240b0f756720a56fe9167996","dmack@rpath.com","Finally
+      conditionalize virtualenvwrapper loading.","Daemian Mack",true]],"ref":"refs/heads/master"},"actor":"daemianmack","public":true},{"actor_attributes":{"blog":"daemianmack.com","location":"Raleigh,
+      NC","gravatar_id":"dc2592b56f80dafd7ba86f4ccef552c1","email":"daemianmack@gmail.com","type":"User","company":"","login":"daemianmack","name":"Daemian
+      Mack"},"url":"https://github.com/daemianmack/fake_ruby_project/compare/master","created_at":"2012-07-22T14:56:45-07:00","type":"CreateEvent","payload":{"ref_type":"branch","description":"Fake!","master_branch":"master","ref":"master"},"actor":"daemianmack","public":true},{"actor_attributes":{"blog":"daemianmack.com","location":"Raleigh,
+      NC","gravatar_id":"dc2592b56f80dafd7ba86f4ccef552c1","email":"daemianmack@gmail.com","type":"User","company":"","login":"daemianmack","name":"Daemian
+      Mack"},"url":"https://github.com/daemianmack/fake_ruby_project","created_at":"2012-07-22T14:55:45-07:00","type":"CreateEvent","payload":{"ref_type":"repository","description":"Fake!","master_branch":"master","ref":null},"actor":"daemianmack","public":true},{"actor_attributes":{"blog":"daemianmack.com","location":"Raleigh,
+      NC","gravatar_id":"dc2592b56f80dafd7ba86f4ccef552c1","email":"daemianmack@gmail.com","type":"User","company":"","login":"daemianmack","name":"Daemian
+      Mack"},"repository":{"owner":"daemianmack","created_at":"2009-07-18T09:50:15-07:00","has_downloads":true,"stargazers":3,"homepage":"","has_wiki":true,"watchers":3,"fork":false,"size":1612,"has_issues":true,"pushed_at":"2012-07-24T13:09:46-07:00","name":"dotfiles","url":"https://github.com/daemianmack/dotfiles","forks":1,"language":"Python","description":"Some
+      of the best files start with a dot.","private":false,"open_issues":0},"url":"https://github.com/daemianmack/dotfiles/compare/ed8e8a0e29...2a932c7f4e","created_at":"2012-07-21T05:15:20-07:00","type":"PushEvent","payload":{"head":"2a932c7f4ea29d0db8239e168b09bf92f0320c3f","size":1,"shas":[["2a932c7f4ea29d0db8239e168b09bf92f0320c3f","daemianmack@gmail.com","Out
+      out damned RVM.","Daemian Mack",true]],"ref":"refs/heads/master"},"actor":"daemianmack","public":true},{"actor_attributes":{"blog":"daemianmack.com","location":"Raleigh,
+      NC","gravatar_id":"dc2592b56f80dafd7ba86f4ccef552c1","email":"daemianmack@gmail.com","type":"User","company":"","login":"daemianmack","name":"Daemian
+      Mack"},"url":"https://gist.github.com/3151794","created_at":"2012-07-20T09:44:24-07:00","type":"GistEvent","payload":{"action":"fork","url":"https://gist.github.com/3151794","id":3151794,"desc":"using
+      ActiveSupport::Concerns to extend Rails","name":"gist: 3151794"},"actor":"daemianmack","public":true},{"actor_attributes":{"blog":"daemianmack.com","location":"Raleigh,
+      NC","gravatar_id":"dc2592b56f80dafd7ba86f4ccef552c1","email":"daemianmack@gmail.com","type":"User","company":"","login":"daemianmack","name":"Daemian
+      Mack"},"repository":{"owner":"daemianmack","created_at":"2009-07-19T13:31:35-07:00","has_downloads":true,"stargazers":3,"homepage":"","has_wiki":true,"watchers":3,"fork":true,"size":176,"has_issues":false,"pushed_at":"2012-07-19T12:32:57-07:00","name":"emacs-starter-kit","url":"https://github.com/daemianmack/emacs-starter-kit","forks":1,"language":"Emacs
+      Lisp","description":"All the code you need to get started, with an emphasis
+      on dynamic languages.","private":false,"open_issues":0},"url":"https://github.com/daemianmack/emacs-starter-kit/compare/dfb1659467...4002d614d5","created_at":"2012-07-19T12:32:58-07:00","type":"PushEvent","payload":{"head":"4002d614d5be0ee86f8a08a756562a64b0ce1984","size":1,"shas":[["4002d614d5be0ee86f8a08a756562a64b0ce1984","daemianmack@gmail.com","Having
+      added workgroups, let''s actually add workgroups.el now.","Daemian Mack",true]],"ref":"refs/heads/master"},"actor":"daemianmack","public":true},{"actor_attributes":{"blog":"daemianmack.com","location":"Raleigh,
+      NC","gravatar_id":"dc2592b56f80dafd7ba86f4ccef552c1","email":"daemianmack@gmail.com","type":"User","company":"","login":"daemianmack","name":"Daemian
+      Mack"},"repository":{"owner":"daemianmack","created_at":"2009-07-19T13:31:35-07:00","has_downloads":true,"stargazers":3,"homepage":"","has_wiki":true,"watchers":3,"fork":true,"size":176,"has_issues":false,"pushed_at":"2012-07-19T12:32:57-07:00","name":"emacs-starter-kit","url":"https://github.com/daemianmack/emacs-starter-kit","forks":1,"language":"Emacs
+      Lisp","description":"All the code you need to get started, with an emphasis
+      on dynamic languages.","private":false,"open_issues":0},"url":"https://github.com/daemianmack/emacs-starter-kit/compare/06f9612297...dfb1659467","created_at":"2012-07-18T09:03:40-07:00","type":"PushEvent","payload":{"head":"dfb16594671acf04f5b6cba31e1b5f84831b3c26","size":2,"shas":[["e78db11e998f5f51ba3d719d86197808a1df6ab8","dmack@rpath.com","Re-enable
+      smooth scrolling, omgggg.","Daemian Mack",true],["dfb16594671acf04f5b6cba31e1b5f84831b3c26","dmack@rpath.com","Add
+      vi-style % for paren-jumping brace-matching.","Daemian Mack",true]],"ref":"refs/heads/master"},"actor":"daemianmack","public":true},{"actor_attributes":{"blog":"daemianmack.com","location":"Raleigh,
+      NC","gravatar_id":"dc2592b56f80dafd7ba86f4ccef552c1","email":"daemianmack@gmail.com","type":"User","company":"","login":"daemianmack","name":"Daemian
+      Mack"},"repository":{"owner":"daemianmack","created_at":"2012-07-08T17:42:30-07:00","has_downloads":true,"stargazers":1,"homepage":"","has_wiki":true,"watchers":1,"fork":false,"size":136,"has_issues":true,"pushed_at":"2012-07-08T19:15:17-07:00","name":"clj-cronviz","url":"https://github.com/daemianmack/clj-cronviz","forks":1,"language":"Clojure","description":"A
+      Clojure port of the Ruby crontab visualizer I wrote for Federated Media.","private":false,"open_issues":0},"url":"https://github.com/daemianmack/clj-cronviz","created_at":"2012-07-08T19:16:38-07:00","type":"PublicEvent","actor":"daemianmack","public":true},{"actor_attributes":{"blog":"daemianmack.com","location":"Raleigh,
+      NC","gravatar_id":"dc2592b56f80dafd7ba86f4ccef552c1","email":"daemianmack@gmail.com","type":"User","company":"","login":"daemianmack","name":"Daemian
+      Mack"},"url":"https://gist.github.com/3070981","created_at":"2012-07-08T06:42:13-07:00","type":"GistEvent","payload":{"action":"fork","url":"https://gist.github.com/3070981","id":3070981,"desc":"Clojure
+      ns syntax cheat-sheet","name":"gist: 3070981"},"actor":"daemianmack","public":true},{"actor_attributes":{"blog":"daemianmack.com","location":"Raleigh,
+      NC","gravatar_id":"dc2592b56f80dafd7ba86f4ccef552c1","email":"daemianmack@gmail.com","type":"User","company":"","login":"daemianmack","name":"Daemian
+      Mack"},"repository":{"owner":"sjl","created_at":"2012-07-07T14:56:34-07:00","has_downloads":true,"stargazers":82,"homepage":"http://stevelosh.com/blog/2012/07/caves-of-clojure-01/","has_wiki":true,"watchers":82,"fork":false,"size":184,"has_issues":true,"pushed_at":"2012-08-01T18:13:48-07:00","name":"caves","url":"https://github.com/sjl/caves","forks":6,"language":"Clojure","description":"The
+      code for my Caves of Clojure series of blog posts.","private":false,"open_issues":1},"url":"https://github.com/sjl/caves","created_at":"2012-07-07T16:57:34-07:00","type":"WatchEvent","payload":{"action":"started"},"actor":"daemianmack","public":true},{"actor_attributes":{"blog":"daemianmack.com","location":"Raleigh,
+      NC","gravatar_id":"dc2592b56f80dafd7ba86f4ccef552c1","email":"daemianmack@gmail.com","type":"User","company":"","login":"daemianmack","name":"Daemian
+      Mack"},"url":"https://github.com/rkh","created_at":"2012-07-03T06:40:33-07:00","type":"FollowEvent","payload":{"target":{"repos":128,"gravatar_id":"5c2b452f6eea4a6d84c105ebd971d2a4","followers":532,"id":30442,"login":"rkh"}},"actor":"daemianmack","public":true},{"actor_attributes":{"blog":"daemianmack.com","location":"Raleigh,
+      NC","gravatar_id":"dc2592b56f80dafd7ba86f4ccef552c1","email":"daemianmack@gmail.com","type":"User","company":"","login":"daemianmack","name":"Daemian
+      Mack"},"repository":{"owner":"gcatlin","created_at":"2012-07-01T08:27:02-07:00","has_downloads":true,"stargazers":1,"homepage":"","has_wiki":true,"watchers":1,"fork":true,"size":192,"has_issues":false,"pushed_at":"2012-07-31T17:21:37-07:00","name":"home","url":"https://github.com/gcatlin/home","forks":0,"language":"Perl","description":"My
+      dotfiles and stuff","private":false,"open_issues":0},"url":"https://github.com/gcatlin/home/commit/82913d98890f91966998280aa627ebe5e96f63ec#Library/KeyBindings/DefaultKeyBinding.dict-P57","created_at":"2012-07-03T06:10:21-07:00","type":"CommitCommentEvent","payload":{"commit":"82913d98890f91966998280aa627ebe5e96f63ec","comment_id":1532901},"actor":"daemianmack","public":true},{"actor_attributes":{"blog":"daemianmack.com","location":"Raleigh,
+      NC","gravatar_id":"dc2592b56f80dafd7ba86f4ccef552c1","email":"daemianmack@gmail.com","type":"User","company":"","login":"daemianmack","name":"Daemian
+      Mack"},"repository":{"owner":"daemianmack","created_at":"2009-07-18T09:50:15-07:00","has_downloads":true,"stargazers":3,"homepage":"","has_wiki":true,"watchers":3,"fork":false,"size":1612,"has_issues":true,"pushed_at":"2012-07-24T13:09:46-07:00","name":"dotfiles","url":"https://github.com/daemianmack/dotfiles","forks":1,"language":"Python","description":"Some
+      of the best files start with a dot.","private":false,"open_issues":0},"url":"https://github.com/daemianmack/dotfiles/compare/4a0199b356...ed8e8a0e29","created_at":"2012-07-02T06:59:47-07:00","type":"PushEvent","payload":{"head":"ed8e8a0e291caf7dd06d5fb32982cc405f505ac1","size":1,"shas":[["ed8e8a0e291caf7dd06d5fb32982cc405f505ac1","dmack@rpath.com","Add
+      eval of rbenv init to bottom of .bash_profile so reboots stop confusing me when
+      gems ''disappear''.","Daemian Mack",true]],"ref":"refs/heads/master"},"actor":"daemianmack","public":true},{"actor_attributes":{"blog":"daemianmack.com","location":"Raleigh,
+      NC","gravatar_id":"dc2592b56f80dafd7ba86f4ccef552c1","email":"daemianmack@gmail.com","type":"User","company":"","login":"daemianmack","name":"Daemian
+      Mack"},"repository":{"owner":"daemianmack","created_at":"2009-07-19T13:31:35-07:00","has_downloads":true,"stargazers":3,"homepage":"","has_wiki":true,"watchers":3,"fork":true,"size":176,"has_issues":false,"pushed_at":"2012-07-19T12:32:57-07:00","name":"emacs-starter-kit","url":"https://github.com/daemianmack/emacs-starter-kit","forks":1,"language":"Emacs
+      Lisp","description":"All the code you need to get started, with an emphasis
+      on dynamic languages.","private":false,"open_issues":0},"url":"https://github.com/daemianmack/emacs-starter-kit/compare/0c9952faf2...06f9612297","created_at":"2012-07-02T02:50:26-07:00","type":"PushEvent","payload":{"head":"06f9612297a8ab445e9e56247920c1a4e33e9e04","size":1,"shas":[["06f9612297a8ab445e9e56247920c1a4e33e9e04","daemianmack@gmail.com","Add
+      workgroups.el","Daemian Mack",true]],"ref":"refs/heads/master"},"actor":"daemianmack","public":true},{"actor_attributes":{"blog":"daemianmack.com","location":"Raleigh,
+      NC","gravatar_id":"dc2592b56f80dafd7ba86f4ccef552c1","email":"daemianmack@gmail.com","type":"User","company":"","login":"daemianmack","name":"Daemian
+      Mack"},"repository":{"owner":"tlh","created_at":"2010-07-23T07:25:08-07:00","has_downloads":true,"stargazers":80,"homepage":"","has_wiki":true,"watchers":80,"fork":false,"size":188,"has_issues":true,"pushed_at":"2011-10-10T11:47:40-07:00","name":"workgroups.el","url":"https://github.com/tlh/workgroups.el","forks":13,"language":"Emacs
+      Lisp","description":"workgroups for windows -- sexy window management for emacs","private":false,"open_issues":19},"url":"https://github.com/daemianmack/workgroups.el","created_at":"2012-07-01T03:53:17-07:00","type":"ForkEvent","payload":{},"actor":"daemianmack","public":true},{"actor_attributes":{"blog":"daemianmack.com","location":"Raleigh,
+      NC","gravatar_id":"dc2592b56f80dafd7ba86f4ccef552c1","email":"daemianmack@gmail.com","type":"User","company":"","login":"daemianmack","name":"Daemian
+      Mack"},"repository":{"owner":"daemianmack","created_at":"2009-07-19T13:31:35-07:00","has_downloads":true,"stargazers":3,"homepage":"","has_wiki":true,"watchers":3,"fork":true,"size":176,"has_issues":false,"pushed_at":"2012-07-19T12:32:57-07:00","name":"emacs-starter-kit","url":"https://github.com/daemianmack/emacs-starter-kit","forks":1,"language":"Emacs
+      Lisp","description":"All the code you need to get started, with an emphasis
+      on dynamic languages.","private":false,"open_issues":0},"url":"https://github.com/daemianmack/emacs-starter-kit/compare/216cc3c328...0c9952faf2","created_at":"2012-06-28T05:22:05-07:00","type":"PushEvent","payload":{"head":"0c9952faf27b68f77f52c358fbda791352fc4a80","size":12,"shas":[["dc4b4e6ab7ade1776c890d73588947a5fd36d707","dmack@rpath.com","Add
+      expand-region and mark-multiple.","Daemian Mack",true],["a73e56b417f7711453cf07fad9227722a557da90","dmack@rpath.com","Add
+      monky business.","Daemian Mack",true],["0056ef83c6958098ff5190419c89c37bd181a3ac","dmack@rpath.com","Add
+      desktop-mode improvements.","Daemian Mack",true],["4d69f9900147ae1e8773b7d8dbac80c625294b47","dmack@rpath.com","mode-line
+      cleanup.","Daemian Mack",true],["0b4eca1cb465069dc906ce2738cef447ce4c64ac","dmack@rpath.com","places
+      config.","Daemian Mack",true],["2e935a6a13d1a121f011fcd92c43bdf64e7b602d","dmack@rpath.com","Display
+      ido results vertically, rather than horizontally","Daemian Mack",true],["0395b2ae3e670b12eb78cedc496daf5cd3dce24a","dmack@rpath.com","Remove
+      outmoded logging from rpdb2 yas snippet.","Daemian Mack",true],["3cef08bf4ba2b25c20edf40c1c26926a8555f134","dmack@rpath.com","Various
+      custom.el effluvia.","Daemian Mack",true],["31d94270e20b93cdb214af6fb640eb2b6d736849","dmack@rpath.com","Tweak
+      monky-diff-none face.","Daemian Mack",true],["fa13f35531ed1abf36710354ac9a4f2c37bf7462","dmack@rpath.com","uniquify-separator","Daemian
+      Mack",true],["b45b58b12f7c7c11be8fd5a21aa2694bf7f8a3c8","dmack@rpath.com","Add
+      bf-pretty-print-xml-region function.","Daemian Mack",true],["0c9952faf27b68f77f52c358fbda791352fc4a80","dmack@rpath.com","Add
+      vc-hg-annotate-command to make vc''s annotations on hg files a\nlittle more
+      helpful.","Daemian Mack",true]],"ref":"refs/heads/master"},"actor":"daemianmack","public":true}]'
+    http_version: '1.1'
