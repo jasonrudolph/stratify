@@ -197,7 +197,7 @@ module Stratify
         end
       end
 
-      # Untested.
+      # Unused? Unseen in the wild.
       # class TeamAddEvent
       #   def self.make(activity, api_hash)
       #     activity.ref   = api_hash['ref']
