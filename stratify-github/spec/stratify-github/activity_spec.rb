@@ -76,6 +76,18 @@ describe Stratify::GitHub::Activity do
       event.repository.should == 'https://github.com/daemianmack/clj-cronviz'
     end
 
+    it 'produces correct fields for a DeleteEvent without a repository' do
+      data = DM({'type' => 'DeleteEvent',
+                  'payload' => {
+                    'ref'      => 'expendable',
+                    'ref_type' => 'branch'}})
+      event = Stratify::GitHub::Activity.from_api_hash(data)
+      event.event_type.should == 'DeleteEvent'
+      event.ref.should == 'expendable'
+      event.ref_type.should == 'branch'
+      event.repository.should be_nil
+    end
+
     it 'produces correct fields for a FollowEvent' do
       data = DM({'type' => 'FollowEvent',
                   'payload' => {
@@ -118,6 +130,19 @@ describe Stratify::GitHub::Activity do
       event.action.should == 'created'
       event.event_type.should == 'GollumEvent'
       event.repository.should == 'https://github.com/daemianmack/clj-cronviz'
+      event.thing.should == 'Contributing'
+    end
+
+    it 'produces correct fields for a GollumEvent without a repository' do
+      data = DM({'type' => 'GollumEvent',
+                  'payload' => {
+                    'pages' => [{
+                                  'action'    => 'created',
+                                  'page_name' => 'Contributing'}]}})
+      event = Stratify::GitHub::Activity.from_api_hash(data)
+      event.action.should == 'created'
+      event.event_type.should == 'GollumEvent'
+      event.repository.should be_nil
       event.thing.should == 'Contributing'
     end
 

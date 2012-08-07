@@ -40,11 +40,12 @@ module Stratify
         def self.make(activity, api_hash)
           activity.ref        = api_hash['payload']['ref']
           activity.ref_type   = api_hash['payload']['ref_type']
-          activity.repository = api_hash['repository']['url']
+          activity.repository = api_hash['repository']['url'] rescue nil
           activity
         end
         def self.text(activity)
-          "#{activity.actor} deleted #{activity.ref_type} #{activity.ref} from #{activity.repository}"
+          repo = activity.repository ? "from #{activity.repository}" : ""
+          "#{activity.actor} deleted #{activity.ref_type} #{activity.ref} #{repo}"
         end
       end
 
@@ -104,12 +105,13 @@ module Stratify
         def self.make(activity, api_hash)
           # TODO Handle more than one page per event, assuming that happens.
           activity.action     = api_hash['payload']['pages'][0]['action']
-          activity.repository = api_hash['repository']['url']
+          activity.repository = api_hash['repository']['url'] rescue nil
           activity.thing      = api_hash['payload']['pages'][0]['page_name']
           activity
         end
         def self.text(activity)
-          "#{activity.actor} #{activity.action} wiki page #{activity.thing} on #{activity.repository}"
+          repo = activity.repository ? "on #{activity.repository}" : ""
+          "#{activity.actor} #{activity.action} wiki page #{activity.thing} #{repo}"
         end
       end
 
