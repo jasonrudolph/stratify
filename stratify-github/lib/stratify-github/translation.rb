@@ -13,7 +13,8 @@ module Stratify
         activity.event_type = api_hash['type']
         activity.url        = api_hash['url']
         activity.actor      = api_hash['actor']
-        activity.created_at = Time.now()
+        activity.created_at = api_hash['created_at']
+
         activity.checksum   = Digest::MD5.hexdigest(activity)
 
         begin

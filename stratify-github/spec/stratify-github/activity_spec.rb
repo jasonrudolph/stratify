@@ -23,6 +23,13 @@ describe Stratify::GitHub::Activity do
   end
 
   context 'translation' do
+    it 'properly interprets the incoming created_at field' do
+      data = DM({'type'       => 'WatchEvent',
+                 'created_at' => '2012-08-01T09:35:11-07:00'})
+      event = Stratify::GitHub::Activity.from_api_hash(data)
+      event.created_at.should == DateTime.parse('2012-08-01T09:35:11-07:00')
+    end
+
     it 'raises an error when the API passes an unknown event type' do
       fields = {'type' => 'BendGirderEvent'}
       lambda {Stratify::GitHub::Activity.from_api_hash(fields)}.should raise_error(GitHubApiError)
