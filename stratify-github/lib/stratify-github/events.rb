@@ -7,9 +7,14 @@ module Stratify
         truncate(text, :length => length)
       end
 
-      class CommitCommentEvent
+      def self.repo_url(event_url)
+        # 'http://github.com/dhh/rails/commit/662bd00' => 'http://github.com/dhh/rails'
+        event_url.split('/')[0..4].join('/')
+      end
+
+      class CommitCommentEvent < Event
         def self.make(activity, api_hash)
-          activity.repository = api_hash['url'].split('/')[0..4].join('/')
+          activity.repository = repo_url(api_hash['url'])
           activity
         end
         def self.text(activity)
@@ -17,7 +22,7 @@ module Stratify
         end
       end
 
-      class CreateEvent
+      class CreateEvent < Event
         def self.make(activity, api_hash)
           activity.ref      = api_hash['payload']['ref']
           activity.ref_type = api_hash['payload']['ref_type']
@@ -25,7 +30,7 @@ module Stratify
           if activity.ref_type == 'repository'
             activity.repository = api_hash['url']
           else
-            activity.repository = api_hash['url'].split('/')[0..4].join('/')
+            activity.repository = repo_url(api_hash['url'])
           end
           activity
         end
