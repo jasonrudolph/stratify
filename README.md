@@ -43,6 +43,7 @@ Stratify consists of the following parts:
 * **stratify-rails**: Rails app for configuring collectors and displaying collected activities.
 * **stratify-foursquare**: Collects your checkins from Foursquare.
 * **stratify-garmin**: Collects your runs, bike rides, etc. from Garmin Connect.
+* **stratify-github**: Collects your commits, comments, issues, etc. from GitHub.
 * **stratify-gowalla**: Collects your checkins from Gowalla.
 * **stratify-instapaper**: Collects the articles you've archived on Instapaper.
 * **stratify-itunes**: Collects the songs you've listened to, shows you've watched, and so on, from iTunes.
@@ -101,7 +102,7 @@ TODO - Add easy mechanism for loading example data
 
 * Move each component into its own repository
 * Rake task for loading sample data (currently handled via db/samples.rb)
-* More collectors (e.g., GitHub, etc.)
+* More collectors (e.g., Stack Overflow, etc.)
 * UI design
 * Better error notification in collectors
 * Ability to search for activities
