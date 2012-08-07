@@ -187,7 +187,7 @@ module Stratify
         def self.make(activity, api_hash)
           activity.action     = "pushed"
           activity.ref        = api_hash['payload']['ref']
-          activity.repository = api_hash['repository']['url']
+          activity.repository = api_hash['repository']['url'] rescue nil
           activity.payload    = api_hash['payload']['shas'][0][2]
           activity
         end
