@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    stratify-github (0.1.1)
+    stratify-github (0.1.2)
       actionpack (~> 3.2.0)
       railties (~> 3.2.0)
       rinku (~> 1.0.0)
@@ -36,7 +36,7 @@ GEM
     fakeweb (1.3.0)
     hike (1.2.1)
     i18n (0.6.0)
-    journey (1.0.3)
+    journey (1.0.4)
     json (1.7.0)
     mongo (1.6.2)
       bson (~> 1.6.2)
