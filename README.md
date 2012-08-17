@@ -111,7 +111,7 @@ TODO - Add easy mechanism for loading example data
 
 ## Contributors
 
-Thanks to [Jared Pace](http://github.com/jdpace) and [Michael Parenteau](http://github.com/michaelparenteau) for their contributions.
+Thanks to [Daemian Mack](http://github.com/daemianmack), [Jared Pace](http://github.com/jdpace), and [Michael Parenteau](http://github.com/michaelparenteau) for their contributions.
 
 ## License
 
