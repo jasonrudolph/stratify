@@ -25,7 +25,8 @@ provide a more rich user interface experience.
 
 #### Activity Timeline
 
-[![Stratify Activity Timeline  Screenshot](http://img.skitch.com/20110716-n6ns38f9ai83e8p8h9jqw6wxak.medium.jpg)](https://skitch.com/jasonrudolph/fkftt/stratify "Stratify Activity Timeline Screenshot")
+
+[![Stratify Activity Timeline  Screenshot](https://img.skitch.com/20120818-83unkntjigdmg6iews2c7ujffe.medium.jpg)](https://skitch.com/jasonrudolph/epcex/stratify-screenshot-circa-august-2012 "Stratify Activity Timeline Screenshot")
 
 #### Punch Card Graph
 
