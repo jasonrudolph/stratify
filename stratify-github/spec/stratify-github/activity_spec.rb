@@ -251,6 +251,19 @@ describe Stratify::GitHub::Activity do
       event.payload.should == 'Fix all the things'
     end
 
+    it 'produces correct fields for a PushEvent without SHAs' do
+      data = DM({'type' => 'PushEvent',
+                  'payload' => {
+                    'ref'  => 'refs/head/master',
+                    'shas' => []}})
+      event = Stratify::GitHub::Activity.from_api_hash(data)
+      event.action.should == 'pushed'
+      event.event_type.should == 'PushEvent'
+      event.ref.should == 'refs/head/master'
+      event.repository.should be_nil
+      event.payload.should be_nil
+    end
+
     it 'produces correct fields for a WatchEvent' do
       data = DM({'type' => 'WatchEvent'})
       event = Stratify::GitHub::Activity.from_api_hash(data)
