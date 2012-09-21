@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    stratify-github (0.1.2)
+    stratify-github (0.1.3)
       actionpack (~> 3.2.0)
       railties (~> 3.2.0)
       rinku (~> 1.0.0)
