@@ -1,5 +1,3 @@
-$:.unshift File.expand_path('../../vendor/plugins/remote_cache_with_project_root/lib', __FILE__)
-
 require "bundler/capistrano"
 require "whenever/capistrano"
 
