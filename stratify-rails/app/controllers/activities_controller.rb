@@ -5,7 +5,7 @@ class ActivitiesController < ApplicationController
     # TODO Simplify the logic below once this bug is fixed in Kaminari:
     #      https://github.com/amatsuda/kaminari/issues/145
     activity_criteria = Stratify::Activity.desc(:created_at)
-    @activities = Kaminari.paginate_array(activity_criteria).page(params[:page])
+    @activities = Kaminari.paginate_array(activity_criteria).page(params[:page]).per(200)
   end
 
   def destroy
