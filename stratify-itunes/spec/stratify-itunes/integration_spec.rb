@@ -73,6 +73,10 @@ describe "collecting and storing iTunes data", :database => true do
   it "does not collect unplayed items from iTunes" do
     Stratify::ITunes::Activity.where(:persistent_id => "8780A3C7A0117B2B").should_not exist
   end
+
+  it "gracefully ignores 'played' items that have no 'last played at' timestamp" do
+    Stratify::ITunes::Activity.where(:persistent_id => "87AD381B6216E628").should_not exist
+  end
 end
 
 describe "reading a remote iTunes library file", :database => true do

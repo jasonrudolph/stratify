@@ -653,6 +653,7 @@
 			<key>Date Added</key><date>2011-02-27T21:45:46Z</date>
 			<key>Bit Rate</key><integer>192</integer>
 			<key>Sample Rate</key><integer>44100</integer>
+			<key>Play Count</key><integer>6</integer>
 			<key>Persistent ID</key><string>87AD381B6216E628</string>
 			<key>Track Type</key><string>File</string>
 			<key>Location</key><string>file://localhost/Users/z/Music/iTunes/iTunes%20Media/Music/Nirvana/Nevermind/11%20On%20A%20Plain.mp3</string>

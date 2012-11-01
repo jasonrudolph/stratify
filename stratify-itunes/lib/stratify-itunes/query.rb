@@ -44,13 +44,12 @@ module Stratify
         ::ITunes::Library.load(library_xml).tracks
       end
 
-      def played_tracks
-        tracks.select { |t| t.played? }
+      def tracks_sorted_by_last_played_at
+        tracks.reject { |t| t.last_played_at.nil? }.sort_by(&:last_played_at)
       end
 
       def recently_played_tracks
-        sorted_tracks = played_tracks.sort_by(&:last_played_at)
-        sorted_tracks.last(limit)
+        tracks_sorted_by_last_played_at.last(limit)
       end
     end
   end
