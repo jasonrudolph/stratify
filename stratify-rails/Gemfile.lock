@@ -221,7 +221,7 @@ GEM
       railties (~> 3.2.0)
       stratify-base (~> 0.1.4)
       thoughtafter-simple-rss (~> 1.2.3)
-    stratify-itunes (0.1.4.1)
+    stratify-itunes (0.1.4.2)
       itunes-library (~> 0.1.1)
       railties (~> 3.2.0)
       stratify-base (~> 0.1.4)
