@@ -25,8 +25,7 @@ provide a more rich user interface experience.
 
 #### Activity Timeline
 
-
-[![Stratify Activity Timeline  Screenshot](https://img.skitch.com/20120818-83unkntjigdmg6iews2c7ujffe.medium.jpg)](https://skitch.com/jasonrudolph/epcex/stratify-screenshot-circa-august-2012 "Stratify Activity Timeline Screenshot")
+[![Stratify Activity Timeline Screenshot](https://raw.github.com/jasonrudolph/stratify/master/doc/timeline-screenshot-medium.png)](https://raw.github.com/jasonrudolph/stratify/master/doc/timeline-screenshot.png "Stratify Activity Timeline Screenshot")
 
 #### Punch Card Graph
 
@@ -34,7 +33,7 @@ This data practically begs for visualization.  Stratify currently provides a "pu
 
 This data is ripe with opportunities for rich visualization.  (Thanks to GitHub for [the idea for this particular graph](https://github.com/jasonrudolph/stratify/graphs/punch_card).)
 
-[![Stratify Punch Card Graph Screenshot](https://img.skitch.com/20110702-jmu63tjdtd3628rs1wuc8i8mh5.medium.jpg)](https://skitch.com/jasonrudolph/f85he/stratify-punch-card-graph-screenshot "Stratify Punch Card Graph Screenshot")
+[![Stratify Punch Card Graph Screenshot](https://raw.github.com/jasonrudolph/stratify/master/doc/punch-card-graph-screenshot-medium.png)](https://raw.github.com/jasonrudolph/stratify/master/doc/punch-card-graph-screenshot.png "Stratify Punch Card Graph Screenshot")
 
 ## Components
 
