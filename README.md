@@ -31,7 +31,7 @@ provide a more rich user interface experience.
 
 This data practically begs for visualization.  Stratify currently provides a "punch card" graph for each of your activity sources. In the screenshot below, the Instapaper activity reveals a clear pattern: apparently I do most of my Instapaper reading at night and on weekend mornings. (This graph is generated from real data. And yeah, that pattern sounds about right.)
 
-This data is ripe with opportunities for rich visualization.  (Thanks to GitHub for [the idea for this particular graph](https://github.com/jasonrudolph/stratify/graphs/punch_card).)
+This data is ripe with opportunities for rich visualization.  (Thanks to GitHub for [the idea for this particular graph](https://github.com/jasonrudolph/stratify/graphs/punch-card).)
 
 [![Stratify Punch Card Graph Screenshot](https://raw.github.com/jasonrudolph/stratify/master/doc/punch-card-graph-screenshot-medium.png)](https://raw.github.com/jasonrudolph/stratify/master/doc/punch-card-graph-screenshot.png "Stratify Punch Card Graph Screenshot")
 
