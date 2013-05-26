@@ -3,31 +3,37 @@ require 'spec_helper'
 describe "stratify-twitter" do
   use_vcr_cassette "twitter"
 
+  let(:collector) do
+    Stratify::Twitter::Collector.create! :username => "jasonrudolph",
+      :consumer_key => 'uqaeu0eAd0kKGUyPcfpcSQ',
+      :consumer_secret => 'CHcsc0zJgxUjFBlrsRISrKamEfgOHjjzHjHJgS9kr0',
+      :oauth_token => '14188383-G8UEUz2KVP0ZZj2IJZC2o6SuaIJnKPYud9JPl1aqO',
+      :oauth_token_secret => 'GjryLDrcvBWfqAD9xY3FjOhTD7LKfNVlKsCRv6lMmfk'
+  end
+
   it "collects and stores status updates from Twitter", :database => true do
-    collector = Stratify::Twitter::Collector.create!(:username => "jasonrudolph")
     collector.run
 
     Stratify::Twitter::Activity.where(
-      :created_at => Time.parse("2011-06-08T16:22:40Z"),
-      :status_id => 78497177902657536,
+      :created_at => Time.parse("2013-03-28T23:14:40Z"),
+      :status_id => 317414466201473025,
       :username => "jasonrudolph",
-      :text => "Google finds it economically infeasible to support IE 6 & 7. You have less money than Google. Apply transitive law here. http://t.co/3lWZA2O",
+      :text => "This tweet is false.",
       :retweeted_status => nil
     ).should exist
   end
 
   it "collects and stores retweets from Twitter", :database => true do
-    collector = Stratify::Twitter::Collector.create!(:username => "jasonrudolph")
     collector.run
 
     activity = Stratify::Twitter::Activity.where(
-      "created_at" => Time.parse("2011-06-21T02:10:44Z"),
-      "status_id" => 82993823143297024,
+      "created_at" => Time.parse("2013-04-18T21:24:39Z"),
+      "status_id" => 324996922605711361,
       "username" => "jasonrudolph",
-      "text" => %Q{RT @timoreilly: Love it: @edd in email: "Programmers don't aspire to a BMW, they aspire to write a clojure program that other people won ...},
-      "retweeted_status.status_id" => 82942860218994688,
-      "retweeted_status.username" => "timoreilly",
-      "retweeted_status.text" => %Q{Love it: @edd in email: "Programmers don't aspire to a BMW, they aspire to write a clojure program that other people won't laugh at"},
+      "text" => "RT @github: Get up to speed with Pulse - https://t.co/yhqlLpcuv4",
+      "retweeted_status.status_id" => 324996855584940033,
+      "retweeted_status.username" => "github",
+      "retweeted_status.text" => "Get up to speed with Pulse - https://t.co/yhqlLpcuv4"
     ).should exist
   end
 end

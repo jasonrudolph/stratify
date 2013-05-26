@@ -23,7 +23,7 @@ Gem::Specification.new do |s|
   s.add_runtime_dependency "railties", "~> 3.2.0"
   s.add_runtime_dependency "rinku", "~> 1.0.0"
   s.add_runtime_dependency "stratify-base", "~> 0.1.4"
-  s.add_runtime_dependency "twitter", "~> 2.1.0"
+  s.add_runtime_dependency "twitter", "~> 4.6.0"
 
   s.add_development_dependency "database_cleaner", "~> 0.7.2"
   s.add_development_dependency "fakeweb", "~> 1.3.0"
