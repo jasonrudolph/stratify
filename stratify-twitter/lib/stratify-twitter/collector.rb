@@ -34,6 +34,10 @@ module Stratify
         </p>
       ]
 
+      def configuration_summary
+        username
+      end
+
       def activities
         activities_from_api.map do |activity_in_api_format|
           Stratify::Twitter::Activity.from_api_hash(activity_in_api_format)
