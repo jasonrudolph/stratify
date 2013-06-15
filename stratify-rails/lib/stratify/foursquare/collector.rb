@@ -1,5 +1,3 @@
-require 'stratify-foursquare/query'
-
 module Stratify
   module Foursquare
     class Collector < Stratify::Collector

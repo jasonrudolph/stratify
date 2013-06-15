@@ -1,5 +1,3 @@
-require 'stratify-foursquare/presenter'
-
 module Stratify
   module Foursquare
     class Activity < Stratify::Activity
