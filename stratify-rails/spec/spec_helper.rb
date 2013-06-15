@@ -31,9 +31,16 @@ Spork.prefork do
     # == Mock Framework
     config.mock_with :mocha
 
+    config.extend VCR::RSpec::Macros
+
     DatabaseCleaner.strategy = :truncation
     DatabaseCleaner.orm = "mongoid"
-    config.before :each do
+
+    config.before(:each, :type => :request) do
+      DatabaseCleaner.clean
+    end
+
+    config.before(:each, :database => true) do
       DatabaseCleaner.clean
     end
   end

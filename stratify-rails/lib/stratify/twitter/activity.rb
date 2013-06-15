@@ -1,6 +1,3 @@
-require 'stratify-twitter/presenter'
-require 'stratify-twitter/translation'
-
 module Stratify
   module Twitter
     class Activity < Stratify::Activity

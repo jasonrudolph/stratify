@@ -45,6 +45,13 @@ module Stratify
     # Enable the asset pipeline
     config.assets.enabled = true
 
+    # Each collector provides its own icons (and potentially other images). Add
+    # the collector's images to the asset path.
+    image_asset_dirs_for_collectors = Dir.glob(Rails.root.join('lib/stratify/*/assets/images'))
+    image_asset_dirs_for_collectors.each do |dir|
+      config.assets.paths << dir
+    end
+
     # Version of your assets, change this if you want to expire all your assets
     config.assets.version = '1.0'
   end

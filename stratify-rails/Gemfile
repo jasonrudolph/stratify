@@ -20,13 +20,17 @@ gem "stratify-gowalla"
 gem "stratify-instapaper"
 gem "stratify-itunes"
 gem "stratify-rhapsody"
-gem "stratify-twitter"
 gem "stratify-github"
 gem "kaminari"
 gem "mongoid_rails_migrations"
+
 gem 'whenever', :require => false
 gem 'capistrano' # for deployment
 gem 'capistrano-remote-cache-with-project-root' # for deployment
+
+# Dependencies used by various collectors
+gem "rinku", "~> 1.0.0"
+gem "twitter", "~> 4.6.0"
 
 group "development", "test" do
   gem "factory_girl_rails"
@@ -45,4 +49,5 @@ group "test" do
   gem "mocha"
   gem "rb-fsevent", :require => false if RUBY_PLATFORM =~ /darwin/i
   gem "spork"
+  gem "vcr", "~> 1.10.0"
 end
