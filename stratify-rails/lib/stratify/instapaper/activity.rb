@@ -1,5 +1,3 @@
-require 'stratify-instapaper/presenter'
-
 module Stratify
   module Instapaper
     class Activity < Stratify::Activity

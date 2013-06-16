@@ -1,5 +1,3 @@
-require 'stratify-instapaper/query'
-
 module Stratify
   module Instapaper
     class Collector < Stratify::Collector

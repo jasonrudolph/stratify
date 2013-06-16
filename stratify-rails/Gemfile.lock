@@ -256,7 +256,6 @@ DEPENDENCIES
   sass-rails (~> 3.2.3)
   spork
   stratify-base
-  stratify-instapaper
   stratify-itunes
   stratify-rhapsody
   thoughtafter-simple-rss (~> 1.2.3)
