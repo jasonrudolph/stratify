@@ -14,7 +14,6 @@ end
 
 # Stratify-specific dependencies
 gem "stratify-base"
-gem "stratify-itunes"
 gem "stratify-rhapsody"
 gem "kaminari"
 gem "mongoid_rails_migrations"
@@ -25,6 +24,7 @@ gem 'capistrano-remote-cache-with-project-root' # for deployment
 
 # Dependencies used by various collectors
 gem "foursquare2", "~> 1.9.7"
+gem "itunes-library", "~> 0.1.1"
 gem "nokogiri", "~> 1.4.4"
 gem "rinku", "~> 1.0.0"
 gem "thoughtafter-simple-rss", "~> 1.2.3"
