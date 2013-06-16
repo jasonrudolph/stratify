@@ -1,5 +1,3 @@
-require 'stratify-garmin/presenter'
-
 module Stratify
   module Garmin
     class Activity < Stratify::Activity

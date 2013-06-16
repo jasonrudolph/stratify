@@ -14,7 +14,6 @@ end
 
 # Stratify-specific dependencies
 gem "stratify-base"
-gem "stratify-garmin"
 gem "stratify-gowalla"
 gem "stratify-instapaper"
 gem "stratify-itunes"
@@ -29,7 +28,9 @@ gem 'capistrano-remote-cache-with-project-root' # for deployment
 
 # Dependencies used by various collectors
 gem "foursquare2", "~> 1.9.7"
+gem "nokogiri", "~> 1.4.4"
 gem "rinku", "~> 1.0.0"
+gem "thoughtafter-simple-rss", "~> 1.2.3"
 gem "twitter", "~> 4.6.0"
 
 group "development", "test" do

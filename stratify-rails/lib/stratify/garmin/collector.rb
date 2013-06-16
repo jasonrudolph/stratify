@@ -1,6 +1,5 @@
 require 'open-uri'
 require 'simple-rss'
-require 'stratify-garmin/rss_item_adapter'
 
 module Stratify
   module Garmin
