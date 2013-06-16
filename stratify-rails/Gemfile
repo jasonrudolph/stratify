@@ -18,7 +18,6 @@ gem "stratify-gowalla"
 gem "stratify-instapaper"
 gem "stratify-itunes"
 gem "stratify-rhapsody"
-gem "stratify-github"
 gem "kaminari"
 gem "mongoid_rails_migrations"
 

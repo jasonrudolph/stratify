@@ -1,4 +1,4 @@
-require 'stratify-github/events'
+require 'stratify/github/events'
 require 'digest/md5'
 
 class GitHubApiError < StandardError; end
