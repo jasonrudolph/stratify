@@ -1,5 +1,3 @@
-require 'stratify-rhapsody/query'
-
 module Stratify
   module Rhapsody
     class Collector < Stratify::Collector

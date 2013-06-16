@@ -14,7 +14,6 @@ end
 
 # Stratify-specific dependencies
 gem "stratify-base"
-gem "stratify-rhapsody"
 gem "kaminari"
 gem "mongoid_rails_migrations"
 
