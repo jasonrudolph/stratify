@@ -198,13 +198,6 @@ GEM
       bson_ext (~> 1.6.0)
       mongoid (~> 2.4.0)
       tilt (~> 1.3.2)
-    stratify-gowalla (0.1.4.1)
-      railties (~> 3.2.0)
-      stratify-base (~> 0.1.4)
-    stratify-instapaper (0.1.4.1)
-      railties (~> 3.2.0)
-      stratify-base (~> 0.1.4)
-      thoughtafter-simple-rss (~> 1.2.3)
     stratify-itunes (0.1.4.2)
       itunes-library (~> 0.1.1)
       railties (~> 3.2.0)
@@ -263,7 +256,6 @@ DEPENDENCIES
   sass-rails (~> 3.2.3)
   spork
   stratify-base
-  stratify-gowalla
   stratify-instapaper
   stratify-itunes
   stratify-rhapsody

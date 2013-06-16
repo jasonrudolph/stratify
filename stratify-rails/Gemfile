@@ -14,7 +14,6 @@ end
 
 # Stratify-specific dependencies
 gem "stratify-base"
-gem "stratify-gowalla"
 gem "stratify-instapaper"
 gem "stratify-itunes"
 gem "stratify-rhapsody"
