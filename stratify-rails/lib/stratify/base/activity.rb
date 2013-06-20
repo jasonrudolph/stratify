@@ -1,6 +1,6 @@
 require 'mongoid'
-require 'stratify/mongoid_extension'
-require 'stratify/renderable'
+require 'stratify/base/mongoid_extension'
+require 'stratify/base/renderable'
 
 module Stratify
   class Activity

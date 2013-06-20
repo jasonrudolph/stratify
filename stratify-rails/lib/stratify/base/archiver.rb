@@ -1,4 +1,4 @@
-require 'stratify/logger'
+require 'stratify/base/logger'
 
 module Stratify
   class Archiver

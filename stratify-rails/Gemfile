@@ -12,22 +12,25 @@ group :assets do
   gem 'uglifier',     "~> 1.0.3"
 end
 
-# Stratify-specific dependencies
-gem "stratify-base"
-gem "kaminari"
-gem "mongoid_rails_migrations"
+# Used by stratify/base
+gem "bson_ext", "~> 1.6.0"
+gem "mongoid", "~> 2.4.0"
+gem "tilt", "~> 1.3.2"
 
-gem 'whenever', :require => false
-gem 'capistrano' # for deployment
-gem 'capistrano-remote-cache-with-project-root' # for deployment
-
-# Dependencies used by various collectors
+# Used by various collectors
 gem "foursquare2", "~> 1.9.7"
 gem "itunes-library", "~> 0.1.1"
 gem "nokogiri", "~> 1.4.4"
 gem "rinku", "~> 1.0.0"
 gem "thoughtafter-simple-rss", "~> 1.2.3"
 gem "twitter", "~> 4.6.0"
+
+# Used by Rails app
+gem "kaminari"
+gem "mongoid_rails_migrations"
+gem 'whenever', :require => false
+gem 'capistrano' # for deployment
+gem 'capistrano-remote-cache-with-project-root' # for deployment
 
 group "development", "test" do
   gem "factory_girl_rails"

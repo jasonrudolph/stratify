@@ -44,6 +44,11 @@ Spork.prefork do
       DatabaseCleaner.clean
     end
   end
+
+  def silence_stratify_logging
+    # Silence the logger so as not to clutter the test output
+    Stratify.stubs(:logger).returns(Logger.new("/dev/null"))
+  end
 end
 
 Spork.each_run do
