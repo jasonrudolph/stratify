@@ -1,6 +1,6 @@
 require 'mongoid'
-require 'stratify/base/archiver'
-require 'stratify/base/field_definition'
+require 'stratify/archiver'
+require 'stratify/field_definition'
 
 module Stratify
   class Collector

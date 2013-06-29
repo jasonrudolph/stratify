@@ -20,6 +20,7 @@ module Stratify
 
     # Custom directories with classes and modules you want to be autoloadable.
     config.autoload_paths << config.root.join('lib')
+    config.autoload_paths << config.root.join('lib/plugins')
 
     # Only load the plugins named here, in the order given (default is alphabetical).
     # :all can be used as a placeholder for all plugins not explicitly named.
@@ -47,7 +48,7 @@ module Stratify
 
     # Each collector provides its own icons (and potentially other images). Add
     # the collector's images to the asset path.
-    image_asset_dirs_for_collectors = Dir.glob(Rails.root.join('lib/stratify/*/assets/images'))
+    image_asset_dirs_for_collectors = Dir.glob(config.root.join('lib/plugins/stratify/*/assets/images'))
     image_asset_dirs_for_collectors.each do |dir|
       config.assets.paths << dir
     end

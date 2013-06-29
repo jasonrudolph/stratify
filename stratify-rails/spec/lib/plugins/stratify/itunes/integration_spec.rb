@@ -2,7 +2,7 @@ require 'spec_helper'
 
 describe "collecting and storing iTunes data", :database => true do
   before do
-    itunes_library_path = File.expand_path('../../../../fixtures/iTunes Music Library.xml', __FILE__)
+    itunes_library_path = File.expand_path('../../../../../fixtures/iTunes Music Library.xml', __FILE__)
     collector = Stratify::ITunes::Collector.create!(:library_path => itunes_library_path)
     collector.run
   end
