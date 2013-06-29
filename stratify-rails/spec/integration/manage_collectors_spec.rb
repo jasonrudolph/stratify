@@ -1,6 +1,11 @@
 require 'spec_helper'
 
 feature "Managing collectors" do
+  before do
+    Stratify::Collector.collector_classes.clear
+    Stratify::Collector.collector_classes << Stratify::Bacon::Collector
+  end
+
   scenario "Add a collector" do
     visit collectors_path
 

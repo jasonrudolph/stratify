@@ -61,3 +61,5 @@ module Stratify
     end
   end
 end
+
+Stratify::Collector.collector_classes << Stratify::Twitter::Collector

@@ -5,16 +5,23 @@ class TestCollector < Stratify::Collector
                        :password => {:type => :password}
 end
 
-def anonymous_collector_subclass
-  Class.new(Stratify::Collector)
+def anonymous_collector_subclass(source = "some-source")
+  Class.new(Stratify::Collector).tap do |collector_class|
+    collector_class.source(source)
+  end
 end
 
 describe Stratify::Collector do
 
+  before do
+    Stratify::Collector.collector_classes.clear
+  end
+
   describe ".collector_class_for" do
     it "returns the collector subclass associated with the given source" do
-      example_collector_subclass = anonymous_collector_subclass
-      example_collector_subclass.source("Twitter")
+      example_collector_subclass = anonymous_collector_subclass("Twitter")
+      Stratify::Collector.collector_classes << example_collector_subclass
+
       Stratify::Collector.collector_class_for("Twitter").should == example_collector_subclass
     end
 
@@ -24,19 +31,18 @@ describe Stratify::Collector do
   end
 
   describe ".sources" do
-    before { Stratify::Collector.collector_classes.clear }
-
     it "returns the list of sources for all collectors" do
-      anonymous_collector_subclass.source("FourSquare")
-      anonymous_collector_subclass.source("Twitter")
-      Stratify::Collector.sources.should =~ ["FourSquare", "Twitter"]
+      Stratify::Collector.collector_classes << anonymous_collector_subclass("Foursquare")
+      Stratify::Collector.collector_classes << anonymous_collector_subclass("Twitter")
+
+      Stratify::Collector.sources.should =~ ["Foursquare", "Twitter"]
     end
 
     it "returns the sources in case-insensitive alphabetical order" do
-      anonymous_collector_subclass.source("Twitter")
-      anonymous_collector_subclass.source("iTunes")
-      anonymous_collector_subclass.source("Instapaper")
-      anonymous_collector_subclass.source("Pandora")
+      %w(Twitter iTunes Instapaper Pandora).each do |source|
+        Stratify::Collector.collector_classes << anonymous_collector_subclass(source)
+      end
+
       Stratify::Collector.sources.should == %w(Instapaper iTunes Pandora Twitter)
     end
   end

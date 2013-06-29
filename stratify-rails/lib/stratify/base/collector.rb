@@ -65,11 +65,6 @@ module Stratify
 
     @collector_classes = []
 
-    def self.inherited(subclass)
-      super
-      Collector.collector_classes << subclass
-    end
-
     def self.collector_class_for(source)
       Collector.collector_classes.find {|clazz| clazz.source == source}
     end

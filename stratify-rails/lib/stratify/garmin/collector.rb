@@ -56,3 +56,5 @@ module Stratify
     end
   end
 end
+
+Stratify::Collector.collector_classes << Stratify::Garmin::Collector
