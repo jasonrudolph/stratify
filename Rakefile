@@ -1,62 +1,12 @@
-stratify_gems = [
-  'stratify-base',
-  'stratify-foursquare',
-  'stratify-garmin',
-  'stratify-github',
-  'stratify-gowalla',
-  'stratify-instapaper',
-  'stratify-itunes',
-  'stratify-rhapsody',
-  'stratify-twitter',
-]
+#!/usr/bin/env rake
+# Add your own tasks in files placed in lib/tasks ending in .rake,
+# for example lib/tasks/capistrano.rake, and they will automatically be available to Rake.
 
-stratify_components = stratify_gems + ['stratify-rails']
+require File.expand_path('../config/application', __FILE__)
 
-ROOT = File.dirname(__FILE__)
+Stratify::Application.load_tasks
 
-def in_each_dir(dirs, &command)
-  dirs.each do |dir_name|
-    Dir.chdir(File.join(ROOT, dir_name)) { command.call }
-  end
+unless Rails.env.production?
+  task(:default).clear
+  task :default => ["spec"]
 end
-
-def gem_command(command, *args)
-  ruby "-S gem #{command} #{args.join(' ')}"
-end
-
-def rake_command(command)
-  ruby "-S bundle exec rake #{command}"
-end
-
-namespace :components do
-  desc 'Runs the given shell command in each component directory (e.g., rake components:run["bundle update"]'
-  task :run, [:command] do |t, args|
-    command = args.command
-    if command.nil?
-      raise "Usage: rake components:run[<command>]"
-    end
-
-    in_each_dir(stratify_components) { sh command }
-  end
-
-  desc "Run specs for all Stratify components"
-  task :spec do
-    in_each_dir(stratify_components) { rake_command "spec" }
-  end
-end
-
-namespace :gems do
-  desc "Install all Stratify gems"
-  task :install do
-    in_each_dir(stratify_gems) { ruby "-S rake install" }
-  end
-
-  desc "Build all Stratify gems"
-  task :build do
-    stratify_gems.each do |gem_name|
-      Dir.chdir(File.join(ROOT, gem_name)) { gem_command "build", "#{gem_name}.gemspec" }
-    end
-  end
-end
-
-task :default => 'components:spec'
