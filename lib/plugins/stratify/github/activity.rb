@@ -1,5 +1,5 @@
-require 'stratify/github/presenter'
-require 'stratify/github/translation'
+require_dependency 'stratify/github/presenter'
+require_dependency 'stratify/github/translation'
 
 module Stratify
   module GitHub

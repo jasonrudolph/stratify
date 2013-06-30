@@ -1,2 +1,2 @@
-require_relative 'garmin/activity'
-require_relative 'garmin/collector'
+require_dependency 'stratify/garmin/activity'
+require_dependency 'stratify/garmin/collector'

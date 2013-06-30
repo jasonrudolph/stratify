@@ -1,2 +1,2 @@
-require_relative 'itunes/activity'
-require_relative 'itunes/collector'
+require_dependency 'stratify/itunes/activity'
+require_dependency 'stratify/itunes/collector'

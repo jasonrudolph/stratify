@@ -1,2 +1,2 @@
-require_relative 'twitter/activity'
-require_relative 'twitter/collector'
+require_dependency 'stratify/twitter/activity'
+require_dependency 'stratify/twitter/collector'

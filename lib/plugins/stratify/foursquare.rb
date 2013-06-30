@@ -1,2 +1,2 @@
-require_relative 'foursquare/activity'
-require_relative 'foursquare/collector'
+require_dependency 'stratify/foursquare/activity'
+require_dependency 'stratify/foursquare/collector'

@@ -1,4 +1,4 @@
-require 'stratify/logger'
+require_dependency 'stratify/logger'
 
 module Stratify
   class Archiver

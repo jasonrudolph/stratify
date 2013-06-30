@@ -1,2 +1,2 @@
-require_relative 'rhapsody/activity'
-require_relative 'rhapsody/collector'
+require_dependency 'stratify/rhapsody/activity'
+require_dependency 'stratify/rhapsody/collector'

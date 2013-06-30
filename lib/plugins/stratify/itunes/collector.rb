@@ -1,5 +1,6 @@
 require 'open-uri'
-require 'stratify/itunes/query'
+
+require_dependency 'stratify/itunes/query'
 
 module Stratify
   module ITunes

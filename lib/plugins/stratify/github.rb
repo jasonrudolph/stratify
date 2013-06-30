@@ -1,2 +1,2 @@
-require_relative 'github/activity'
-require_relative 'github/collector'
+require_dependency 'stratify/github/activity'
+require_dependency 'stratify/github/collector'

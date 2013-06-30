@@ -1,2 +1,2 @@
-require_relative 'gowalla/activity'
-require_relative 'gowalla/collector'
+require_dependency 'stratify/gowalla/activity'
+require_dependency 'stratify/gowalla/collector'

@@ -1,3 +1,3 @@
-require 'stratify/activity'
-require 'stratify/collector'
-require 'stratify/collector_coordinator'
+require_dependency 'stratify/activity'
+require_dependency 'stratify/collector'
+require_dependency 'stratify/collector_coordinator'

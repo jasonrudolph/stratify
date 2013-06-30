@@ -1,4 +1,4 @@
-require 'stratify/itunes/presenter'
+require_dependency 'stratify/itunes/presenter'
 
 module Stratify
   module ITunes

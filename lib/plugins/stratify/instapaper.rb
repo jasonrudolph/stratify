@@ -1,2 +1,2 @@
-require_relative 'instapaper/activity'
-require_relative 'instapaper/collector'
+require_dependency 'stratify/instapaper/activity'
+require_dependency 'stratify/instapaper/collector'
