@@ -16,7 +16,6 @@ set :ssh_options, { :forward_agent => true }
 default_run_options[:pty] = true
 
 set :deploy_to, "/var/www/apps/#{application}"
-set :deploy_via, "remote_cache_with_project_root"
 set :project_root, "stratify-rails"
 set :copy_cache, true
 set :copy_exclude, [".git"]

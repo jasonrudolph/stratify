@@ -30,7 +30,6 @@ gem "kaminari"
 gem "mongoid_rails_migrations"
 gem 'whenever', :require => false
 gem 'capistrano' # for deployment
-gem 'capistrano-remote-cache-with-project-root' # for deployment
 
 group "development", "test" do
   gem "factory_girl_rails"
