@@ -42,8 +42,8 @@ group "test" do
   gem "database_cleaner", "~> 1.0.1"
   gem "fakeweb"
   gem "growl" # for Guard notifications
-  gem "guard-rspec"
-  gem "guard-spork"
+  gem "guard-rspec",      "~> 3.0.2"
+  gem "guard-spork",      "~> 1.0.1"
   gem "launchy"
   gem "mocha", :require => false
   gem "rb-fsevent",       "~> 0.9.3", :require => false if RUBY_PLATFORM =~ /darwin/i
