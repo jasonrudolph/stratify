@@ -1,6 +1,11 @@
 require 'spec_helper'
 
 feature "Viewing graphs" do
+  before do
+    Stratify::Collector.collector_classes.clear
+    Stratify::Collector.collector_classes << Stratify::Bacon::Collector
+  end
+
   scenario "Viewing the punch card graph" do
     activity = Factory(:bacon_activity, :created_at => Time.parse("Fri, 1 Jul 2011 19:27 EDT"))
 
