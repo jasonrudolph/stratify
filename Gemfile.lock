@@ -239,7 +239,7 @@ DEPENDENCIES
   rails (= 3.2.13)
   rb-fsevent
   rinku (~> 1.0.0)
-  rspec-rails
+  rspec-rails (~> 2.0)
   sass-rails (~> 3.2.3)
   spork
   thoughtafter-simple-rss (~> 1.2.3)

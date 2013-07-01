@@ -34,7 +34,7 @@ gem 'capistrano' # for deployment
 group "development", "test" do
   gem "factory_girl_rails"
   gem "faker"
-  gem "rspec-rails"
+  gem "rspec-rails",        "~> 2.0"
 end
 
 group "test" do
