@@ -35,20 +35,18 @@ This data is ripe with opportunities for rich visualization.  (Thanks to GitHub 
 
 [![Stratify Punch Card Graph Screenshot](https://raw.github.com/jasonrudolph/stratify/master/doc/punch-card-graph-screenshot-medium.png)](https://raw.github.com/jasonrudolph/stratify/master/doc/punch-card-graph-screenshot.png "Stratify Punch Card Graph Screenshot")
 
-## Components
+## Collectors
 
-Stratify consists of the following parts:
+Stratify currently provides the following [collectors](lib/plugins/stratify):
 
-* **stratify-base**: Core collector and activity componentry.
-* **stratify-rails**: Rails app for configuring collectors and displaying collected activities.
-* **stratify-foursquare**: Collects your checkins from Foursquare.
-* **stratify-garmin**: Collects your runs, bike rides, etc. from Garmin Connect.
-* **stratify-github**: Collects your commits, comments, issues, etc. from GitHub.
-* **stratify-gowalla**: Collects your checkins from Gowalla.
-* **stratify-instapaper**: Collects the articles you've archived on Instapaper.
-* **stratify-itunes**: Collects the songs you've listened to, shows you've watched, and so on, from iTunes.
-* **stratify-rhapsody**: Collects the songs you've played on Rhapsody.
-* **stratify-twitter**: Collects your tweets.
+* **foursquare**: Collects your checkins from Foursquare.
+* **garmin**: Collects your runs, bike rides, etc. from Garmin Connect.
+* **github**: Collects your commits, comments, issues, etc. from GitHub.
+* **gowalla**: Collects your checkins from Gowalla.
+* **instapaper**: Collects the articles you've archived on Instapaper.
+* **itunes**: Collects the songs you've listened to, shows you've watched, and so on, from iTunes.
+* **rhapsody**: Collects the songs you've played on Rhapsody.
+* **twitter**: Collects your tweets.
 
 
 ## Dependencies
@@ -63,7 +61,7 @@ Stratify is developed and tested with the following dependencies.
 
 To use Stratify, clone the repo, and ...
 
-    cd stratify/stratify-rails
+    cd stratify
     gem install bundler
     bundle
     cp config/mongoid.example.yml config/mongoid.yml
@@ -88,7 +86,7 @@ To provide the automation we're looking for, Stratify runs the collectors via cr
 
 To install the cron job ...
 
-    # cd to the stratify-rails directory and ...
+    # cd to the root of the repository, and ...
     whenever --update-crontab
     crontab -l # show updated crontab
 
@@ -100,7 +98,6 @@ TODO - Add easy mechanism for loading example data
 
 ## TODO
 
-* Move each component into its own repository
 * Rake task for loading sample data (currently handled via db/samples.rb)
 * More collectors (e.g., Stack Overflow, etc.)
 * UI design
