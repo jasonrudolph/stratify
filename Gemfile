@@ -38,7 +38,7 @@ group "development", "test" do
 end
 
 group "test" do
-  gem "capybara", "~> 1.0.0.beta1"
+  gem "capybara",         "~> 1.0.0.beta1"
   gem "database_cleaner"
   gem "fakeweb"
   gem "growl" # for Guard notifications
@@ -48,5 +48,5 @@ group "test" do
   gem "mocha", :require => false
   gem "rb-fsevent", :require => false if RUBY_PLATFORM =~ /darwin/i
   gem "spork"
-  gem "vcr", "~> 1.10.0"
+  gem "vcr",              "~> 1.10.0"
 end
