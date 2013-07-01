@@ -1,7 +1,7 @@
 source "http://rubygems.org"
 
 # Default Rails dependencies
-gem "rails", "3.2.11"
+gem "rails", "3.2.13"
 gem "jquery-rails"
 
 # Gems used only for assets and not required
