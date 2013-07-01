@@ -39,7 +39,7 @@ end
 
 group "test" do
   gem "capybara",         "~> 1.0.0.beta1"
-  gem "database_cleaner"
+  gem "database_cleaner", "~> 1.0.1"
   gem "fakeweb"
   gem "growl" # for Guard notifications
   gem "guard-rspec"
