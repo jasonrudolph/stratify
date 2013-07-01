@@ -12,7 +12,7 @@ group :assets do
   gem 'uglifier',     "~> 1.0.3"
 end
 
-# Used by stratify/base
+# Used by core collector/activity code (in lib/stratify)
 gem "bson_ext", "~> 1.6.0"
 gem "mongoid",  "~> 2.4.0"
 gem "tilt",     "~> 1.3.2"
