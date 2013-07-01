@@ -257,7 +257,7 @@ DEPENDENCIES
   jquery-rails
   kaminari (~> 0.14.1)
   launchy
-  mocha
+  mocha (~> 0.14.0)
   mongoid (~> 2.4.0)
   mongoid_rails_migrations
   nokogiri (~> 1.4.4)
