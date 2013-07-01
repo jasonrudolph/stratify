@@ -26,7 +26,7 @@ gem "thoughtafter-simple-rss", "~> 1.2.3"
 gem "twitter",                 "~> 4.6.0"
 
 # Used by Rails app
-gem "kaminari"
+gem "kaminari",                 "~> 0.14.1"
 gem "mongoid_rails_migrations"
 gem 'whenever', :require => false
 gem 'capistrano' # for deployment

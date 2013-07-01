@@ -230,7 +230,7 @@ DEPENDENCIES
   guard-spork
   itunes-library (~> 0.1.1)
   jquery-rails
-  kaminari
+  kaminari (~> 0.14.1)
   launchy
   mocha
   mongoid (~> 2.4.0)
