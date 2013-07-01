@@ -45,7 +45,7 @@ group "test" do
   gem "guard-rspec"
   gem "guard-spork"
   gem "launchy"
-  gem "mocha"
+  gem "mocha", :require => false
   gem "rb-fsevent", :require => false if RUBY_PLATFORM =~ /darwin/i
   gem "spork"
   gem "vcr", "~> 1.10.0"
