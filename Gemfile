@@ -20,7 +20,7 @@ gem "tilt",     "~> 1.4.1"
 # Used by various collectors
 gem "foursquare2",             "~> 1.9.7"
 gem "itunes-library",          "~> 0.1.1"
-gem "nokogiri",                "~> 1.4.4"
+gem "nokogiri",                "~> 1.6.0"
 gem "rinku",                   "~> 1.0.0"
 gem "thoughtafter-simple-rss", "~> 1.2.3"
 gem "twitter",                 "~> 4.8.1"
