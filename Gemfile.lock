@@ -211,7 +211,7 @@ GEM
     treetop (1.4.14)
       polyglot
       polyglot (>= 0.3.1)
-    twitter (4.6.2)
+    twitter (4.8.1)
       faraday (~> 0.8, < 0.10)
       multi_json (~> 1.0)
       simple_oauth (~> 0.2)
@@ -257,7 +257,7 @@ DEPENDENCIES
   spork (~> 0.9.2)
   thoughtafter-simple-rss (~> 1.2.3)
   tilt (~> 1.4.1)
-  twitter (~> 4.6.0)
+  twitter (~> 4.8.1)
   uglifier (~> 1.0.3)
   vcr (~> 1.10.0)
   whenever (~> 0.8.3)

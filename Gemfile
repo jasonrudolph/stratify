@@ -23,7 +23,7 @@ gem "itunes-library",          "~> 0.1.1"
 gem "nokogiri",                "~> 1.4.4"
 gem "rinku",                   "~> 1.0.0"
 gem "thoughtafter-simple-rss", "~> 1.2.3"
-gem "twitter",                 "~> 4.6.0"
+gem "twitter",                 "~> 4.8.1"
 
 # Used by Rails app
 gem "kaminari",                 "~> 0.14.1"
