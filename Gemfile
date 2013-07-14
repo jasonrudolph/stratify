@@ -29,7 +29,7 @@ gem "twitter",                 "~> 4.6.0"
 gem "kaminari",                 "~> 0.14.1"
 gem "mongoid_rails_migrations", "~> 0.0.14"
 gem 'whenever',                 "~> 0.8.3", :require => false
-gem 'capistrano' # for deployment
+gem 'capistrano',               "~> 2.15.5" # for deployment
 
 group "development", "test" do
   gem "factory_girl_rails", "~> 4.2.1"
