@@ -38,13 +38,13 @@ group "development", "test" do
 end
 
 group "test" do
-  gem "capybara",         "~> 1.0.0.beta1"
+  gem "capybara",         "~> 2.1.0"
   gem "database_cleaner", "~> 1.0.1"
   gem "fakeweb"
   gem "growl" # for Guard notifications
   gem "guard-rspec",      "~> 3.0.2"
   gem "guard-spork",      "~> 1.0.1"
-  gem "launchy"
+  gem "launchy",          "~> 2.3.0"
   gem "mocha",            "~> 0.14.0", :require => false
   gem "rb-fsevent",       "~> 0.9.3", :require => false if RUBY_PLATFORM =~ /darwin/i
   gem "spork",            "~> 0.9.2"

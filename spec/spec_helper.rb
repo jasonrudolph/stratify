@@ -42,7 +42,7 @@ Spork.prefork do
     DatabaseCleaner.strategy = :truncation
     DatabaseCleaner.orm = "mongoid"
 
-    config.before(:each, :type => :request) do
+    config.before(:each, :type => :feature) do
       DatabaseCleaner.clean
     end
 
