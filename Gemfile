@@ -41,7 +41,6 @@ group "test" do
   gem "capybara",         "~> 2.1.0"
   gem "database_cleaner", "~> 1.0.1"
   gem "fakeweb",          "~> 1.3.0"
-  gem "growl" # for Guard notifications
   gem "guard-rspec",      "~> 3.0.2"
   gem "guard-spork",      "~> 1.0.1"
   gem "launchy",          "~> 2.3.0"
