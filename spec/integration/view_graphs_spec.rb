@@ -7,7 +7,7 @@ feature "Viewing graphs" do
   end
 
   scenario "Viewing the punch card graph" do
-    activity = Factory(:bacon_activity, :created_at => Time.parse("Fri, 1 Jul 2011 19:27 EDT"))
+    activity = FactoryGirl.create(:bacon_activity, :created_at => Time.parse("Fri, 1 Jul 2011 19:27 EDT"))
 
     visit "/graphs/punch_card"
 

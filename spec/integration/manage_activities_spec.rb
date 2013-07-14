@@ -20,7 +20,7 @@ feature "Managing activities" do
   end
 
   scenario "Soft delete an activity" do
-    activity = Factory(:bacon_activity)
+    activity = FactoryGirl.create(:bacon_activity)
     css_selector_for_activity = "article##{ActionController::RecordIdentifier.dom_id(activity)}"
 
     visit activities_path

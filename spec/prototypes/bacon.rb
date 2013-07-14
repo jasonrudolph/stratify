@@ -45,8 +45,10 @@ module Stratify
   end
 end
 
-Factory.define :bacon_activity, :class => Stratify::Bacon::Activity do |f|
-  f.source       Stratify::Bacon::Collector.source
-  f.slices       3
-  f.created_at   { rand(1000).hours.ago }
+FactoryGirl.define do
+  factory :bacon_activity, :class => Stratify::Bacon::Activity do
+    source     Stratify::Bacon::Collector.source
+    slices     3
+    created_at { rand(1000).hours.ago }
+  end
 end
