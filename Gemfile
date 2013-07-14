@@ -27,7 +27,7 @@ gem "twitter",                 "~> 4.6.0"
 
 # Used by Rails app
 gem "kaminari",                 "~> 0.14.1"
-gem "mongoid_rails_migrations"
+gem "mongoid_rails_migrations", "~> 0.0.14"
 gem 'whenever', :require => false
 gem 'capistrano' # for deployment
 

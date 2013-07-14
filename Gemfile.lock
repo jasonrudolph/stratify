@@ -260,7 +260,7 @@ DEPENDENCIES
   launchy
   mocha (~> 0.14.0)
   mongoid (~> 2.4.0)
-  mongoid_rails_migrations
+  mongoid_rails_migrations (~> 0.0.14)
   nokogiri (~> 1.4.4)
   rails (= 3.2.13)
   rb-fsevent (~> 0.9.3)
