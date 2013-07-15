@@ -7,7 +7,7 @@ module Stratify
   class Collector
     include Mongoid::Document
 
-    store_in :collectors
+    store_in :collection => 'collectors'
 
     field :last_ran_at, :type => DateTime
 

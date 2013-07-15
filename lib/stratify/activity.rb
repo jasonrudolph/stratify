@@ -10,7 +10,7 @@ module Stratify
     include MongoidExtension::NaturalKey
     include Renderable
 
-    store_in :activities
+    store_in :collection => 'activities'
 
     field :source, :type => String
     field :created_at, :type => DateTime

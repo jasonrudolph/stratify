@@ -13,8 +13,7 @@ group :assets do
 end
 
 # Used by core collector/activity code (in lib/stratify)
-gem "bson_ext", "~> 1.6.0"
-gem "mongoid",  "~> 2.4.0"
+gem "mongoid",  "~> 3.1.4"
 gem "tilt",     "~> 1.4.1"
 
 # Used by various collectors
