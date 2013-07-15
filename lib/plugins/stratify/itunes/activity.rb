@@ -3,7 +3,7 @@ require_dependency 'stratify/itunes/presenter'
 module Stratify
   module ITunes
     class Activity < Stratify::Activity
-      field :persistent_id, :type => Integer
+      field :persistent_id, :type => String
       field :album
       field :artist
       field :composer
