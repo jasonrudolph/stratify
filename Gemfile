@@ -33,7 +33,7 @@ gem 'capistrano',               "~> 2.15.5" # for deployment
 group "development", "test" do
   gem "factory_girl_rails", "~> 4.2.1"
   gem "faker",              "~> 1.1.2"
-  gem "rspec-rails",        "~> 2.0"
+  gem "rspec-rails",        "~> 2.14"
 end
 
 group "test" do
