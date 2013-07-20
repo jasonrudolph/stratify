@@ -8,6 +8,14 @@ GIT
       origin (~> 1.0)
       tzinfo (~> 0.3.22)
 
+GIT
+  remote: git://github.com/simi/mongoid-paranoia.git
+  revision: 926e991c8cd2f2d62fda9ad3e55038d95498c4f6
+  specs:
+    mongoid-paranoia (0.1)
+      activemodel (~> 4.0.0)
+      mongoid (~> 4.0)
+
 GEM
   remote: http://rubygems.org/
   specs:
@@ -246,6 +254,7 @@ DEPENDENCIES
   launchy (~> 2.3.0)
   mocha (~> 0.14.0)
   mongoid!
+  mongoid-paranoia!
   mongoid_rails_migrations (~> 1.0.1)
   nokogiri (~> 1.6.0)
   pry (~> 0.9.12)

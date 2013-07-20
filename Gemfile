@@ -9,8 +9,9 @@ gem 'jquery-rails'
 gem 'capistrano',   '~> 2.15.5', :group => :development
 
 # Used by core collector/activity code (in lib/stratify)
-gem 'mongoid', :github => 'mongoid/mongoid'
-gem 'tilt',    '~> 1.4.1'
+gem 'mongoid',          :github => 'mongoid/mongoid'
+gem 'mongoid-paranoia', :github => 'simi/mongoid-paranoia'
+gem 'tilt',             '~> 1.4.1'
 
 # Used by various collectors
 gem 'foursquare2',             '~> 1.9.7'
