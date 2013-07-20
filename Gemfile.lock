@@ -248,6 +248,7 @@ DEPENDENCIES
   mongoid (~> 3.1.4)
   mongoid_rails_migrations (~> 1.0.1)
   nokogiri (~> 1.6.0)
+  pry (~> 0.9.12)
   rails (= 3.2.13)
   rb-fsevent (~> 0.9.3)
   rinku (~> 1.7.3)
