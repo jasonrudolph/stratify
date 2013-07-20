@@ -25,9 +25,6 @@ Spork.prefork do
     config.run_all_when_everything_filtered = true
     config.alias_example_to :fit, :focused => true
 
-    # Turn color on if we are NOT inside Textmate, Emacs, or VIM
-    config.color_enabled = (%w[TM_MODE EMACS VIM] & ENV.keys).empty?
-
     # == Mock Framework
     config.mock_with :mocha
 
