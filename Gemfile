@@ -38,10 +38,10 @@ group 'test' do
   gem 'database_cleaner', '~> 1.0.1'
   gem 'fakeweb',          '~> 1.3.0'
   gem 'guard-rspec',      '~> 3.0.2'
-  gem 'guard-spork',      '~> 1.0.1'
+  gem 'guard-spork',      '~> 1.5.1'
   gem 'launchy',          '~> 2.3.0'
   gem 'mocha',            '~> 0.14.0', :require => false
   gem 'rb-fsevent',       '~> 0.9.3', :require => false if RUBY_PLATFORM =~ /darwin/i
-  gem 'spork',            '~> 0.9.2'
+  gem 'spork-rails',      :github => 'sporkrb/spork-rails'
   gem 'vcr',              '~> 1.10.0'
 end
