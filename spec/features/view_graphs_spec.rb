@@ -9,6 +9,7 @@ feature "Viewing graphs" do
   scenario "Viewing the punch card graph" do
     activity = FactoryGirl.create(:bacon_activity, :created_at => Time.parse("Fri, 1 Jul 2011 19:27 EDT"))
 
+    set_time_zone_cookie("America/New_York")
     visit "/graphs/punch_card"
 
     page.should have_content("Baconation Activity by Day and Hour")

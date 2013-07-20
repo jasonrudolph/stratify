@@ -34,6 +34,8 @@ Spork.prefork do
     #     --seed 1234
     config.order = "random"
 
+    config.include FeatureHelpers, :type => :feature
+
     config.extend VCR::RSpec::Macros
 
     DatabaseCleaner.strategy = :truncation

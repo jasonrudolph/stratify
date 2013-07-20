@@ -8,6 +8,7 @@ feature "Managing activities" do
       :source => Stratify::Bacon::Collector.source,
     )
 
+    set_time_zone_cookie("America/New_York")
     visit activities_path
 
     within(:css, ".day") do
