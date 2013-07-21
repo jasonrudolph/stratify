@@ -45,7 +45,7 @@ feature "Managing collectors" do
 
   scenario "Delete a collector" do
     collector = Stratify::Bacon::Collector.create!(:username => "johndoe", :password => "password")
-    css_selector_for_collector = "##{ActionController::RecordIdentifier.dom_id(collector)}"
+    css_selector_for_collector = "##{ActionView::RecordIdentifier.dom_id(collector)}"
 
     visit collectors_path
 
