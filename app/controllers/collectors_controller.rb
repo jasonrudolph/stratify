@@ -14,7 +14,7 @@ class CollectorsController < ApplicationController
   end
 
   def create
-    @collector = @collector_class.new(params[:collector])
+    @collector = @collector_class.new(collector_params(@collector_class))
     if @collector.save
       redirect_to collectors_path, :notice => 'Collector was successfully created.'
     else
@@ -25,7 +25,7 @@ class CollectorsController < ApplicationController
   def update
     @collector = Stratify::Collector.find(params[:id])
 
-    if @collector.update_attributes(params[:collector])
+    if @collector.update_attributes(collector_params(@collector.class))
       redirect_to collectors_path, :notice => 'Collector was successfully updated.'
     else
       render :action => "edit"
@@ -50,5 +50,14 @@ class CollectorsController < ApplicationController
     source = params[:collector] && params[:collector][:source]
     @collector_class = Stratify::Collector.collector_class_for(source)
     redirect_to collectors_path unless @collector_class
+  end
+
+  def collector_params(collector_class)
+    permitted_params = collector_configuration_field_names(collector_class)
+    params.require(:collector).permit(*permitted_params)
+  end
+
+  def collector_configuration_field_names(collector_class)
+    collector_class.configuration_fields.map(&:name)
   end
 end
