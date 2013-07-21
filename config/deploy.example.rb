@@ -1,6 +1,10 @@
 require "bundler/capistrano"
 require "whenever/capistrano"
 
+set :default_environment, {
+  'LANG' => 'en_US.UTF-8',
+}
+
 set :application, "stratify"
 set :repository,  "git://github.com/your-username-here/stratify.git"
 
