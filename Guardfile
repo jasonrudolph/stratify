@@ -11,7 +11,7 @@ guard 'spork', :rspec_env => { 'RAILS_ENV' => 'test' }, :wait => 20 do
   watch('spec/spec_helper.rb') { :rspec }
 end
 
-guard 'rspec', :version => 2, :cli => "--drb", :all_on_start => false do
+guard 'rspec', :cli => "--drb", :all_on_start => false do
   watch('spec/spec_helper.rb')                       { "spec" }
   watch('config/routes.rb')                          { "spec/routing" }
   watch('app/controllers/application_controller.rb') { "spec/controllers" }
