@@ -22,7 +22,10 @@
           <td class="collector-configuration"><%= link_to collector.configuration_summary, edit_collector_path(collector) %></td>
           <td><%= collector.last_ran_at ? "#{time_ago_in_words(collector.last_ran_at)} ago" : "Never" %></td>
           <td class="actions"><%= button_to "Run now", run_collector_path(collector) %></td>
-          <td class="actions"><%= link_to image_tag("trash-icon-16.gif"), collector_path(collector), :confirm => 'Are you sure?', :method => :delete, :title => "Delete" %></td>
+          <td class="actions">
+            <%= link_to image_tag("trash-icon-16.gif"), collector_path(collector),
+              :data => { :confirm => 'Are you sure?' }, :method => :delete, :title => "Delete" %>
+          </td>
         </tr>
       <% end %>
     </tbody>
