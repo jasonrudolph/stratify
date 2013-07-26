@@ -9,6 +9,7 @@ module Stratify
       field :event_type
       field :distance_in_miles, :type => Float
       field :time_in_seconds, :type => Integer
+      field :elevation_gain_in_feet, :type => Integer
       field :starting_latitude, :type => BigDecimal
       field :starting_longitude, :type => BigDecimal
 
