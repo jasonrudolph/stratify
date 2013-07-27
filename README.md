@@ -42,7 +42,6 @@ Stratify currently provides the following [collectors](lib/plugins/stratify):
 * **foursquare**: Collects your checkins from Foursquare.
 * **garmin**: Collects your runs, bike rides, etc. from Garmin Connect.
 * **github**: Collects your commits, comments, issues, etc. from GitHub.
-* **gowalla**: Collects your checkins from Gowalla.
 * **instapaper**: Collects the articles you've archived on Instapaper.
 * **itunes**: Collects the songs you've listened to, shows you've watched, and so on, from iTunes.
 * **rhapsody**: Collects the songs you've played on Rhapsody.
