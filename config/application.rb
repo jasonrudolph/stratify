@@ -25,6 +25,7 @@ module Stratify
     # The default locale is :en and all translations from config/locales/*.rb,yml are auto loaded.
     # config.i18n.load_path += Dir[Rails.root.join('my', 'locales', '*.{rb,yml}').to_s]
     # config.i18n.default_locale = :de
+    config.i18n.enforce_available_locales = true
 
     # Each collector provides its own icons (and potentially other images). Add
     # the collector's images to the asset path.
